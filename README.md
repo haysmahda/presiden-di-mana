@@ -1,12 +1,34 @@
 # Presiden Di Mana Sekarang?
 
+### → **[haysmahda.github.io/presiden-di-mana](https://haysmahda.github.io/presiden-di-mana/)**
+
 A website that shows where the President of Indonesia was **last publicly reported** to be,
 based on Indonesian news coverage. Not GPS. Not real-time. Just reading the news, automatically.
 
-> **Status: Step 3 of 6.** The website is now showing **real locations from real news
-> articles**. The fake sample data is gone and the warning banner has switched itself off.
-> The one thing still missing is automation — right now the scanner only runs when you
-> run it by hand. That's Step 4.
+> **Status: Step 4 of 6.** The site is live and runs itself. A robot re-reads the news
+> **every 2 hours**, and any new location publishes automatically within a minute or two.
+> You don't have to do anything to keep it running.
+
+## The robot
+
+Two things run by themselves on GitHub's servers, for free. You can watch both on the
+**Actions** tab of the repository.
+
+| Workflow | When it runs | What it does |
+|---|---|---|
+| **Perbarui lokasi** | every 2 hours | Reads the feeds, updates `data/locations.json` if something changed |
+| **Terbitkan situs** | on every change | Publishes the site to its live address |
+
+**To force an update right now** instead of waiting for the next 2-hour slot:
+go to the repo → **Actions** tab → **Perbarui lokasi** in the left sidebar →
+**Run workflow** button → **Run workflow**. Give it about a minute.
+
+**If a run fails**, GitHub emails you. Click into the red run on the Actions tab to see
+which step broke — the scanner prints the reason in plain language.
+
+Quiet runs make no commit at all. The scanner only writes when a location actually
+changes, or when the "last checked" clock is more than 6 hours stale — otherwise the
+repository would collect 12 pointless commits a day.
 
 ---
 
@@ -19,6 +41,8 @@ You need two things: a terminal window, and a browser.
 ```bash
 cd ~/presiden-di-mana
 ```
+
+(You only need this for local development — the live site runs on its own.)
 
 **2. Start a tiny local web server:**
 
