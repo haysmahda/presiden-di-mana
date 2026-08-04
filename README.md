@@ -186,8 +186,8 @@ JavaScript, which is the cheapest and most beginner-proof thing to host.
 - [x] **Step 0 — Setup.** GitHub account and repository.
 - [x] **Step 1 — Static prototype.** The site, with fake data, previewable locally.
 - [x] **Step 2 — The updater script.** Read real RSS feeds, find place names, print results.
-- [x] **Step 3 — Wire it together.** Script writes real data into `locations.json`. ← *you are here*
-- [ ] **Step 4 — Automate.** GitHub Actions runs it every 2 hours; deploy free.
+- [x] **Step 3 — Wire it together.** Script writes real data into `locations.json`.
+- [x] **Step 4 — Automate.** GitHub Actions every 2 hours; live free on GitHub Pages. ← *you are here*
 - [ ] **Step 5 — Polish.** Stats, share image, English toggle.
 
 ---
