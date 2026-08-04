@@ -3,9 +3,10 @@
 A website that shows where the President of Indonesia was **last publicly reported** to be,
 based on Indonesian news coverage. Not GPS. Not real-time. Just reading the news, automatically.
 
-> **Status: Step 2 of 6.** The website is built, and the news scanner works and finds
-> real locations. They aren't joined up yet — the website still shows **fake sample data**
-> until Step 3.
+> **Status: Step 3 of 6.** The website is now showing **real locations from real news
+> articles**. The fake sample data is gone and the warning banner has switched itself off.
+> The one thing still missing is automation — right now the scanner only runs when you
+> run it by hand. That's Step 4.
 
 ---
 
@@ -43,8 +44,8 @@ That's it. You should see the site.
 
 ### What you should see
 
-- An orange/amber warning bar at the very top saying **DATA CONTOH** — that's the reminder
-  that the locations are fake for now. It disappears automatically once real data is flowing.
+- **No** orange warning bar. That bar only appears while the data is fake; now that real
+  news is flowing it hides itself. If you ever see it come back, something reset the data.
 - A big headline: *"Presiden di mana sekarang?"* with the answer right underneath.
 - A dark map of Indonesia with a **pulsing red dot** on the current location, smaller faded
   dots for previous locations, and a dashed line joining them.
@@ -76,7 +77,31 @@ Useful variations:
 | `node scripts/update.js` | Normal run — last 72 hours |
 | `node scripts/update.js --hours=168` | Look back a whole week |
 | `node scripts/update.js --verbose` | Also show what it *rejected* and why |
-| `node scripts/update.js --json` | Machine-readable output (Step 3 will use this) |
+| `node scripts/update.js --json` | Machine-readable output |
+| `node scripts/update.js --write` | **Actually update the website** (see below) |
+
+### Updating the website with fresh news
+
+```bash
+node scripts/update.js --write
+```
+
+Without `--write` the script can only look. With `--write` it updates `data/locations.json`,
+which is what the website reads. Reload the page in your browser and the new location
+is there.
+
+Rules it follows when writing, so it can't quietly wreck your data:
+
+- **Two independent outlets minimum.** A location reported by only one outlet is held
+  back and listed as *"Ditahan (baru satu media)"*. It gets published later if a second
+  outlet confirms it.
+- **Same visit, same pin.** Re-running it doesn't create duplicates — it tops up the
+  existing entry with any new articles it found and recalculates the confidence.
+- **Confidence can rise but not fall.** Each outlet keeps its best contribution, so a
+  later run that happens to see fewer articles won't downgrade a solid location.
+- **A quiet run changes nothing.** If it finds no confirmed location it leaves your
+  locations alone and only updates the "last checked" time.
+- **Running it twice in a row is a no-op.** Verified.
 
 ### Where the news comes from
 
@@ -122,7 +147,7 @@ Newspaper datelines are stripped too — nearly every Indonesian article begins
 | `assets/util.js` | Shared helpers (Indonesian dates, "3 jam yang lalu", source buttons) |
 | `assets/app.js` | Makes the main page work |
 | `assets/history.js` | Makes the archive page work |
-| `data/locations.json` | **The database.** Right now: fake samples. Later: real news results |
+| `data/locations.json` | **The database.** Real locations, written by the scanner |
 | `data/gazetteer.json` | The list of known places + their coordinates. This one is **real** |
 | `scripts/update.js` | The news scanner — reads RSS, finds places, scores confidence |
 | `scripts/sources.json` | Which feeds to read, how much to trust each, and what we exclude |
@@ -136,8 +161,8 @@ JavaScript, which is the cheapest and most beginner-proof thing to host.
 
 - [x] **Step 0 — Setup.** GitHub account and repository.
 - [x] **Step 1 — Static prototype.** The site, with fake data, previewable locally.
-- [x] **Step 2 — The updater script.** Read real RSS feeds, find place names, print results. ← *you are here*
-- [ ] **Step 3 — Wire it together.** Script writes real data into `locations.json`.
+- [x] **Step 2 — The updater script.** Read real RSS feeds, find place names, print results.
+- [x] **Step 3 — Wire it together.** Script writes real data into `locations.json`. ← *you are here*
 - [ ] **Step 4 — Automate.** GitHub Actions runs it every 2 hours; deploy free.
 - [ ] **Step 5 — Polish.** Stats, share image, English toggle.
 

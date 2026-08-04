@@ -1,12 +1,11 @@
 {
-  "_readme": "SAMPLE DATA — fabricated for design preview only. Step 3 replaces this with real output from scripts/update.js. The `sample_data` flag drives the warning banner on the site.",
   "schema_version": 1,
-  "sample_data": true,
-  "generated_at": "2026-08-04T09:00:00+07:00",
-  "current": "loc-20260804-0815",
+  "sample_data": false,
+  "generated_at": "2026-08-04T09:29:27.939Z",
+  "current": "loc-20260804-1223-istana-merdeka",
   "locations": [
     {
-      "id": "loc-20260804-0815",
+      "id": "loc-20260804-1223-istana-merdeka",
       "place": "Istana Merdeka",
       "city": "Jakarta Pusat",
       "region": "DKI Jakarta",
@@ -14,254 +13,84 @@
       "country_code": "ID",
       "lat": -6.1701,
       "lng": 106.8219,
-      "event_type": "kenegaraan",
-      "event_label_id": "Kegiatan Kenegaraan",
-      "reported_at": "2026-08-04T08:15:00+07:00",
-      "confidence": 92,
-      "sources": [
-        { "outlet": "Sekretariat Presiden", "title": "[CONTOH] Presiden menerima kunjungan kehormatan di Istana Merdeka", "url": "#", "published_at": "2026-08-04T08:15:00+07:00" },
-        { "outlet": "Antara News", "title": "[CONTOH] Presiden gelar pertemuan pagi di Istana Merdeka, Jakarta", "url": "#", "published_at": "2026-08-04T08:40:00+07:00" },
-        { "outlet": "Kompas", "title": "[CONTOH] Agenda Presiden hari ini berpusat di Istana Merdeka", "url": "#", "published_at": "2026-08-04T09:02:00+07:00" }
-      ]
-    },
-    {
-      "id": "loc-20260802-1440",
-      "place": "Istana Garuda, Ibu Kota Nusantara",
-      "city": "Penajam Paser Utara",
-      "region": "Kalimantan Timur",
-      "country": "Indonesia",
-      "country_code": "ID",
-      "lat": -0.9265,
-      "lng": 116.6907,
-      "event_type": "kunjungan_kerja",
-      "event_label_id": "Kunjungan Kerja",
-      "reported_at": "2026-08-02T14:40:00+07:00",
-      "confidence": 88,
-      "sources": [
-        { "outlet": "Antara News", "title": "[CONTOH] Presiden tinjau perkembangan pembangunan di IKN Nusantara", "url": "#", "published_at": "2026-08-02T14:40:00+07:00" },
-        { "outlet": "Setkab", "title": "[CONTOH] Presiden pimpin rapat di Istana Garuda IKN", "url": "#", "published_at": "2026-08-02T15:05:00+07:00" },
-        { "outlet": "Detik", "title": "[CONTOH] Presiden bermalam di Nusantara usai agenda peninjauan", "url": "#", "published_at": "2026-08-02T18:20:00+07:00" }
-      ]
-    },
-    {
-      "id": "loc-20260730-1005",
-      "place": "Istana Kepresidenan Bogor",
-      "city": "Bogor",
-      "region": "Jawa Barat",
-      "country": "Indonesia",
-      "country_code": "ID",
-      "lat": -6.5971,
-      "lng": 106.7972,
-      "event_type": "rapat",
-      "event_label_id": "Rapat Terbatas",
-      "reported_at": "2026-07-30T10:05:00+07:00",
+      "event_type": "bilateral",
+      "event_label_id": "Pertemuan Bilateral",
+      "reported_at": "2026-08-04T05:23:00.000Z",
       "confidence": 84,
+      "outlet_scores": {
+        "Liputan6": 1.496,
+        "Setkab": 2.244,
+        "CNN Indonesia": 0.952
+      },
       "sources": [
-        { "outlet": "Antara News", "title": "[CONTOH] Presiden pimpin rapat terbatas di Istana Bogor", "url": "#", "published_at": "2026-07-30T10:05:00+07:00" },
-        { "outlet": "CNN Indonesia", "title": "[CONTOH] Sejumlah menteri hadiri rapat di Istana Bogor", "url": "#", "published_at": "2026-07-30T11:15:00+07:00" }
+        {
+          "outlet": "Liputan6",
+          "title": "Melihat Jamuan Prabowo untuk PM Thailand di Istana",
+          "url": "https://www.liputan6.com/news/read/8261502/melihat-jamuan-prabowo-untuk-pm-thailand-di-istana",
+          "published_at": "2026-08-04T05:23:00.000Z"
+        },
+        {
+          "outlet": "Liputan6",
+          "title": "Presiden Prabowo dan PM Thailand Anutin Perkuat Kemitraan Strategis",
+          "url": "https://www.liputan6.com/photo/read/8261297/presiden-prabowo-dan-pm-thailand-anutin-perkuat-kemitraan-strategis",
+          "published_at": "2026-08-03T16:39:38.000Z"
+        },
+        {
+          "outlet": "Liputan6",
+          "title": "Prabowo Dianugerahi Medali Kehormatan Angkatan Bersenjata Thailand",
+          "url": "https://www.liputan6.com/news/read/8261256/prabowo-dianugerahi-medali-kehormatan-angkatan-bersenjata-thailand",
+          "published_at": "2026-08-03T14:48:50.000Z"
+        },
+        {
+          "outlet": "Setkab",
+          "title": "Indonesia dan Tailan Perkuat Kemitraan Strategis, Presiden Prabowo dan PM Anutin Saksikan Penunjukan Dokumen Kerja Sama",
+          "url": "https://setkab.go.id/indonesia-dan-tailan-perkuat-kemitraan-strategis-presiden-prabowo-dan-pm-anutin-saksikan-penunjukan-dokumen-kerja-sama/",
+          "published_at": "2026-08-03T13:55:02.000Z"
+        },
+        {
+          "outlet": "CNN Indonesia",
+          "title": "Dipimpin Muzani, Pimpinan MPR Serahkan Konsep PPHN ke Prabowo",
+          "url": "https://www.cnnindonesia.com/nasional/20260803182443-32-1388128/dipimpin-muzani-pimpinan-mpr-serahkan-konsep-pphn-ke-prabowo",
+          "published_at": "2026-08-03T11:54:12.000Z"
+        },
+        {
+          "outlet": "CNN Indonesia",
+          "title": "Pimpinan MPR Temui Prabowo di Istana Kepresidenan",
+          "url": "https://www.cnnindonesia.com/nasional/20260803161335-20-1388069/pimpinan-mpr-temui-prabowo-di-istana-kepresidenan",
+          "published_at": "2026-08-03T09:19:27.000Z"
+        }
       ]
     },
     {
-      "id": "loc-20260727-1920",
-      "place": "Pangkalan TNI AU Halim Perdanakusuma",
-      "city": "Jakarta Timur",
+      "id": "loc-20260731-1838-jakarta",
+      "place": "Jakarta",
+      "city": "Jakarta",
       "region": "DKI Jakarta",
       "country": "Indonesia",
       "country_code": "ID",
-      "lat": -6.2666,
-      "lng": 106.891,
-      "event_type": "perjalanan",
-      "event_label_id": "Keberangkatan / Kepulangan",
-      "reported_at": "2026-07-27T19:20:00+07:00",
-      "confidence": 79,
+      "lat": -6.2088,
+      "lng": 106.8456,
+      "event_type": "upacara",
+      "event_label_id": "Upacara Kenegaraan",
+      "reported_at": "2026-07-31T11:38:32.000Z",
+      "confidence": 88,
+      "outlet_scores": {
+        "Tempo": 2.24,
+        "Setkab": 3.36
+      },
       "sources": [
-        { "outlet": "Antara News", "title": "[CONTOH] Presiden tiba kembali di Tanah Air melalui Halim Perdanakusuma", "url": "#", "published_at": "2026-07-27T19:20:00+07:00" },
-        { "outlet": "Tempo", "title": "[CONTOH] Rombongan Presiden mendarat di Halim malam ini", "url": "#", "published_at": "2026-07-27T20:00:00+07:00" }
-      ]
-    },
-    {
-      "id": "loc-20260725-0930",
-      "place": "Balai Agung Rakyat",
-      "city": "Beijing",
-      "region": "",
-      "country": "Tiongkok",
-      "country_code": "CN",
-      "lat": 39.9042,
-      "lng": 116.4074,
-      "event_type": "kunjungan_kenegaraan",
-      "event_label_id": "Kunjungan Kenegaraan",
-      "reported_at": "2026-07-25T09:30:00+07:00",
-      "confidence": 95,
-      "sources": [
-        { "outlet": "Sekretariat Presiden", "title": "[CONTOH] Presiden lakukan kunjungan kenegaraan ke Tiongkok", "url": "#", "published_at": "2026-07-25T09:30:00+07:00" },
-        { "outlet": "Antara News", "title": "[CONTOH] Presiden disambut upacara kenegaraan di Beijing", "url": "#", "published_at": "2026-07-25T10:10:00+07:00" },
-        { "outlet": "Kompas", "title": "[CONTOH] Sejumlah kesepakatan ditandatangani dalam lawatan ke Beijing", "url": "#", "published_at": "2026-07-25T13:45:00+07:00" },
-        { "outlet": "CNN Indonesia", "title": "[CONTOH] Agenda Presiden di Beijing berlanjut hingga sore", "url": "#", "published_at": "2026-07-25T16:20:00+07:00" }
-      ]
-    },
-    {
-      "id": "loc-20260721-1610",
-      "place": "Surabaya",
-      "city": "Surabaya",
-      "region": "Jawa Timur",
-      "country": "Indonesia",
-      "country_code": "ID",
-      "lat": -7.2575,
-      "lng": 112.7521,
-      "event_type": "peresmian",
-      "event_label_id": "Peresmian Infrastruktur",
-      "reported_at": "2026-07-21T16:10:00+07:00",
-      "confidence": 81,
-      "sources": [
-        { "outlet": "Antara News", "title": "[CONTOH] Presiden resmikan proyek infrastruktur di Surabaya", "url": "#", "published_at": "2026-07-21T16:10:00+07:00" },
-        { "outlet": "Detik", "title": "[CONTOH] Warga sambut kedatangan Presiden di Surabaya", "url": "#", "published_at": "2026-07-21T17:00:00+07:00" }
-      ]
-    },
-    {
-      "id": "loc-20260718-1100",
-      "place": "Makassar",
-      "city": "Makassar",
-      "region": "Sulawesi Selatan",
-      "country": "Indonesia",
-      "country_code": "ID",
-      "lat": -5.1477,
-      "lng": 119.4327,
-      "event_type": "kunjungan_kerja",
-      "event_label_id": "Kunjungan Kerja",
-      "reported_at": "2026-07-18T11:00:00+07:00",
-      "confidence": 76,
-      "sources": [
-        { "outlet": "Antara News", "title": "[CONTOH] Presiden tinjau program pangan di Makassar", "url": "#", "published_at": "2026-07-18T11:00:00+07:00" },
-        { "outlet": "Tribunnews", "title": "[CONTOH] Kunjungan kerja Presiden ke Sulawesi Selatan berlangsung sehari", "url": "#", "published_at": "2026-07-18T12:30:00+07:00" }
-      ]
-    },
-    {
-      "id": "loc-20260712-0845",
-      "place": "Istana Negara",
-      "city": "Jakarta Pusat",
-      "region": "DKI Jakarta",
-      "country": "Indonesia",
-      "country_code": "ID",
-      "lat": -6.1704,
-      "lng": 106.8236,
-      "event_type": "pelantikan",
-      "event_label_id": "Pelantikan",
-      "reported_at": "2026-07-12T08:45:00+07:00",
-      "confidence": 90,
-      "sources": [
-        { "outlet": "Sekretariat Presiden", "title": "[CONTOH] Presiden lantik pejabat negara di Istana Negara", "url": "#", "published_at": "2026-07-12T08:45:00+07:00" },
-        { "outlet": "Antara News", "title": "[CONTOH] Prosesi pelantikan digelar di Istana Negara pagi ini", "url": "#", "published_at": "2026-07-12T09:15:00+07:00" },
-        { "outlet": "Kompas", "title": "[CONTOH] Daftar pejabat yang dilantik Presiden hari ini", "url": "#", "published_at": "2026-07-12T10:00:00+07:00" }
-      ]
-    },
-    {
-      "id": "loc-20260629-1325",
-      "place": "Nusa Dua",
-      "city": "Denpasar",
-      "region": "Bali",
-      "country": "Indonesia",
-      "country_code": "ID",
-      "lat": -8.8008,
-      "lng": 115.2317,
-      "event_type": "forum",
-      "event_label_id": "Forum Internasional",
-      "reported_at": "2026-06-29T13:25:00+07:00",
-      "confidence": 87,
-      "sources": [
-        { "outlet": "Antara News", "title": "[CONTOH] Presiden buka forum internasional di Nusa Dua, Bali", "url": "#", "published_at": "2026-06-29T13:25:00+07:00" },
-        { "outlet": "Tempo", "title": "[CONTOH] Delegasi sejumlah negara hadiri forum di Bali", "url": "#", "published_at": "2026-06-29T14:40:00+07:00" },
-        { "outlet": "CNN Indonesia", "title": "[CONTOH] Presiden sampaikan pidato kunci di Bali", "url": "#", "published_at": "2026-06-29T15:10:00+07:00" }
-      ]
-    },
-    {
-      "id": "loc-20260620-1015",
-      "place": "Medan",
-      "city": "Medan",
-      "region": "Sumatera Utara",
-      "country": "Indonesia",
-      "country_code": "ID",
-      "lat": 3.5952,
-      "lng": 98.6722,
-      "event_type": "peresmian",
-      "event_label_id": "Peresmian Infrastruktur",
-      "reported_at": "2026-06-20T10:15:00+07:00",
-      "confidence": 73,
-      "sources": [
-        { "outlet": "Antara News", "title": "[CONTOH] Presiden resmikan fasilitas publik di Medan", "url": "#", "published_at": "2026-06-20T10:15:00+07:00" },
-        { "outlet": "Liputan6", "title": "[CONTOH] Agenda Presiden di Sumatera Utara berlangsung setengah hari", "url": "#", "published_at": "2026-06-20T11:50:00+07:00" }
-      ]
-    },
-    {
-      "id": "loc-20260611-1550",
-      "place": "Kompleks Parlemen Senayan",
-      "city": "Jakarta Pusat",
-      "region": "DKI Jakarta",
-      "country": "Indonesia",
-      "country_code": "ID",
-      "lat": -6.2101,
-      "lng": 106.8003,
-      "event_type": "kenegaraan",
-      "event_label_id": "Kegiatan Kenegaraan",
-      "reported_at": "2026-06-11T15:50:00+07:00",
-      "confidence": 89,
-      "sources": [
-        { "outlet": "Antara News", "title": "[CONTOH] Presiden hadiri sidang di Kompleks Parlemen", "url": "#", "published_at": "2026-06-11T15:50:00+07:00" },
-        { "outlet": "Detik", "title": "[CONTOH] Presiden tiba di Senayan sore ini", "url": "#", "published_at": "2026-06-11T16:05:00+07:00" },
-        { "outlet": "Kompas", "title": "[CONTOH] Isi pidato Presiden di hadapan anggota dewan", "url": "#", "published_at": "2026-06-11T17:20:00+07:00" }
-      ]
-    },
-    {
-      "id": "loc-20260528-0900",
-      "place": "Istana Akasaka",
-      "city": "Tokyo",
-      "region": "",
-      "country": "Jepang",
-      "country_code": "JP",
-      "lat": 35.6785,
-      "lng": 139.7295,
-      "event_type": "kunjungan_kenegaraan",
-      "event_label_id": "Kunjungan Kenegaraan",
-      "reported_at": "2026-05-28T09:00:00+07:00",
-      "confidence": 93,
-      "sources": [
-        { "outlet": "Sekretariat Presiden", "title": "[CONTOH] Presiden memulai kunjungan kenegaraan ke Jepang", "url": "#", "published_at": "2026-05-28T09:00:00+07:00" },
-        { "outlet": "Antara News", "title": "[CONTOH] Presiden disambut di Tokyo, bahas kerja sama ekonomi", "url": "#", "published_at": "2026-05-28T10:30:00+07:00" },
-        { "outlet": "Tempo", "title": "[CONTOH] Lawatan Presiden ke Tokyo berlangsung dua hari", "url": "#", "published_at": "2026-05-28T12:00:00+07:00" }
-      ]
-    },
-    {
-      "id": "loc-20260514-1730",
-      "place": "Hambalang",
-      "city": "Bogor",
-      "region": "Jawa Barat",
-      "country": "Indonesia",
-      "country_code": "ID",
-      "lat": -6.5333,
-      "lng": 106.9167,
-      "event_type": "militer",
-      "event_label_id": "Kegiatan Militer",
-      "reported_at": "2026-05-14T17:30:00+07:00",
-      "confidence": 68,
-      "sources": [
-        { "outlet": "Detik", "title": "[CONTOH] Presiden tinjau latihan di kawasan Hambalang", "url": "#", "published_at": "2026-05-14T17:30:00+07:00" }
-      ]
-    },
-    {
-      "id": "loc-20260430-1140",
-      "place": "Banda Aceh",
-      "city": "Banda Aceh",
-      "region": "Aceh",
-      "country": "Indonesia",
-      "country_code": "ID",
-      "lat": 5.5483,
-      "lng": 95.3238,
-      "event_type": "kunjungan_kerja",
-      "event_label_id": "Kunjungan Kerja",
-      "reported_at": "2026-04-30T11:40:00+07:00",
-      "confidence": 71,
-      "sources": [
-        { "outlet": "Antara News", "title": "[CONTOH] Presiden kunjungi Banda Aceh, tinjau program daerah", "url": "#", "published_at": "2026-04-30T11:40:00+07:00" },
-        { "outlet": "Tribunnews", "title": "[CONTOH] Kedatangan Presiden di Aceh disambut pemerintah daerah", "url": "#", "published_at": "2026-04-30T13:00:00+07:00" }
+        {
+          "outlet": "Tempo",
+          "title": "Prabowo Upacara HUT ke-81 RI di Jakarta",
+          "url": "https://nasional.tempo.co/read/2116336/prabowo-upacara-hut-ke-81-ri-di-jakarta",
+          "published_at": "2026-07-31T11:38:32.000Z"
+        },
+        {
+          "outlet": "Setkab",
+          "title": "Presiden Prabowo Kembali ke Jakarta dengan KA Nusantara Explorer, Perkuat Gagasan Wisata Berbasis Kereta Api",
+          "url": "https://setkab.go.id/presiden-prabowo-kembali-ke-jakarta-dengan-ka-nusantara-explorer-perkuat-gagasan-wisata-berbasis-kereta-api/",
+          "published_at": "2026-07-30T15:00:59.000Z"
+        }
       ]
     }
   ]

@@ -24,6 +24,7 @@ const path = require('path');
 const ROOT = path.join(__dirname, '..');
 const GAZETTEER = path.join(ROOT, 'data', 'gazetteer.json');
 const SOURCES   = path.join(ROOT, 'scripts', 'sources.json');
+const LOCATIONS = path.join(ROOT, 'data', 'locations.json');
 
 /* ---------------------------------------------------------------- options */
 
@@ -37,6 +38,7 @@ const OPT = {
   limit:   Number(flag('limit', 12)),
   json:    argv.includes('--json'),
   verbose: argv.includes('--verbose'),
+  write:   argv.includes('--write'),
   timeout: Number(flag('timeout', 20)) * 1000
 };
 
@@ -355,6 +357,9 @@ function scoreCluster(reports) {
   return {
     confidence: Math.max(20, Math.min(98, confidence)),
     outlets: [...perOutlet.keys()],
+    outlet_scores: Object.fromEntries(
+      [...perOutlet].map(([outlet, v]) => [outlet, Math.round(v * 1000) / 1000])
+    ),
     official: reports.some(r => r.official),
     confirmed: perOutlet.size >= 2 && !weakOnly,
     weakOnly
@@ -438,6 +443,168 @@ function rollup(clusters, windowMs) {
   return kept.filter(cl => !dropped.has(cl));
 }
 
+/* ----------------------------------------------------- event type guessing */
+
+/* First pattern that matches wins, so the specific ones come first. */
+const EVENTS = [
+  ['pelantikan',          'Pelantikan',                 /\b(pelantikan|melantik|dilantik|mengambil sumpah)\b/i],
+  ['rapat',               'Rapat Kabinet',              /\b(rapat terbatas|ratas|sidang kabinet|rapat kabinet|rapat paripurna|memimpin rapat)\b/i],
+  /* Host-language first: when a foreign guest is received here the articles
+     also say "kunjungan kenegaraan", but that is the guest's trip, not his. */
+  ['bilateral',           'Pertemuan Bilateral',        /\b(menjamu|jamuan|jamu|menyambut|menerima kunjungan|pertemuan bilateral|bertemu dengan|kunjungan kehormatan)\b/i],
+  ['kunjungan_kenegaraan','Kunjungan Kenegaraan',       /\b(kunjungan kenegaraan|lawatan|kunjungan resmi|state visit)\b/i],
+  ['forum',               'Forum Internasional',        /\b(ktt|konferensi tingkat tinggi|summit|forum internasional|sidang umum pbb|g20|asean)\b/i],
+  ['peresmian',           'Peresmian',                  /\b(meresmikan|resmikan|peresmian|groundbreaking|pencanangan|revitalisasi)\b/i],
+  ['upacara',             'Upacara Kenegaraan',         /\b(upacara|hut ke|peringatan hari|apel|detik-detik proklamasi)\b/i],
+  ['militer',             'Kegiatan Militer',           /\b(latihan (gabungan|militer|perang)|defile|alutsista|panglima tni|prajurit)\b/i],
+  ['perjalanan',          'Keberangkatan / Kepulangan', /\b(bertolak|lepas landas|tiba di tanah air|mendarat|kembali ke tanah air|tinggalkan)\b/i],
+  ['kunjungan_kerja',     'Kunjungan Kerja',            /\b(kunjungan kerja|kunker|meninjau|tinjau|blusukan|menyerahkan bantuan)\b/i],
+  ['pidato',              'Pidato',                     /\b(pidato|sambutan|orasi|menyampaikan keterangan)\b/i]
+];
+
+function classifyEvent(reports) {
+  const hay = reports.map(r => `${r.title} ${r.summary}`).join(' ');
+  for (const [type, label, re] of EVENTS) {
+    if (re.test(hay)) return { event_type: type, event_label_id: label };
+  }
+  return { event_type: 'kenegaraan', event_label_id: 'Kegiatan Kenegaraan' };
+}
+
+/* ---------------------------------------------------------- writing to disk */
+
+const MAX_SOURCES = 8;    // per location — keeps locations.json small
+const MAX_ENTRIES = 500;  // history cap
+const MERGE_WINDOW_MS = 36 * 3600e3;
+
+function jakartaParts(date) {
+  const p = Object.fromEntries(new Intl.DateTimeFormat('en-GB', {
+    timeZone: 'Asia/Jakarta', year: 'numeric', month: '2-digit', day: '2-digit',
+    hour: '2-digit', minute: '2-digit', hour12: false
+  }).formatToParts(date).map(x => [x.type, x.value]));
+  return p;
+}
+
+function makeId(place, date) {
+  const p = jakartaParts(date);
+  const slug = normalise(place.name).replace(/ /g, '-').slice(0, 24);
+  return `loc-${p.year}${p.month}${p.day}-${p.hour}${p.minute}-${slug}`;
+}
+
+/* Turn a scored cluster into the shape the website reads. `outlet_scores`
+   is kept so a later run can merge into this entry without losing the
+   evidence that produced the original confidence. */
+function toEntry(cl) {
+  const sources = cl.reports
+    .filter(r => r.url)
+    .sort((a, b) => b.published - a.published)
+    .slice(0, MAX_SOURCES)
+    .map(r => ({
+      outlet: r.outlet,
+      title: r.title,
+      url: r.url,
+      published_at: r.published.toISOString()
+    }));
+
+  return {
+    id: makeId(cl.place, cl.reported_at),
+    place: cl.place.name,
+    city: cl.place.city,
+    region: cl.place.region,
+    country: cl.place.country,
+    country_code: cl.place.country_code,
+    lat: cl.place.lat,
+    lng: cl.place.lng,
+    ...classifyEvent(cl.reports),
+    reported_at: cl.reported_at.toISOString(),
+    confidence: cl.confidence,
+    outlet_scores: cl.outlet_scores,
+    sources
+  };
+}
+
+/* Same place, same visit? Then it's the entry we already have — top it up
+   rather than adding a second pin to the map. */
+function sameVisit(entry, cl) {
+  return entry.place === cl.place.name
+    && Math.abs(new Date(entry.reported_at) - cl.reported_at) <= MERGE_WINDOW_MS;
+}
+
+function mergeEntry(existing, incoming) {
+  const bySource = new Map();
+  for (const s of [...(incoming.sources || []), ...(existing.sources || [])]) {
+    if (s.url && !bySource.has(s.url)) bySource.set(s.url, s);
+  }
+  const sources = [...bySource.values()]
+    .sort((a, b) => new Date(b.published_at) - new Date(a.published_at))
+    .slice(0, MAX_SOURCES);
+
+  /* Outlets keep their best-ever contribution, so confidence can rise as more
+     outlets report the same visit, but never falls just because a later run
+     saw fewer articles. */
+  const scores = { ...(existing.outlet_scores || {}) };
+  for (const [outlet, value] of Object.entries(incoming.outlet_scores || {})) {
+    scores[outlet] = Math.max(scores[outlet] ?? 0, value);
+  }
+  const raw = Object.values(scores).reduce((a, b) => a + b, 0);
+
+  const newer = new Date(incoming.reported_at) > new Date(existing.reported_at);
+
+  return {
+    ...existing,
+    ...(newer ? { reported_at: incoming.reported_at, event_type: incoming.event_type, event_label_id: incoming.event_label_id } : {}),
+    confidence: Math.max(20, Math.min(98, Math.round(100 * (1 - Math.exp(-raw / 2.6))))),
+    outlet_scores: scores,
+    sources
+  };
+}
+
+function writeLocations(clusters, file) {
+  const prior = fs.existsSync(file) ? JSON.parse(fs.readFileSync(file, 'utf8')) : {};
+
+  /* The shipped sample entries are fabricated. The moment real data arrives
+     they go, rather than sitting alongside it. */
+  const startedFromSample = prior.sample_data === true;
+  const history = startedFromSample ? [] : (prior.locations || []);
+
+  const added = [], updated = [];
+  for (const cl of clusters) {
+    const incoming = toEntry(cl);
+    const hit = history.find(e => sameVisit(e, cl));
+    if (hit) {
+      Object.assign(hit, mergeEntry(hit, incoming));
+      updated.push(hit);
+    } else {
+      history.push(incoming);
+      added.push(incoming);
+    }
+  }
+
+  history.sort((a, b) => new Date(b.reported_at) - new Date(a.reported_at));
+  const locations = history.slice(0, MAX_ENTRIES);
+
+  const payload = {
+    schema_version: 1,
+    sample_data: false,
+    generated_at: new Date().toISOString(),
+    current: locations.length ? locations[0].id : null,
+    locations
+  };
+
+  fs.writeFileSync(file, JSON.stringify(payload, null, 2) + '\n');
+  return { added, updated, total: locations.length, purgedSample: startedFromSample };
+}
+
+/* Nothing new to publish, but we still checked — record that so the site can
+   say when it last looked. */
+function touchTimestamp(file) {
+  if (!fs.existsSync(file)) return false;
+  const data = JSON.parse(fs.readFileSync(file, 'utf8'));
+  if (data.sample_data === true) return false;   // don't stamp fabricated data
+  data.generated_at = new Date().toISOString();
+  fs.writeFileSync(file, JSON.stringify(data, null, 2) + '\n');
+  return true;
+}
+
 /* ------------------------------------------------------------------- main */
 
 async function main() {
@@ -516,7 +683,7 @@ async function main() {
   if (!located.length) {
     say(amber('  Tidak ada lokasi yang bisa disimpulkan dari jendela waktu ini.'));
     say(grey('  Coba perlebar: node scripts/update.js --hours=168'));
-    return finish(0);
+    return nothingToPublish();
   }
 
   /* -- 4. score ---------------------------------------------------------- */
@@ -526,7 +693,7 @@ async function main() {
 
   if (!clusters.length) {
     say(amber('  Semua kandidat hanya berdasar nama negara — tidak cukup kuat.'));
-    return finish(0);
+    return nothingToPublish();
   }
 
   const best = [...clusters].sort((a, b) =>
@@ -578,12 +745,52 @@ async function main() {
     say(amber('  Peringatan: baru satu media. Belum memenuhi syarat tampil di situs.'));
   }
   say('');
+
+  /* -- 6. publish -------------------------------------------------------- */
+  say(bold('  6. Menyimpan ke situs'));
   say('  ' + bar());
-  say(grey('  Tidak ada file yang diubah. data/locations.json masih data contoh.'));
-  say(grey('  Penulisan data asli menyusul di Step 3.'));
+
+  /* CLAUDE.MD rule: nothing reaches the website until at least two
+     independent outlets agree on it. */
+  const publishable = clusters.filter(cl => cl.confirmed);
+  const held = clusters.filter(cl => !cl.confirmed);
+
+  if (!OPT.write) {
+    say(grey('  Mode baca-saja. Tidak ada file yang diubah.'));
+    say(grey(`  ${publishable.length} lokasi siap terbit, ${held.length} ditahan (sumber tunggal).`));
+    say(grey('  Untuk benar-benar menyimpan:  node scripts/update.js --write'));
+  } else if (!publishable.length) {
+    const stamped = touchTimestamp(LOCATIONS);
+    say(amber('  Tidak ada lokasi yang dikonfirmasi 2+ media. Tidak ada yang diterbitkan.'));
+    say(grey(stamped
+      ? '  Waktu pemeriksaan diperbarui agar situs tahu kita sudah mengecek.'
+      : '  data/locations.json dibiarkan apa adanya.'));
+  } else {
+    const res = writeLocations(publishable, LOCATIONS);
+    if (res.purgedSample) say(amber('  Data contoh dihapus, digantikan pemberitaan asli.'));
+    for (const e of res.added)   say(`  ${green('baru   ')} ${e.place} ${grey('· ' + e.confidence + '% · ' + e.sources.length + ' sumber')}`);
+    for (const e of res.updated) say(`  ${cyan('diperbarui')} ${e.place} ${grey('· ' + e.confidence + '% · ' + e.sources.length + ' sumber')}`);
+    say('');
+    say(`  ${res.total} lokasi tersimpan di ${grey('data/locations.json')}`);
+    if (held.length) {
+      say(grey(`  Ditahan (baru satu media): ${held.map(h => h.place.name).join(', ')}`));
+    }
+    say(grey('  Muat ulang situs untuk melihat hasilnya.'));
+  }
   say('');
 
   return finish(0, { current, clusters });
+}
+
+/* The feeds were read fine, there was just nothing worth publishing. Record
+   that we looked, so the site can still say when it last checked. */
+function nothingToPublish() {
+  if (OPT.write && touchTimestamp(LOCATIONS)) {
+    say('');
+    say(grey('  Lokasi lama dibiarkan. Waktu pemeriksaan diperbarui.'));
+  }
+  say('');
+  return finish(0);
 }
 
 function finish(code, payload) {
