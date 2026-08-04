@@ -1,0 +1,55 @@
+# Publishes the website to GitHub Pages.
+# Runs on every push to main — including the robot's own data commits, so a
+# new location goes live within a minute or two of being found.
+name: Terbitkan situs
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# If two pushes land close together, publish the newer one and drop the older.
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  terbitkan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Ambil kode
+        uses: actions/checkout@v4
+
+      - name: Susun folder situs
+        # Only the files a visitor needs — not the scanner, the brief, or the
+        # workflows. Paths in the HTML are relative, so the /presiden-di-mana/
+        # sub-path works without any rewriting.
+        run: |
+          set -euo pipefail
+          mkdir -p _site
+          cp index.html history.html _site/
+          cp -r assets data _site/
+          touch _site/.nojekyll
+          echo "Diterbitkan:"; find _site -type f | sort | sed 's/^/  /'
+
+      - name: Siapkan Pages
+        uses: actions/configure-pages@v5
+
+      - name: Unggah
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Terbitkan
+        id: deployment
+        uses: actions/deploy-pages@v4

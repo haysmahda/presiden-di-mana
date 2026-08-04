@@ -561,6 +561,11 @@ function mergeEntry(existing, incoming) {
 function writeLocations(clusters, file) {
   const prior = fs.existsSync(file) ? JSON.parse(fs.readFileSync(file, 'utf8')) : {};
 
+  /* Snapshot before we start merging — the entries below get mutated in
+     place, so comparing against prior.locations afterwards would compare the
+     array with itself and always look unchanged. */
+  const before = JSON.stringify(prior.locations || []);
+
   /* The shipped sample entries are fabricated. The moment real data arrives
      they go, rather than sitting alongside it. */
   const startedFromSample = prior.sample_data === true;
@@ -582,6 +587,13 @@ function writeLocations(clusters, file) {
   history.sort((a, b) => new Date(b.reported_at) - new Date(a.reported_at));
   const locations = history.slice(0, MAX_ENTRIES);
 
+  /* Nothing actually moved. Rewriting the file anyway would mean a commit
+     every couple of hours forever, so only refresh the "last checked" clock
+     once it has gone properly stale. */
+  if (!startedFromSample && JSON.stringify(locations) === before && !stampIsStale(prior)) {
+    return { added: [], updated: [], total: locations.length, unchanged: true };
+  }
+
   const payload = {
     schema_version: 1,
     sample_data: false,
@@ -594,12 +606,23 @@ function writeLocations(clusters, file) {
   return { added, updated, total: locations.length, purgedSample: startedFromSample };
 }
 
+/* How stale the "last checked" clock has to get before we bother rewriting the
+   file for its sake alone. Caps idle commits at ~4 a day instead of 12. */
+const STAMP_MAX_AGE_MS = 6 * 3600e3;
+
+function stampIsStale(data) {
+  if (!data.generated_at) return true;
+  const age = Date.now() - new Date(data.generated_at).getTime();
+  return !(age >= 0) || age > STAMP_MAX_AGE_MS;
+}
+
 /* Nothing new to publish, but we still checked — record that so the site can
    say when it last looked. */
 function touchTimestamp(file) {
   if (!fs.existsSync(file)) return false;
   const data = JSON.parse(fs.readFileSync(file, 'utf8'));
   if (data.sample_data === true) return false;   // don't stamp fabricated data
+  if (!stampIsStale(data)) return false;         // still fresh, leave the file alone
   data.generated_at = new Date().toISOString();
   fs.writeFileSync(file, JSON.stringify(data, null, 2) + '\n');
   return true;
@@ -767,6 +790,12 @@ async function main() {
       : '  data/locations.json dibiarkan apa adanya.'));
   } else {
     const res = writeLocations(publishable, LOCATIONS);
+    if (res.unchanged) {
+      say(grey('  Tidak ada perubahan. File dibiarkan apa adanya.'));
+      say(grey(`  ${res.total} lokasi tersimpan, semuanya sudah mutakhir.`));
+      say('');
+      return finish(0, { current, clusters });
+    }
     if (res.purgedSample) say(amber('  Data contoh dihapus, digantikan pemberitaan asli.'));
     for (const e of res.added)   say(`  ${green('baru   ')} ${e.place} ${grey('· ' + e.confidence + '% · ' + e.sources.length + ' sumber')}`);
     for (const e of res.updated) say(`  ${cyan('diperbarui')} ${e.place} ${grey('· ' + e.confidence + '% · ' + e.sources.length + ' sumber')}`);

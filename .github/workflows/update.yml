@@ -1,0 +1,77 @@
+# Reads the news feeds and updates data/locations.json.
+# Runs itself every 2 hours. You can also trigger it by hand from the
+# Actions tab -> "Perbarui lokasi" -> "Run workflow".
+name: Perbarui lokasi
+
+on:
+  schedule:
+    # Every 2 hours, at 15 past. GitHub runs cron in UTC and is often a few
+    # minutes late when it is busy — that is normal and harmless here.
+    - cron: '15 */2 * * *'
+  workflow_dispatch:          # the manual "Run workflow" button
+  push:
+    branches: [main]
+    paths:                    # re-scan when the matching rules change
+      - 'scripts/**'
+      - 'data/gazetteer.json'
+
+# Only the token needs write access, and only to this repo's contents.
+permissions:
+  contents: write
+
+# Never let two runs write locations.json at the same time.
+concurrency:
+  group: perbarui-lokasi
+  cancel-in-progress: false
+
+jobs:
+  perbarui:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Ambil kode
+        uses: actions/checkout@v4
+
+      - name: Siapkan Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Pindai berita dan tulis lokasi
+        run: node scripts/update.js --write --hours=72
+
+      - name: Commit kalau ada perubahan
+        run: |
+          set -euo pipefail
+          if git diff --quiet -- data/locations.json; then
+            echo "Tidak ada perubahan — tidak ada commit."
+            exit 0
+          fi
+
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/locations.json
+
+          TEMPAT=$(node -e "const d=require('./data/locations.json');const c=d.locations.find(l=>l.id===d.current);console.log(c?c.place:'tidak ada')")
+          git commit -m "data: ${TEMPAT} ($(date -u '+%Y-%m-%d %H:%M UTC'))"
+
+          # Another run may have pushed while we were scanning.
+          git pull --rebase --autostash origin main
+          git push origin main
+
+      - name: Ringkasan
+        if: always()
+        run: |
+          {
+            echo "### Hasil pemindaian"
+            echo ''
+            node -e "
+              const d = require('./data/locations.json');
+              const c = d.locations.find(l => l.id === d.current);
+              console.log('- Lokasi saat ini: **' + (c ? c.place : 'tidak ada') + '**');
+              if (c) console.log('- Keyakinan: ' + c.confidence + '% dari ' + c.sources.length + ' laporan');
+              console.log('- Total lokasi tersimpan: ' + d.locations.length);
+              console.log('- Terakhir diperbarui: ' + d.generated_at);
+            "
+          } >> "$GITHUB_STEP_SUMMARY"
