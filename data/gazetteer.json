@@ -1,149 +1,1966 @@
 {
-  "_readme": "Known places with coordinates. Step 2 (scripts/update.js) matches news headlines against `name` + `aliases` to work out where the President was reported to be. Real data — safe to keep and extend. `specificity` breaks ties: a headline matching both 'Bogor' and 'Istana Bogor' should resolve to the more specific one.",
+  "_readme": "Known places with coordinates. Step 2 (scripts/update.js) matches news headlines against `name` + `aliases` to work out where the President was reported to be. Real data — safe to keep and extend. `aliases` are strong name matches; `weak_aliases` (country names, bare \"Istana\") only count at reduced strength because they usually appear as topics rather than locations. `specificity` breaks ties: a headline matching both 'Bogor' and 'Istana Bogor' should resolve to the more specific one.",
   "schema_version": 1,
   "places": [
-    { "name": "Istana Merdeka", "aliases": ["Istana Merdeka Jakarta"], "type": "istana", "city": "Jakarta Pusat", "region": "DKI Jakarta", "country": "Indonesia", "country_code": "ID", "lat": -6.1701, "lng": 106.8219, "specificity": 3 },
-    { "name": "Istana Negara", "aliases": ["Istana Negara Jakarta"], "type": "istana", "city": "Jakarta Pusat", "region": "DKI Jakarta", "country": "Indonesia", "country_code": "ID", "lat": -6.1704, "lng": 106.8236, "specificity": 3 },
-    { "name": "Istana Kepresidenan Bogor", "aliases": ["Istana Bogor"], "type": "istana", "city": "Bogor", "region": "Jawa Barat", "country": "Indonesia", "country_code": "ID", "lat": -6.5971, "lng": 106.7972, "specificity": 3 },
-    { "name": "Istana Garuda, Ibu Kota Nusantara", "aliases": ["Istana Garuda", "Istana Negara IKN", "Istana Kepresidenan IKN", "IKN Nusantara", "IKN", "Ibu Kota Nusantara"], "type": "istana", "city": "Penajam Paser Utara", "region": "Kalimantan Timur", "country": "Indonesia", "country_code": "ID", "lat": -0.9265, "lng": 116.6907, "specificity": 3 },
-    { "name": "Istana Kepresidenan Cipanas", "aliases": ["Istana Cipanas"], "type": "istana", "city": "Cianjur", "region": "Jawa Barat", "country": "Indonesia", "country_code": "ID", "lat": -6.7397, "lng": 107.0442, "specificity": 3 },
-    { "name": "Istana Kepresidenan Yogyakarta", "aliases": ["Gedung Agung", "Istana Gedung Agung"], "type": "istana", "city": "Yogyakarta", "region": "DI Yogyakarta", "country": "Indonesia", "country_code": "ID", "lat": -7.8005, "lng": 110.3648, "specificity": 3 },
-    { "name": "Istana Kepresidenan Tampaksiring", "aliases": ["Istana Tampaksiring"], "type": "istana", "city": "Gianyar", "region": "Bali", "country": "Indonesia", "country_code": "ID", "lat": -8.4184, "lng": 115.3140, "specificity": 3 },
-
-    { "name": "Pangkalan TNI AU Halim Perdanakusuma", "aliases": ["Halim Perdanakusuma", "Bandara Halim", "Lanud Halim"], "type": "bandara", "city": "Jakarta Timur", "region": "DKI Jakarta", "country": "Indonesia", "country_code": "ID", "lat": -6.2666, "lng": 106.8910, "specificity": 3 },
-    { "name": "Bandara Soekarno-Hatta", "aliases": ["Soekarno-Hatta", "Soetta", "Bandara Soetta"], "type": "bandara", "city": "Tangerang", "region": "Banten", "country": "Indonesia", "country_code": "ID", "lat": -6.1256, "lng": 106.6559, "specificity": 3 },
-    { "name": "Kompleks Parlemen Senayan", "aliases": ["DPR/MPR", "Gedung DPR", "Gedung MPR", "Kompleks Parlemen", "Senayan"], "type": "venue", "city": "Jakarta Pusat", "region": "DKI Jakarta", "country": "Indonesia", "country_code": "ID", "lat": -6.2101, "lng": 106.8003, "specificity": 3 },
-    { "name": "Kementerian Pertahanan", "aliases": ["Kemhan", "Kemenhan"], "type": "venue", "city": "Jakarta Pusat", "region": "DKI Jakarta", "country": "Indonesia", "country_code": "ID", "lat": -6.1752, "lng": 106.8309, "specificity": 3 },
-    { "name": "Hambalang", "aliases": ["Kawasan Hambalang"], "type": "venue", "city": "Bogor", "region": "Jawa Barat", "country": "Indonesia", "country_code": "ID", "lat": -6.5333, "lng": 106.9167, "specificity": 3 },
-    { "name": "Markas Besar TNI Cilangkap", "aliases": ["Mabes TNI", "Cilangkap"], "type": "venue", "city": "Jakarta Timur", "region": "DKI Jakarta", "country": "Indonesia", "country_code": "ID", "lat": -6.3239, "lng": 106.9128, "specificity": 3 },
-    { "name": "Monumen Nasional", "aliases": ["Monas", "Lapangan Monas"], "type": "venue", "city": "Jakarta Pusat", "region": "DKI Jakarta", "country": "Indonesia", "country_code": "ID", "lat": -6.1754, "lng": 106.8272, "specificity": 3 },
-    { "name": "Nusa Dua", "aliases": ["Kawasan Nusa Dua", "BNDCC"], "type": "venue", "city": "Denpasar", "region": "Bali", "country": "Indonesia", "country_code": "ID", "lat": -8.8008, "lng": 115.2317, "specificity": 3 },
-
-    { "name": "Banda Aceh", "aliases": [], "type": "kota", "city": "Banda Aceh", "region": "Aceh", "country": "Indonesia", "country_code": "ID", "lat": 5.5483, "lng": 95.3238, "specificity": 2 },
-    { "name": "Medan", "aliases": [], "type": "kota", "city": "Medan", "region": "Sumatera Utara", "country": "Indonesia", "country_code": "ID", "lat": 3.5952, "lng": 98.6722, "specificity": 2 },
-    { "name": "Padang", "aliases": [], "type": "kota", "city": "Padang", "region": "Sumatera Barat", "country": "Indonesia", "country_code": "ID", "lat": -0.9471, "lng": 100.4172, "specificity": 2 },
-    { "name": "Pekanbaru", "aliases": [], "type": "kota", "city": "Pekanbaru", "region": "Riau", "country": "Indonesia", "country_code": "ID", "lat": 0.5071, "lng": 101.4478, "specificity": 2 },
-    { "name": "Tanjungpinang", "aliases": ["Tanjung Pinang"], "type": "kota", "city": "Tanjungpinang", "region": "Kepulauan Riau", "country": "Indonesia", "country_code": "ID", "lat": 0.9186, "lng": 104.4665, "specificity": 2 },
-    { "name": "Batam", "aliases": [], "type": "kota", "city": "Batam", "region": "Kepulauan Riau", "country": "Indonesia", "country_code": "ID", "lat": 1.0456, "lng": 104.0305, "specificity": 2 },
-    { "name": "Jambi", "aliases": ["Kota Jambi"], "type": "kota", "city": "Jambi", "region": "Jambi", "country": "Indonesia", "country_code": "ID", "lat": -1.6101, "lng": 103.6131, "specificity": 2 },
-    { "name": "Palembang", "aliases": [], "type": "kota", "city": "Palembang", "region": "Sumatera Selatan", "country": "Indonesia", "country_code": "ID", "lat": -2.9761, "lng": 104.7754, "specificity": 2 },
-    { "name": "Pangkalpinang", "aliases": ["Pangkal Pinang"], "type": "kota", "city": "Pangkalpinang", "region": "Kepulauan Bangka Belitung", "country": "Indonesia", "country_code": "ID", "lat": -2.1316, "lng": 106.1169, "specificity": 2 },
-    { "name": "Bengkulu", "aliases": ["Kota Bengkulu"], "type": "kota", "city": "Bengkulu", "region": "Bengkulu", "country": "Indonesia", "country_code": "ID", "lat": -3.7928, "lng": 102.2608, "specificity": 2 },
-    { "name": "Bandar Lampung", "aliases": ["Lampung"], "type": "kota", "city": "Bandar Lampung", "region": "Lampung", "country": "Indonesia", "country_code": "ID", "lat": -5.4294, "lng": 105.2610, "specificity": 2 },
-
-    { "name": "Jakarta", "aliases": ["DKI Jakarta", "Jakarta Pusat", "Jakarta Selatan", "Jakarta Utara", "Jakarta Barat", "Jakarta Timur"], "type": "kota", "city": "Jakarta", "region": "DKI Jakarta", "country": "Indonesia", "country_code": "ID", "lat": -6.2088, "lng": 106.8456, "specificity": 1 },
-    { "name": "Bogor", "aliases": ["Kota Bogor", "Kabupaten Bogor"], "type": "kota", "city": "Bogor", "region": "Jawa Barat", "country": "Indonesia", "country_code": "ID", "lat": -6.5950, "lng": 106.8166, "specificity": 2 },
-    { "name": "Depok", "aliases": [], "type": "kota", "city": "Depok", "region": "Jawa Barat", "country": "Indonesia", "country_code": "ID", "lat": -6.4025, "lng": 106.7942, "specificity": 2 },
-    { "name": "Bekasi", "aliases": [], "type": "kota", "city": "Bekasi", "region": "Jawa Barat", "country": "Indonesia", "country_code": "ID", "lat": -6.2383, "lng": 106.9756, "specificity": 2 },
-    { "name": "Tangerang", "aliases": ["Tangerang Selatan"], "type": "kota", "city": "Tangerang", "region": "Banten", "country": "Indonesia", "country_code": "ID", "lat": -6.1783, "lng": 106.6319, "specificity": 2 },
-    { "name": "Serang", "aliases": [], "type": "kota", "city": "Serang", "region": "Banten", "country": "Indonesia", "country_code": "ID", "lat": -6.1200, "lng": 106.1503, "specificity": 2 },
-    { "name": "Bandung", "aliases": ["Kota Bandung"], "type": "kota", "city": "Bandung", "region": "Jawa Barat", "country": "Indonesia", "country_code": "ID", "lat": -6.9175, "lng": 107.6191, "specificity": 2 },
-    { "name": "Cirebon", "aliases": [], "type": "kota", "city": "Cirebon", "region": "Jawa Barat", "country": "Indonesia", "country_code": "ID", "lat": -6.7320, "lng": 108.5523, "specificity": 2 },
-    { "name": "Semarang", "aliases": [], "type": "kota", "city": "Semarang", "region": "Jawa Tengah", "country": "Indonesia", "country_code": "ID", "lat": -6.9932, "lng": 110.4203, "specificity": 2 },
-    { "name": "Surakarta", "aliases": ["Solo", "Kota Solo"], "type": "kota", "city": "Surakarta", "region": "Jawa Tengah", "country": "Indonesia", "country_code": "ID", "lat": -7.5755, "lng": 110.8243, "specificity": 2 },
-    { "name": "Yogyakarta", "aliases": ["Jogja", "Jogjakarta", "DIY"], "type": "kota", "city": "Yogyakarta", "region": "DI Yogyakarta", "country": "Indonesia", "country_code": "ID", "lat": -7.7956, "lng": 110.3695, "specificity": 2 },
-    { "name": "Surabaya", "aliases": [], "type": "kota", "city": "Surabaya", "region": "Jawa Timur", "country": "Indonesia", "country_code": "ID", "lat": -7.2575, "lng": 112.7521, "specificity": 2 },
-    { "name": "Malang", "aliases": [], "type": "kota", "city": "Malang", "region": "Jawa Timur", "country": "Indonesia", "country_code": "ID", "lat": -7.9666, "lng": 112.6326, "specificity": 2 },
-    { "name": "Denpasar", "aliases": ["Bali"], "type": "kota", "city": "Denpasar", "region": "Bali", "country": "Indonesia", "country_code": "ID", "lat": -8.6705, "lng": 115.2126, "specificity": 2 },
-    { "name": "Mataram", "aliases": [], "type": "kota", "city": "Mataram", "region": "Nusa Tenggara Barat", "country": "Indonesia", "country_code": "ID", "lat": -8.5833, "lng": 116.1167, "specificity": 2 },
-    { "name": "Labuan Bajo", "aliases": [], "type": "kota", "city": "Labuan Bajo", "region": "Nusa Tenggara Timur", "country": "Indonesia", "country_code": "ID", "lat": -8.4964, "lng": 119.8877, "specificity": 2 },
-    { "name": "Kupang", "aliases": [], "type": "kota", "city": "Kupang", "region": "Nusa Tenggara Timur", "country": "Indonesia", "country_code": "ID", "lat": -10.1772, "lng": 123.6070, "specificity": 2 },
-    { "name": "Pontianak", "aliases": [], "type": "kota", "city": "Pontianak", "region": "Kalimantan Barat", "country": "Indonesia", "country_code": "ID", "lat": -0.0263, "lng": 109.3425, "specificity": 2 },
-    { "name": "Palangka Raya", "aliases": ["Palangkaraya"], "type": "kota", "city": "Palangka Raya", "region": "Kalimantan Tengah", "country": "Indonesia", "country_code": "ID", "lat": -2.2096, "lng": 113.9108, "specificity": 2 },
-    { "name": "Banjarmasin", "aliases": [], "type": "kota", "city": "Banjarmasin", "region": "Kalimantan Selatan", "country": "Indonesia", "country_code": "ID", "lat": -3.3194, "lng": 114.5906, "specificity": 2 },
-    { "name": "Banjarbaru", "aliases": [], "type": "kota", "city": "Banjarbaru", "region": "Kalimantan Selatan", "country": "Indonesia", "country_code": "ID", "lat": -3.4572, "lng": 114.8113, "specificity": 2 },
-    { "name": "Samarinda", "aliases": [], "type": "kota", "city": "Samarinda", "region": "Kalimantan Timur", "country": "Indonesia", "country_code": "ID", "lat": -0.5017, "lng": 117.1536, "specificity": 2 },
-    { "name": "Balikpapan", "aliases": [], "type": "kota", "city": "Balikpapan", "region": "Kalimantan Timur", "country": "Indonesia", "country_code": "ID", "lat": -1.2379, "lng": 116.8529, "specificity": 2 },
-    { "name": "Tanjung Selor", "aliases": [], "type": "kota", "city": "Tanjung Selor", "region": "Kalimantan Utara", "country": "Indonesia", "country_code": "ID", "lat": 2.8375, "lng": 117.3661, "specificity": 2 },
-    { "name": "Manado", "aliases": [], "type": "kota", "city": "Manado", "region": "Sulawesi Utara", "country": "Indonesia", "country_code": "ID", "lat": 1.4748, "lng": 124.8421, "specificity": 2 },
-    { "name": "Gorontalo", "aliases": ["Kota Gorontalo"], "type": "kota", "city": "Gorontalo", "region": "Gorontalo", "country": "Indonesia", "country_code": "ID", "lat": 0.5435, "lng": 123.0568, "specificity": 2 },
-    { "name": "Palu", "aliases": [], "type": "kota", "city": "Palu", "region": "Sulawesi Tengah", "country": "Indonesia", "country_code": "ID", "lat": -0.8917, "lng": 119.8707, "specificity": 2 },
-    { "name": "Mamuju", "aliases": [], "type": "kota", "city": "Mamuju", "region": "Sulawesi Barat", "country": "Indonesia", "country_code": "ID", "lat": -2.6748, "lng": 118.8885, "specificity": 2 },
-    { "name": "Makassar", "aliases": ["Ujung Pandang"], "type": "kota", "city": "Makassar", "region": "Sulawesi Selatan", "country": "Indonesia", "country_code": "ID", "lat": -5.1477, "lng": 119.4327, "specificity": 2 },
-    { "name": "Kendari", "aliases": [], "type": "kota", "city": "Kendari", "region": "Sulawesi Tenggara", "country": "Indonesia", "country_code": "ID", "lat": -3.9985, "lng": 122.5130, "specificity": 2 },
-    { "name": "Ambon", "aliases": [], "type": "kota", "city": "Ambon", "region": "Maluku", "country": "Indonesia", "country_code": "ID", "lat": -3.6954, "lng": 128.1814, "specificity": 2 },
-    { "name": "Sofifi", "aliases": ["Ternate"], "type": "kota", "city": "Sofifi", "region": "Maluku Utara", "country": "Indonesia", "country_code": "ID", "lat": 0.7333, "lng": 127.5667, "specificity": 2 },
-    { "name": "Jayapura", "aliases": [], "type": "kota", "city": "Jayapura", "region": "Papua", "country": "Indonesia", "country_code": "ID", "lat": -2.5337, "lng": 140.7181, "specificity": 2 },
-    { "name": "Manokwari", "aliases": [], "type": "kota", "city": "Manokwari", "region": "Papua Barat", "country": "Indonesia", "country_code": "ID", "lat": -0.8615, "lng": 134.0620, "specificity": 2 },
-    { "name": "Sorong", "aliases": [], "type": "kota", "city": "Sorong", "region": "Papua Barat Daya", "country": "Indonesia", "country_code": "ID", "lat": -0.8762, "lng": 131.2558, "specificity": 2 },
-    { "name": "Nabire", "aliases": [], "type": "kota", "city": "Nabire", "region": "Papua Tengah", "country": "Indonesia", "country_code": "ID", "lat": -3.3667, "lng": 135.4833, "specificity": 2 },
-    { "name": "Wamena", "aliases": [], "type": "kota", "city": "Wamena", "region": "Papua Pegunungan", "country": "Indonesia", "country_code": "ID", "lat": -4.0983, "lng": 138.9503, "specificity": 2 },
-    { "name": "Merauke", "aliases": [], "type": "kota", "city": "Merauke", "region": "Papua Selatan", "country": "Indonesia", "country_code": "ID", "lat": -8.4932, "lng": 140.4018, "specificity": 2 },
-
-    { "name": "Aceh", "aliases": ["Provinsi Aceh", "Nanggroe Aceh Darussalam"], "type": "provinsi", "city": "Banda Aceh", "region": "Aceh", "country": "Indonesia", "country_code": "ID", "lat": 4.6951, "lng": 96.7494, "specificity": 1 },
-    { "name": "Sumatera Utara", "aliases": ["Sumut"], "type": "provinsi", "city": "Medan", "region": "Sumatera Utara", "country": "Indonesia", "country_code": "ID", "lat": 2.1154, "lng": 99.5451, "specificity": 1 },
-    { "name": "Sumatera Barat", "aliases": ["Sumbar"], "type": "provinsi", "city": "Padang", "region": "Sumatera Barat", "country": "Indonesia", "country_code": "ID", "lat": -0.7399, "lng": 100.8000, "specificity": 1 },
-    { "name": "Riau", "aliases": ["Provinsi Riau"], "type": "provinsi", "city": "Pekanbaru", "region": "Riau", "country": "Indonesia", "country_code": "ID", "lat": 0.2933, "lng": 101.7068, "specificity": 1 },
-    { "name": "Kepulauan Riau", "aliases": ["Kepri"], "type": "provinsi", "city": "Tanjungpinang", "region": "Kepulauan Riau", "country": "Indonesia", "country_code": "ID", "lat": 3.9457, "lng": 108.1429, "specificity": 1 },
-    { "name": "Jambi", "aliases": ["Provinsi Jambi"], "type": "provinsi", "city": "Jambi", "region": "Jambi", "country": "Indonesia", "country_code": "ID", "lat": -1.4852, "lng": 102.4381, "specificity": 1 },
-    { "name": "Sumatera Selatan", "aliases": ["Sumsel"], "type": "provinsi", "city": "Palembang", "region": "Sumatera Selatan", "country": "Indonesia", "country_code": "ID", "lat": -3.3194, "lng": 103.9144, "specificity": 1 },
-    { "name": "Kepulauan Bangka Belitung", "aliases": ["Bangka Belitung", "Babel"], "type": "provinsi", "city": "Pangkalpinang", "region": "Kepulauan Bangka Belitung", "country": "Indonesia", "country_code": "ID", "lat": -2.7411, "lng": 106.4406, "specificity": 1 },
-    { "name": "Bengkulu", "aliases": ["Provinsi Bengkulu"], "type": "provinsi", "city": "Bengkulu", "region": "Bengkulu", "country": "Indonesia", "country_code": "ID", "lat": -3.5778, "lng": 102.3464, "specificity": 1 },
-    { "name": "Lampung", "aliases": ["Provinsi Lampung"], "type": "provinsi", "city": "Bandar Lampung", "region": "Lampung", "country": "Indonesia", "country_code": "ID", "lat": -4.5586, "lng": 105.4068, "specificity": 1 },
-    { "name": "Jawa Barat", "aliases": ["Jabar"], "type": "provinsi", "city": "Bandung", "region": "Jawa Barat", "country": "Indonesia", "country_code": "ID", "lat": -6.8890, "lng": 107.6405, "specificity": 1 },
-    { "name": "Jawa Tengah", "aliases": ["Jateng"], "type": "provinsi", "city": "Semarang", "region": "Jawa Tengah", "country": "Indonesia", "country_code": "ID", "lat": -7.1510, "lng": 110.1403, "specificity": 1 },
-    { "name": "DI Yogyakarta", "aliases": ["Daerah Istimewa Yogyakarta"], "type": "provinsi", "city": "Yogyakarta", "region": "DI Yogyakarta", "country": "Indonesia", "country_code": "ID", "lat": -7.7956, "lng": 110.3695, "specificity": 1 },
-    { "name": "Jawa Timur", "aliases": ["Jatim"], "type": "provinsi", "city": "Surabaya", "region": "Jawa Timur", "country": "Indonesia", "country_code": "ID", "lat": -7.5361, "lng": 112.2384, "specificity": 1 },
-    { "name": "Banten", "aliases": ["Provinsi Banten"], "type": "provinsi", "city": "Serang", "region": "Banten", "country": "Indonesia", "country_code": "ID", "lat": -6.4058, "lng": 106.0640, "specificity": 1 },
-    { "name": "Bali", "aliases": ["Provinsi Bali"], "type": "provinsi", "city": "Denpasar", "region": "Bali", "country": "Indonesia", "country_code": "ID", "lat": -8.4095, "lng": 115.1889, "specificity": 1 },
-    { "name": "Nusa Tenggara Barat", "aliases": ["NTB"], "type": "provinsi", "city": "Mataram", "region": "Nusa Tenggara Barat", "country": "Indonesia", "country_code": "ID", "lat": -8.6529, "lng": 117.3616, "specificity": 1 },
-    { "name": "Nusa Tenggara Timur", "aliases": ["NTT"], "type": "provinsi", "city": "Kupang", "region": "Nusa Tenggara Timur", "country": "Indonesia", "country_code": "ID", "lat": -8.6574, "lng": 121.0794, "specificity": 1 },
-    { "name": "Kalimantan Barat", "aliases": ["Kalbar"], "type": "provinsi", "city": "Pontianak", "region": "Kalimantan Barat", "country": "Indonesia", "country_code": "ID", "lat": -0.2788, "lng": 111.4753, "specificity": 1 },
-    { "name": "Kalimantan Tengah", "aliases": ["Kalteng"], "type": "provinsi", "city": "Palangka Raya", "region": "Kalimantan Tengah", "country": "Indonesia", "country_code": "ID", "lat": -1.6815, "lng": 113.3824, "specificity": 1 },
-    { "name": "Kalimantan Selatan", "aliases": ["Kalsel"], "type": "provinsi", "city": "Banjarbaru", "region": "Kalimantan Selatan", "country": "Indonesia", "country_code": "ID", "lat": -3.0926, "lng": 115.2838, "specificity": 1 },
-    { "name": "Kalimantan Timur", "aliases": ["Kaltim"], "type": "provinsi", "city": "Samarinda", "region": "Kalimantan Timur", "country": "Indonesia", "country_code": "ID", "lat": 0.5387, "lng": 116.4194, "specificity": 1 },
-    { "name": "Kalimantan Utara", "aliases": ["Kaltara"], "type": "provinsi", "city": "Tanjung Selor", "region": "Kalimantan Utara", "country": "Indonesia", "country_code": "ID", "lat": 3.0731, "lng": 116.0414, "specificity": 1 },
-    { "name": "Sulawesi Utara", "aliases": ["Sulut"], "type": "provinsi", "city": "Manado", "region": "Sulawesi Utara", "country": "Indonesia", "country_code": "ID", "lat": 0.6247, "lng": 123.9750, "specificity": 1 },
-    { "name": "Gorontalo", "aliases": ["Provinsi Gorontalo"], "type": "provinsi", "city": "Gorontalo", "region": "Gorontalo", "country": "Indonesia", "country_code": "ID", "lat": 0.6999, "lng": 122.4467, "specificity": 1 },
-    { "name": "Sulawesi Tengah", "aliases": ["Sulteng"], "type": "provinsi", "city": "Palu", "region": "Sulawesi Tengah", "country": "Indonesia", "country_code": "ID", "lat": -1.4300, "lng": 121.4456, "specificity": 1 },
-    { "name": "Sulawesi Barat", "aliases": ["Sulbar"], "type": "provinsi", "city": "Mamuju", "region": "Sulawesi Barat", "country": "Indonesia", "country_code": "ID", "lat": -2.8441, "lng": 119.2321, "specificity": 1 },
-    { "name": "Sulawesi Selatan", "aliases": ["Sulsel"], "type": "provinsi", "city": "Makassar", "region": "Sulawesi Selatan", "country": "Indonesia", "country_code": "ID", "lat": -3.6688, "lng": 119.9741, "specificity": 1 },
-    { "name": "Sulawesi Tenggara", "aliases": ["Sultra"], "type": "provinsi", "city": "Kendari", "region": "Sulawesi Tenggara", "country": "Indonesia", "country_code": "ID", "lat": -4.1449, "lng": 122.1746, "specificity": 1 },
-    { "name": "Maluku", "aliases": ["Provinsi Maluku"], "type": "provinsi", "city": "Ambon", "region": "Maluku", "country": "Indonesia", "country_code": "ID", "lat": -3.2385, "lng": 130.1453, "specificity": 1 },
-    { "name": "Maluku Utara", "aliases": ["Malut"], "type": "provinsi", "city": "Sofifi", "region": "Maluku Utara", "country": "Indonesia", "country_code": "ID", "lat": 1.5709, "lng": 127.8088, "specificity": 1 },
-    { "name": "Papua", "aliases": ["Provinsi Papua"], "type": "provinsi", "city": "Jayapura", "region": "Papua", "country": "Indonesia", "country_code": "ID", "lat": -3.3167, "lng": 138.7000, "specificity": 1 },
-    { "name": "Papua Barat", "aliases": ["Pabar"], "type": "provinsi", "city": "Manokwari", "region": "Papua Barat", "country": "Indonesia", "country_code": "ID", "lat": -1.3361, "lng": 133.1747, "specificity": 1 },
-    { "name": "Papua Barat Daya", "aliases": [], "type": "provinsi", "city": "Sorong", "region": "Papua Barat Daya", "country": "Indonesia", "country_code": "ID", "lat": -1.1000, "lng": 132.3000, "specificity": 1 },
-    { "name": "Papua Tengah", "aliases": [], "type": "provinsi", "city": "Nabire", "region": "Papua Tengah", "country": "Indonesia", "country_code": "ID", "lat": -3.9000, "lng": 136.5000, "specificity": 1 },
-    { "name": "Papua Pegunungan", "aliases": [], "type": "provinsi", "city": "Wamena", "region": "Papua Pegunungan", "country": "Indonesia", "country_code": "ID", "lat": -4.1000, "lng": 138.9000, "specificity": 1 },
-    { "name": "Papua Selatan", "aliases": [], "type": "provinsi", "city": "Merauke", "region": "Papua Selatan", "country": "Indonesia", "country_code": "ID", "lat": -7.5000, "lng": 139.7000, "specificity": 1 },
-
-    { "name": "Beijing", "aliases": ["Tiongkok", "China", "Cina", "Republik Rakyat Tiongkok", "RRT"], "type": "ibukota_asing", "city": "Beijing", "region": "", "country": "Tiongkok", "country_code": "CN", "lat": 39.9042, "lng": 116.4074, "specificity": 2 },
-    { "name": "Tokyo", "aliases": ["Jepang"], "type": "ibukota_asing", "city": "Tokyo", "region": "", "country": "Jepang", "country_code": "JP", "lat": 35.6762, "lng": 139.6503, "specificity": 2 },
-    { "name": "Seoul", "aliases": ["Korea Selatan", "Korsel"], "type": "ibukota_asing", "city": "Seoul", "region": "", "country": "Korea Selatan", "country_code": "KR", "lat": 37.5665, "lng": 126.9780, "specificity": 2 },
-    { "name": "Washington", "aliases": ["Washington DC", "Amerika Serikat", "AS", "Gedung Putih"], "type": "ibukota_asing", "city": "Washington, D.C.", "region": "", "country": "Amerika Serikat", "country_code": "US", "lat": 38.9072, "lng": -77.0369, "specificity": 2 },
-    { "name": "New York", "aliases": ["Markas Besar PBB", "Sidang Umum PBB"], "type": "ibukota_asing", "city": "New York", "region": "", "country": "Amerika Serikat", "country_code": "US", "lat": 40.7489, "lng": -73.9680, "specificity": 2 },
-    { "name": "Kuala Lumpur", "aliases": ["Malaysia"], "type": "ibukota_asing", "city": "Kuala Lumpur", "region": "", "country": "Malaysia", "country_code": "MY", "lat": 3.1390, "lng": 101.6869, "specificity": 2 },
-    { "name": "Singapura", "aliases": ["Singapore"], "type": "ibukota_asing", "city": "Singapura", "region": "", "country": "Singapura", "country_code": "SG", "lat": 1.3521, "lng": 103.8198, "specificity": 2 },
-    { "name": "Bandar Seri Begawan", "aliases": ["Brunei", "Brunei Darussalam"], "type": "ibukota_asing", "city": "Bandar Seri Begawan", "region": "", "country": "Brunei Darussalam", "country_code": "BN", "lat": 4.9031, "lng": 114.9398, "specificity": 2 },
-    { "name": "Bangkok", "aliases": ["Thailand"], "type": "ibukota_asing", "city": "Bangkok", "region": "", "country": "Thailand", "country_code": "TH", "lat": 13.7563, "lng": 100.5018, "specificity": 2 },
-    { "name": "Hanoi", "aliases": ["Vietnam"], "type": "ibukota_asing", "city": "Hanoi", "region": "", "country": "Vietnam", "country_code": "VN", "lat": 21.0285, "lng": 105.8542, "specificity": 2 },
-    { "name": "Manila", "aliases": ["Filipina"], "type": "ibukota_asing", "city": "Manila", "region": "", "country": "Filipina", "country_code": "PH", "lat": 14.5995, "lng": 120.9842, "specificity": 2 },
-    { "name": "Phnom Penh", "aliases": ["Kamboja"], "type": "ibukota_asing", "city": "Phnom Penh", "region": "", "country": "Kamboja", "country_code": "KH", "lat": 11.5564, "lng": 104.9282, "specificity": 2 },
-    { "name": "Vientiane", "aliases": ["Laos"], "type": "ibukota_asing", "city": "Vientiane", "region": "", "country": "Laos", "country_code": "LA", "lat": 17.9757, "lng": 102.6331, "specificity": 2 },
-    { "name": "Naypyidaw", "aliases": ["Myanmar"], "type": "ibukota_asing", "city": "Naypyidaw", "region": "", "country": "Myanmar", "country_code": "MM", "lat": 19.7633, "lng": 96.0785, "specificity": 2 },
-    { "name": "Dili", "aliases": ["Timor Leste", "Timor-Leste"], "type": "ibukota_asing", "city": "Dili", "region": "", "country": "Timor-Leste", "country_code": "TL", "lat": -8.5569, "lng": 125.5603, "specificity": 2 },
-    { "name": "Canberra", "aliases": ["Australia"], "type": "ibukota_asing", "city": "Canberra", "region": "", "country": "Australia", "country_code": "AU", "lat": -35.2809, "lng": 149.1300, "specificity": 2 },
-    { "name": "New Delhi", "aliases": ["India"], "type": "ibukota_asing", "city": "New Delhi", "region": "", "country": "India", "country_code": "IN", "lat": 28.6139, "lng": 77.2090, "specificity": 2 },
-    { "name": "Islamabad", "aliases": ["Pakistan"], "type": "ibukota_asing", "city": "Islamabad", "region": "", "country": "Pakistan", "country_code": "PK", "lat": 33.6844, "lng": 73.0479, "specificity": 2 },
-    { "name": "Dhaka", "aliases": ["Bangladesh"], "type": "ibukota_asing", "city": "Dhaka", "region": "", "country": "Bangladesh", "country_code": "BD", "lat": 23.8103, "lng": 90.4125, "specificity": 2 },
-    { "name": "Moskow", "aliases": ["Moskwa", "Moscow", "Rusia"], "type": "ibukota_asing", "city": "Moskow", "region": "", "country": "Rusia", "country_code": "RU", "lat": 55.7558, "lng": 37.6173, "specificity": 2 },
-    { "name": "Ankara", "aliases": ["Turki", "Turkiye"], "type": "ibukota_asing", "city": "Ankara", "region": "", "country": "Turki", "country_code": "TR", "lat": 39.9334, "lng": 32.8597, "specificity": 2 },
-    { "name": "Riyadh", "aliases": ["Arab Saudi", "Riyad"], "type": "ibukota_asing", "city": "Riyadh", "region": "", "country": "Arab Saudi", "country_code": "SA", "lat": 24.7136, "lng": 46.6753, "specificity": 2 },
-    { "name": "Jeddah", "aliases": ["Jedah", "Mekkah", "Makkah"], "type": "ibukota_asing", "city": "Jeddah", "region": "", "country": "Arab Saudi", "country_code": "SA", "lat": 21.4858, "lng": 39.1925, "specificity": 2 },
-    { "name": "Abu Dhabi", "aliases": ["Uni Emirat Arab", "UEA", "Dubai"], "type": "ibukota_asing", "city": "Abu Dhabi", "region": "", "country": "Uni Emirat Arab", "country_code": "AE", "lat": 24.4539, "lng": 54.3773, "specificity": 2 },
-    { "name": "Doha", "aliases": ["Qatar"], "type": "ibukota_asing", "city": "Doha", "region": "", "country": "Qatar", "country_code": "QA", "lat": 25.2854, "lng": 51.5310, "specificity": 2 },
-    { "name": "Amman", "aliases": ["Yordania"], "type": "ibukota_asing", "city": "Amman", "region": "", "country": "Yordania", "country_code": "JO", "lat": 31.9454, "lng": 35.9284, "specificity": 2 },
-    { "name": "Kairo", "aliases": ["Cairo", "Mesir"], "type": "ibukota_asing", "city": "Kairo", "region": "", "country": "Mesir", "country_code": "EG", "lat": 30.0444, "lng": 31.2357, "specificity": 2 },
-    { "name": "London", "aliases": ["Inggris", "Britania Raya"], "type": "ibukota_asing", "city": "London", "region": "", "country": "Britania Raya", "country_code": "GB", "lat": 51.5074, "lng": -0.1278, "specificity": 2 },
-    { "name": "Paris", "aliases": ["Prancis", "Perancis"], "type": "ibukota_asing", "city": "Paris", "region": "", "country": "Prancis", "country_code": "FR", "lat": 48.8566, "lng": 2.3522, "specificity": 2 },
-    { "name": "Berlin", "aliases": ["Jerman"], "type": "ibukota_asing", "city": "Berlin", "region": "", "country": "Jerman", "country_code": "DE", "lat": 52.5200, "lng": 13.4050, "specificity": 2 },
-    { "name": "Roma", "aliases": ["Rome", "Italia", "Vatikan"], "type": "ibukota_asing", "city": "Roma", "region": "", "country": "Italia", "country_code": "IT", "lat": 41.9028, "lng": 12.4964, "specificity": 2 },
-    { "name": "Brussel", "aliases": ["Brussels", "Belgia", "Uni Eropa"], "type": "ibukota_asing", "city": "Brussel", "region": "", "country": "Belgia", "country_code": "BE", "lat": 50.8503, "lng": 4.3517, "specificity": 2 },
-    { "name": "Den Haag", "aliases": ["Belanda", "Amsterdam"], "type": "ibukota_asing", "city": "Den Haag", "region": "", "country": "Belanda", "country_code": "NL", "lat": 52.0705, "lng": 4.3007, "specificity": 2 },
-    { "name": "Brasilia", "aliases": ["Brasil", "Brazil"], "type": "ibukota_asing", "city": "Brasilia", "region": "", "country": "Brasil", "country_code": "BR", "lat": -15.7939, "lng": -47.8828, "specificity": 2 },
-    { "name": "Rio de Janeiro", "aliases": [], "type": "ibukota_asing", "city": "Rio de Janeiro", "region": "", "country": "Brasil", "country_code": "BR", "lat": -22.9068, "lng": -43.1729, "specificity": 2 },
-    { "name": "Johannesburg", "aliases": ["Afrika Selatan", "Pretoria"], "type": "ibukota_asing", "city": "Johannesburg", "region": "", "country": "Afrika Selatan", "country_code": "ZA", "lat": -26.2041, "lng": 28.0473, "specificity": 2 },
-    { "name": "Lima", "aliases": ["Peru"], "type": "ibukota_asing", "city": "Lima", "region": "", "country": "Peru", "country_code": "PE", "lat": -12.0464, "lng": -77.0428, "specificity": 2 }
+    {
+      "name": "Istana Merdeka",
+      "aliases": [
+        "Istana Merdeka Jakarta"
+      ],
+      "type": "istana",
+      "city": "Jakarta Pusat",
+      "region": "DKI Jakarta",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -6.1701,
+      "lng": 106.8219,
+      "specificity": 3,
+      "weak_aliases": [
+        "Istana",
+        "Istana Kepresidenan"
+      ]
+    },
+    {
+      "name": "Istana Negara",
+      "aliases": [
+        "Istana Negara Jakarta"
+      ],
+      "type": "istana",
+      "city": "Jakarta Pusat",
+      "region": "DKI Jakarta",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -6.1704,
+      "lng": 106.8236,
+      "specificity": 3
+    },
+    {
+      "name": "Istana Kepresidenan Bogor",
+      "aliases": [
+        "Istana Bogor"
+      ],
+      "type": "istana",
+      "city": "Bogor",
+      "region": "Jawa Barat",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -6.5971,
+      "lng": 106.7972,
+      "specificity": 3
+    },
+    {
+      "name": "Istana Garuda, Ibu Kota Nusantara",
+      "aliases": [
+        "Istana Garuda",
+        "Istana Negara IKN",
+        "Istana Kepresidenan IKN",
+        "IKN Nusantara",
+        "IKN",
+        "Ibu Kota Nusantara"
+      ],
+      "type": "istana",
+      "city": "Penajam Paser Utara",
+      "region": "Kalimantan Timur",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -0.9265,
+      "lng": 116.6907,
+      "specificity": 3
+    },
+    {
+      "name": "Istana Kepresidenan Cipanas",
+      "aliases": [
+        "Istana Cipanas"
+      ],
+      "type": "istana",
+      "city": "Cianjur",
+      "region": "Jawa Barat",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -6.7397,
+      "lng": 107.0442,
+      "specificity": 3
+    },
+    {
+      "name": "Istana Kepresidenan Yogyakarta",
+      "aliases": [
+        "Gedung Agung",
+        "Istana Gedung Agung"
+      ],
+      "type": "istana",
+      "city": "Yogyakarta",
+      "region": "DI Yogyakarta",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -7.8005,
+      "lng": 110.3648,
+      "specificity": 3
+    },
+    {
+      "name": "Istana Kepresidenan Tampaksiring",
+      "aliases": [
+        "Istana Tampaksiring"
+      ],
+      "type": "istana",
+      "city": "Gianyar",
+      "region": "Bali",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -8.4184,
+      "lng": 115.314,
+      "specificity": 3
+    },
+    {
+      "name": "Pangkalan TNI AU Halim Perdanakusuma",
+      "aliases": [
+        "Halim Perdanakusuma",
+        "Bandara Halim",
+        "Lanud Halim"
+      ],
+      "type": "bandara",
+      "city": "Jakarta Timur",
+      "region": "DKI Jakarta",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -6.2666,
+      "lng": 106.891,
+      "specificity": 3
+    },
+    {
+      "name": "Bandara Soekarno-Hatta",
+      "aliases": [
+        "Soekarno-Hatta",
+        "Soetta",
+        "Bandara Soetta"
+      ],
+      "type": "bandara",
+      "city": "Tangerang",
+      "region": "Banten",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -6.1256,
+      "lng": 106.6559,
+      "specificity": 3
+    },
+    {
+      "name": "Kompleks Parlemen Senayan",
+      "aliases": [
+        "DPR/MPR",
+        "Gedung DPR",
+        "Gedung MPR",
+        "Kompleks Parlemen",
+        "Senayan"
+      ],
+      "type": "venue",
+      "city": "Jakarta Pusat",
+      "region": "DKI Jakarta",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -6.2101,
+      "lng": 106.8003,
+      "specificity": 3
+    },
+    {
+      "name": "Kementerian Pertahanan",
+      "aliases": [
+        "Kemhan",
+        "Kemenhan"
+      ],
+      "type": "venue",
+      "city": "Jakarta Pusat",
+      "region": "DKI Jakarta",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -6.1752,
+      "lng": 106.8309,
+      "specificity": 3
+    },
+    {
+      "name": "Hambalang",
+      "aliases": [
+        "Kawasan Hambalang"
+      ],
+      "type": "venue",
+      "city": "Bogor",
+      "region": "Jawa Barat",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -6.5333,
+      "lng": 106.9167,
+      "specificity": 3
+    },
+    {
+      "name": "Markas Besar TNI Cilangkap",
+      "aliases": [
+        "Mabes TNI",
+        "Cilangkap"
+      ],
+      "type": "venue",
+      "city": "Jakarta Timur",
+      "region": "DKI Jakarta",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -6.3239,
+      "lng": 106.9128,
+      "specificity": 3
+    },
+    {
+      "name": "Monumen Nasional",
+      "aliases": [
+        "Monas",
+        "Lapangan Monas"
+      ],
+      "type": "venue",
+      "city": "Jakarta Pusat",
+      "region": "DKI Jakarta",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -6.1754,
+      "lng": 106.8272,
+      "specificity": 3
+    },
+    {
+      "name": "Nusa Dua",
+      "aliases": [
+        "Kawasan Nusa Dua",
+        "BNDCC"
+      ],
+      "type": "venue",
+      "city": "Denpasar",
+      "region": "Bali",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -8.8008,
+      "lng": 115.2317,
+      "specificity": 3
+    },
+    {
+      "name": "Banda Aceh",
+      "aliases": [],
+      "type": "kota",
+      "city": "Banda Aceh",
+      "region": "Aceh",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": 5.5483,
+      "lng": 95.3238,
+      "specificity": 2
+    },
+    {
+      "name": "Medan",
+      "aliases": [],
+      "type": "kota",
+      "city": "Medan",
+      "region": "Sumatera Utara",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": 3.5952,
+      "lng": 98.6722,
+      "specificity": 2
+    },
+    {
+      "name": "Padang",
+      "aliases": [],
+      "type": "kota",
+      "city": "Padang",
+      "region": "Sumatera Barat",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -0.9471,
+      "lng": 100.4172,
+      "specificity": 2
+    },
+    {
+      "name": "Pekanbaru",
+      "aliases": [],
+      "type": "kota",
+      "city": "Pekanbaru",
+      "region": "Riau",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": 0.5071,
+      "lng": 101.4478,
+      "specificity": 2
+    },
+    {
+      "name": "Tanjungpinang",
+      "aliases": [
+        "Tanjung Pinang"
+      ],
+      "type": "kota",
+      "city": "Tanjungpinang",
+      "region": "Kepulauan Riau",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": 0.9186,
+      "lng": 104.4665,
+      "specificity": 2
+    },
+    {
+      "name": "Batam",
+      "aliases": [],
+      "type": "kota",
+      "city": "Batam",
+      "region": "Kepulauan Riau",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": 1.0456,
+      "lng": 104.0305,
+      "specificity": 2
+    },
+    {
+      "name": "Jambi",
+      "aliases": [
+        "Kota Jambi"
+      ],
+      "type": "kota",
+      "city": "Jambi",
+      "region": "Jambi",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -1.6101,
+      "lng": 103.6131,
+      "specificity": 2
+    },
+    {
+      "name": "Palembang",
+      "aliases": [],
+      "type": "kota",
+      "city": "Palembang",
+      "region": "Sumatera Selatan",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -2.9761,
+      "lng": 104.7754,
+      "specificity": 2
+    },
+    {
+      "name": "Pangkalpinang",
+      "aliases": [
+        "Pangkal Pinang"
+      ],
+      "type": "kota",
+      "city": "Pangkalpinang",
+      "region": "Kepulauan Bangka Belitung",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -2.1316,
+      "lng": 106.1169,
+      "specificity": 2
+    },
+    {
+      "name": "Bengkulu",
+      "aliases": [
+        "Kota Bengkulu"
+      ],
+      "type": "kota",
+      "city": "Bengkulu",
+      "region": "Bengkulu",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -3.7928,
+      "lng": 102.2608,
+      "specificity": 2
+    },
+    {
+      "name": "Bandar Lampung",
+      "aliases": [
+        "Lampung"
+      ],
+      "type": "kota",
+      "city": "Bandar Lampung",
+      "region": "Lampung",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -5.4294,
+      "lng": 105.261,
+      "specificity": 2
+    },
+    {
+      "name": "Jakarta",
+      "aliases": [
+        "DKI Jakarta",
+        "Jakarta Pusat",
+        "Jakarta Selatan",
+        "Jakarta Utara",
+        "Jakarta Barat",
+        "Jakarta Timur"
+      ],
+      "type": "kota",
+      "city": "Jakarta",
+      "region": "DKI Jakarta",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -6.2088,
+      "lng": 106.8456,
+      "specificity": 1
+    },
+    {
+      "name": "Bogor",
+      "aliases": [
+        "Kota Bogor",
+        "Kabupaten Bogor"
+      ],
+      "type": "kota",
+      "city": "Bogor",
+      "region": "Jawa Barat",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -6.595,
+      "lng": 106.8166,
+      "specificity": 2
+    },
+    {
+      "name": "Depok",
+      "aliases": [],
+      "type": "kota",
+      "city": "Depok",
+      "region": "Jawa Barat",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -6.4025,
+      "lng": 106.7942,
+      "specificity": 2
+    },
+    {
+      "name": "Bekasi",
+      "aliases": [],
+      "type": "kota",
+      "city": "Bekasi",
+      "region": "Jawa Barat",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -6.2383,
+      "lng": 106.9756,
+      "specificity": 2
+    },
+    {
+      "name": "Tangerang",
+      "aliases": [
+        "Tangerang Selatan"
+      ],
+      "type": "kota",
+      "city": "Tangerang",
+      "region": "Banten",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -6.1783,
+      "lng": 106.6319,
+      "specificity": 2
+    },
+    {
+      "name": "Serang",
+      "aliases": [],
+      "type": "kota",
+      "city": "Serang",
+      "region": "Banten",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -6.12,
+      "lng": 106.1503,
+      "specificity": 2
+    },
+    {
+      "name": "Bandung",
+      "aliases": [
+        "Kota Bandung"
+      ],
+      "type": "kota",
+      "city": "Bandung",
+      "region": "Jawa Barat",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -6.9175,
+      "lng": 107.6191,
+      "specificity": 2
+    },
+    {
+      "name": "Cirebon",
+      "aliases": [],
+      "type": "kota",
+      "city": "Cirebon",
+      "region": "Jawa Barat",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -6.732,
+      "lng": 108.5523,
+      "specificity": 2
+    },
+    {
+      "name": "Semarang",
+      "aliases": [],
+      "type": "kota",
+      "city": "Semarang",
+      "region": "Jawa Tengah",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -6.9932,
+      "lng": 110.4203,
+      "specificity": 2
+    },
+    {
+      "name": "Surakarta",
+      "aliases": [
+        "Solo",
+        "Kota Solo"
+      ],
+      "type": "kota",
+      "city": "Surakarta",
+      "region": "Jawa Tengah",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -7.5755,
+      "lng": 110.8243,
+      "specificity": 2
+    },
+    {
+      "name": "Yogyakarta",
+      "aliases": [
+        "Jogja",
+        "Jogjakarta",
+        "DIY"
+      ],
+      "type": "kota",
+      "city": "Yogyakarta",
+      "region": "DI Yogyakarta",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -7.7956,
+      "lng": 110.3695,
+      "specificity": 2
+    },
+    {
+      "name": "Surabaya",
+      "aliases": [],
+      "type": "kota",
+      "city": "Surabaya",
+      "region": "Jawa Timur",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -7.2575,
+      "lng": 112.7521,
+      "specificity": 2
+    },
+    {
+      "name": "Malang",
+      "aliases": [],
+      "type": "kota",
+      "city": "Malang",
+      "region": "Jawa Timur",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -7.9666,
+      "lng": 112.6326,
+      "specificity": 2
+    },
+    {
+      "name": "Denpasar",
+      "aliases": [
+        "Bali"
+      ],
+      "type": "kota",
+      "city": "Denpasar",
+      "region": "Bali",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -8.6705,
+      "lng": 115.2126,
+      "specificity": 2
+    },
+    {
+      "name": "Mataram",
+      "aliases": [],
+      "type": "kota",
+      "city": "Mataram",
+      "region": "Nusa Tenggara Barat",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -8.5833,
+      "lng": 116.1167,
+      "specificity": 2
+    },
+    {
+      "name": "Labuan Bajo",
+      "aliases": [],
+      "type": "kota",
+      "city": "Labuan Bajo",
+      "region": "Nusa Tenggara Timur",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -8.4964,
+      "lng": 119.8877,
+      "specificity": 2
+    },
+    {
+      "name": "Kupang",
+      "aliases": [],
+      "type": "kota",
+      "city": "Kupang",
+      "region": "Nusa Tenggara Timur",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -10.1772,
+      "lng": 123.607,
+      "specificity": 2
+    },
+    {
+      "name": "Pontianak",
+      "aliases": [],
+      "type": "kota",
+      "city": "Pontianak",
+      "region": "Kalimantan Barat",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -0.0263,
+      "lng": 109.3425,
+      "specificity": 2
+    },
+    {
+      "name": "Palangka Raya",
+      "aliases": [
+        "Palangkaraya"
+      ],
+      "type": "kota",
+      "city": "Palangka Raya",
+      "region": "Kalimantan Tengah",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -2.2096,
+      "lng": 113.9108,
+      "specificity": 2
+    },
+    {
+      "name": "Banjarmasin",
+      "aliases": [],
+      "type": "kota",
+      "city": "Banjarmasin",
+      "region": "Kalimantan Selatan",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -3.3194,
+      "lng": 114.5906,
+      "specificity": 2
+    },
+    {
+      "name": "Banjarbaru",
+      "aliases": [],
+      "type": "kota",
+      "city": "Banjarbaru",
+      "region": "Kalimantan Selatan",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -3.4572,
+      "lng": 114.8113,
+      "specificity": 2
+    },
+    {
+      "name": "Samarinda",
+      "aliases": [],
+      "type": "kota",
+      "city": "Samarinda",
+      "region": "Kalimantan Timur",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -0.5017,
+      "lng": 117.1536,
+      "specificity": 2
+    },
+    {
+      "name": "Balikpapan",
+      "aliases": [],
+      "type": "kota",
+      "city": "Balikpapan",
+      "region": "Kalimantan Timur",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -1.2379,
+      "lng": 116.8529,
+      "specificity": 2
+    },
+    {
+      "name": "Tanjung Selor",
+      "aliases": [],
+      "type": "kota",
+      "city": "Tanjung Selor",
+      "region": "Kalimantan Utara",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": 2.8375,
+      "lng": 117.3661,
+      "specificity": 2
+    },
+    {
+      "name": "Manado",
+      "aliases": [],
+      "type": "kota",
+      "city": "Manado",
+      "region": "Sulawesi Utara",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": 1.4748,
+      "lng": 124.8421,
+      "specificity": 2
+    },
+    {
+      "name": "Gorontalo",
+      "aliases": [
+        "Kota Gorontalo"
+      ],
+      "type": "kota",
+      "city": "Gorontalo",
+      "region": "Gorontalo",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": 0.5435,
+      "lng": 123.0568,
+      "specificity": 2
+    },
+    {
+      "name": "Palu",
+      "aliases": [],
+      "type": "kota",
+      "city": "Palu",
+      "region": "Sulawesi Tengah",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -0.8917,
+      "lng": 119.8707,
+      "specificity": 2
+    },
+    {
+      "name": "Mamuju",
+      "aliases": [],
+      "type": "kota",
+      "city": "Mamuju",
+      "region": "Sulawesi Barat",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -2.6748,
+      "lng": 118.8885,
+      "specificity": 2
+    },
+    {
+      "name": "Makassar",
+      "aliases": [
+        "Ujung Pandang"
+      ],
+      "type": "kota",
+      "city": "Makassar",
+      "region": "Sulawesi Selatan",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -5.1477,
+      "lng": 119.4327,
+      "specificity": 2
+    },
+    {
+      "name": "Kendari",
+      "aliases": [],
+      "type": "kota",
+      "city": "Kendari",
+      "region": "Sulawesi Tenggara",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -3.9985,
+      "lng": 122.513,
+      "specificity": 2
+    },
+    {
+      "name": "Ambon",
+      "aliases": [],
+      "type": "kota",
+      "city": "Ambon",
+      "region": "Maluku",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -3.6954,
+      "lng": 128.1814,
+      "specificity": 2
+    },
+    {
+      "name": "Sofifi",
+      "aliases": [
+        "Ternate"
+      ],
+      "type": "kota",
+      "city": "Sofifi",
+      "region": "Maluku Utara",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": 0.7333,
+      "lng": 127.5667,
+      "specificity": 2
+    },
+    {
+      "name": "Jayapura",
+      "aliases": [],
+      "type": "kota",
+      "city": "Jayapura",
+      "region": "Papua",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -2.5337,
+      "lng": 140.7181,
+      "specificity": 2
+    },
+    {
+      "name": "Manokwari",
+      "aliases": [],
+      "type": "kota",
+      "city": "Manokwari",
+      "region": "Papua Barat",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -0.8615,
+      "lng": 134.062,
+      "specificity": 2
+    },
+    {
+      "name": "Sorong",
+      "aliases": [],
+      "type": "kota",
+      "city": "Sorong",
+      "region": "Papua Barat Daya",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -0.8762,
+      "lng": 131.2558,
+      "specificity": 2
+    },
+    {
+      "name": "Nabire",
+      "aliases": [],
+      "type": "kota",
+      "city": "Nabire",
+      "region": "Papua Tengah",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -3.3667,
+      "lng": 135.4833,
+      "specificity": 2
+    },
+    {
+      "name": "Wamena",
+      "aliases": [],
+      "type": "kota",
+      "city": "Wamena",
+      "region": "Papua Pegunungan",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -4.0983,
+      "lng": 138.9503,
+      "specificity": 2
+    },
+    {
+      "name": "Merauke",
+      "aliases": [],
+      "type": "kota",
+      "city": "Merauke",
+      "region": "Papua Selatan",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -8.4932,
+      "lng": 140.4018,
+      "specificity": 2
+    },
+    {
+      "name": "Aceh",
+      "aliases": [
+        "Provinsi Aceh",
+        "Nanggroe Aceh Darussalam"
+      ],
+      "type": "provinsi",
+      "city": "Banda Aceh",
+      "region": "Aceh",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": 4.6951,
+      "lng": 96.7494,
+      "specificity": 1
+    },
+    {
+      "name": "Sumatera Utara",
+      "aliases": [
+        "Sumut"
+      ],
+      "type": "provinsi",
+      "city": "Medan",
+      "region": "Sumatera Utara",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": 2.1154,
+      "lng": 99.5451,
+      "specificity": 1
+    },
+    {
+      "name": "Sumatera Barat",
+      "aliases": [
+        "Sumbar"
+      ],
+      "type": "provinsi",
+      "city": "Padang",
+      "region": "Sumatera Barat",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -0.7399,
+      "lng": 100.8,
+      "specificity": 1
+    },
+    {
+      "name": "Riau",
+      "aliases": [
+        "Provinsi Riau"
+      ],
+      "type": "provinsi",
+      "city": "Pekanbaru",
+      "region": "Riau",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": 0.2933,
+      "lng": 101.7068,
+      "specificity": 1
+    },
+    {
+      "name": "Kepulauan Riau",
+      "aliases": [
+        "Kepri"
+      ],
+      "type": "provinsi",
+      "city": "Tanjungpinang",
+      "region": "Kepulauan Riau",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": 3.9457,
+      "lng": 108.1429,
+      "specificity": 1
+    },
+    {
+      "name": "Jambi",
+      "aliases": [
+        "Provinsi Jambi"
+      ],
+      "type": "provinsi",
+      "city": "Jambi",
+      "region": "Jambi",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -1.4852,
+      "lng": 102.4381,
+      "specificity": 1
+    },
+    {
+      "name": "Sumatera Selatan",
+      "aliases": [
+        "Sumsel"
+      ],
+      "type": "provinsi",
+      "city": "Palembang",
+      "region": "Sumatera Selatan",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -3.3194,
+      "lng": 103.9144,
+      "specificity": 1
+    },
+    {
+      "name": "Kepulauan Bangka Belitung",
+      "aliases": [
+        "Bangka Belitung",
+        "Babel"
+      ],
+      "type": "provinsi",
+      "city": "Pangkalpinang",
+      "region": "Kepulauan Bangka Belitung",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -2.7411,
+      "lng": 106.4406,
+      "specificity": 1
+    },
+    {
+      "name": "Bengkulu",
+      "aliases": [
+        "Provinsi Bengkulu"
+      ],
+      "type": "provinsi",
+      "city": "Bengkulu",
+      "region": "Bengkulu",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -3.5778,
+      "lng": 102.3464,
+      "specificity": 1
+    },
+    {
+      "name": "Lampung",
+      "aliases": [
+        "Provinsi Lampung"
+      ],
+      "type": "provinsi",
+      "city": "Bandar Lampung",
+      "region": "Lampung",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -4.5586,
+      "lng": 105.4068,
+      "specificity": 1
+    },
+    {
+      "name": "Jawa Barat",
+      "aliases": [
+        "Jabar"
+      ],
+      "type": "provinsi",
+      "city": "Bandung",
+      "region": "Jawa Barat",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -6.889,
+      "lng": 107.6405,
+      "specificity": 1
+    },
+    {
+      "name": "Jawa Tengah",
+      "aliases": [
+        "Jateng"
+      ],
+      "type": "provinsi",
+      "city": "Semarang",
+      "region": "Jawa Tengah",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -7.151,
+      "lng": 110.1403,
+      "specificity": 1
+    },
+    {
+      "name": "DI Yogyakarta",
+      "aliases": [
+        "Daerah Istimewa Yogyakarta"
+      ],
+      "type": "provinsi",
+      "city": "Yogyakarta",
+      "region": "DI Yogyakarta",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -7.7956,
+      "lng": 110.3695,
+      "specificity": 1
+    },
+    {
+      "name": "Jawa Timur",
+      "aliases": [
+        "Jatim"
+      ],
+      "type": "provinsi",
+      "city": "Surabaya",
+      "region": "Jawa Timur",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -7.5361,
+      "lng": 112.2384,
+      "specificity": 1
+    },
+    {
+      "name": "Banten",
+      "aliases": [
+        "Provinsi Banten"
+      ],
+      "type": "provinsi",
+      "city": "Serang",
+      "region": "Banten",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -6.4058,
+      "lng": 106.064,
+      "specificity": 1
+    },
+    {
+      "name": "Bali",
+      "aliases": [
+        "Provinsi Bali"
+      ],
+      "type": "provinsi",
+      "city": "Denpasar",
+      "region": "Bali",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -8.4095,
+      "lng": 115.1889,
+      "specificity": 1
+    },
+    {
+      "name": "Nusa Tenggara Barat",
+      "aliases": [
+        "NTB"
+      ],
+      "type": "provinsi",
+      "city": "Mataram",
+      "region": "Nusa Tenggara Barat",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -8.6529,
+      "lng": 117.3616,
+      "specificity": 1
+    },
+    {
+      "name": "Nusa Tenggara Timur",
+      "aliases": [
+        "NTT"
+      ],
+      "type": "provinsi",
+      "city": "Kupang",
+      "region": "Nusa Tenggara Timur",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -8.6574,
+      "lng": 121.0794,
+      "specificity": 1
+    },
+    {
+      "name": "Kalimantan Barat",
+      "aliases": [
+        "Kalbar"
+      ],
+      "type": "provinsi",
+      "city": "Pontianak",
+      "region": "Kalimantan Barat",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -0.2788,
+      "lng": 111.4753,
+      "specificity": 1
+    },
+    {
+      "name": "Kalimantan Tengah",
+      "aliases": [
+        "Kalteng"
+      ],
+      "type": "provinsi",
+      "city": "Palangka Raya",
+      "region": "Kalimantan Tengah",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -1.6815,
+      "lng": 113.3824,
+      "specificity": 1
+    },
+    {
+      "name": "Kalimantan Selatan",
+      "aliases": [
+        "Kalsel"
+      ],
+      "type": "provinsi",
+      "city": "Banjarbaru",
+      "region": "Kalimantan Selatan",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -3.0926,
+      "lng": 115.2838,
+      "specificity": 1
+    },
+    {
+      "name": "Kalimantan Timur",
+      "aliases": [
+        "Kaltim"
+      ],
+      "type": "provinsi",
+      "city": "Samarinda",
+      "region": "Kalimantan Timur",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": 0.5387,
+      "lng": 116.4194,
+      "specificity": 1
+    },
+    {
+      "name": "Kalimantan Utara",
+      "aliases": [
+        "Kaltara"
+      ],
+      "type": "provinsi",
+      "city": "Tanjung Selor",
+      "region": "Kalimantan Utara",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": 3.0731,
+      "lng": 116.0414,
+      "specificity": 1
+    },
+    {
+      "name": "Sulawesi Utara",
+      "aliases": [
+        "Sulut"
+      ],
+      "type": "provinsi",
+      "city": "Manado",
+      "region": "Sulawesi Utara",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": 0.6247,
+      "lng": 123.975,
+      "specificity": 1
+    },
+    {
+      "name": "Gorontalo",
+      "aliases": [
+        "Provinsi Gorontalo"
+      ],
+      "type": "provinsi",
+      "city": "Gorontalo",
+      "region": "Gorontalo",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": 0.6999,
+      "lng": 122.4467,
+      "specificity": 1
+    },
+    {
+      "name": "Sulawesi Tengah",
+      "aliases": [
+        "Sulteng"
+      ],
+      "type": "provinsi",
+      "city": "Palu",
+      "region": "Sulawesi Tengah",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -1.43,
+      "lng": 121.4456,
+      "specificity": 1
+    },
+    {
+      "name": "Sulawesi Barat",
+      "aliases": [
+        "Sulbar"
+      ],
+      "type": "provinsi",
+      "city": "Mamuju",
+      "region": "Sulawesi Barat",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -2.8441,
+      "lng": 119.2321,
+      "specificity": 1
+    },
+    {
+      "name": "Sulawesi Selatan",
+      "aliases": [
+        "Sulsel"
+      ],
+      "type": "provinsi",
+      "city": "Makassar",
+      "region": "Sulawesi Selatan",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -3.6688,
+      "lng": 119.9741,
+      "specificity": 1
+    },
+    {
+      "name": "Sulawesi Tenggara",
+      "aliases": [
+        "Sultra"
+      ],
+      "type": "provinsi",
+      "city": "Kendari",
+      "region": "Sulawesi Tenggara",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -4.1449,
+      "lng": 122.1746,
+      "specificity": 1
+    },
+    {
+      "name": "Maluku",
+      "aliases": [
+        "Provinsi Maluku"
+      ],
+      "type": "provinsi",
+      "city": "Ambon",
+      "region": "Maluku",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -3.2385,
+      "lng": 130.1453,
+      "specificity": 1
+    },
+    {
+      "name": "Maluku Utara",
+      "aliases": [
+        "Malut"
+      ],
+      "type": "provinsi",
+      "city": "Sofifi",
+      "region": "Maluku Utara",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": 1.5709,
+      "lng": 127.8088,
+      "specificity": 1
+    },
+    {
+      "name": "Papua",
+      "aliases": [
+        "Provinsi Papua"
+      ],
+      "type": "provinsi",
+      "city": "Jayapura",
+      "region": "Papua",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -3.3167,
+      "lng": 138.7,
+      "specificity": 1
+    },
+    {
+      "name": "Papua Barat",
+      "aliases": [
+        "Pabar"
+      ],
+      "type": "provinsi",
+      "city": "Manokwari",
+      "region": "Papua Barat",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -1.3361,
+      "lng": 133.1747,
+      "specificity": 1
+    },
+    {
+      "name": "Papua Barat Daya",
+      "aliases": [],
+      "type": "provinsi",
+      "city": "Sorong",
+      "region": "Papua Barat Daya",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -1.1,
+      "lng": 132.3,
+      "specificity": 1
+    },
+    {
+      "name": "Papua Tengah",
+      "aliases": [],
+      "type": "provinsi",
+      "city": "Nabire",
+      "region": "Papua Tengah",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -3.9,
+      "lng": 136.5,
+      "specificity": 1
+    },
+    {
+      "name": "Papua Pegunungan",
+      "aliases": [],
+      "type": "provinsi",
+      "city": "Wamena",
+      "region": "Papua Pegunungan",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -4.1,
+      "lng": 138.9,
+      "specificity": 1
+    },
+    {
+      "name": "Papua Selatan",
+      "aliases": [],
+      "type": "provinsi",
+      "city": "Merauke",
+      "region": "Papua Selatan",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -7.5,
+      "lng": 139.7,
+      "specificity": 1
+    },
+    {
+      "name": "Beijing",
+      "aliases": [],
+      "type": "ibukota_asing",
+      "city": "Beijing",
+      "region": "",
+      "country": "Tiongkok",
+      "country_code": "CN",
+      "lat": 39.9042,
+      "lng": 116.4074,
+      "specificity": 2,
+      "weak_aliases": [
+        "Tiongkok",
+        "China",
+        "Cina",
+        "Republik Rakyat Tiongkok",
+        "RRT"
+      ]
+    },
+    {
+      "name": "Tokyo",
+      "aliases": [],
+      "type": "ibukota_asing",
+      "city": "Tokyo",
+      "region": "",
+      "country": "Jepang",
+      "country_code": "JP",
+      "lat": 35.6762,
+      "lng": 139.6503,
+      "specificity": 2,
+      "weak_aliases": [
+        "Jepang"
+      ]
+    },
+    {
+      "name": "Seoul",
+      "aliases": [],
+      "type": "ibukota_asing",
+      "city": "Seoul",
+      "region": "",
+      "country": "Korea Selatan",
+      "country_code": "KR",
+      "lat": 37.5665,
+      "lng": 126.978,
+      "specificity": 2,
+      "weak_aliases": [
+        "Korea Selatan",
+        "Korsel"
+      ]
+    },
+    {
+      "name": "Washington",
+      "aliases": [
+        "Washington DC",
+        "Gedung Putih"
+      ],
+      "type": "ibukota_asing",
+      "city": "Washington, D.C.",
+      "region": "",
+      "country": "Amerika Serikat",
+      "country_code": "US",
+      "lat": 38.9072,
+      "lng": -77.0369,
+      "specificity": 2,
+      "weak_aliases": [
+        "Amerika Serikat",
+        "AS"
+      ]
+    },
+    {
+      "name": "New York",
+      "aliases": [
+        "Markas Besar PBB",
+        "Sidang Umum PBB"
+      ],
+      "type": "ibukota_asing",
+      "city": "New York",
+      "region": "",
+      "country": "Amerika Serikat",
+      "country_code": "US",
+      "lat": 40.7489,
+      "lng": -73.968,
+      "specificity": 2
+    },
+    {
+      "name": "Kuala Lumpur",
+      "aliases": [],
+      "type": "ibukota_asing",
+      "city": "Kuala Lumpur",
+      "region": "",
+      "country": "Malaysia",
+      "country_code": "MY",
+      "lat": 3.139,
+      "lng": 101.6869,
+      "specificity": 2,
+      "weak_aliases": [
+        "Malaysia"
+      ]
+    },
+    {
+      "name": "Singapura",
+      "aliases": [
+        "Singapore"
+      ],
+      "type": "ibukota_asing",
+      "city": "Singapura",
+      "region": "",
+      "country": "Singapura",
+      "country_code": "SG",
+      "lat": 1.3521,
+      "lng": 103.8198,
+      "specificity": 2
+    },
+    {
+      "name": "Bandar Seri Begawan",
+      "aliases": [],
+      "type": "ibukota_asing",
+      "city": "Bandar Seri Begawan",
+      "region": "",
+      "country": "Brunei Darussalam",
+      "country_code": "BN",
+      "lat": 4.9031,
+      "lng": 114.9398,
+      "specificity": 2,
+      "weak_aliases": [
+        "Brunei",
+        "Brunei Darussalam"
+      ]
+    },
+    {
+      "name": "Bangkok",
+      "aliases": [],
+      "type": "ibukota_asing",
+      "city": "Bangkok",
+      "region": "",
+      "country": "Thailand",
+      "country_code": "TH",
+      "lat": 13.7563,
+      "lng": 100.5018,
+      "specificity": 2,
+      "weak_aliases": [
+        "Thailand"
+      ]
+    },
+    {
+      "name": "Hanoi",
+      "aliases": [],
+      "type": "ibukota_asing",
+      "city": "Hanoi",
+      "region": "",
+      "country": "Vietnam",
+      "country_code": "VN",
+      "lat": 21.0285,
+      "lng": 105.8542,
+      "specificity": 2,
+      "weak_aliases": [
+        "Vietnam"
+      ]
+    },
+    {
+      "name": "Manila",
+      "aliases": [],
+      "type": "ibukota_asing",
+      "city": "Manila",
+      "region": "",
+      "country": "Filipina",
+      "country_code": "PH",
+      "lat": 14.5995,
+      "lng": 120.9842,
+      "specificity": 2,
+      "weak_aliases": [
+        "Filipina"
+      ]
+    },
+    {
+      "name": "Phnom Penh",
+      "aliases": [],
+      "type": "ibukota_asing",
+      "city": "Phnom Penh",
+      "region": "",
+      "country": "Kamboja",
+      "country_code": "KH",
+      "lat": 11.5564,
+      "lng": 104.9282,
+      "specificity": 2,
+      "weak_aliases": [
+        "Kamboja"
+      ]
+    },
+    {
+      "name": "Vientiane",
+      "aliases": [],
+      "type": "ibukota_asing",
+      "city": "Vientiane",
+      "region": "",
+      "country": "Laos",
+      "country_code": "LA",
+      "lat": 17.9757,
+      "lng": 102.6331,
+      "specificity": 2,
+      "weak_aliases": [
+        "Laos"
+      ]
+    },
+    {
+      "name": "Naypyidaw",
+      "aliases": [],
+      "type": "ibukota_asing",
+      "city": "Naypyidaw",
+      "region": "",
+      "country": "Myanmar",
+      "country_code": "MM",
+      "lat": 19.7633,
+      "lng": 96.0785,
+      "specificity": 2,
+      "weak_aliases": [
+        "Myanmar"
+      ]
+    },
+    {
+      "name": "Dili",
+      "aliases": [],
+      "type": "ibukota_asing",
+      "city": "Dili",
+      "region": "",
+      "country": "Timor-Leste",
+      "country_code": "TL",
+      "lat": -8.5569,
+      "lng": 125.5603,
+      "specificity": 2,
+      "weak_aliases": [
+        "Timor Leste",
+        "Timor-Leste"
+      ]
+    },
+    {
+      "name": "Canberra",
+      "aliases": [],
+      "type": "ibukota_asing",
+      "city": "Canberra",
+      "region": "",
+      "country": "Australia",
+      "country_code": "AU",
+      "lat": -35.2809,
+      "lng": 149.13,
+      "specificity": 2,
+      "weak_aliases": [
+        "Australia"
+      ]
+    },
+    {
+      "name": "New Delhi",
+      "aliases": [],
+      "type": "ibukota_asing",
+      "city": "New Delhi",
+      "region": "",
+      "country": "India",
+      "country_code": "IN",
+      "lat": 28.6139,
+      "lng": 77.209,
+      "specificity": 2,
+      "weak_aliases": [
+        "India"
+      ]
+    },
+    {
+      "name": "Islamabad",
+      "aliases": [],
+      "type": "ibukota_asing",
+      "city": "Islamabad",
+      "region": "",
+      "country": "Pakistan",
+      "country_code": "PK",
+      "lat": 33.6844,
+      "lng": 73.0479,
+      "specificity": 2,
+      "weak_aliases": [
+        "Pakistan"
+      ]
+    },
+    {
+      "name": "Dhaka",
+      "aliases": [],
+      "type": "ibukota_asing",
+      "city": "Dhaka",
+      "region": "",
+      "country": "Bangladesh",
+      "country_code": "BD",
+      "lat": 23.8103,
+      "lng": 90.4125,
+      "specificity": 2,
+      "weak_aliases": [
+        "Bangladesh"
+      ]
+    },
+    {
+      "name": "Moskow",
+      "aliases": [
+        "Moskwa",
+        "Moscow"
+      ],
+      "type": "ibukota_asing",
+      "city": "Moskow",
+      "region": "",
+      "country": "Rusia",
+      "country_code": "RU",
+      "lat": 55.7558,
+      "lng": 37.6173,
+      "specificity": 2,
+      "weak_aliases": [
+        "Rusia"
+      ]
+    },
+    {
+      "name": "Ankara",
+      "aliases": [],
+      "type": "ibukota_asing",
+      "city": "Ankara",
+      "region": "",
+      "country": "Turki",
+      "country_code": "TR",
+      "lat": 39.9334,
+      "lng": 32.8597,
+      "specificity": 2,
+      "weak_aliases": [
+        "Turki",
+        "Turkiye"
+      ]
+    },
+    {
+      "name": "Riyadh",
+      "aliases": [
+        "Riyad"
+      ],
+      "type": "ibukota_asing",
+      "city": "Riyadh",
+      "region": "",
+      "country": "Arab Saudi",
+      "country_code": "SA",
+      "lat": 24.7136,
+      "lng": 46.6753,
+      "specificity": 2,
+      "weak_aliases": [
+        "Arab Saudi"
+      ]
+    },
+    {
+      "name": "Jeddah",
+      "aliases": [
+        "Jedah",
+        "Mekkah",
+        "Makkah"
+      ],
+      "type": "ibukota_asing",
+      "city": "Jeddah",
+      "region": "",
+      "country": "Arab Saudi",
+      "country_code": "SA",
+      "lat": 21.4858,
+      "lng": 39.1925,
+      "specificity": 2
+    },
+    {
+      "name": "Abu Dhabi",
+      "aliases": [
+        "Dubai"
+      ],
+      "type": "ibukota_asing",
+      "city": "Abu Dhabi",
+      "region": "",
+      "country": "Uni Emirat Arab",
+      "country_code": "AE",
+      "lat": 24.4539,
+      "lng": 54.3773,
+      "specificity": 2,
+      "weak_aliases": [
+        "Uni Emirat Arab",
+        "UEA"
+      ]
+    },
+    {
+      "name": "Doha",
+      "aliases": [],
+      "type": "ibukota_asing",
+      "city": "Doha",
+      "region": "",
+      "country": "Qatar",
+      "country_code": "QA",
+      "lat": 25.2854,
+      "lng": 51.531,
+      "specificity": 2,
+      "weak_aliases": [
+        "Qatar"
+      ]
+    },
+    {
+      "name": "Amman",
+      "aliases": [],
+      "type": "ibukota_asing",
+      "city": "Amman",
+      "region": "",
+      "country": "Yordania",
+      "country_code": "JO",
+      "lat": 31.9454,
+      "lng": 35.9284,
+      "specificity": 2,
+      "weak_aliases": [
+        "Yordania"
+      ]
+    },
+    {
+      "name": "Kairo",
+      "aliases": [
+        "Cairo"
+      ],
+      "type": "ibukota_asing",
+      "city": "Kairo",
+      "region": "",
+      "country": "Mesir",
+      "country_code": "EG",
+      "lat": 30.0444,
+      "lng": 31.2357,
+      "specificity": 2,
+      "weak_aliases": [
+        "Mesir"
+      ]
+    },
+    {
+      "name": "London",
+      "aliases": [],
+      "type": "ibukota_asing",
+      "city": "London",
+      "region": "",
+      "country": "Britania Raya",
+      "country_code": "GB",
+      "lat": 51.5074,
+      "lng": -0.1278,
+      "specificity": 2,
+      "weak_aliases": [
+        "Inggris",
+        "Britania Raya"
+      ]
+    },
+    {
+      "name": "Paris",
+      "aliases": [],
+      "type": "ibukota_asing",
+      "city": "Paris",
+      "region": "",
+      "country": "Prancis",
+      "country_code": "FR",
+      "lat": 48.8566,
+      "lng": 2.3522,
+      "specificity": 2,
+      "weak_aliases": [
+        "Prancis",
+        "Perancis"
+      ]
+    },
+    {
+      "name": "Berlin",
+      "aliases": [],
+      "type": "ibukota_asing",
+      "city": "Berlin",
+      "region": "",
+      "country": "Jerman",
+      "country_code": "DE",
+      "lat": 52.52,
+      "lng": 13.405,
+      "specificity": 2,
+      "weak_aliases": [
+        "Jerman"
+      ]
+    },
+    {
+      "name": "Roma",
+      "aliases": [
+        "Rome",
+        "Vatikan"
+      ],
+      "type": "ibukota_asing",
+      "city": "Roma",
+      "region": "",
+      "country": "Italia",
+      "country_code": "IT",
+      "lat": 41.9028,
+      "lng": 12.4964,
+      "specificity": 2,
+      "weak_aliases": [
+        "Italia"
+      ]
+    },
+    {
+      "name": "Brussel",
+      "aliases": [
+        "Brussels"
+      ],
+      "type": "ibukota_asing",
+      "city": "Brussel",
+      "region": "",
+      "country": "Belgia",
+      "country_code": "BE",
+      "lat": 50.8503,
+      "lng": 4.3517,
+      "specificity": 2,
+      "weak_aliases": [
+        "Belgia",
+        "Uni Eropa"
+      ]
+    },
+    {
+      "name": "Den Haag",
+      "aliases": [
+        "Amsterdam"
+      ],
+      "type": "ibukota_asing",
+      "city": "Den Haag",
+      "region": "",
+      "country": "Belanda",
+      "country_code": "NL",
+      "lat": 52.0705,
+      "lng": 4.3007,
+      "specificity": 2,
+      "weak_aliases": [
+        "Belanda"
+      ]
+    },
+    {
+      "name": "Brasilia",
+      "aliases": [],
+      "type": "ibukota_asing",
+      "city": "Brasilia",
+      "region": "",
+      "country": "Brasil",
+      "country_code": "BR",
+      "lat": -15.7939,
+      "lng": -47.8828,
+      "specificity": 2,
+      "weak_aliases": [
+        "Brasil",
+        "Brazil"
+      ]
+    },
+    {
+      "name": "Rio de Janeiro",
+      "aliases": [],
+      "type": "ibukota_asing",
+      "city": "Rio de Janeiro",
+      "region": "",
+      "country": "Brasil",
+      "country_code": "BR",
+      "lat": -22.9068,
+      "lng": -43.1729,
+      "specificity": 2
+    },
+    {
+      "name": "Johannesburg",
+      "aliases": [
+        "Pretoria"
+      ],
+      "type": "ibukota_asing",
+      "city": "Johannesburg",
+      "region": "",
+      "country": "Afrika Selatan",
+      "country_code": "ZA",
+      "lat": -26.2041,
+      "lng": 28.0473,
+      "specificity": 2,
+      "weak_aliases": [
+        "Afrika Selatan"
+      ]
+    },
+    {
+      "name": "Lima",
+      "aliases": [],
+      "type": "ibukota_asing",
+      "city": "Lima",
+      "region": "",
+      "country": "Peru",
+      "country_code": "PE",
+      "lat": -12.0464,
+      "lng": -77.0428,
+      "specificity": 2,
+      "weak_aliases": [
+        "Peru"
+      ]
+    }
   ]
 }

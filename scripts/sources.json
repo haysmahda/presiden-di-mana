@@ -1,0 +1,27 @@
+{
+  "_readme": "RSS feeds, every URL verified working. `weight` drives the confidence score: 3 = official/state news agency, 2 = major national outlet, 1 = aggregator. See `excluded` at the bottom for sources we deliberately do NOT touch and why.",
+  "user_agent": "PresidenDiMana/0.1 (+https://github.com/haysmahda/presiden-di-mana) feed reader",
+  "feeds": [
+    { "outlet": "Setkab",          "name": "Sekretariat Kabinet",        "url": "https://setkab.go.id/feed/",                    "weight": 3, "official": true },
+    { "outlet": "Antara News",     "name": "Antara — Politik",           "url": "https://www.antaranews.com/rss/politik.xml",    "weight": 3, "official": true },
+    { "outlet": "Antara News",     "name": "Antara — Terkini",           "url": "https://www.antaranews.com/rss/terkini.xml",    "weight": 3, "official": true },
+    { "outlet": "Detik",           "name": "detikNews",                  "url": "https://news.detik.com/berita/rss",             "weight": 2, "official": false },
+    { "outlet": "CNN Indonesia",   "name": "CNN Indonesia — Nasional",   "url": "https://www.cnnindonesia.com/nasional/rss",     "weight": 2, "official": false },
+    { "outlet": "Tempo",           "name": "Tempo — Nasional",           "url": "https://rss.tempo.co/nasional",                 "weight": 2, "official": false },
+    { "outlet": "Liputan6",        "name": "Liputan6 — News",            "url": "https://feed.liputan6.com/rss/news",            "weight": 2, "official": false }
+  ],
+  "excluded": [
+    {
+      "outlet": "Tribunnews",
+      "reason": "tribunnews.com/rss returns 403 to any client that identifies itself as a bot, and only serves the feed to a browser user-agent. Their robots.txt permits /rss, so this is a crude filter rather than a policy — but we are not going to disguise the script as a browser to get around it. Lowest-weight source anyway."
+    },
+    {
+      "outlet": "Kompas",
+      "reason": "kompas.com/robots.txt explicitly prohibits automated data mining and use of its content for software or machine learning without prior written permission. Its RSS endpoints also return 403. Do not add Kompas without written permission from PT Kompas Cyber Media."
+    },
+    {
+      "outlet": "presidenri.go.id",
+      "reason": "The whole domain, robots.txt included, sits behind a Cloudflare managed challenge that blocks automated clients. Reaching it would mean defeating an anti-bot measure, so we leave it alone. Setkab (setkab.go.id) covers official presidential activity and is reachable."
+    }
+  ]
+}
