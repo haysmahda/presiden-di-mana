@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Presiden Di Mana Sekarang? — Pemantau Lokasi Presiden RI</title>
+<meta name="description" content="Situs independen yang memantau lokasi Presiden Republik Indonesia berdasarkan pemberitaan publik. Bukan pelacakan GPS.">
+<meta name="theme-color" content="#0A0B0D">
+
+<meta property="og:title" content="Presiden Di Mana Sekarang?">
+<meta property="og:description" content="Memantau lokasi Presiden RI dari pemberitaan publik. Situs independen, bukan pelacakan GPS.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="id_ID">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Archivo:wght@400;500;600;700&family=Azeret+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ============ SAMPLE DATA WARNING (removed once real data flows) ============ -->
+<div class="sample-banner" id="sampleBanner" hidden>
+  <div class="wrap sample-banner__inner">
+    <span class="sample-banner__tag">DATA CONTOH</span>
+    <p>Angka dan lokasi di halaman ini masih <strong>data uji coba buatan</strong>, bukan pemberitaan asli.
+       Tautan sumber belum aktif. <span class="en">This page is showing fabricated placeholder data, not real reporting.</span></p>
+  </div>
+</div>
+
+<!-- ============ STATUS RAIL ============ -->
+<div class="statusrail">
+  <div class="wrap statusrail__inner">
+    <span class="statusrail__live"><i class="beacon-dot"></i> PEMANTAUAN AKTIF</span>
+    <span class="statusrail__sep" aria-hidden="true">/</span>
+    <span>SUMBER: <b id="statSources">—</b> KANAL BERITA</span>
+    <span class="statusrail__sep" aria-hidden="true">/</span>
+    <span>PEMERIKSAAN TERAKHIR: <b id="statChecked">—</b></span>
+  </div>
+</div>
+
+<!-- ============ HEADER ============ -->
+<header class="masthead">
+  <div class="wrap masthead__inner">
+    <a class="wordmark" href="index.html">
+      <span class="wordmark__mark" aria-hidden="true"></span>
+      <span class="wordmark__text">Presiden<br><em>Di Mana</em></span>
+    </a>
+    <nav class="nav" aria-label="Navigasi utama">
+      <a class="nav__link is-current" href="index.html" aria-current="page">Sekarang</a>
+      <a class="nav__link" href="history.html">Riwayat</a>
+      <a class="nav__link" href="#cara-kerja">Cara Kerja</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ HERO ANSWER ============ -->
+<section class="hero">
+  <div class="wrap">
+    <p class="hero__kicker">Pertanyaannya sederhana</p>
+    <h1 class="hero__q">Presiden di&nbsp;mana <em>sekarang?</em></h1>
+
+    <div class="hero__answer" id="heroAnswer">
+      <p class="hero__label">Menurut pemberitaan terakhir, beliau berada di</p>
+      <p class="hero__place" id="heroPlace">Memuat…</p>
+      <p class="hero__meta">
+        <span id="heroRegion">—</span>
+        <span class="dot" aria-hidden="true"></span>
+        <span id="heroAgo">—</span>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MAP + NOW CARD ============ -->
+<section class="monitor" aria-label="Peta lokasi">
+  <div id="map" role="application" aria-label="Peta lokasi Presiden"></div>
+  <div class="monitor__fade" aria-hidden="true"></div>
+
+  <article class="nowcard" id="nowCard">
+    <header class="nowcard__head">
+      <span class="nowcard__eyebrow">Lokasi Saat Ini</span>
+      <span class="nowcard__stamp" id="nowStamp">—</span>
+    </header>
+
+    <h2 class="nowcard__place" id="nowPlace">Memuat…</h2>
+    <p class="nowcard__region" id="nowRegion">—</p>
+
+    <ul class="readout">
+      <li class="readout__row">
+        <span class="readout__k">Jenis kegiatan</span>
+        <span class="readout__v" id="nowEvent">—</span>
+      </li>
+      <li class="readout__row">
+        <span class="readout__k">Tanggal laporan</span>
+        <span class="readout__v" id="nowDate">—</span>
+      </li>
+      <li class="readout__row">
+        <span class="readout__k">Koordinat</span>
+        <span class="readout__v mono" id="nowCoords">—</span>
+      </li>
+    </ul>
+
+    <div class="conf">
+      <div class="conf__top">
+        <span class="conf__label">Skor Keyakinan</span>
+        <span class="conf__num" id="confNum">—</span>
+      </div>
+      <div class="conf__bars" id="confBars" role="img" aria-label="Skor keyakinan"></div>
+      <p class="conf__note" id="confNote">—</p>
+    </div>
+
+    <p class="nowcard__disclaimer">
+      Berdasarkan pemberitaan publik. <strong>Bukan pelacakan GPS</strong> dan bukan posisi
+      real-time. Bisa saja tertunda atau keliru.
+    </p>
+
+    <div class="nowcard__sources" id="nowSources"></div>
+  </article>
+</section>
+
+<!-- ============ FEED ============ -->
+<section class="section" id="kabar">
+  <div class="wrap">
+    <div class="sectionhead">
+      <span class="sectionhead__num">01</span>
+      <h2 class="sectionhead__title">Pergerakan Terakhir</h2>
+      <p class="sectionhead__sub">Setiap catatan bersumber dari pemberitaan media. Klik untuk membaca artikel aslinya.</p>
+    </div>
+
+    <ol class="feed" id="feed">
+      <li class="feed__loading">Memuat pergerakan…</li>
+    </ol>
+
+    <a class="btn btn--ghost btn--wide" href="history.html">
+      <svg class="btn__i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 8v5l3 2M3 12a9 9 0 1 0 3-6.7M3 4v4h4"/></svg>
+      Lihat seluruh riwayat lokasi
+    </a>
+  </div>
+</section>
+
+<!-- ============ HOW IT WORKS ============ -->
+<section class="section section--alt" id="cara-kerja">
+  <div class="wrap">
+    <div class="sectionhead">
+      <span class="sectionhead__num">02</span>
+      <h2 class="sectionhead__title">Cara Kerjanya</h2>
+      <p class="sectionhead__sub">Tidak ada perangkat pelacak, tidak ada orang dalam. Hanya membaca berita yang sudah terbit — secara otomatis.</p>
+    </div>
+
+    <ol class="steps">
+      <li class="steps__item">
+        <span class="steps__n">1</span>
+        <h3>Membaca kanal berita</h3>
+        <p>Setiap dua jam, robot kami membaca umpan RSS dari situs resmi kepresidenan dan
+           kantor berita besar Indonesia.</p>
+      </li>
+      <li class="steps__item">
+        <span class="steps__n">2</span>
+        <h3>Mencari nama tempat</h3>
+        <p>Judul berita dicocokkan dengan daftar tempat — 38 provinsi, kota besar, istana
+           kepresidenan, bandara, hingga ibu kota negara lain.</p>
+      </li>
+      <li class="steps__item">
+        <span class="steps__n">3</span>
+        <h3>Meminta konfirmasi</h3>
+        <p>Satu berita saja belum cukup. Lokasi baru ditampilkan bila beberapa media
+           independen melaporkan hal yang sama.</p>
+      </li>
+      <li class="steps__item">
+        <span class="steps__n">4</span>
+        <h3>Memberi skor</h3>
+        <p>Sumber resmi dan kantor berita negara berbobot lebih tinggi. Berita terbaru
+           mengalahkan yang lama. Hasilnya: skor keyakinan.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ DISCLAIMER ============ -->
+<section class="section">
+  <div class="wrap">
+    <div class="disclaimer">
+      <span class="disclaimer__tag">Penting / Important</span>
+      <p class="disclaimer__id" lang="id">
+        Situs independen. Tidak berafiliasi dengan pemerintah, istana, atau partai mana pun.
+        Semua data berasal dari pemberitaan publik yang sudah terbit dan mungkin tidak akurat
+        atau tertunda. <strong>Bukan pelacakan GPS.</strong> Situs ini tidak memprediksi
+        pergerakan di masa depan dan tidak memuat informasi kediaman pribadi di luar apa yang
+        sudah diberitakan media arus utama.
+      </p>
+      <p class="disclaimer__en" lang="en">
+        Independent site. Not affiliated with the government, the palace, or any political party.
+        All data comes from published public news reports and may be inaccurate or delayed.
+        <strong>This is not GPS tracking.</strong> This site does not predict future movements and
+        does not publish private residence details beyond mainstream reporting.
+      </p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__inner">
+    <p class="foot__mark">Presiden Di Mana Sekarang?</p>
+    <p class="foot__note">
+      Proyek transparansi warga. Data diperbarui otomatis setiap 2 jam.
+      Peta: <a href="https://www.openstreetmap.org/copyright" rel="noopener">OpenStreetMap</a> &amp;
+      <a href="https://carto.com/attributions" rel="noopener">CARTO</a>.
+    </p>
+    <p class="foot__note foot__note--dim">
+      Terakhir diperbarui: <span id="footUpdated">—</span>
+    </p>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="assets/util.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

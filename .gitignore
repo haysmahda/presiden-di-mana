@@ -1,0 +1,22 @@
+# dependencies
+node_modules/
+
+# secrets — never commit API keys
+.env
+.env.*
+!.env.example
+
+# local Claude Code settings (machine-specific)
+.claude/settings.local.json
+.claude/*.tmp.*
+
+# os / editor noise
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+.idea/
+
+# logs
+*.log
+npm-debug.log*

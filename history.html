@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Riwayat Lokasi — Presiden Di Mana Sekarang?</title>
+<meta name="description" content="Riwayat lengkap lokasi Presiden Republik Indonesia berdasarkan pemberitaan publik.">
+<meta name="theme-color" content="#0A0B0D">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Archivo:wght@400;500;600;700&family=Azeret+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+
+<div class="sample-banner" id="sampleBanner" hidden>
+  <div class="wrap sample-banner__inner">
+    <span class="sample-banner__tag">DATA CONTOH</span>
+    <p>Angka dan lokasi di halaman ini masih <strong>data uji coba buatan</strong>, bukan pemberitaan asli.
+       Tautan sumber belum aktif. <span class="en">This page is showing fabricated placeholder data, not real reporting.</span></p>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="wrap masthead__inner">
+    <a class="wordmark" href="index.html">
+      <span class="wordmark__mark" aria-hidden="true"></span>
+      <span class="wordmark__text">Presiden<br><em>Di Mana</em></span>
+    </a>
+    <nav class="nav" aria-label="Navigasi utama">
+      <a class="nav__link" href="index.html">Sekarang</a>
+      <a class="nav__link is-current" href="history.html" aria-current="page">Riwayat</a>
+      <a class="nav__link" href="index.html#cara-kerja">Cara Kerja</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="hero">
+  <div class="wrap">
+    <p class="hero__kicker">Arsip pergerakan</p>
+    <h1 class="hero__q">Ke mana saja <em>selama ini?</em></h1>
+    <p class="sectionhead__sub" style="margin-top:1.2rem">
+      Seluruh lokasi yang pernah tercatat dari pemberitaan publik. Saring berdasarkan tahun,
+      wilayah, atau jenis kegiatan.
+    </p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+
+    <div class="stats" id="stats"></div>
+
+    <div class="filters">
+      <div class="field">
+        <label for="fTahun">Tahun</label>
+        <select id="fTahun"><option value="">Semua tahun</option></select>
+      </div>
+      <div class="field">
+        <label for="fWilayah">Wilayah</label>
+        <select id="fWilayah"><option value="">Semua wilayah</option></select>
+      </div>
+      <div class="field">
+        <label for="fJenis">Jenis kegiatan</label>
+        <select id="fJenis"><option value="">Semua kegiatan</option></select>
+      </div>
+      <div class="field">
+        <label for="fCari">Cari tempat</label>
+        <input id="fCari" type="search" placeholder="mis. Bogor, Nusantara…" autocomplete="off">
+      </div>
+
+      <div class="filters__foot">
+        <span class="filters__count"><b id="hitung">0</b> catatan ditampilkan</span>
+        <button class="btn btn--ghost btn--sm" type="button" id="reset">
+          <svg class="btn__i" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M3 12a9 9 0 1 0 3-6.7M3 4v4h4"/>
+          </svg>
+          Hapus semua filter
+        </button>
+      </div>
+    </div>
+
+    <ol class="feed" id="feed">
+      <li class="feed__loading">Memuat riwayat…</li>
+    </ol>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="disclaimer">
+      <span class="disclaimer__tag">Penting / Important</span>
+      <p class="disclaimer__id" lang="id">
+        Situs independen. Tidak berafiliasi dengan pemerintah, istana, atau partai mana pun.
+        Semua data berasal dari pemberitaan publik yang sudah terbit dan mungkin tidak akurat
+        atau tertunda. <strong>Bukan pelacakan GPS.</strong>
+      </p>
+      <p class="disclaimer__en" lang="en">
+        Independent site. Not affiliated with the government, the palace, or any political party.
+        All data comes from published public news reports and may be inaccurate or delayed.
+        <strong>This is not GPS tracking.</strong>
+      </p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__inner">
+    <p class="foot__mark">Presiden Di Mana Sekarang?</p>
+    <p class="foot__note">Proyek transparansi warga. Data diperbarui otomatis setiap 2 jam.</p>
+    <p class="foot__note foot__note--dim">Terakhir diperbarui: <span id="footUpdated">—</span></p>
+  </div>
+</footer>
+
+<script src="assets/util.js"></script>
+<script src="assets/history.js"></script>
+</body>
+</html>
