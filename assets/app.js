@@ -55,7 +55,28 @@ function renderNowCard(loc) {
   $('confNote').textContent =
     `${jumlah} laporan dari ${outlets} media ${outlets > 1 ? 'independen' : ''}`.trim() + '.';
 
-  $('nowSources').innerHTML = sourceButtons(loc.sources);
+  $('nowSources').innerHTML = nowCardSources(loc.sources);
+}
+
+/* The card floats over the map, so it must not grow without bound. Show a few
+   sources and tuck the rest behind a toggle — every source stays reachable,
+   and the full list is repeated in the feed below anyway. */
+const NOWCARD_SOURCES = 3;
+
+function nowCardSources(sources) {
+  const list = Array.isArray(sources) ? sources : [];
+  const shown = sourceButtons(list.slice(0, NOWCARD_SOURCES));
+  const rest = list.slice(NOWCARD_SOURCES);
+  if (!rest.length) return shown;
+
+  return shown + `
+    <details class="moresrc">
+      <summary class="moresrc__toggle">
+        <svg class="btn__i moresrc__chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        ${rest.length} laporan lain
+      </summary>
+      <div class="moresrc__list">${sourceButtons(rest)}</div>
+    </details>`;
 }
 
 function renderFeed(list) {

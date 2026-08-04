@@ -384,6 +384,23 @@ a { color: inherit; }
 
 .nowcard__sources { display: grid; gap: .5rem; }
 
+/* "3 laporan lain" expander */
+.moresrc { display: grid; gap: .5rem; }
+.moresrc__toggle {
+  display: flex; align-items: center; gap: .5rem;
+  padding: .6rem .8rem; cursor: pointer; list-style: none;
+  font-family: var(--mono); font-size: .6rem; font-weight: 600;
+  letter-spacing: .12em; text-transform: uppercase; color: var(--bone-dim);
+  border: 1px dashed var(--line); border-radius: var(--r);
+  transition: color .18s, border-color .18s, background .18s;
+}
+.moresrc__toggle::-webkit-details-marker { display: none; }
+.moresrc__toggle:hover { color: var(--bone); border-color: var(--merah); background: var(--ink-3); }
+.moresrc__toggle:focus-visible { outline: 2px solid var(--merah); outline-offset: 2px; }
+.moresrc__chev { width: 14px; height: 14px; transition: transform .22s ease; }
+.moresrc[open] .moresrc__chev { transform: rotate(180deg); }
+.moresrc__list { display: grid; gap: .5rem; }
+
 /* =========================================================================
    BUTTONS  (large, always labelled, never bare icons)
    ========================================================================= */
@@ -624,17 +641,31 @@ a { color: inherit; }
   .filters { grid-template-columns: repeat(4, 1fr); }
 
   #map { height: 74vh; min-height: 540px; }
+  .monitor__fade { height: 130px; }
 
+  .hero__answer { padding-left: 1.6rem; }
+}
+
+/* The card only floats over the map when the window is tall enough to hold it.
+   On short screens it drops below the map instead (the mobile layout), which
+   beats cramming a scrollbox over the top of everything. */
+@media (min-width: 900px) and (min-height: 760px) {
   .nowcard {
     position: absolute;
     left: max(var(--pad), calc((100vw - var(--wrap)) / 2 + var(--pad)));
     bottom: 2.6rem;
     width: 400px;
     margin: 0;
+    /* Belt and braces: never taller than the map it sits on, however many
+       sources arrive — otherwise it grows upward and covers the headline. */
+    max-height: calc(100% - 5.2rem);
+    overflow-y: auto;
+    overscroll-behavior: contain;
   }
-  .monitor__fade { height: 130px; }
-
-  .hero__answer { padding-left: 1.6rem; }
+  .nowcard::-webkit-scrollbar { width: 6px; }
+  .nowcard::-webkit-scrollbar-track { background: transparent; }
+  .nowcard::-webkit-scrollbar-thumb { background: var(--line); border-radius: 3px; }
+  .nowcard:hover::-webkit-scrollbar-thumb { background: var(--ink-4); }
 }
 
 @media (prefers-reduced-motion: reduce) {
