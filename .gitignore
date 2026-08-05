@@ -6,8 +6,10 @@ node_modules/
 .env.*
 !.env.example
 
-# the project brief is a private working document — keep it local
+# private working documents — keep these local, never publish
 CLAUDE.MD
+PROJECT-STATE.md
+local/
 
 # local Claude Code settings (machine-specific)
 .claude/settings.local.json
