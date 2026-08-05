@@ -5,9 +5,16 @@ const TILE_ATTR =
   '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> ' +
   '&copy; <a href="https://carto.com/attributions">CARTO</a>';
 
-const JEJAK_MAX = 8; // how many past points to trail on the map
+const JEJAK_MAX = 8;       // how many past points to trail on the map
+const FEED_MAX = 6;        // entries in the movement feed
+const NOWCARD_SOURCES = 3; // sources shown before the "more" toggle
 
 const $ = id => document.getElementById(id);
+
+let DATA = null;   // last loaded payload, so a language switch can re-render
+let MAP = null;
+
+/* --------------------------------------------------------------- markers */
 
 function beaconIcon() {
   return L.divIcon({
@@ -29,40 +36,20 @@ function popupHtml(loc) {
   return `<b>${esc(loc.place)}</b><span>${esc(labelWilayah(loc))} — ${esc(waktuRelatif(loc.reported_at))}</span>`;
 }
 
+/* ----------------------------------------------------------------- parts */
+
 function renderHero(loc) {
   $('heroPlace').textContent  = loc.place;
   $('heroRegion').textContent = labelWilayah(loc);
   $('heroAgo').textContent    = waktuRelatif(loc.reported_at);
-  document.title = `Presiden di ${loc.place} — Presiden Di Mana Sekarang?`;
-}
-
-function renderNowCard(loc) {
-  $('nowStamp').textContent  = waktuRelatif(loc.reported_at);
-  $('nowPlace').textContent  = loc.place;
-  $('nowRegion').textContent = [labelWilayah(loc), loc.country_code !== 'ID' ? loc.country : null]
-    .filter(Boolean).join(' · ');
-  $('nowEvent').textContent  = loc.event_label_id || '—';
-  $('nowDate').textContent   = tanggalPanjang(loc.reported_at);
-  $('nowCoords').textContent = `${Number(loc.lat).toFixed(4)}, ${Number(loc.lng).toFixed(4)}`;
-
-  const skor = Number(loc.confidence) || 0;
-  $('confNum').textContent = `${skor}%`;
-  $('confBars').innerHTML  = segmenKeyakinan(skor);
-  $('confBars').setAttribute('aria-label', `Skor keyakinan ${skor} persen`);
-
-  const jumlah = (loc.sources || []).length;
-  const outlets = new Set((loc.sources || []).map(s => s.outlet)).size;
-  $('confNote').textContent =
-    `${jumlah} laporan dari ${outlets} media ${outlets > 1 ? 'independen' : ''}`.trim() + '.';
-
-  $('nowSources').innerHTML = nowCardSources(loc.sources);
+  document.title = LANG === 'en'
+    ? `The President is at ${loc.place} — Presiden Di Mana Sekarang?`
+    : `Presiden di ${loc.place} — Presiden Di Mana Sekarang?`;
 }
 
 /* The card floats over the map, so it must not grow without bound. Show a few
    sources and tuck the rest behind a toggle — every source stays reachable,
    and the full list is repeated in the feed below anyway. */
-const NOWCARD_SOURCES = 3;
-
 function nowCardSources(sources) {
   const list = Array.isArray(sources) ? sources : [];
   const shown = sourceButtons(list.slice(0, NOWCARD_SOURCES));
@@ -73,26 +60,49 @@ function nowCardSources(sources) {
     <details class="moresrc">
       <summary class="moresrc__toggle">
         <svg class="btn__i moresrc__chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
-        ${rest.length} laporan lain
+        ${rest.length} ${esc(t('card.more'))}
       </summary>
       <div class="moresrc__list">${sourceButtons(rest)}</div>
     </details>`;
+}
+
+function renderNowCard(loc) {
+  $('nowStamp').textContent  = waktuRelatif(loc.reported_at);
+  $('nowPlace').textContent  = loc.place;
+  $('nowRegion').textContent = [labelWilayah(loc), loc.country_code !== 'ID' ? loc.country : null]
+    .filter(Boolean).join(' · ');
+  $('nowEvent').textContent  = eventLabel(loc);
+  $('nowDate').textContent   = tanggalPanjang(loc.reported_at);
+  $('nowCoords').textContent = `${Number(loc.lat).toFixed(4)}, ${Number(loc.lng).toFixed(4)}`;
+
+  const skor = Number(loc.confidence) || 0;
+  $('confNum').textContent = `${skor}%`;
+  $('confBars').innerHTML  = segmenKeyakinan(skor);
+  $('confBars').setAttribute('aria-label', `${t('card.conf')} ${skor}%`);
+
+  const jumlah = (loc.sources || []).length;
+  const outlets = new Set((loc.sources || []).map(s => s.outlet)).size;
+  $('confNote').textContent = LANG === 'en'
+    ? `${jumlah} ${plural(jumlah, 'report')} from ${outlets} independent ${plural(outlets, 'outlet')}.`
+    : `${jumlah} laporan dari ${outlets} media independen.`;
+
+  $('nowSources').innerHTML = nowCardSources(loc.sources);
 }
 
 function renderFeed(list) {
   const feed = $('feed');
 
   if (!list.length) {
-    feed.innerHTML = '<li class="feed__loading">Belum ada pergerakan yang tercatat.</li>';
+    feed.innerHTML = `<li class="feed__loading">${esc(t('feed.empty'))}</li>`;
     return;
   }
 
   feed.innerHTML = list.map((loc, i) => {
     const luarNegeri = loc.country_code !== 'ID';
     const chips = [
-      i === 0 ? '<span class="chip chip--now">Terkini</span>' : '',
-      `<span class="chip">${esc(loc.event_label_id || 'Kegiatan')}</span>`,
-      luarNegeri ? `<span class="chip chip--luar">Luar Negeri</span>` : ''
+      i === 0 ? `<span class="chip chip--now">${esc(t('feed.latest'))}</span>` : '',
+      `<span class="chip">${esc(eventLabel(loc))}</span>`,
+      luarNegeri ? `<span class="chip chip--luar">${esc(t('feed.abroad'))}</span>` : ''
     ].join('');
 
     return `
@@ -103,20 +113,20 @@ function renderFeed(list) {
         </div>
         <h3 class="entry__place">${esc(loc.place)}</h3>
         <p class="entry__region">${esc(labelWilayah(loc))} — ${esc(tanggalPanjang(loc.reported_at))}</p>
-        <p class="entry__conf">KEYAKINAN <b>${esc(loc.confidence)}%</b></p>
+        <p class="entry__conf">${esc(t('feed.conf')).toUpperCase()} <b>${esc(loc.confidence)}%</b></p>
         <div class="entry__sources">${sourceButtons(loc.sources)}</div>
       </li>`;
   }).join('');
 }
 
 function renderMap(list, current) {
-  const map = L.map('map', {
+  MAP = L.map('map', {
     zoomControl: true,
     scrollWheelZoom: false,   // don't hijack the page scroll on mobile
     attributionControl: true
   });
 
-  L.tileLayer(TILE_URL, { attribution: TILE_ATTR, maxZoom: 18, subdomains: 'abcd' }).addTo(map);
+  L.tileLayer(TILE_URL, { attribution: TILE_ATTR, maxZoom: 18, subdomains: 'abcd' }).addTo(MAP);
 
   const jejak = list.slice(0, JEJAK_MAX);
 
@@ -124,30 +134,27 @@ function renderMap(list, current) {
   if (jejak.length > 1) {
     L.polyline([...jejak].reverse().map(l => [l.lat, l.lng]), {
       color: '#E1362C', weight: 1.2, opacity: .38, dashArray: '3 7'
-    }).addTo(map);
+    }).addTo(MAP);
   }
 
   jejak.slice(1).forEach(loc => {
     L.marker([loc.lat, loc.lng], { icon: pastIcon(), keyboard: false })
-      .addTo(map).bindPopup(popupHtml(loc));
+      .addTo(MAP).bindPopup(popupHtml(loc));
   });
 
   L.marker([current.lat, current.lng], { icon: beaconIcon(), zIndexOffset: 1000, title: current.place })
-    .addTo(map).bindPopup(popupHtml(current)).openPopup();
+    .addTo(MAP).bindPopup(popupHtml(current)).openPopup();
 
-  // Frame the recent trail, then bias the view towards the current pin.
   if (jejak.length > 1) {
-    map.fitBounds(L.latLngBounds(jejak.map(l => [l.lat, l.lng])), {
-      padding: [70, 70], maxZoom: 7
-    });
+    MAP.fitBounds(L.latLngBounds(jejak.map(l => [l.lat, l.lng])), { padding: [70, 70], maxZoom: 7 });
   } else {
-    map.setView([current.lat, current.lng], 9);
+    MAP.setView([current.lat, current.lng], 9);
   }
 
   // Wheel zoom only after a deliberate click, and off again once the pointer
   // leaves — mouseleave (not Leaflet's mouseout) so moving onto a pin is fine.
-  map.on('click', () => map.scrollWheelZoom.enable());
-  map.getContainer().addEventListener('mouseleave', () => map.scrollWheelZoom.disable());
+  MAP.on('click', () => MAP.scrollWheelZoom.enable());
+  MAP.getContainer().addEventListener('mouseleave', () => MAP.scrollWheelZoom.disable());
 }
 
 function renderStatus(data, list) {
@@ -159,33 +166,56 @@ function renderStatus(data, list) {
 }
 
 function gagal(pesan) {
-  $('heroPlace').textContent = 'Data tidak tersedia';
+  $('heroPlace').textContent = t('err.na');
   $('heroRegion').textContent = pesan;
-  $('nowPlace').textContent = 'Data tidak tersedia';
+  $('nowPlace').textContent = t('err.na');
   $('feed').innerHTML = `<li class="feed__loading">${esc(pesan)}</li>`;
 }
 
+/* Everything that depends on language, redrawn. The Leaflet map is built once
+   and only its popups need refreshing. */
+function renderAll() {
+  if (!DATA) return;
+  const list = urutBaru(DATA.locations || []);
+  const current = list.find(l => l.id === DATA.current) || list[0];
+
+  renderStatus(DATA, list);
+  renderHero(current);
+  renderNowCard(current);
+  renderFeed(list.slice(0, FEED_MAX));
+
+  if (MAP) {
+    MAP.eachLayer(layer => {
+      if (layer instanceof L.Marker && layer.getPopup()) {
+        const ll = layer.getLatLng();
+        const match = list.find(l => l.lat === ll.lat && l.lng === ll.lng);
+        if (match) layer.setPopupContent(popupHtml(match));
+      }
+    });
+  }
+}
+
 (async function init() {
-  let data;
+  initLangToggle();
+
   try {
-    data = await muatData();
+    DATA = await muatData();
   } catch (err) {
-    gagal('Gagal memuat data lokasi. Coba muat ulang halaman.');
+    gagal(t('err.load'));
     console.error(err);
     return;
   }
 
-  const list = urutBaru(data.locations || []);
+  const list = urutBaru(DATA.locations || []);
   if (!list.length) {
-    gagal('Belum ada lokasi yang tercatat.');
+    gagal(t('err.none'));
     return;
   }
 
-  const current = list.find(l => l.id === data.current) || list[0];
+  const current = list.find(l => l.id === DATA.current) || list[0];
 
-  renderStatus(data, list);
-  renderHero(current);
-  renderNowCard(current);
-  renderFeed(list.slice(0, 6));
+  renderAll();
   renderMap(list, current);
+
+  document.addEventListener('langchange', renderAll);
 })();

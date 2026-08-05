@@ -1,7 +1,11 @@
 /* Shared helpers for both pages. Plain browser JS, no build step. */
 
-const BULAN = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni',
-               'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
+const BULAN = {
+  id: ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni',
+       'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'],
+  en: ['January', 'February', 'March', 'April', 'May', 'June',
+       'July', 'August', 'September', 'October', 'November', 'December']
+};
 
 /* Escape anything that came from the JSON feed before it touches innerHTML.
    Real news headlines land here in Step 3, so never skip this. */
@@ -17,25 +21,43 @@ function safeUrl(url) {
   return /^https?:\/\//i.test(s) ? s : '';
 }
 
+/* Plural helper — Indonesian has no plural -s, English does. */
+function plural(n, word) {
+  return LANG === 'en' && n !== 1 ? `${word}s` : word;
+}
+
 function waktuRelatif(iso) {
   const then = new Date(iso);
   if (isNaN(then)) return '—';
   const detik = Math.floor((Date.now() - then.getTime()) / 1000);
+  const en = LANG === 'en';
 
-  if (detik < 60)      return 'baru saja';
+  if (detik < 60) return en ? 'just now' : 'baru saja';
+
   const menit = Math.floor(detik / 60);
-  if (menit < 60)      return `${menit} menit yang lalu`;
+  if (menit < 60) return en ? `${menit} ${plural(menit, 'minute')} ago` : `${menit} menit yang lalu`;
+
   const jam = Math.floor(menit / 60);
-  if (jam < 24)        return `${jam} jam yang lalu`;
+  if (jam < 24) return en ? `${jam} ${plural(jam, 'hour')} ago` : `${jam} jam yang lalu`;
+
   const hari = Math.floor(jam / 24);
-  if (hari === 1)      return 'kemarin';
-  if (hari < 7)        return `${hari} hari yang lalu`;
-  if (hari < 31)       return `${Math.floor(hari / 7)} minggu yang lalu`;
-  if (hari < 365)      return `${Math.floor(hari / 30)} bulan yang lalu`;
-  return `${Math.floor(hari / 365)} tahun yang lalu`;
+  if (hari === 1) return en ? 'yesterday' : 'kemarin';
+  if (hari < 7)   return en ? `${hari} ${plural(hari, 'day')} ago` : `${hari} hari yang lalu`;
+
+  if (hari < 31) {
+    const m = Math.floor(hari / 7);
+    return en ? `${m} ${plural(m, 'week')} ago` : `${m} minggu yang lalu`;
+  }
+  if (hari < 365) {
+    const b = Math.floor(hari / 30);
+    return en ? `${b} ${plural(b, 'month')} ago` : `${b} bulan yang lalu`;
+  }
+  const y = Math.floor(hari / 365);
+  return en ? `${y} ${plural(y, 'year')} ago` : `${y} tahun yang lalu`;
 }
 
-/* "4 Agustus 2026, 08.15 WIB" — always shown in Jakarta time. */
+/* "4 Agustus 2026, 08.15 WIB" / "4 August 2026, 08:15 WIB".
+   Always Jakarta time — the audience is Indonesian either way. */
 function tanggalPanjang(iso, withTime = true) {
   const d = new Date(iso);
   if (isNaN(d)) return '—';
@@ -45,8 +67,11 @@ function tanggalPanjang(iso, withTime = true) {
       year: 'numeric', hour: '2-digit', minute: '2-digit', hour12: false
     }).formatToParts(d).map(x => [x.type, x.value])
   );
-  const tanggal = `${Number(p.day)} ${BULAN[Number(p.month) - 1]} ${p.year}`;
-  return withTime ? `${tanggal}, ${p.hour}.${p.minute} WIB` : tanggal;
+  const bulan = (BULAN[LANG] || BULAN.id)[Number(p.month) - 1];
+  const tanggal = `${Number(p.day)} ${bulan} ${p.year}`;
+  if (!withTime) return tanggal;
+  const jam = LANG === 'en' ? `${p.hour}:${p.minute}` : `${p.hour}.${p.minute}`;
+  return `${tanggal}, ${jam} WIB`;
 }
 
 function tahunJakarta(iso) {

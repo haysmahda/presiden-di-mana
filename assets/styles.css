@@ -148,6 +148,27 @@ a { color: inherit; }
 }
 .wordmark__text em { font-style: italic; color: var(--merah); }
 
+.masthead__right { display: flex; align-items: center; gap: .55rem; }
+
+/* language switch — a labelled two-option control, never a bare flag icon */
+.langtoggle {
+  display: flex; flex: none;
+  border: 1px solid var(--line); border-radius: var(--r);
+  overflow: hidden; background: var(--ink-2);
+}
+.langtoggle__opt {
+  appearance: none; border: 0; cursor: pointer;
+  padding: .5rem .62rem;
+  font-family: var(--mono); font-size: .62rem; font-weight: 600;
+  letter-spacing: .1em;
+  background: transparent; color: var(--muted);
+  transition: color .18s, background .18s;
+}
+.langtoggle__opt + .langtoggle__opt { border-left: 1px solid var(--line); }
+.langtoggle__opt:hover { color: var(--bone); background: var(--ink-3); }
+.langtoggle__opt.is-on { background: var(--merah); color: #fff; }
+.langtoggle__opt:focus-visible { outline: 2px solid var(--merah); outline-offset: -2px; }
+
 .nav { display: flex; gap: .3rem; }
 .nav__link {
   font-family: var(--mono); font-size: .62rem; font-weight: 500;
@@ -585,6 +606,66 @@ a { color: inherit; }
   line-height: 1.5;
 }
 
+/* --- richer stat panels (history page) --- */
+.panels {
+  display: grid; gap: 1px; background: var(--line-soft);
+  border: 1px solid var(--line-soft); margin-bottom: 2.4rem;
+}
+.panel { background: var(--ink-2); padding: 1.3rem 1.2rem; min-width: 0; }
+.panel__title {
+  margin: 0 0 1.1rem;
+  font-family: var(--mono); font-size: .58rem; font-weight: 600;
+  letter-spacing: .16em; text-transform: uppercase; color: var(--merah);
+}
+
+/* horizontal bar list — most-visited regions */
+.barlist { list-style: none; margin: 0; padding: 0; display: grid; gap: .75rem; }
+.barlist__row { display: grid; gap: .3rem; }
+.barlist__top {
+  display: flex; align-items: baseline; justify-content: space-between; gap: .8rem;
+}
+.barlist__name {
+  font-size: .82rem; color: var(--bone);
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.barlist__n {
+  font-family: var(--mono); font-size: .62rem; color: var(--muted); flex: none;
+}
+.barlist__track { height: 5px; background: var(--ink-4); border-radius: 1px; overflow: hidden; }
+.barlist__fill {
+  height: 100%; background: var(--merah); border-radius: 1px;
+  box-shadow: 0 0 9px var(--merah-glow);
+  animation: grow .8s cubic-bezier(.2,.7,.3,1) both;
+  transform-origin: left;
+}
+@keyframes grow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+
+/* Jakarta vs travelling split */
+.split { display: grid; gap: .9rem; }
+.split__bar {
+  display: flex; height: 26px; border-radius: 2px; overflow: hidden;
+  background: var(--ink-4);
+}
+.split__seg {
+  display: grid; place-items: center;
+  font-family: var(--mono); font-size: .58rem; font-weight: 600; color: #fff;
+  min-width: 0; overflow: hidden;
+  animation: grow .8s cubic-bezier(.2,.7,.3,1) both; transform-origin: left;
+}
+.split__seg--jkt    { background: var(--merah); }
+.split__seg--travel { background: var(--merah-deep); }
+.split__seg--abroad { background: var(--amber); color: #1A1204; }
+.split__key { display: grid; gap: .4rem; }
+.split__item {
+  display: flex; align-items: center; gap: .5rem;
+  font-size: .78rem; color: var(--bone-dim);
+}
+.split__dot { width: 9px; height: 9px; border-radius: 2px; flex: none; }
+.split__dot--jkt    { background: var(--merah); }
+.split__dot--travel { background: var(--merah-deep); }
+.split__dot--abroad { background: var(--amber); }
+.split__n { margin-left: auto; font-family: var(--mono); font-size: .66rem; color: var(--bone); }
+
 .filters {
   display: grid; gap: .8rem; margin-bottom: 2rem;
   padding: 1.1rem; background: var(--ink-2);
@@ -629,9 +710,16 @@ a { color: inherit; }
 /* =========================================================================
    RESPONSIVE
    ========================================================================= */
+@media (max-width: 479px) {
+  /* keep the masthead from wrapping on small phones */
+  .nav__link--wide { display: none; }
+  .nav__link { padding: .5rem .55rem; }
+}
+
 @media (min-width: 640px) {
   .steps { grid-template-columns: repeat(2, 1fr); }
   .stats { grid-template-columns: repeat(4, 1fr); }
+  .panels { grid-template-columns: repeat(2, 1fr); }
   .filters { grid-template-columns: repeat(2, 1fr); align-items: end; }
   .filters__foot { grid-column: 1 / -1; }
 }

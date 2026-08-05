@@ -7,6 +7,19 @@
 <meta name="description" content="Riwayat lengkap lokasi Presiden Republik Indonesia berdasarkan pemberitaan publik.">
 <meta name="theme-color" content="#0A0B0D">
 
+<link rel="canonical" href="https://haysmahda.github.io/presiden-di-mana/history.html">
+<meta property="og:site_name" content="Presiden Di Mana Sekarang?">
+<meta property="og:title" content="Riwayat Lokasi Presiden RI">
+<meta property="og:description" content="Seluruh lokasi yang pernah tercatat dari pemberitaan publik, lengkap dengan statistik.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="id_ID">
+<meta property="og:url" content="https://haysmahda.github.io/presiden-di-mana/history.html">
+<meta property="og:image" content="https://haysmahda.github.io/presiden-di-mana/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://haysmahda.github.io/presiden-di-mana/og.png">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Archivo:wght@400;500;600;700&family=Azeret+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -20,7 +33,7 @@
   <div class="wrap sample-banner__inner">
     <span class="sample-banner__tag">DATA CONTOH</span>
     <p>Angka dan lokasi di halaman ini masih <strong>data uji coba buatan</strong>, bukan pemberitaan asli.
-       Tautan sumber belum aktif. <span class="en">This page is showing fabricated placeholder data, not real reporting.</span></p>
+       <span class="en">This page is showing fabricated placeholder data, not real reporting.</span></p>
   </div>
 </div>
 
@@ -30,11 +43,19 @@
       <span class="wordmark__mark" aria-hidden="true"></span>
       <span class="wordmark__text">Presiden<br><em>Di Mana</em></span>
     </a>
-    <nav class="nav" aria-label="Navigasi utama">
-      <a class="nav__link" href="index.html">Sekarang</a>
-      <a class="nav__link is-current" href="history.html" aria-current="page">Riwayat</a>
-      <a class="nav__link" href="index.html#cara-kerja">Cara Kerja</a>
-    </nav>
+
+    <div class="masthead__right">
+      <nav class="nav" data-i18n-attr="aria-label:nav.aria">
+        <a class="nav__link" href="index.html" data-i18n="nav.now"></a>
+        <a class="nav__link is-current" href="history.html" aria-current="page" data-i18n="nav.history"></a>
+        <a class="nav__link nav__link--wide" href="index.html#cara-kerja" data-i18n="nav.how"></a>
+      </nav>
+
+      <div class="langtoggle" role="group" data-i18n-attr="aria-label:lang.switch">
+        <button class="langtoggle__opt" type="button" data-lang="id" aria-pressed="true">ID</button>
+        <button class="langtoggle__opt" type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+    </div>
   </div>
 </header>
 
@@ -42,12 +63,9 @@
 
 <section class="hero">
   <div class="wrap">
-    <p class="hero__kicker">Arsip pergerakan</p>
-    <h1 class="hero__q">Ke mana saja <em>selama ini?</em></h1>
-    <p class="sectionhead__sub" style="margin-top:1.2rem">
-      Seluruh lokasi yang pernah tercatat dari pemberitaan publik. Saring berdasarkan tahun,
-      wilayah, atau jenis kegiatan.
-    </p>
+    <p class="hero__kicker" data-i18n="hist.kicker"></p>
+    <h1 class="hero__q" data-i18n="hist.q"></h1>
+    <p class="sectionhead__sub" style="margin-top:1.2rem" data-i18n="hist.sub"></p>
   </div>
 </section>
 
@@ -55,38 +73,39 @@
   <div class="wrap">
 
     <div class="stats" id="stats"></div>
+    <div class="panels" id="panels"></div>
 
     <div class="filters">
       <div class="field">
-        <label for="fTahun">Tahun</label>
-        <select id="fTahun"><option value="">Semua tahun</option></select>
+        <label for="fTahun" data-i18n="f.year"></label>
+        <select id="fTahun"></select>
       </div>
       <div class="field">
-        <label for="fWilayah">Wilayah</label>
-        <select id="fWilayah"><option value="">Semua wilayah</option></select>
+        <label for="fWilayah" data-i18n="f.region"></label>
+        <select id="fWilayah"></select>
       </div>
       <div class="field">
-        <label for="fJenis">Jenis kegiatan</label>
-        <select id="fJenis"><option value="">Semua kegiatan</option></select>
+        <label for="fJenis" data-i18n="f.type"></label>
+        <select id="fJenis"></select>
       </div>
       <div class="field">
-        <label for="fCari">Cari tempat</label>
-        <input id="fCari" type="search" placeholder="mis. Bogor, Nusantara…" autocomplete="off">
+        <label for="fCari" data-i18n="f.search"></label>
+        <input id="fCari" type="search" autocomplete="off" data-i18n-attr="placeholder:f.placeholder">
       </div>
 
       <div class="filters__foot">
-        <span class="filters__count"><b id="hitung">0</b> catatan ditampilkan</span>
+        <span class="filters__count"><b id="hitung">0</b> <span data-i18n="f.count"></span></span>
         <button class="btn btn--ghost btn--sm" type="button" id="reset">
           <svg class="btn__i" viewBox="0 0 24 24" aria-hidden="true">
             <path d="M3 12a9 9 0 1 0 3-6.7M3 4v4h4"/>
           </svg>
-          Hapus semua filter
+          <span data-i18n="f.reset"></span>
         </button>
       </div>
     </div>
 
     <ol class="feed" id="feed">
-      <li class="feed__loading">Memuat riwayat…</li>
+      <li class="feed__loading" data-i18n="hist.loading"></li>
     </ol>
 
   </div>
@@ -95,7 +114,7 @@
 <section class="section">
   <div class="wrap">
     <div class="disclaimer">
-      <span class="disclaimer__tag">Penting / Important</span>
+      <span class="disclaimer__tag" data-i18n="dis.tag"></span>
       <p class="disclaimer__id" lang="id">
         Situs independen. Tidak berafiliasi dengan pemerintah, istana, atau partai mana pun.
         Semua data berasal dari pemberitaan publik yang sudah terbit dan mungkin tidak akurat
@@ -115,11 +134,14 @@
 <footer class="foot">
   <div class="wrap foot__inner">
     <p class="foot__mark">Presiden Di Mana Sekarang?</p>
-    <p class="foot__note">Proyek transparansi warga. Data diperbarui otomatis setiap 2 jam.</p>
-    <p class="foot__note foot__note--dim">Terakhir diperbarui: <span id="footUpdated">—</span></p>
+    <p class="foot__note" data-i18n="foot.note"></p>
+    <p class="foot__note foot__note--dim">
+      <span data-i18n="foot.updated"></span>: <span id="footUpdated">—</span>
+    </p>
   </div>
 </footer>
 
+<script src="assets/i18n.js"></script>
 <script src="assets/util.js"></script>
 <script src="assets/history.js"></script>
 </body>
