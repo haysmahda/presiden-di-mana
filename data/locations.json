@@ -1,9 +1,59 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-08-06T03:39:47.694Z",
-  "current": "loc-20260804-1223-istana-merdeka",
+  "generated_at": "2026-08-06T10:49:47.381Z",
+  "current": "loc-20260806-1718-istana-merdeka",
   "locations": [
+    {
+      "id": "loc-20260806-1718-istana-merdeka",
+      "place": "Istana Merdeka",
+      "city": "Jakarta Pusat",
+      "region": "DKI Jakarta",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -6.1701,
+      "lng": 106.8219,
+      "event_type": "kenegaraan",
+      "event_label_id": "Kegiatan Kenegaraan",
+      "reported_at": "2026-08-06T10:18:17.000Z",
+      "confidence": 53,
+      "outlet_scores": {
+        "Antara News": 1.428,
+        "Detik": 0.56
+      },
+      "sources": [
+        {
+          "outlet": "Antara News",
+          "title": "Prabowo lihat satu per satu hasil riset dan inovasi BRIN di Istana",
+          "url": "https://www.antaranews.com/berita/5682724/prabowo-lihat-satu-per-satu-hasil-riset-dan-inovasi-brin-di-istana",
+          "published_at": "2026-08-06T10:18:17.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Prabowo Coba Air Minum yang Diolah BRIN dari Air Laut",
+          "url": "https://news.detik.com/berita/d-8607368/prabowo-coba-air-minum-yang-diolah-brin-dari-air-laut",
+          "published_at": "2026-08-06T10:17:45.000Z"
+        },
+        {
+          "outlet": "Antara News",
+          "title": "Seskab buka pertemuan perdana Prabowo dan 150 periset BRIN di Istana",
+          "url": "https://www.antaranews.com/berita/5682712/seskab-buka-pertemuan-perdana-prabowo-dan-150-periset-brin-di-istana",
+          "published_at": "2026-08-06T10:10:17.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "BRIN Pamerkan Robot hingga Kendaraan Otonom, Mensesneg: Tanda Indonesia Mampu",
+          "url": "https://news.detik.com/berita/d-8607106/brin-pamerkan-robot-hingga-kendaraan-otonom-mensesneg-tanda-indonesia-mampu",
+          "published_at": "2026-08-06T08:40:30.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "150 Peneliti BRIN Bakal Paparkan Hasil Riset Pangan hingga Nuklir ke Prabowo",
+          "url": "https://news.detik.com/berita/d-8606837/150-peneliti-brin-bakal-paparkan-hasil-riset-pangan-hingga-nuklir-ke-prabowo",
+          "published_at": "2026-08-06T06:32:06.000Z"
+        }
+      ]
+    },
     {
       "id": "loc-20260804-1223-istana-merdeka",
       "place": "Istana Merdeka",
