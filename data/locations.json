@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-08-14T07:51:44.996Z",
+  "generated_at": "2026-08-14T11:09:13.369Z",
   "current": "loc-20260814-1206-kompleks-parlemen-senaya",
   "locations": [
     {
@@ -15,14 +15,20 @@
       "lng": 106.8003,
       "event_type": "upacara",
       "event_label_id": "Upacara Kenegaraan",
-      "reported_at": "2026-08-14T07:41:21.000Z",
-      "confidence": 86,
+      "reported_at": "2026-08-14T10:53:10.000Z",
+      "confidence": 94,
       "outlet_scores": {
-        "Setkab": 0.84,
+        "Setkab": 3.06,
         "Liputan6": 2.72,
         "Detik": 1.496
       },
       "sources": [
+        {
+          "outlet": "Setkab",
+          "title": "Pidato Kenegaraan pada Sidang Tahunan MPR RI dan Sidang Bersama DPR dan DPD RI dalam rangka HUT ke-81 Kemerdekaan Republik Indonesia, di Gedung Nusantara I Kompleks Perkantoran MPR/DPR/DPD RI, Senayan, Provinsi DKI Jakarta, 14 Agustus 2026",
+          "url": "https://setkab.go.id/pidato-kenegaraan-pada-sidang-tahunan-mpr-ri-dan-sidang-bersama-dpr-dan-dpd-ri-dalam-rangka-hut-ke-81-kemerdekaan-republik-indonesia/",
+          "published_at": "2026-08-14T10:53:10.000Z"
+        },
         {
           "outlet": "Detik",
           "title": "Disambut Puan di DPR, Prabowo Bakal Sampaikan RAPBN 2027 dan Nota Keuangan",
@@ -64,12 +70,6 @@
           "title": "2 Helikopter Parkir di Halaman DPR Jelang Pidato Kenegaraan Prabowo",
           "url": "https://www.liputan6.com/news/read/8269415/2-helikopter-parkir-di-halaman-dpr-jelang-pidato-kenegaraan-prabowo",
           "published_at": "2026-08-14T00:31:08.000Z"
-        },
-        {
-          "outlet": "Liputan6",
-          "title": "Pidato Kenegaraan Prabowo, Arus Lalu Lintas di Senayan Dialihkan",
-          "url": "https://www.liputan6.com/news/read/8269407/pidato-kenegaraan-prabowo-arus-lalu-lintas-di-senayan-dialihkan",
-          "published_at": "2026-08-14T00:06:31.000Z"
         }
       ]
     },
