@@ -1,9 +1,65 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-08-13T21:04:37.053Z",
-  "current": "loc-20260806-1718-istana-merdeka",
+  "generated_at": "2026-08-14T05:47:43.621Z",
+  "current": "loc-20260814-1206-kompleks-parlemen-senaya",
   "locations": [
+    {
+      "id": "loc-20260814-1206-kompleks-parlemen-senaya",
+      "place": "Kompleks Parlemen Senayan",
+      "city": "Jakarta Pusat",
+      "region": "DKI Jakarta",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -6.2101,
+      "lng": 106.8003,
+      "event_type": "upacara",
+      "event_label_id": "Upacara Kenegaraan",
+      "reported_at": "2026-08-14T05:06:55.000Z",
+      "confidence": 75,
+      "outlet_scores": {
+        "Setkab": 0.84,
+        "Liputan6": 2.72
+      },
+      "sources": [
+        {
+          "outlet": "Setkab",
+          "title": "Presiden Prabowo: Pemerintah Jalankan 121 Kebijakan Transformatif dalam 21 Bulan",
+          "url": "https://setkab.go.id/presiden-prabowo-pemerintah-jalankan-121-kebijakan-transformatif-dalam-21-bulan/",
+          "published_at": "2026-08-14T05:06:55.000Z"
+        },
+        {
+          "outlet": "Liputan6",
+          "title": "Presiden Prabowo Sampaikan Capaian Ekonomi saat Pidato Sidang Tahunan MPR",
+          "url": "https://www.liputan6.com/photo/read/8269589/presiden-prabowo-sampaikan-capaian-ekonomi-saat-pidato-sidang-tahunan-mpr",
+          "published_at": "2026-08-14T04:15:08.000Z"
+        },
+        {
+          "outlet": "Liputan6",
+          "title": "Presiden Prabowo Hadiri Sidang Tahunan di Gedung DPR",
+          "url": "https://www.liputan6.com/photo/read/8269486/presiden-prabowo-hadiri-sidang-tahunan-di-gedung-dpr",
+          "published_at": "2026-08-14T02:41:52.000Z"
+        },
+        {
+          "outlet": "Liputan6",
+          "title": "Prabowo Tiba di DPR, Siap Sampaikan Pidato Kenegaraan",
+          "url": "https://www.liputan6.com/news/read/8269433/prabowo-tiba-di-dpr-siap-sampaikan-pidato-kenegaraan",
+          "published_at": "2026-08-14T01:29:43.000Z"
+        },
+        {
+          "outlet": "Liputan6",
+          "title": "2 Helikopter Parkir di Halaman DPR Jelang Pidato Kenegaraan Prabowo",
+          "url": "https://www.liputan6.com/news/read/8269415/2-helikopter-parkir-di-halaman-dpr-jelang-pidato-kenegaraan-prabowo",
+          "published_at": "2026-08-14T00:31:08.000Z"
+        },
+        {
+          "outlet": "Liputan6",
+          "title": "Pidato Kenegaraan Prabowo, Arus Lalu Lintas di Senayan Dialihkan",
+          "url": "https://www.liputan6.com/news/read/8269407/pidato-kenegaraan-prabowo-arus-lalu-lintas-di-senayan-dialihkan",
+          "published_at": "2026-08-14T00:06:31.000Z"
+        }
+      ]
+    },
     {
       "id": "loc-20260806-1718-istana-merdeka",
       "place": "Istana Merdeka",
