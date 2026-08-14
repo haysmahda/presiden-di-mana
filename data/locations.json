@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-08-14T05:47:43.621Z",
+  "generated_at": "2026-08-14T07:51:44.996Z",
   "current": "loc-20260814-1206-kompleks-parlemen-senaya",
   "locations": [
     {
@@ -15,13 +15,26 @@
       "lng": 106.8003,
       "event_type": "upacara",
       "event_label_id": "Upacara Kenegaraan",
-      "reported_at": "2026-08-14T05:06:55.000Z",
-      "confidence": 75,
+      "reported_at": "2026-08-14T07:41:21.000Z",
+      "confidence": 86,
       "outlet_scores": {
         "Setkab": 0.84,
-        "Liputan6": 2.72
+        "Liputan6": 2.72,
+        "Detik": 1.496
       },
       "sources": [
+        {
+          "outlet": "Detik",
+          "title": "Disambut Puan di DPR, Prabowo Bakal Sampaikan RAPBN 2027 dan Nota Keuangan",
+          "url": "https://news.detik.com/berita/d-8618478/disambut-puan-di-dpr-prabowo-bakal-sampaikan-rapbn-2027-dan-nota-keuangan",
+          "published_at": "2026-08-14T07:41:21.000Z"
+        },
+        {
+          "outlet": "Liputan6",
+          "title": "Usai Pidato Sidang Tahunan MPR Prabowo Beri Hormat kepada Jokowi",
+          "url": "https://www.liputan6.com/photo/read/8269711/usai-pidato-sidang-tahunan-mpr-prabowo-beri-hormat-kepada-jokowi",
+          "published_at": "2026-08-14T06:28:18.000Z"
+        },
         {
           "outlet": "Setkab",
           "title": "Presiden Prabowo: Pemerintah Jalankan 121 Kebijakan Transformatif dalam 21 Bulan",
