@@ -1,9 +1,47 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-08-16T08:48:35.183Z",
-  "current": "loc-20260814-1206-kompleks-parlemen-senaya",
+  "generated_at": "2026-08-16T10:41:36.042Z",
+  "current": "loc-20260816-1628-nusa-tenggara-timur",
   "locations": [
+    {
+      "id": "loc-20260816-1628-nusa-tenggara-timur",
+      "place": "Nusa Tenggara Timur",
+      "city": "Kupang",
+      "region": "Nusa Tenggara Timur",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -8.6574,
+      "lng": 121.0794,
+      "event_type": "kenegaraan",
+      "event_label_id": "Kegiatan Kenegaraan",
+      "reported_at": "2026-08-16T09:28:24.000Z",
+      "confidence": 42,
+      "outlet_scores": {
+        "Setkab": 0.84,
+        "Detik": 0.56
+      },
+      "sources": [
+        {
+          "outlet": "Setkab",
+          "title": "Sejak Awal Gempa, Arahan Presiden Prabowo Ditindaklanjuti Pengerahan Bantuan dan Ribuan Personel",
+          "url": "https://setkab.go.id/sejak-awal-gempa-arahan-presiden-prabowo-ditindaklanjuti-pengerahan-bantuan-dan-ribuan-personel/",
+          "published_at": "2026-08-16T09:28:24.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Prabowo Pastikan Gerak Cepat Tangani Gempa NTT, Kirim 50 Ribu Paket Bantuan",
+          "url": "https://news.detik.com/berita/d-8621218/prabowo-pastikan-gerak-cepat-tangani-gempa-ntt-kirim-50-ribu-paket-bantuan",
+          "published_at": "2026-08-16T08:44:19.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "7 Fakta Gempa M 7 Nagekeo NTT yang Tewaskan Puluhan Jiwa",
+          "url": "https://news.detik.com/berita/d-8620347/7-fakta-gempa-m-7-nagekeo-ntt-yang-tewaskan-puluhan-jiwa",
+          "published_at": "2026-08-15T13:05:48.000Z"
+        }
+      ]
+    },
     {
       "id": "loc-20260814-1206-kompleks-parlemen-senaya",
       "place": "Kompleks Parlemen Senayan",
