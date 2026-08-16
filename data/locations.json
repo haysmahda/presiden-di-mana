@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-08-16T16:43:22.165Z",
+  "generated_at": "2026-08-16T18:47:45.224Z",
   "current": "loc-20260816-1628-nusa-tenggara-timur",
   "locations": [
     {
@@ -16,10 +16,10 @@
       "event_type": "kenegaraan",
       "event_label_id": "Kegiatan Kenegaraan",
       "reported_at": "2026-08-16T15:31:54.000Z",
-      "confidence": 75,
+      "confidence": 87,
       "outlet_scores": {
         "Setkab": 0.84,
-        "Detik": 0.56,
+        "Detik": 2.24,
         "Liputan6": 2.24
       },
       "sources": [
@@ -28,6 +28,12 @@
           "title": "Prabowo: Hati dan Doa Kami Bersama Saudara-Saudara Kita di NTT",
           "url": "https://www.liputan6.com/news/read/8271178/prabowo-hati-dan-doa-kami-bersama-saudara-saudara-kita-di-ntt",
           "published_at": "2026-08-16T15:31:54.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Prabowo: Hati dan Doa Kami Bersama Saudara di NTT",
+          "url": "https://news.detik.com/berita/d-8621601/prabowo-hati-dan-doa-kami-bersama-saudara-di-ntt",
+          "published_at": "2026-08-16T15:01:29.000Z"
         },
         {
           "outlet": "Liputan6",
