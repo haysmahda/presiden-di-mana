@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-08-17T07:17:10.795Z",
+  "generated_at": "2026-08-17T09:01:37.370Z",
   "current": "loc-20260817-0831-istana-merdeka",
   "locations": [
     {
@@ -15,7 +15,7 @@
       "lng": 106.8219,
       "event_type": "upacara",
       "event_label_id": "Upacara Kenegaraan",
-      "reported_at": "2026-08-17T06:33:59.000Z",
+      "reported_at": "2026-08-17T08:03:04.000Z",
       "confidence": 93,
       "outlet_scores": {
         "Liputan6": 2.72,
@@ -23,6 +23,12 @@
         "Antara News": 2.244
       },
       "sources": [
+        {
+          "outlet": "Detik",
+          "title": "Bangganya Celina Olivia Bawa Baki Bendera Merah Putih di Hadapan Prabowo",
+          "url": "https://news.detik.com/berita/d-8622411/bangganya-celina-olivia-bawa-baki-bendera-merah-putih-di-hadapan-prabowo",
+          "published_at": "2026-08-17T08:03:04.000Z"
+        },
         {
           "outlet": "Liputan6",
           "title": "Cerita Warga Antre Sejak Subuh Demi Saksikan Upacara HUT RI di Istana",
@@ -64,12 +70,6 @@
           "title": "Prabowo Pimpin Upacara Detik-detik Proklamasi HUT Ke-81 RI di Istana",
           "url": "https://news.detik.com/berita/d-8621946/prabowo-pimpin-upacara-detik-detik-proklamasi-hut-ke-81-ri-di-istana",
           "published_at": "2026-08-17T03:01:43.000Z"
-        },
-        {
-          "outlet": "Detik",
-          "title": "Jokowi, Iriana hingga Kaesang Tiba di Istana Jelang Upacara HUT ke-81 RI",
-          "url": "https://news.detik.com/berita/d-8621917/jokowi-iriana-hingga-kaesang-tiba-di-istana-jelang-upacara-hut-ke-81-ri",
-          "published_at": "2026-08-17T02:38:06.000Z"
         }
       ]
     },
