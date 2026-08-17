@@ -1,9 +1,54 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-08-17T10:49:04.892Z",
-  "current": "loc-20260817-0831-istana-merdeka",
+  "generated_at": "2026-08-17T13:06:41.548Z",
+  "current": "loc-20260817-1959-monumen-nasional",
   "locations": [
+    {
+      "id": "loc-20260817-1959-monumen-nasional",
+      "place": "Monumen Nasional",
+      "city": "Jakarta Pusat",
+      "region": "DKI Jakarta",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -6.1754,
+      "lng": 106.8272,
+      "event_type": "upacara",
+      "event_label_id": "Upacara Kenegaraan",
+      "reported_at": "2026-08-17T12:59:50.000Z",
+      "confidence": 91,
+      "outlet_scores": {
+        "Antara News": 0.84,
+        "Liputan6": 2.72,
+        "Detik": 2.72
+      },
+      "sources": [
+        {
+          "outlet": "Antara News",
+          "title": "Swasembada pangan dan SDM unggul",
+          "url": "https://www.antaranews.com/berita/5698729/swasembada-pangan-dan-sdm-unggul",
+          "published_at": "2026-08-17T12:59:50.000Z"
+        },
+        {
+          "outlet": "Liputan6",
+          "title": "Prabowo-Gibran Hadiri Pesta Rakyat HUT ke-81 RI di Monas",
+          "url": "https://www.liputan6.com/news/read/8271669/prabowo-gibran-hadiri-pesta-rakyat-hut-ke-81-ri-di-monas",
+          "published_at": "2026-08-17T12:56:10.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Prabowo Tiba di Monas, Buka Karnaval HUT ke-81 RI",
+          "url": "https://news.detik.com/berita/d-8622905/prabowo-tiba-di-monas-buka-karnaval-hut-ke-81-ri",
+          "published_at": "2026-08-17T12:35:34.000Z"
+        },
+        {
+          "outlet": "Liputan6",
+          "title": "Momen Prabowo Cium Bendera Merah Putih Sebelum Disimpan Kembali di Monas",
+          "url": "https://www.liputan6.com/news/read/8271608/momen-prabowo-cium-bendera-merah-putih-sebelum-disimpan-kembali-di-monas",
+          "published_at": "2026-08-17T10:59:40.000Z"
+        }
+      ]
+    },
     {
       "id": "loc-20260817-0831-istana-merdeka",
       "place": "Istana Merdeka",
@@ -15,7 +60,7 @@
       "lng": 106.8219,
       "event_type": "upacara",
       "event_label_id": "Upacara Kenegaraan",
-      "reported_at": "2026-08-17T10:30:55.000Z",
+      "reported_at": "2026-08-17T10:51:16.000Z",
       "confidence": 93,
       "outlet_scores": {
         "Liputan6": 2.72,
@@ -23,6 +68,12 @@
         "Antara News": 2.244
       },
       "sources": [
+        {
+          "outlet": "Detik",
+          "title": "Prabowo Diapit Jokowi dan Gibran Saat Upacara HUT RI, Mensesneg: Bestie Akrab",
+          "url": "https://news.detik.com/berita/d-8622737/prabowo-diapit-jokowi-dan-gibran-saat-upacara-hut-ri-mensesneg-bestie-akrab",
+          "published_at": "2026-08-17T10:51:16.000Z"
+        },
         {
           "outlet": "Antara News",
           "title": "Presiden tiba di mimbar kehormatan pimpin Upacara Penurunan Bendera",
@@ -64,12 +115,6 @@
           "title": "Tepuk Tangan Menggema Usai Paskibraka Sukses Kibarkan Merah Putih di Istana",
           "url": "https://www.liputan6.com/news/read/8271373/tepuk-tangan-menggema-usai-paskibraka-sukses-kibarkan-merah-putih-di-istana",
           "published_at": "2026-08-17T04:48:32.000Z"
-        },
-        {
-          "outlet": "Detik",
-          "title": "Momen Prabowo Diapit Jokowi dan Gibran Ngobrol saat Upacara HUT RI di Istana",
-          "url": "https://news.detik.com/berita/d-8622094/momen-prabowo-diapit-jokowi-dan-gibran-ngobrol-saat-upacara-hut-ri-di-istana",
-          "published_at": "2026-08-17T04:27:27.000Z"
         }
       ]
     },
