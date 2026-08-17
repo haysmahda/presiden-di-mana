@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-08-17T09:01:37.370Z",
+  "generated_at": "2026-08-17T10:49:04.892Z",
   "current": "loc-20260817-0831-istana-merdeka",
   "locations": [
     {
@@ -15,7 +15,7 @@
       "lng": 106.8219,
       "event_type": "upacara",
       "event_label_id": "Upacara Kenegaraan",
-      "reported_at": "2026-08-17T08:03:04.000Z",
+      "reported_at": "2026-08-17T10:30:55.000Z",
       "confidence": 93,
       "outlet_scores": {
         "Liputan6": 2.72,
@@ -23,6 +23,24 @@
         "Antara News": 2.244
       },
       "sources": [
+        {
+          "outlet": "Antara News",
+          "title": "Presiden tiba di mimbar kehormatan pimpin Upacara Penurunan Bendera",
+          "url": "https://www.antaranews.com/berita/5698443/presiden-tiba-di-mimbar-kehormatan-pimpin-upacara-penurunan-bendera",
+          "published_at": "2026-08-17T10:30:55.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Prabowo Pimpin Upacara Penurunan Bendera HUT Ke-81 RI di Istana",
+          "url": "https://news.detik.com/berita/d-8622634/prabowo-pimpin-upacara-penurunan-bendera-hut-ke-81-ri-di-istana",
+          "published_at": "2026-08-17T10:02:54.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Kucing Bobby Kertanegara Ikut Upacara Penurunan Bendera HUT Ke-81 RI di Istana",
+          "url": "https://news.detik.com/berita/d-8622602/kucing-bobby-kertanegara-ikut-upacara-penurunan-bendera-hut-ke-81-ri-di-istana",
+          "published_at": "2026-08-17T09:46:51.000Z"
+        },
         {
           "outlet": "Detik",
           "title": "Bangganya Celina Olivia Bawa Baki Bendera Merah Putih di Hadapan Prabowo",
@@ -52,24 +70,6 @@
           "title": "Momen Prabowo Diapit Jokowi dan Gibran Ngobrol saat Upacara HUT RI di Istana",
           "url": "https://news.detik.com/berita/d-8622094/momen-prabowo-diapit-jokowi-dan-gibran-ngobrol-saat-upacara-hut-ri-di-istana",
           "published_at": "2026-08-17T04:27:27.000Z"
-        },
-        {
-          "outlet": "Detik",
-          "title": "Prabowo Beri Tepuk Tangan Usai Paskibraka Tuntas Kibarkan Merah Putih di Istana",
-          "url": "https://news.detik.com/berita/d-8622053/prabowo-beri-tepuk-tangan-usai-paskibraka-tuntas-kibarkan-merah-putih-di-istana",
-          "published_at": "2026-08-17T04:07:04.000Z"
-        },
-        {
-          "outlet": "Antara News",
-          "title": "Presiden Prabowo pimpin Upacara Detik-detik Proklamasi HUT ke-81 RI",
-          "url": "https://www.antaranews.com/berita/5697829/presiden-prabowo-pimpin-upacara-detik-detik-proklamasi-hut-ke-81-ri",
-          "published_at": "2026-08-17T03:17:38.000Z"
-        },
-        {
-          "outlet": "Detik",
-          "title": "Prabowo Pimpin Upacara Detik-detik Proklamasi HUT Ke-81 RI di Istana",
-          "url": "https://news.detik.com/berita/d-8621946/prabowo-pimpin-upacara-detik-detik-proklamasi-hut-ke-81-ri-di-istana",
-          "published_at": "2026-08-17T03:01:43.000Z"
         }
       ]
     },
