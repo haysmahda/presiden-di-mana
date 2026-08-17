@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-08-16T18:47:45.224Z",
+  "generated_at": "2026-08-17T01:55:38.957Z",
   "current": "loc-20260816-1628-nusa-tenggara-timur",
   "locations": [
     {
@@ -13,16 +13,23 @@
       "country_code": "ID",
       "lat": -8.6574,
       "lng": 121.0794,
-      "event_type": "kenegaraan",
-      "event_label_id": "Kegiatan Kenegaraan",
-      "reported_at": "2026-08-16T15:31:54.000Z",
-      "confidence": 87,
+      "event_type": "kunjungan_kerja",
+      "event_label_id": "Kunjungan Kerja",
+      "reported_at": "2026-08-17T01:53:27.000Z",
+      "confidence": 96,
       "outlet_scores": {
         "Setkab": 0.84,
         "Detik": 2.24,
-        "Liputan6": 2.24
+        "Liputan6": 2.24,
+        "Antara News": 3.36
       },
       "sources": [
+        {
+          "outlet": "Antara News",
+          "title": "Prabowo pertimbangkan ke NTT tinjau penanganan gempa",
+          "url": "https://www.antaranews.com/berita/5697744/prabowo-pertimbangkan-ke-ntt-tinjau-penanganan-gempa",
+          "published_at": "2026-08-17T01:53:27.000Z"
+        },
         {
           "outlet": "Liputan6",
           "title": "Prabowo: Hati dan Doa Kami Bersama Saudara-Saudara Kita di NTT",
@@ -58,6 +65,38 @@
           "title": "7 Fakta Gempa M 7 Nagekeo NTT yang Tewaskan Puluhan Jiwa",
           "url": "https://news.detik.com/berita/d-8620347/7-fakta-gempa-m-7-nagekeo-ntt-yang-tewaskan-puluhan-jiwa",
           "published_at": "2026-08-15T13:05:48.000Z"
+        }
+      ]
+    },
+    {
+      "id": "loc-20260817-0831-istana-merdeka",
+      "place": "Istana Merdeka",
+      "city": "Jakarta Pusat",
+      "region": "DKI Jakarta",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -6.1701,
+      "lng": 106.8219,
+      "event_type": "upacara",
+      "event_label_id": "Upacara Kenegaraan",
+      "reported_at": "2026-08-17T01:31:32.000Z",
+      "confidence": 68,
+      "outlet_scores": {
+        "Liputan6": 0.952,
+        "Detik": 2.04
+      },
+      "sources": [
+        {
+          "outlet": "Liputan6",
+          "title": "Isi Suvenir HUT ke-81 RI di Istana, Ada Buku Prabowo hingga Kelereng",
+          "url": "https://www.liputan6.com/news/read/8271280/isi-suvenir-hut-ke-81-ri-di-istana-ada-buku-prabowo-hingga-kelereng",
+          "published_at": "2026-08-17T01:31:32.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Suasana Istana Merdeka Jelang Upacara Detik-detik Proklamasi HUT ke-81 RI",
+          "url": "https://news.detik.com/berita/d-8621759/suasana-istana-merdeka-jelang-upacara-detik-detik-proklamasi-hut-ke-81-ri",
+          "published_at": "2026-08-17T00:26:50.000Z"
         }
       ]
     },
