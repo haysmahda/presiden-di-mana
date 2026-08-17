@@ -1,9 +1,78 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-08-17T16:46:30.158Z",
-  "current": "loc-20260817-1959-monumen-nasional",
+  "generated_at": "2026-08-17T18:58:45.540Z",
+  "current": "loc-20260817-0831-istana-merdeka",
   "locations": [
+    {
+      "id": "loc-20260817-0831-istana-merdeka",
+      "place": "Istana Merdeka",
+      "city": "Jakarta Pusat",
+      "region": "DKI Jakarta",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -6.1701,
+      "lng": 106.8219,
+      "event_type": "upacara",
+      "event_label_id": "Upacara Kenegaraan",
+      "reported_at": "2026-08-17T17:45:27.000Z",
+      "confidence": 93,
+      "outlet_scores": {
+        "Liputan6": 2.72,
+        "Detik": 2.04,
+        "Antara News": 2.244
+      },
+      "sources": [
+        {
+          "outlet": "Antara News",
+          "title": "Istana berterima kasih ribuan warga ikuti upacara dengan antusias",
+          "url": "https://www.antaranews.com/berita/5699021/istana-berterima-kasih-ribuan-warga-ikuti-upacara-dengan-antusias",
+          "published_at": "2026-08-17T17:45:27.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Prabowo Diapit Jokowi dan Gibran Saat Upacara HUT RI, Mensesneg: Bestie Akrab",
+          "url": "https://news.detik.com/berita/d-8622737/prabowo-diapit-jokowi-dan-gibran-saat-upacara-hut-ri-mensesneg-bestie-akrab",
+          "published_at": "2026-08-17T10:51:16.000Z"
+        },
+        {
+          "outlet": "Antara News",
+          "title": "Presiden tiba di mimbar kehormatan pimpin Upacara Penurunan Bendera",
+          "url": "https://www.antaranews.com/berita/5698443/presiden-tiba-di-mimbar-kehormatan-pimpin-upacara-penurunan-bendera",
+          "published_at": "2026-08-17T10:30:55.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Prabowo Pimpin Upacara Penurunan Bendera HUT Ke-81 RI di Istana",
+          "url": "https://news.detik.com/berita/d-8622634/prabowo-pimpin-upacara-penurunan-bendera-hut-ke-81-ri-di-istana",
+          "published_at": "2026-08-17T10:02:54.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Kucing Bobby Kertanegara Ikut Upacara Penurunan Bendera HUT Ke-81 RI di Istana",
+          "url": "https://news.detik.com/berita/d-8622602/kucing-bobby-kertanegara-ikut-upacara-penurunan-bendera-hut-ke-81-ri-di-istana",
+          "published_at": "2026-08-17T09:46:51.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Bangganya Celina Olivia Bawa Baki Bendera Merah Putih di Hadapan Prabowo",
+          "url": "https://news.detik.com/berita/d-8622411/bangganya-celina-olivia-bawa-baki-bendera-merah-putih-di-hadapan-prabowo",
+          "published_at": "2026-08-17T08:03:04.000Z"
+        },
+        {
+          "outlet": "Liputan6",
+          "title": "Cerita Warga Antre Sejak Subuh Demi Saksikan Upacara HUT RI di Istana",
+          "url": "https://www.liputan6.com/news/read/8271435/cerita-warga-antre-sejak-subuh-demi-saksikan-upacara-hut-ri-di-istana",
+          "published_at": "2026-08-17T06:33:59.000Z"
+        },
+        {
+          "outlet": "Liputan6",
+          "title": "Presiden Prabowo Pimpin Upacara HUT Ke-81 Kemerdekaan RI di Istana Merdeka",
+          "url": "https://www.liputan6.com/photo/read/8271422/presiden-prabowo-pimpin-upacara-hut-ke-81-kemerdekaan-ri-di-istana-merdeka",
+          "published_at": "2026-08-17T06:15:04.000Z"
+        }
+      ]
+    },
     {
       "id": "loc-20260817-1959-monumen-nasional",
       "place": "Monumen Nasional",
@@ -96,75 +165,6 @@
           "title": "Ratusan WNI Ikut Upacara HUT RI di KBRI Bangkok",
           "url": "https://news.detik.com/berita/d-8622557/ratusan-wni-ikut-upacara-hut-ri-di-kbri-bangkok",
           "published_at": "2026-08-17T09:17:22.000Z"
-        }
-      ]
-    },
-    {
-      "id": "loc-20260817-0831-istana-merdeka",
-      "place": "Istana Merdeka",
-      "city": "Jakarta Pusat",
-      "region": "DKI Jakarta",
-      "country": "Indonesia",
-      "country_code": "ID",
-      "lat": -6.1701,
-      "lng": 106.8219,
-      "event_type": "upacara",
-      "event_label_id": "Upacara Kenegaraan",
-      "reported_at": "2026-08-17T10:51:16.000Z",
-      "confidence": 93,
-      "outlet_scores": {
-        "Liputan6": 2.72,
-        "Detik": 2.04,
-        "Antara News": 2.244
-      },
-      "sources": [
-        {
-          "outlet": "Detik",
-          "title": "Prabowo Diapit Jokowi dan Gibran Saat Upacara HUT RI, Mensesneg: Bestie Akrab",
-          "url": "https://news.detik.com/berita/d-8622737/prabowo-diapit-jokowi-dan-gibran-saat-upacara-hut-ri-mensesneg-bestie-akrab",
-          "published_at": "2026-08-17T10:51:16.000Z"
-        },
-        {
-          "outlet": "Antara News",
-          "title": "Presiden tiba di mimbar kehormatan pimpin Upacara Penurunan Bendera",
-          "url": "https://www.antaranews.com/berita/5698443/presiden-tiba-di-mimbar-kehormatan-pimpin-upacara-penurunan-bendera",
-          "published_at": "2026-08-17T10:30:55.000Z"
-        },
-        {
-          "outlet": "Detik",
-          "title": "Prabowo Pimpin Upacara Penurunan Bendera HUT Ke-81 RI di Istana",
-          "url": "https://news.detik.com/berita/d-8622634/prabowo-pimpin-upacara-penurunan-bendera-hut-ke-81-ri-di-istana",
-          "published_at": "2026-08-17T10:02:54.000Z"
-        },
-        {
-          "outlet": "Detik",
-          "title": "Kucing Bobby Kertanegara Ikut Upacara Penurunan Bendera HUT Ke-81 RI di Istana",
-          "url": "https://news.detik.com/berita/d-8622602/kucing-bobby-kertanegara-ikut-upacara-penurunan-bendera-hut-ke-81-ri-di-istana",
-          "published_at": "2026-08-17T09:46:51.000Z"
-        },
-        {
-          "outlet": "Detik",
-          "title": "Bangganya Celina Olivia Bawa Baki Bendera Merah Putih di Hadapan Prabowo",
-          "url": "https://news.detik.com/berita/d-8622411/bangganya-celina-olivia-bawa-baki-bendera-merah-putih-di-hadapan-prabowo",
-          "published_at": "2026-08-17T08:03:04.000Z"
-        },
-        {
-          "outlet": "Liputan6",
-          "title": "Cerita Warga Antre Sejak Subuh Demi Saksikan Upacara HUT RI di Istana",
-          "url": "https://www.liputan6.com/news/read/8271435/cerita-warga-antre-sejak-subuh-demi-saksikan-upacara-hut-ri-di-istana",
-          "published_at": "2026-08-17T06:33:59.000Z"
-        },
-        {
-          "outlet": "Liputan6",
-          "title": "Presiden Prabowo Pimpin Upacara HUT Ke-81 Kemerdekaan RI di Istana Merdeka",
-          "url": "https://www.liputan6.com/photo/read/8271422/presiden-prabowo-pimpin-upacara-hut-ke-81-kemerdekaan-ri-di-istana-merdeka",
-          "published_at": "2026-08-17T06:15:04.000Z"
-        },
-        {
-          "outlet": "Liputan6",
-          "title": "Tepuk Tangan Menggema Usai Paskibraka Sukses Kibarkan Merah Putih di Istana",
-          "url": "https://www.liputan6.com/news/read/8271373/tepuk-tangan-menggema-usai-paskibraka-sukses-kibarkan-merah-putih-di-istana",
-          "published_at": "2026-08-17T04:48:32.000Z"
         }
       ]
     },
