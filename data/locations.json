@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-08-17T13:06:41.548Z",
+  "generated_at": "2026-08-17T14:46:10.581Z",
   "current": "loc-20260817-1959-monumen-nasional",
   "locations": [
     {
@@ -15,14 +15,20 @@
       "lng": 106.8272,
       "event_type": "upacara",
       "event_label_id": "Upacara Kenegaraan",
-      "reported_at": "2026-08-17T12:59:50.000Z",
-      "confidence": 91,
+      "reported_at": "2026-08-17T13:27:37.000Z",
+      "confidence": 97,
       "outlet_scores": {
-        "Antara News": 0.84,
+        "Antara News": 4.08,
         "Liputan6": 2.72,
         "Detik": 2.72
       },
       "sources": [
+        {
+          "outlet": "Antara News",
+          "title": "Prabowo-Gibran saksikan Karnaval Kemerdekaan di Monas",
+          "url": "https://www.antaranews.com/berita/5698775/prabowo-gibran-saksikan-karnaval-kemerdekaan-di-monas",
+          "published_at": "2026-08-17T13:27:37.000Z"
+        },
         {
           "outlet": "Antara News",
           "title": "Swasembada pangan dan SDM unggul",
@@ -46,6 +52,38 @@
           "title": "Momen Prabowo Cium Bendera Merah Putih Sebelum Disimpan Kembali di Monas",
           "url": "https://www.liputan6.com/news/read/8271608/momen-prabowo-cium-bendera-merah-putih-sebelum-disimpan-kembali-di-monas",
           "published_at": "2026-08-17T10:59:40.000Z"
+        }
+      ]
+    },
+    {
+      "id": "loc-20260817-2021-bangkok",
+      "place": "Bangkok",
+      "city": "Bangkok",
+      "region": "",
+      "country": "Thailand",
+      "country_code": "TH",
+      "lat": 13.7563,
+      "lng": 100.5018,
+      "event_type": "upacara",
+      "event_label_id": "Upacara Kenegaraan",
+      "reported_at": "2026-08-17T13:21:09.000Z",
+      "confidence": 88,
+      "outlet_scores": {
+        "Antara News": 3.72,
+        "Detik": 1.86
+      },
+      "sources": [
+        {
+          "outlet": "Antara News",
+          "title": "Dubes RI di Bangkok: HUT RI momentum jaga semangat kebangsaan",
+          "url": "https://www.antaranews.com/berita/5698767/dubes-ri-di-bangkok-hut-ri-momentum-jaga-semangat-kebangsaan",
+          "published_at": "2026-08-17T13:21:09.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Ratusan WNI Ikut Upacara HUT RI di KBRI Bangkok",
+          "url": "https://news.detik.com/berita/d-8622557/ratusan-wni-ikut-upacara-hut-ri-di-kbri-bangkok",
+          "published_at": "2026-08-17T09:17:22.000Z"
         }
       ]
     },
