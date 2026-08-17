@@ -1,9 +1,53 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-08-17T01:55:38.957Z",
-  "current": "loc-20260816-1628-nusa-tenggara-timur",
+  "generated_at": "2026-08-17T03:13:47.201Z",
+  "current": "loc-20260817-0831-istana-merdeka",
   "locations": [
+    {
+      "id": "loc-20260817-0831-istana-merdeka",
+      "place": "Istana Merdeka",
+      "city": "Jakarta Pusat",
+      "region": "DKI Jakarta",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -6.1701,
+      "lng": 106.8219,
+      "event_type": "upacara",
+      "event_label_id": "Upacara Kenegaraan",
+      "reported_at": "2026-08-17T03:01:43.000Z",
+      "confidence": 68,
+      "outlet_scores": {
+        "Liputan6": 0.952,
+        "Detik": 2.04
+      },
+      "sources": [
+        {
+          "outlet": "Detik",
+          "title": "Prabowo Pimpin Upacara Detik-detik Proklamasi HUT ke-81 RI di Istana",
+          "url": "https://news.detik.com/berita/d-8621946/prabowo-pimpin-upacara-detik-detik-proklamasi-hut-ke-81-ri-di-istana",
+          "published_at": "2026-08-17T03:01:43.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Jokowi, Iriana hingga Kaesang Tiba di Istana Jelang Upacara HUT ke-81 RI",
+          "url": "https://news.detik.com/berita/d-8621917/jokowi-iriana-hingga-kaesang-tiba-di-istana-jelang-upacara-hut-ke-81-ri",
+          "published_at": "2026-08-17T02:38:06.000Z"
+        },
+        {
+          "outlet": "Liputan6",
+          "title": "Isi Suvenir HUT ke-81 RI di Istana, Ada Buku Prabowo hingga Kelereng",
+          "url": "https://www.liputan6.com/news/read/8271280/isi-suvenir-hut-ke-81-ri-di-istana-ada-buku-prabowo-hingga-kelereng",
+          "published_at": "2026-08-17T02:32:23.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Suasana Istana Merdeka Jelang Upacara Detik-detik Proklamasi HUT ke-81 RI",
+          "url": "https://news.detik.com/berita/d-8621759/suasana-istana-merdeka-jelang-upacara-detik-detik-proklamasi-hut-ke-81-ri",
+          "published_at": "2026-08-17T00:26:50.000Z"
+        }
+      ]
+    },
     {
       "id": "loc-20260816-1628-nusa-tenggara-timur",
       "place": "Nusa Tenggara Timur",
@@ -65,38 +109,6 @@
           "title": "7 Fakta Gempa M 7 Nagekeo NTT yang Tewaskan Puluhan Jiwa",
           "url": "https://news.detik.com/berita/d-8620347/7-fakta-gempa-m-7-nagekeo-ntt-yang-tewaskan-puluhan-jiwa",
           "published_at": "2026-08-15T13:05:48.000Z"
-        }
-      ]
-    },
-    {
-      "id": "loc-20260817-0831-istana-merdeka",
-      "place": "Istana Merdeka",
-      "city": "Jakarta Pusat",
-      "region": "DKI Jakarta",
-      "country": "Indonesia",
-      "country_code": "ID",
-      "lat": -6.1701,
-      "lng": 106.8219,
-      "event_type": "upacara",
-      "event_label_id": "Upacara Kenegaraan",
-      "reported_at": "2026-08-17T01:31:32.000Z",
-      "confidence": 68,
-      "outlet_scores": {
-        "Liputan6": 0.952,
-        "Detik": 2.04
-      },
-      "sources": [
-        {
-          "outlet": "Liputan6",
-          "title": "Isi Suvenir HUT ke-81 RI di Istana, Ada Buku Prabowo hingga Kelereng",
-          "url": "https://www.liputan6.com/news/read/8271280/isi-suvenir-hut-ke-81-ri-di-istana-ada-buku-prabowo-hingga-kelereng",
-          "published_at": "2026-08-17T01:31:32.000Z"
-        },
-        {
-          "outlet": "Detik",
-          "title": "Suasana Istana Merdeka Jelang Upacara Detik-detik Proklamasi HUT ke-81 RI",
-          "url": "https://news.detik.com/berita/d-8621759/suasana-istana-merdeka-jelang-upacara-detik-detik-proklamasi-hut-ke-81-ri",
-          "published_at": "2026-08-17T00:26:50.000Z"
         }
       ]
     },
