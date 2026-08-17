@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-08-17T14:46:10.581Z",
+  "generated_at": "2026-08-17T16:46:30.158Z",
   "current": "loc-20260817-1959-monumen-nasional",
   "locations": [
     {
@@ -15,7 +15,7 @@
       "lng": 106.8272,
       "event_type": "upacara",
       "event_label_id": "Upacara Kenegaraan",
-      "reported_at": "2026-08-17T13:27:37.000Z",
+      "reported_at": "2026-08-17T15:27:35.000Z",
       "confidence": 97,
       "outlet_scores": {
         "Antara News": 4.08,
@@ -23,6 +23,18 @@
         "Detik": 2.72
       },
       "sources": [
+        {
+          "outlet": "Antara News",
+          "title": "Prabowo sapa warga usai saksikan karnaval kemerdekaan di Monas",
+          "url": "https://www.antaranews.com/berita/5698915/prabowo-sapa-warga-usai-saksikan-karnaval-kemerdekaan-di-monas",
+          "published_at": "2026-08-17T15:27:35.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Momen Prabowo Beri Hormat dan Sapa Warga Usai Hadiri Karnaval Malam Merdeka",
+          "url": "https://news.detik.com/berita/d-8623094/momen-prabowo-beri-hormat-dan-sapa-warga-usai-hadiri-karnaval-malam-merdeka",
+          "published_at": "2026-08-17T14:55:34.000Z"
+        },
         {
           "outlet": "Antara News",
           "title": "Prabowo-Gibran saksikan Karnaval Kemerdekaan di Monas",
