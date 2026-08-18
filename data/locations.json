@@ -1,9 +1,47 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-08-17T18:58:45.540Z",
-  "current": "loc-20260817-0831-istana-merdeka",
+  "generated_at": "2026-08-18T01:51:22.874Z",
+  "current": "loc-20260818-0731-istana-negara",
   "locations": [
+    {
+      "id": "loc-20260818-0731-istana-negara",
+      "place": "Istana Negara",
+      "city": "Jakarta Pusat",
+      "region": "DKI Jakarta",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -6.1704,
+      "lng": 106.8236,
+      "event_type": "upacara",
+      "event_label_id": "Upacara Kenegaraan",
+      "reported_at": "2026-08-18T00:31:41.000Z",
+      "confidence": 59,
+      "outlet_scores": {
+        "Detik": 1.496,
+        "Antara News": 0.84
+      },
+      "sources": [
+        {
+          "outlet": "Detik",
+          "title": "Saat Prabowo Diapit Jokowi dan Gibran Nonton Atraksi Pesawat",
+          "url": "https://news.detik.com/berita/d-8623287/saat-prabowo-diapit-jokowi-dan-gibran-nonton-atraksi-pesawat",
+          "published_at": "2026-08-18T00:31:41.000Z"
+        },
+        {
+          "outlet": "Antara News",
+          "title": "Presiden Prabowo ikut meriahkan karnaval HUT ke-81 Kemerdekaan RI",
+          "url": "https://www.antaranews.com/foto/5699127/presiden-prabowo-ikut-meriahkan-karnaval-hut-ke-81-kemerdekaan-ri",
+          "published_at": "2026-08-18T00:26:43.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Upacara Penurunan Bendera Tertib dan Khidmat, Prabowo Minta Komandan Menghadap",
+          "url": "https://news.detik.com/berita/d-8622769/upacara-penurunan-bendera-tertib-dan-khidmat-prabowo-minta-komandan-menghadap",
+          "published_at": "2026-08-17T11:00:13.000Z"
+        }
+      ]
+    },
     {
       "id": "loc-20260817-0831-istana-merdeka",
       "place": "Istana Merdeka",
@@ -15,14 +53,20 @@
       "lng": 106.8219,
       "event_type": "upacara",
       "event_label_id": "Upacara Kenegaraan",
-      "reported_at": "2026-08-17T17:45:27.000Z",
-      "confidence": 93,
+      "reported_at": "2026-08-17T23:32:03.000Z",
+      "confidence": 95,
       "outlet_scores": {
         "Liputan6": 2.72,
-        "Detik": 2.04,
+        "Detik": 2.72,
         "Antara News": 2.244
       },
       "sources": [
+        {
+          "outlet": "Detik",
+          "title": "Sosok-sosok di Balik Sakralnya Upacara HUT RI di Istana Merdeka",
+          "url": "https://news.detik.com/berita/d-8623228/sosok-sosok-di-balik-sakralnya-upacara-hut-ri-di-istana-merdeka",
+          "published_at": "2026-08-17T23:32:03.000Z"
+        },
         {
           "outlet": "Antara News",
           "title": "Istana berterima kasih ribuan warga ikuti upacara dengan antusias",
@@ -64,12 +108,6 @@
           "title": "Cerita Warga Antre Sejak Subuh Demi Saksikan Upacara HUT RI di Istana",
           "url": "https://www.liputan6.com/news/read/8271435/cerita-warga-antre-sejak-subuh-demi-saksikan-upacara-hut-ri-di-istana",
           "published_at": "2026-08-17T06:33:59.000Z"
-        },
-        {
-          "outlet": "Liputan6",
-          "title": "Presiden Prabowo Pimpin Upacara HUT Ke-81 Kemerdekaan RI di Istana Merdeka",
-          "url": "https://www.liputan6.com/photo/read/8271422/presiden-prabowo-pimpin-upacara-hut-ke-81-kemerdekaan-ri-di-istana-merdeka",
-          "published_at": "2026-08-17T06:15:04.000Z"
         }
       ]
     },
