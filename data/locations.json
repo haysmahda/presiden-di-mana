@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-08-18T01:51:22.874Z",
+  "generated_at": "2026-08-18T04:53:17.178Z",
   "current": "loc-20260818-0731-istana-negara",
   "locations": [
     {
@@ -16,10 +16,11 @@
       "event_type": "upacara",
       "event_label_id": "Upacara Kenegaraan",
       "reported_at": "2026-08-18T00:31:41.000Z",
-      "confidence": 59,
+      "confidence": 71,
       "outlet_scores": {
         "Detik": 1.496,
-        "Antara News": 0.84
+        "Antara News": 0.84,
+        "Setkab": 0.84
       },
       "sources": [
         {
@@ -39,6 +40,12 @@
           "title": "Upacara Penurunan Bendera Tertib dan Khidmat, Prabowo Minta Komandan Menghadap",
           "url": "https://news.detik.com/berita/d-8622769/upacara-penurunan-bendera-tertib-dan-khidmat-prabowo-minta-komandan-menghadap",
           "published_at": "2026-08-17T11:00:13.000Z"
+        },
+        {
+          "outlet": "Setkab",
+          "title": "Pimpin Ziarah Nasional dan Renungan Suci, Presiden Prabowo Teguhkan Tekad Lanjutkan Perjuangan Pahlawan",
+          "url": "https://setkab.go.id/pimpin-ziarah-nasional-dan-renungan-suci-presiden-prabowo-teguhkan-tekad-lanjutkan-perjuangan-pahlawan/",
+          "published_at": "2026-08-16T23:00:13.000Z"
         }
       ]
     },
