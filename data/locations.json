@@ -1,9 +1,41 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-08-18T20:41:37.525Z",
-  "current": "loc-20260818-0731-istana-negara",
+  "generated_at": "2026-08-19T01:53:54.465Z",
+  "current": "loc-20260819-0801-nusa-tenggara-timur",
   "locations": [
+    {
+      "id": "loc-20260819-0801-nusa-tenggara-timur",
+      "place": "Nusa Tenggara Timur",
+      "city": "Kupang",
+      "region": "Nusa Tenggara Timur",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -8.6574,
+      "lng": 121.0794,
+      "event_type": "kunjungan_kerja",
+      "event_label_id": "Kunjungan Kerja",
+      "reported_at": "2026-08-19T01:01:11.000Z",
+      "confidence": 83,
+      "outlet_scores": {
+        "Setkab": 3.36,
+        "Detik": 1.232
+      },
+      "sources": [
+        {
+          "outlet": "Setkab",
+          "title": "Hari Kelima Pascabencana, Pemerintah Kirim 65 Ton Logistik ke NTT",
+          "url": "https://setkab.go.id/253-ton-logistik-dikirim-ke-ntt/",
+          "published_at": "2026-08-19T01:01:11.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Prabowo Direncanakan Tinjau Penanganan Bencana Gempa di NTT",
+          "url": "https://news.detik.com/berita/d-8624536/prabowo-direncanakan-tinjau-penanganan-bencana-gempa-di-ntt",
+          "published_at": "2026-08-18T13:12:49.000Z"
+        }
+      ]
+    },
     {
       "id": "loc-20260818-0731-istana-negara",
       "place": "Istana Negara",
