@@ -1,9 +1,41 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-08-19T16:47:33.324Z",
-  "current": "loc-20260819-0801-nusa-tenggara-timur",
+  "generated_at": "2026-08-20T01:52:19.786Z",
+  "current": "loc-20260820-0816-hambalang",
   "locations": [
+    {
+      "id": "loc-20260820-0816-hambalang",
+      "place": "Hambalang",
+      "city": "Bogor",
+      "region": "Jawa Barat",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -6.5333,
+      "lng": 106.9167,
+      "event_type": "upacara",
+      "event_label_id": "Upacara Kenegaraan",
+      "reported_at": "2026-08-20T01:16:55.000Z",
+      "confidence": 93,
+      "outlet_scores": {
+        "Liputan6": 2.72,
+        "Antara News": 4.08
+      },
+      "sources": [
+        {
+          "outlet": "Liputan6",
+          "title": "Prabowo Undang Petugas HUT ke-81 RI ke Hambalang, Beri Pesan Khusus",
+          "url": "https://www.liputan6.com/news/read/8273706/prabowo-undang-petugas-hut-ke-81-ri-ke-hambalang-beri-pesan-khusus",
+          "published_at": "2026-08-20T01:16:55.000Z"
+        },
+        {
+          "outlet": "Antara News",
+          "title": "Presiden Prabowo undang petugas upacara HUT Ke-81 RI ke Hambalang",
+          "url": "https://www.antaranews.com/berita/5702673/presiden-prabowo-undang-petugas-upacara-hut-ke-81-ri-ke-hambalang",
+          "published_at": "2026-08-19T22:17:05.000Z"
+        }
+      ]
+    },
     {
       "id": "loc-20260819-0801-nusa-tenggara-timur",
       "place": "Nusa Tenggara Timur",
