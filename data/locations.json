@@ -1,41 +1,9 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-08-22T14:39:21.056Z",
-  "current": "loc-20260822-2127-jakarta",
+  "generated_at": "2026-08-22T16:41:37.661Z",
+  "current": "loc-20260822-2027-palangka-raya",
   "locations": [
-    {
-      "id": "loc-20260822-2127-jakarta",
-      "place": "Jakarta",
-      "city": "Jakarta",
-      "region": "DKI Jakarta",
-      "country": "Indonesia",
-      "country_code": "ID",
-      "lat": -6.2088,
-      "lng": 106.8456,
-      "event_type": "peresmian",
-      "event_label_id": "Peresmian",
-      "reported_at": "2026-08-22T14:27:48.000Z",
-      "confidence": 69,
-      "outlet_scores": {
-        "Antara News": 0.84,
-        "Detik": 2.24
-      },
-      "sources": [
-        {
-          "outlet": "Antara News",
-          "title": "Presiden Prabowo dijadwalkan resmikan LRT Kelapa Gading-Manggarai",
-          "url": "https://www.antaranews.com/berita/5707029/presiden-prabowo-dijadwalkan-resmikan-lrt-kelapa-gading-manggarai",
-          "published_at": "2026-08-22T14:27:48.000Z"
-        },
-        {
-          "outlet": "Detik",
-          "title": "200 Warga Madura RMP4 Siap ke Jakarta Dukung Program Pemerintah",
-          "url": "https://news.detik.com/berita/d-8630255/200-warga-madura-rmp4-siap-ke-jakarta-dukung-program-pemerintah",
-          "published_at": "2026-08-22T11:17:25.000Z"
-        }
-      ]
-    },
     {
       "id": "loc-20260822-2027-palangka-raya",
       "place": "Palangka Raya",
@@ -45,15 +13,34 @@
       "country_code": "ID",
       "lat": -2.2096,
       "lng": 113.9108,
-      "event_type": "kunjungan_kerja",
-      "event_label_id": "Kunjungan Kerja",
-      "reported_at": "2026-08-22T13:27:57.000Z",
-      "confidence": 82,
+      "event_type": "rapat",
+      "event_label_id": "Rapat Kabinet",
+      "reported_at": "2026-08-22T16:18:49.000Z",
+      "confidence": 93,
       "outlet_scores": {
         "Detik": 2.48,
-        "Antara News": 2.046
+        "Antara News": 3.36,
+        "Liputan6": 1.232
       },
       "sources": [
+        {
+          "outlet": "Liputan6",
+          "title": "Momen Prabowo Telepon di Tengah Rapat Kebakaran Hutan, Minta Pompa dan Heli",
+          "url": "https://www.liputan6.com/news/read/8275847/momen-prabowo-telepon-di-tengah-rapat-kebakaran-hutan-minta-pompa-dan-heli",
+          "published_at": "2026-08-22T16:18:49.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Momen Prabowo Telepon di Tengah Rapat, Minta Tambahan Alat untuk Atasi Karhutla",
+          "url": "https://news.detik.com/berita/d-8630571/momen-prabowo-telepon-di-tengah-rapat-minta-tambahan-alat-untuk-atasi-karhutla",
+          "published_at": "2026-08-22T15:48:31.000Z"
+        },
+        {
+          "outlet": "Antara News",
+          "title": "Tinjau lokasi Karhutla, Presiden Prabowo ketemu warga di Kalimantan Tengah",
+          "url": "https://www.antaranews.com/foto/5707059/tinjau-lokasi-karhutla-presiden-prabowo-ketemu-warga-di-kalimantan-tengah",
+          "published_at": "2026-08-22T14:49:03.000Z"
+        },
         {
           "outlet": "Detik",
           "title": "Mendagri Dampingi Prabowo ke Kalteng Bahas Penguatan Penanganan Karhutla",
@@ -85,7 +72,7 @@
       "lng": 109.3425,
       "event_type": "rapat",
       "event_label_id": "Rapat Kabinet",
-      "reported_at": "2026-08-22T11:22:08.000Z",
+      "reported_at": "2026-08-22T14:40:19.000Z",
       "confidence": 96,
       "outlet_scores": {
         "Antara News": 3.72,
@@ -93,6 +80,12 @@
         "Liputan6": 2.48
       },
       "sources": [
+        {
+          "outlet": "Detik",
+          "title": "Langit Putih Gelap dan Aroma Bakaran Daun Menyengat di Sungai Raya Kalbar",
+          "url": "https://news.detik.com/berita/d-8630503/langit-putih-gelap-dan-aroma-bakaran-daun-menyengat-di-sungai-raya-kalbar",
+          "published_at": "2026-08-22T14:40:19.000Z"
+        },
         {
           "outlet": "Detik",
           "title": "Prabowo Minta Tindak Tegas Pihak yang Terbukti Sebabkan Karhutla",
@@ -134,12 +127,38 @@
           "title": "Prabowo Susuri Lahan Terbakar di Kalbar, Sapa Petugas dan Warga",
           "url": "https://news.detik.com/berita/d-8630108/prabowo-susuri-lahan-terbakar-di-kalbar-sapa-petugas-dan-warga",
           "published_at": "2026-08-22T09:07:58.000Z"
+        }
+      ]
+    },
+    {
+      "id": "loc-20260822-2127-jakarta",
+      "place": "Jakarta",
+      "city": "Jakarta",
+      "region": "DKI Jakarta",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -6.2088,
+      "lng": 106.8456,
+      "event_type": "peresmian",
+      "event_label_id": "Peresmian",
+      "reported_at": "2026-08-22T14:27:48.000Z",
+      "confidence": 69,
+      "outlet_scores": {
+        "Antara News": 0.84,
+        "Detik": 2.24
+      },
+      "sources": [
+        {
+          "outlet": "Antara News",
+          "title": "Presiden Prabowo dijadwalkan resmikan LRT Kelapa Gading-Manggarai",
+          "url": "https://www.antaranews.com/berita/5707029/presiden-prabowo-dijadwalkan-resmikan-lrt-kelapa-gading-manggarai",
+          "published_at": "2026-08-22T14:27:48.000Z"
         },
         {
           "outlet": "Detik",
-          "title": "Seskab: 3 Batalyon TNI-6 Heli Water Bombing Dikirim Atasi Karhutla Kalimantan",
-          "url": "https://news.detik.com/berita/d-8630093/seskab-3-batalyon-tni-6-heli-water-bombing-dikirim-atasi-karhutla-kalimantan",
-          "published_at": "2026-08-22T09:01:58.000Z"
+          "title": "200 Warga Madura RMP4 Siap ke Jakarta Dukung Program Pemerintah",
+          "url": "https://news.detik.com/berita/d-8630255/200-warga-madura-rmp4-siap-ke-jakarta-dukung-program-pemerintah",
+          "published_at": "2026-08-22T11:17:25.000Z"
         }
       ]
     },
