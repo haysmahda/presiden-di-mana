@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-08-22T06:59:57.150Z",
+  "generated_at": "2026-08-22T08:49:02.301Z",
   "current": "loc-20260822-1351-pontianak",
   "locations": [
     {
@@ -15,14 +15,32 @@
       "lng": 109.3425,
       "event_type": "rapat",
       "event_label_id": "Rapat Kabinet",
-      "reported_at": "2026-08-22T06:51:30.000Z",
+      "reported_at": "2026-08-22T07:26:54.000Z",
       "confidence": 96,
       "outlet_scores": {
-        "Antara News": 3.36,
+        "Antara News": 3.72,
         "Detik": 2.24,
         "Liputan6": 2.48
       },
       "sources": [
+        {
+          "outlet": "Antara News",
+          "title": "Prabowo tinjau kondisi karhutla di Kalimantan Barat",
+          "url": "https://www.antaranews.com/berita/5706492/prabowo-tinjau-kondisi-karhutla-di-kalimantan-barat",
+          "published_at": "2026-08-22T07:26:54.000Z"
+        },
+        {
+          "outlet": "Liputan6",
+          "title": "Momen Prabowo Tanpa Masker Terobos Kabut Asap Kebakaran Hutan Kalbar",
+          "url": "https://www.liputan6.com/news/read/8275575/momen-prabowo-tanpa-masker-terobos-kabut-asap-kebakaran-hutan-kalbar",
+          "published_at": "2026-08-22T07:13:41.000Z"
+        },
+        {
+          "outlet": "Antara News",
+          "title": "Presiden Prabowo pimpin rapat penanganan kebakaran hutan dan lahan di Pontianak",
+          "url": "https://www.antaranews.com/foto/5706471/presiden-prabowo-pimpin-rapat-penanganan-kebakaran-hutan-dan-lahan-di-pontianak",
+          "published_at": "2026-08-22T07:00:39.000Z"
+        },
         {
           "outlet": "Antara News",
           "title": "Prabowo minta kondisi karhutla Kalbar dipetakan secara nyata",
@@ -52,24 +70,6 @@
           "title": "Panglima TNI-Kapolri damping Presiden tangani Karhutla Kalbar",
           "url": "https://www.antaranews.com/berita/5706396/panglima-tni-kapolri-damping-presiden-tangani-karhutla-kalbar",
           "published_at": "2026-08-22T05:37:37.000Z"
-        },
-        {
-          "outlet": "Liputan6",
-          "title": "Tiba di Pontianak, Prabowo Pimpin Rapat Penanganan Kebakaran Hutan",
-          "url": "https://www.liputan6.com/news/read/8275515/tiba-di-pontianak-prabowo-pimpin-rapat-penanganan-kebakaran-hutan",
-          "published_at": "2026-08-22T05:27:39.000Z"
-        },
-        {
-          "outlet": "Detik",
-          "title": "Tiba di Kalbar, Prabowo Langsung Pimpin Rapat Terbatas Penanganan Karhutla",
-          "url": "https://news.detik.com/berita/d-8629798/tiba-di-kalbar-prabowo-langsung-pimpin-rapat-terbatas-penanganan-karhutla",
-          "published_at": "2026-08-22T05:21:37.000Z"
-        },
-        {
-          "outlet": "Antara News",
-          "title": "Prabowo pimpin langsung penanganan Karhutla Kalimantan Barat",
-          "url": "https://www.antaranews.com/berita/5706356/prabowo-pimpin-langsung-penanganan-karhutla-kalimantan-barat",
-          "published_at": "2026-08-22T05:02:50.000Z"
         }
       ]
     },
