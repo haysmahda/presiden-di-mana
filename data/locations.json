@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-08-22T16:41:37.661Z",
+  "generated_at": "2026-08-22T18:50:09.052Z",
   "current": "loc-20260822-2027-palangka-raya",
   "locations": [
     {
@@ -15,14 +15,20 @@
       "lng": 113.9108,
       "event_type": "rapat",
       "event_label_id": "Rapat Kabinet",
-      "reported_at": "2026-08-22T16:18:49.000Z",
-      "confidence": 93,
+      "reported_at": "2026-08-22T16:40:31.000Z",
+      "confidence": 94,
       "outlet_scores": {
         "Detik": 2.48,
         "Antara News": 3.36,
-        "Liputan6": 1.232
+        "Liputan6": 1.68
       },
       "sources": [
+        {
+          "outlet": "Liputan6",
+          "title": "Seskab Teddy: 4 Heli Water Bombing Ditambah untuk Kebakaran Hutan Kalteng",
+          "url": "https://www.liputan6.com/news/read/8275857/seskab-teddy-4-heli-water-bombing-ditambah-untuk-kebakaran-hutan-kalteng",
+          "published_at": "2026-08-22T16:40:31.000Z"
+        },
         {
           "outlet": "Liputan6",
           "title": "Momen Prabowo Telepon di Tengah Rapat Kebakaran Hutan, Minta Pompa dan Heli",
