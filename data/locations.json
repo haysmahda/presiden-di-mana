@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-08-22T08:49:02.301Z",
+  "generated_at": "2026-08-22T13:01:41.958Z",
   "current": "loc-20260822-1351-pontianak",
   "locations": [
     {
@@ -15,7 +15,7 @@
       "lng": 109.3425,
       "event_type": "rapat",
       "event_label_id": "Rapat Kabinet",
-      "reported_at": "2026-08-22T07:26:54.000Z",
+      "reported_at": "2026-08-22T11:03:58.000Z",
       "confidence": 96,
       "outlet_scores": {
         "Antara News": 3.72,
@@ -23,6 +23,30 @@
         "Liputan6": 2.48
       },
       "sources": [
+        {
+          "outlet": "Antara News",
+          "title": "Tiba di Kalbar, Presiden pimpin rapat dan tinjau lokasi karhutla",
+          "url": "https://www.antaranews.com/video/5706713/tiba-di-kalbar-presiden-pimpin-rapat-dan-tinjau-lokasi-karhutla",
+          "published_at": "2026-08-22T11:03:58.000Z"
+        },
+        {
+          "outlet": "Liputan6",
+          "title": "Usai Pontianak, Prabowo Pimpin Penanganan Kebakaran Hutan Kalimantan Tengah",
+          "url": "https://www.liputan6.com/news/read/8275693/usai-pontianak-prabowo-pimpin-penanganan-kebakaran-hutan-kalimantan-tengah",
+          "published_at": "2026-08-22T10:39:15.000Z"
+        },
+        {
+          "outlet": "Liputan6",
+          "title": "Mendagri Tito Dampingi Presiden Prabowo Tinjau Lahan Terbakar di Kalbar",
+          "url": "https://www.liputan6.com/news/read/8275676/mendagri-tito-dampingi-presiden-prabowo-tinjau-lahan-terbakar-di-kalbar",
+          "published_at": "2026-08-22T10:13:22.000Z"
+        },
+        {
+          "outlet": "Liputan6",
+          "title": "Seskab Teddy Ungkap Langkah Terbaru Tangani Kebakaran Hutan di Kalbar",
+          "url": "https://www.liputan6.com/news/read/8275655/seskab-teddy-ungkap-langkah-terbaru-tangani-kebakaran-hutan-di-kalbar",
+          "published_at": "2026-08-22T09:35:58.000Z"
+        },
         {
           "outlet": "Antara News",
           "title": "Prabowo tinjau kondisi karhutla di Kalimantan Barat",
@@ -46,30 +70,6 @@
           "title": "Prabowo minta kondisi karhutla Kalbar dipetakan secara nyata",
           "url": "https://www.antaranews.com/berita/5706456/prabowo-minta-kondisi-karhutla-kalbar-dipetakan-secara-nyata",
           "published_at": "2026-08-22T06:51:30.000Z"
-        },
-        {
-          "outlet": "Antara News",
-          "title": "Prabowo tiba di Kalbar, pimpin rapat penanganan karhutla",
-          "url": "https://www.antaranews.com/berita/5706423/prabowo-tiba-di-kalbar-pimpin-rapat-penanganan-karhutla",
-          "published_at": "2026-08-22T06:03:50.000Z"
-        },
-        {
-          "outlet": "Antara News",
-          "title": "Presiden Prabowo pimpin rapat penanganan karhutla di Kalbar",
-          "url": "https://www.antaranews.com/berita/5706415/presiden-prabowo-pimpin-rapat-penanganan-karhutla-di-kalbar",
-          "published_at": "2026-08-22T05:57:53.000Z"
-        },
-        {
-          "outlet": "Detik",
-          "title": "Prabowo Pimpin Ratas Penanganan Karhutla: Saya Datang Lihat Keadaan Nyata",
-          "url": "https://news.detik.com/berita/d-8629825/prabowo-pimpin-ratas-penanganan-karhutla-saya-datang-lihat-keadaan-nyata",
-          "published_at": "2026-08-22T05:38:59.000Z"
-        },
-        {
-          "outlet": "Antara News",
-          "title": "Panglima TNI-Kapolri damping Presiden tangani Karhutla Kalbar",
-          "url": "https://www.antaranews.com/berita/5706396/panglima-tni-kapolri-damping-presiden-tangani-karhutla-kalbar",
-          "published_at": "2026-08-22T05:37:37.000Z"
         }
       ]
     },
