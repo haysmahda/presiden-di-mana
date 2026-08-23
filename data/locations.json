@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-08-23T04:52:41.333Z",
+  "generated_at": "2026-08-23T10:42:22.385Z",
   "current": "loc-20260822-2027-palangka-raya",
   "locations": [
     {
@@ -108,6 +108,50 @@
           "title": "200 Warga Madura RMP4 Siap ke Jakarta Dukung Program Pemerintah",
           "url": "https://news.detik.com/berita/d-8630255/200-warga-madura-rmp4-siap-ke-jakarta-dukung-program-pemerintah",
           "published_at": "2026-08-22T11:17:25.000Z"
+        }
+      ]
+    },
+    {
+      "id": "loc-20260822-2340-kalimantan-tengah",
+      "place": "Kalimantan Tengah",
+      "city": "Palangka Raya",
+      "region": "Kalimantan Tengah",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -1.6815,
+      "lng": 113.3824,
+      "event_type": "kunjungan_kerja",
+      "event_label_id": "Kunjungan Kerja",
+      "reported_at": "2026-08-22T16:40:31.000Z",
+      "confidence": 78,
+      "outlet_scores": {
+        "Liputan6": 1.68,
+        "Detik": 2.24
+      },
+      "sources": [
+        {
+          "outlet": "Liputan6",
+          "title": "Seskab Teddy: 4 Heli Water Bombing Ditambah untuk Kebakaran Hutan Kalteng",
+          "url": "https://www.liputan6.com/news/read/8275857/seskab-teddy-4-heli-water-bombing-ditambah-untuk-kebakaran-hutan-kalteng",
+          "published_at": "2026-08-22T16:40:31.000Z"
+        },
+        {
+          "outlet": "Liputan6",
+          "title": "Momen Prabowo Telepon di Tengah Rapat Kebakaran Hutan, Minta Pompa dan Heli",
+          "url": "https://www.liputan6.com/news/read/8275847/momen-prabowo-telepon-di-tengah-rapat-kebakaran-hutan-minta-pompa-dan-heli",
+          "published_at": "2026-08-22T16:18:49.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Momen Prabowo Telepon di Tengah Rapat, Minta Tambahan Alat untuk Atasi Karhutla",
+          "url": "https://news.detik.com/berita/d-8630571/momen-prabowo-telepon-di-tengah-rapat-minta-tambahan-alat-untuk-atasi-karhutla",
+          "published_at": "2026-08-22T15:48:31.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Mendagri Dampingi Prabowo ke Kalteng Bahas Penguatan Penanganan Karhutla",
+          "url": "https://news.detik.com/berita/d-8630404/mendagri-dampingi-prabowo-ke-kalteng-bahas-penguatan-penanganan-karhutla",
+          "published_at": "2026-08-22T13:27:57.000Z"
         }
       ]
     },
