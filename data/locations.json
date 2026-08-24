@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-08-24T10:54:36.470Z",
+  "generated_at": "2026-08-24T13:13:59.999Z",
   "current": "loc-20260824-1151-pekanbaru",
   "locations": [
     {
@@ -15,7 +15,7 @@
       "lng": 101.4478,
       "event_type": "rapat",
       "event_label_id": "Rapat Kabinet",
-      "reported_at": "2026-08-24T10:19:55.000Z",
+      "reported_at": "2026-08-24T12:29:29.000Z",
       "confidence": 98,
       "outlet_scores": {
         "Antara News": 3.36,
@@ -24,6 +24,12 @@
         "Detik": 2.48
       },
       "sources": [
+        {
+          "outlet": "Antara News",
+          "title": "Prabowo perintahkan pembangunan sumur bor di titik rawan karhutla",
+          "url": "https://www.antaranews.com/video/5709496/prabowo-perintahkan-pembangunan-sumur-bor-di-titik-rawan-karhutla",
+          "published_at": "2026-08-24T12:29:29.000Z"
+        },
         {
           "outlet": "Liputan6",
           "title": "Penerjun Freefall Dikerahkan Tangani Kebakaran Hutan Riau",
@@ -65,12 +71,44 @@
           "title": "Presiden apresiasi penanganan karhutla 15 ribu hektare di Riau",
           "url": "https://www.antaranews.com/berita/5708807/presiden-apresiasi-penanganan-karhutla-15-ribu-hektare-di-riau",
           "published_at": "2026-08-24T07:18:56.000Z"
+        }
+      ]
+    },
+    {
+      "id": "loc-20260824-1612-bandar-lampung",
+      "place": "Bandar Lampung",
+      "city": "Bandar Lampung",
+      "region": "Lampung",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -5.4294,
+      "lng": 105.261,
+      "event_type": "kenegaraan",
+      "event_label_id": "Kegiatan Kenegaraan",
+      "reported_at": "2026-08-24T11:58:16.000Z",
+      "confidence": 61,
+      "outlet_scores": {
+        "Detik": 1.86,
+        "Liputan6": 0.62
+      },
+      "sources": [
+        {
+          "outlet": "Detik",
+          "title": "Prabowo Atensi Karhutla Jambi dan Lampung, Apresiasi Kerja Petugas Lapangan",
+          "url": "https://news.detik.com/berita/d-8633013/prabowo-atensi-karhutla-jambi-dan-lampung-apresiasi-kerja-petugas-lapangan",
+          "published_at": "2026-08-24T11:58:16.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Prabowo Beri Perhatian Khusus Karhutla TN Way Kambas: Segera Dipadamkan",
+          "url": "https://news.detik.com/berita/d-8632720/prabowo-beri-perhatian-khusus-karhutla-tn-way-kambas-segera-dipadamkan",
+          "published_at": "2026-08-24T09:12:19.000Z"
         },
         {
           "outlet": "Liputan6",
-          "title": "Prabowo Minta 300 Sumur Bor untuk Atasi Kebakaran Hutan Riau",
-          "url": "https://www.liputan6.com/news/read/8276585/prabowo-minta-300-sumur-bor-untuk-atasi-kebakaran-hutan-riau",
-          "published_at": "2026-08-24T07:11:13.000Z"
+          "title": "Prabowo Soroti Kebakaran Way Kambas dan Nasib Gajah",
+          "url": "https://www.liputan6.com/news/read/8276541/prabowo-soroti-kebakaran-way-kambas-dan-nasib-gajah",
+          "published_at": "2026-08-24T05:40:00.000Z"
         }
       ]
     },
@@ -85,7 +123,7 @@
       "lng": 104.7754,
       "event_type": "kunjungan_kerja",
       "event_label_id": "Kunjungan Kerja",
-      "reported_at": "2026-08-24T10:07:50.000Z",
+      "reported_at": "2026-08-24T11:48:22.000Z",
       "confidence": 95,
       "outlet_scores": {
         "Antara News": 3.72,
@@ -93,6 +131,18 @@
         "Liputan6": 1.68
       },
       "sources": [
+        {
+          "outlet": "Detik",
+          "title": "Prabowo Siapkan 1.000 Perwira TNI-Polri Perkuat Penanganan Karhutla Sumsel",
+          "url": "https://news.detik.com/berita/d-8632993/prabowo-siapkan-1-000-perwira-tni-polri-perkuat-penanganan-karhutla-sumsel",
+          "published_at": "2026-08-24T11:48:22.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Kata Mensesneg soal Menhut Tak Hadir di Rapat Prabowo Tangani Karhutla",
+          "url": "https://news.detik.com/berita/d-8632961/kata-mensesneg-soal-menhut-tak-hadir-di-rapat-prabowo-tangani-karhutla",
+          "published_at": "2026-08-24T11:30:06.000Z"
+        },
         {
           "outlet": "Detik",
           "title": "Prabowo Setujui Penambahan 500 Sumur Bor dan 500 APD untuk Karhutla Sumsel",
@@ -122,38 +172,6 @@
           "title": "Setelah Pekanbaru, Prabowo Lanjut Tinjau Penanganan Karhutla di Palembang",
           "url": "https://news.detik.com/berita/d-8632377/setelah-pekanbaru-prabowo-lanjut-tinjau-penanganan-karhutla-di-palembang",
           "published_at": "2026-08-24T06:51:45.000Z"
-        }
-      ]
-    },
-    {
-      "id": "loc-20260824-1612-bandar-lampung",
-      "place": "Bandar Lampung",
-      "city": "Bandar Lampung",
-      "region": "Lampung",
-      "country": "Indonesia",
-      "country_code": "ID",
-      "lat": -5.4294,
-      "lng": 105.261,
-      "event_type": "kenegaraan",
-      "event_label_id": "Kegiatan Kenegaraan",
-      "reported_at": "2026-08-24T09:12:19.000Z",
-      "confidence": 38,
-      "outlet_scores": {
-        "Detik": 0.62,
-        "Liputan6": 0.62
-      },
-      "sources": [
-        {
-          "outlet": "Detik",
-          "title": "Prabowo Beri Perhatian Khusus Karhutla TN Way Kambas: Segera Dipadamkan",
-          "url": "https://news.detik.com/berita/d-8632720/prabowo-beri-perhatian-khusus-karhutla-tn-way-kambas-segera-dipadamkan",
-          "published_at": "2026-08-24T09:12:19.000Z"
-        },
-        {
-          "outlet": "Liputan6",
-          "title": "Prabowo Soroti Kebakaran Way Kambas dan Nasib Gajah",
-          "url": "https://www.liputan6.com/news/read/8276541/prabowo-soroti-kebakaran-way-kambas-dan-nasib-gajah",
-          "published_at": "2026-08-24T05:40:00.000Z"
         }
       ]
     },
