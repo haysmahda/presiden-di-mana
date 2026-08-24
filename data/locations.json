@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-08-24T09:05:36.393Z",
+  "generated_at": "2026-08-24T10:54:36.470Z",
   "current": "loc-20260824-1151-pekanbaru",
   "locations": [
     {
@@ -15,7 +15,7 @@
       "lng": 101.4478,
       "event_type": "rapat",
       "event_label_id": "Rapat Kabinet",
-      "reported_at": "2026-08-24T08:47:40.000Z",
+      "reported_at": "2026-08-24T10:19:55.000Z",
       "confidence": 98,
       "outlet_scores": {
         "Antara News": 3.36,
@@ -24,6 +24,12 @@
         "Detik": 2.48
       },
       "sources": [
+        {
+          "outlet": "Liputan6",
+          "title": "Penerjun Freefall Dikerahkan Tangani Kebakaran Hutan Riau",
+          "url": "https://www.liputan6.com/news/read/8276822/penerjun-freefall-dikerahkan-tangani-kebakaran-hutan-riau",
+          "published_at": "2026-08-24T10:19:55.000Z"
+        },
         {
           "outlet": "Setkab",
           "title": "Presiden Prabowo Pastikan Karhutla Riau Dituntaskan, 15.000 Hektare Berhasil Ditangani",
@@ -65,12 +71,6 @@
           "title": "Prabowo Minta 300 Sumur Bor untuk Atasi Kebakaran Hutan Riau",
           "url": "https://www.liputan6.com/news/read/8276585/prabowo-minta-300-sumur-bor-untuk-atasi-kebakaran-hutan-riau",
           "published_at": "2026-08-24T07:11:13.000Z"
-        },
-        {
-          "outlet": "Detik",
-          "title": "Kapolda Riau Lapor Karhutla ke Prabowo: 36 Pembakar Lahan Ditindak di 2026",
-          "url": "https://news.detik.com/berita/d-8632362/kapolda-riau-lapor-karhutla-ke-prabowo-36-pembakar-lahan-ditindak-di-2026",
-          "published_at": "2026-08-24T06:47:33.000Z"
         }
       ]
     },
@@ -85,13 +85,32 @@
       "lng": 104.7754,
       "event_type": "kunjungan_kerja",
       "event_label_id": "Kunjungan Kerja",
-      "reported_at": "2026-08-24T07:00:36.000Z",
-      "confidence": 91,
+      "reported_at": "2026-08-24T10:07:50.000Z",
+      "confidence": 95,
       "outlet_scores": {
         "Antara News": 3.72,
-        "Detik": 2.48
+        "Detik": 2.48,
+        "Liputan6": 1.68
       },
       "sources": [
+        {
+          "outlet": "Detik",
+          "title": "Prabowo Setujui Penambahan 500 Sumur Bor dan 500 APD untuk Karhutla Sumsel",
+          "url": "https://news.detik.com/berita/d-8632839/prabowo-setujui-penambahan-500-sumur-bor-dan-500-apd-untuk-karhutla-sumsel",
+          "published_at": "2026-08-24T10:07:50.000Z"
+        },
+        {
+          "outlet": "Liputan6",
+          "title": "Dapat Laporan Kebakaran Hutan Sumsel, Prabowo Tambah Helikopter",
+          "url": "https://www.liputan6.com/news/read/8276725/dapat-laporan-kebakaran-hutan-sumsel-prabowo-tambah-helikopter",
+          "published_at": "2026-08-24T09:08:56.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Kapolda Sumsel Lapor Jerat 17 Tersangka Karhutla, Prabowo Minta Tindak Tegas",
+          "url": "https://news.detik.com/berita/d-8632594/kapolda-sumsel-lapor-jerat-17-tersangka-karhutla-prabowo-minta-tindak-tegas",
+          "published_at": "2026-08-24T08:27:32.000Z"
+        },
         {
           "outlet": "Antara News",
           "title": "Presiden tiba di Palembang pimpin rapat penanganan karhutla Sumsel",
@@ -103,6 +122,38 @@
           "title": "Setelah Pekanbaru, Prabowo Lanjut Tinjau Penanganan Karhutla di Palembang",
           "url": "https://news.detik.com/berita/d-8632377/setelah-pekanbaru-prabowo-lanjut-tinjau-penanganan-karhutla-di-palembang",
           "published_at": "2026-08-24T06:51:45.000Z"
+        }
+      ]
+    },
+    {
+      "id": "loc-20260824-1612-bandar-lampung",
+      "place": "Bandar Lampung",
+      "city": "Bandar Lampung",
+      "region": "Lampung",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -5.4294,
+      "lng": 105.261,
+      "event_type": "kenegaraan",
+      "event_label_id": "Kegiatan Kenegaraan",
+      "reported_at": "2026-08-24T09:12:19.000Z",
+      "confidence": 38,
+      "outlet_scores": {
+        "Detik": 0.62,
+        "Liputan6": 0.62
+      },
+      "sources": [
+        {
+          "outlet": "Detik",
+          "title": "Prabowo Beri Perhatian Khusus Karhutla TN Way Kambas: Segera Dipadamkan",
+          "url": "https://news.detik.com/berita/d-8632720/prabowo-beri-perhatian-khusus-karhutla-tn-way-kambas-segera-dipadamkan",
+          "published_at": "2026-08-24T09:12:19.000Z"
+        },
+        {
+          "outlet": "Liputan6",
+          "title": "Prabowo Soroti Kebakaran Way Kambas dan Nasib Gajah",
+          "url": "https://www.liputan6.com/news/read/8276541/prabowo-soroti-kebakaran-way-kambas-dan-nasib-gajah",
+          "published_at": "2026-08-24T05:40:00.000Z"
         }
       ]
     },
