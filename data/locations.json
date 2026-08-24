@@ -1,9 +1,72 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-08-24T16:56:08.886Z",
-  "current": "loc-20260824-1612-bandar-lampung",
+  "generated_at": "2026-08-24T19:00:20.506Z",
+  "current": "loc-20260824-2232-sumatera-selatan",
   "locations": [
+    {
+      "id": "loc-20260824-2232-sumatera-selatan",
+      "place": "Sumatera Selatan",
+      "city": "Palembang",
+      "region": "Sumatera Selatan",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -3.3194,
+      "lng": 103.9144,
+      "event_type": "kenegaraan",
+      "event_label_id": "Kegiatan Kenegaraan",
+      "reported_at": "2026-08-24T17:20:44.000Z",
+      "confidence": 94,
+      "outlet_scores": {
+        "Detik": 2.24,
+        "Liputan6": 1.68,
+        "Antara News": 3.36
+      },
+      "sources": [
+        {
+          "outlet": "Antara News",
+          "title": "Prabowo perkuat penanganan karhutla di Sumatera Selatan",
+          "url": "https://www.antaranews.com/video/5709881/prabowo-perkuat-penanganan-karhutla-di-sumatera-selatan",
+          "published_at": "2026-08-24T17:20:44.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Herman Deru Pastikan Penanganan Karhutla di Sumsel Terus Diperkuat",
+          "url": "https://news.detik.com/berita/d-8633286/herman-deru-pastikan-penanganan-karhutla-di-sumsel-terus-diperkuat",
+          "published_at": "2026-08-24T15:32:47.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Prabowo Siapkan 1.000 Perwira TNI-Polri Perkuat Penanganan Karhutla Sumsel",
+          "url": "https://news.detik.com/berita/d-8632993/prabowo-siapkan-1-000-perwira-tni-polri-perkuat-penanganan-karhutla-sumsel",
+          "published_at": "2026-08-24T11:48:22.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Kata Mensesneg soal Menhut Tak Hadir di Rapat Prabowo Tangani Karhutla",
+          "url": "https://news.detik.com/berita/d-8632961/kata-mensesneg-soal-menhut-tak-hadir-di-rapat-prabowo-tangani-karhutla",
+          "published_at": "2026-08-24T11:30:06.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Prabowo Setujui Penambahan 500 Sumur Bor dan 500 APD untuk Karhutla Sumsel",
+          "url": "https://news.detik.com/berita/d-8632839/prabowo-setujui-penambahan-500-sumur-bor-dan-500-apd-untuk-karhutla-sumsel",
+          "published_at": "2026-08-24T10:07:50.000Z"
+        },
+        {
+          "outlet": "Liputan6",
+          "title": "Dapat Laporan Kebakaran Hutan Sumsel, Prabowo Tambah Helikopter",
+          "url": "https://www.liputan6.com/news/read/8276725/dapat-laporan-kebakaran-hutan-sumsel-prabowo-tambah-helikopter",
+          "published_at": "2026-08-24T09:08:56.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Kapolda Sumsel Lapor Jerat 17 Tersangka Karhutla, Prabowo Minta Tindak Tegas",
+          "url": "https://news.detik.com/berita/d-8632594/kapolda-sumsel-lapor-jerat-17-tersangka-karhutla-prabowo-minta-tindak-tegas",
+          "published_at": "2026-08-24T08:27:32.000Z"
+        }
+      ]
+    },
     {
       "id": "loc-20260824-1612-bandar-lampung",
       "place": "Bandar Lampung",
@@ -45,62 +108,6 @@
           "title": "Prabowo Soroti Kebakaran Way Kambas dan Nasib Gajah",
           "url": "https://www.liputan6.com/news/read/8276541/prabowo-soroti-kebakaran-way-kambas-dan-nasib-gajah",
           "published_at": "2026-08-24T05:40:00.000Z"
-        }
-      ]
-    },
-    {
-      "id": "loc-20260824-2232-sumatera-selatan",
-      "place": "Sumatera Selatan",
-      "city": "Palembang",
-      "region": "Sumatera Selatan",
-      "country": "Indonesia",
-      "country_code": "ID",
-      "lat": -3.3194,
-      "lng": 103.9144,
-      "event_type": "kenegaraan",
-      "event_label_id": "Kegiatan Kenegaraan",
-      "reported_at": "2026-08-24T15:32:47.000Z",
-      "confidence": 78,
-      "outlet_scores": {
-        "Detik": 2.24,
-        "Liputan6": 1.68
-      },
-      "sources": [
-        {
-          "outlet": "Detik",
-          "title": "Herman Deru Pastikan Penanganan Karhutla di Sumsel Terus Diperkuat",
-          "url": "https://news.detik.com/berita/d-8633286/herman-deru-pastikan-penanganan-karhutla-di-sumsel-terus-diperkuat",
-          "published_at": "2026-08-24T15:32:47.000Z"
-        },
-        {
-          "outlet": "Detik",
-          "title": "Prabowo Siapkan 1.000 Perwira TNI-Polri Perkuat Penanganan Karhutla Sumsel",
-          "url": "https://news.detik.com/berita/d-8632993/prabowo-siapkan-1-000-perwira-tni-polri-perkuat-penanganan-karhutla-sumsel",
-          "published_at": "2026-08-24T11:48:22.000Z"
-        },
-        {
-          "outlet": "Detik",
-          "title": "Kata Mensesneg soal Menhut Tak Hadir di Rapat Prabowo Tangani Karhutla",
-          "url": "https://news.detik.com/berita/d-8632961/kata-mensesneg-soal-menhut-tak-hadir-di-rapat-prabowo-tangani-karhutla",
-          "published_at": "2026-08-24T11:30:06.000Z"
-        },
-        {
-          "outlet": "Detik",
-          "title": "Prabowo Setujui Penambahan 500 Sumur Bor dan 500 APD untuk Karhutla Sumsel",
-          "url": "https://news.detik.com/berita/d-8632839/prabowo-setujui-penambahan-500-sumur-bor-dan-500-apd-untuk-karhutla-sumsel",
-          "published_at": "2026-08-24T10:07:50.000Z"
-        },
-        {
-          "outlet": "Liputan6",
-          "title": "Dapat Laporan Kebakaran Hutan Sumsel, Prabowo Tambah Helikopter",
-          "url": "https://www.liputan6.com/news/read/8276725/dapat-laporan-kebakaran-hutan-sumsel-prabowo-tambah-helikopter",
-          "published_at": "2026-08-24T09:08:56.000Z"
-        },
-        {
-          "outlet": "Detik",
-          "title": "Kapolda Sumsel Lapor Jerat 17 Tersangka Karhutla, Prabowo Minta Tindak Tegas",
-          "url": "https://news.detik.com/berita/d-8632594/kapolda-sumsel-lapor-jerat-17-tersangka-karhutla-prabowo-minta-tindak-tegas",
-          "published_at": "2026-08-24T08:27:32.000Z"
         }
       ]
     },
