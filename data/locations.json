@@ -1,9 +1,41 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-08-24T01:58:08.896Z",
-  "current": "loc-20260824-0629-hambalang",
+  "generated_at": "2026-08-24T03:17:22.635Z",
+  "current": "loc-20260824-0949-riau",
   "locations": [
+    {
+      "id": "loc-20260824-0949-riau",
+      "place": "Riau",
+      "city": "Pekanbaru",
+      "region": "Riau",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": 0.2933,
+      "lng": 101.7068,
+      "event_type": "kunjungan_kerja",
+      "event_label_id": "Kunjungan Kerja",
+      "reported_at": "2026-08-24T02:49:38.000Z",
+      "confidence": 88,
+      "outlet_scores": {
+        "Detik": 2.24,
+        "Antara News": 3.36
+      },
+      "sources": [
+        {
+          "outlet": "Detik",
+          "title": "Prabowo Kunker ke Riau Hari Ini, Cek Penanganan Karhutla di Sumatera",
+          "url": "https://news.detik.com/berita/d-8631923/prabowo-kunker-ke-riau-hari-ini-cek-penanganan-karhutla-di-sumatera",
+          "published_at": "2026-08-24T02:49:38.000Z"
+        },
+        {
+          "outlet": "Antara News",
+          "title": "Prabowo akan tinjau penanganan karhutla Sumatera, dimulai dari Riau",
+          "url": "https://www.antaranews.com/berita/5708387/prabowo-akan-tinjau-penanganan-karhutla-sumatera-dimulai-dari-riau",
+          "published_at": "2026-08-24T02:38:13.000Z"
+        }
+      ]
+    },
     {
       "id": "loc-20260824-0629-hambalang",
       "place": "Hambalang",
