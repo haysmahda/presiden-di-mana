@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-08-24T05:02:57.818Z",
+  "generated_at": "2026-08-24T07:29:27.849Z",
   "current": "loc-20260824-1151-pekanbaru",
   "locations": [
     {
@@ -13,15 +13,53 @@
       "country_code": "ID",
       "lat": 0.5071,
       "lng": 101.4478,
-      "event_type": "perjalanan",
-      "event_label_id": "Keberangkatan / Kepulangan",
-      "reported_at": "2026-08-24T04:51:02.000Z",
-      "confidence": 87,
+      "event_type": "rapat",
+      "event_label_id": "Rapat Kabinet",
+      "reported_at": "2026-08-24T07:26:31.000Z",
+      "confidence": 98,
       "outlet_scores": {
         "Antara News": 3.36,
-        "Setkab": 2.046
+        "Setkab": 2.046,
+        "Liputan6": 2.24,
+        "Detik": 2.48
       },
       "sources": [
+        {
+          "outlet": "Antara News",
+          "title": "Presiden pastikan pemanfaatan penerjun freefall atasi karhutla Riau",
+          "url": "https://www.antaranews.com/berita/5708823/presiden-pastikan-pemanfaatan-penerjun-freefall-atasi-karhutla-riau",
+          "published_at": "2026-08-24T07:26:31.000Z"
+        },
+        {
+          "outlet": "Antara News",
+          "title": "Presiden apresiasi penanganan karhutla 15 ribu hektare di Riau",
+          "url": "https://www.antaranews.com/berita/5708807/presiden-apresiasi-penanganan-karhutla-15-ribu-hektare-di-riau",
+          "published_at": "2026-08-24T07:18:56.000Z"
+        },
+        {
+          "outlet": "Liputan6",
+          "title": "Prabowo Minta 300 Sumur Bor untuk Atasi Kebakaran Hutan Riau",
+          "url": "https://www.liputan6.com/news/read/8276585/prabowo-minta-300-sumur-bor-untuk-atasi-kebakaran-hutan-riau",
+          "published_at": "2026-08-24T07:11:13.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Kapolda Riau Lapor Karhutla ke Prabowo: 36 Pembakar Lahan Ditindak di 2026",
+          "url": "https://news.detik.com/berita/d-8632362/kapolda-riau-lapor-karhutla-ke-prabowo-36-pembakar-lahan-ditindak-di-2026",
+          "published_at": "2026-08-24T06:47:33.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Prabowo Minta Sumur Bor Segera Dibangun di 300 Hotspot Karhutla Riau",
+          "url": "https://news.detik.com/berita/d-8632228/prabowo-minta-sumur-bor-segera-dibangun-di-300-hotspot-karhutla-riau",
+          "published_at": "2026-08-24T05:41:37.000Z"
+        },
+        {
+          "outlet": "Liputan6",
+          "title": "Tiba di Riau, Prabowo Pimpin Langsung Penanganan Kebakaran Hutan",
+          "url": "https://www.liputan6.com/news/read/8276528/tiba-di-riau-prabowo-pimpin-langsung-penanganan-kebakaran-hutan",
+          "published_at": "2026-08-24T05:25:20.000Z"
+        },
         {
           "outlet": "Antara News",
           "title": "Presiden Prabowo tiba di Riau, tinjau langsung penanganan karhutla",
@@ -29,10 +67,42 @@
           "published_at": "2026-08-24T04:51:02.000Z"
         },
         {
-          "outlet": "Setkab",
-          "title": "Bertolak ke Sumatra, Presiden Prabowo Kembali Turun Langsung Tangani Karhutla, Seskab Teddy: Pastikan Api Padam dan Tak Berulang",
-          "url": "https://setkab.go.id/bertolak-ke-sumatra-presiden-prabowo-kembali-turun-langsung-tangani-karhutla-seskab-teddy-pastikan-api-padam-dan-tak-berulang/",
-          "published_at": "2026-08-24T04:07:24.000Z"
+          "outlet": "Detik",
+          "title": "Tiba di Pekanbaru, Prabowo Disambut Kabut Asap Karhutla",
+          "url": "https://news.detik.com/berita/d-8632081/tiba-di-pekanbaru-prabowo-disambut-kabut-asap-karhutla",
+          "published_at": "2026-08-24T04:12:15.000Z"
+        }
+      ]
+    },
+    {
+      "id": "loc-20260824-1400-palembang",
+      "place": "Palembang",
+      "city": "Palembang",
+      "region": "Sumatera Selatan",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -2.9761,
+      "lng": 104.7754,
+      "event_type": "kunjungan_kerja",
+      "event_label_id": "Kunjungan Kerja",
+      "reported_at": "2026-08-24T07:00:36.000Z",
+      "confidence": 91,
+      "outlet_scores": {
+        "Antara News": 3.72,
+        "Detik": 2.48
+      },
+      "sources": [
+        {
+          "outlet": "Antara News",
+          "title": "Presiden tiba di Palembang pimpin rapat penanganan karhutla Sumsel",
+          "url": "https://www.antaranews.com/berita/5708749/presiden-tiba-di-palembang-pimpin-rapat-penanganan-karhutla-sumsel",
+          "published_at": "2026-08-24T07:00:36.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Setelah Pekanbaru, Prabowo Lanjut Tinjau Penanganan Karhutla di Palembang",
+          "url": "https://news.detik.com/berita/d-8632377/setelah-pekanbaru-prabowo-lanjut-tinjau-penanganan-karhutla-di-palembang",
+          "published_at": "2026-08-24T06:51:45.000Z"
         }
       ]
     },
