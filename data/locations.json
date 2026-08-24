@@ -1,9 +1,48 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-08-23T16:44:07.090Z",
-  "current": "loc-20260822-2027-palangka-raya",
+  "generated_at": "2026-08-24T01:58:08.896Z",
+  "current": "loc-20260824-0629-hambalang",
   "locations": [
+    {
+      "id": "loc-20260824-0629-hambalang",
+      "place": "Hambalang",
+      "city": "Bogor",
+      "region": "Jawa Barat",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -6.5333,
+      "lng": 106.9167,
+      "event_type": "rapat",
+      "event_label_id": "Rapat Kabinet",
+      "reported_at": "2026-08-23T23:29:59.000Z",
+      "confidence": 97,
+      "outlet_scores": {
+        "Liputan6": 2.72,
+        "Setkab": 4.08,
+        "Detik": 2.72
+      },
+      "sources": [
+        {
+          "outlet": "Liputan6",
+          "title": "Prabowo Ratas di Hambalang, Bahas Kebakaran Hutan Kalimantan dan Bencana NTT",
+          "url": "https://www.liputan6.com/news/read/8276324/prabowo-ratas-di-hambalang-bahas-kebakaran-hutan-kalimantan-dan-bencana-ntt",
+          "published_at": "2026-08-23T23:29:59.000Z"
+        },
+        {
+          "outlet": "Setkab",
+          "title": "Rapat di Hambalang, Presiden Prabowo Evaluasi Penanganan Karhutla Kalimantan dan Pemulihan Pascagempa NTT",
+          "url": "https://setkab.go.id/rapat-di-hambalang-presiden-prabowo-evaluasi-penanganan-karhutla-kalimantan-dan-pemulihan-pascagempa-ntt/",
+          "published_at": "2026-08-23T23:00:10.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Prabowo Panggil Menhan hingga Panglima TNI ke Hambalang, Ini yang Dibahas",
+          "url": "https://news.detik.com/berita/d-8631690/prabowo-panggil-menhan-hingga-panglima-tni-ke-hambalang-ini-yang-dibahas",
+          "published_at": "2026-08-23T17:20:12.000Z"
+        }
+      ]
+    },
     {
       "id": "loc-20260822-2027-palangka-raya",
       "place": "Palangka Raya",
