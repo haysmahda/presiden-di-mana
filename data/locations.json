@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-08-24T07:29:27.849Z",
+  "generated_at": "2026-08-24T09:05:36.393Z",
   "current": "loc-20260824-1151-pekanbaru",
   "locations": [
     {
@@ -15,15 +15,39 @@
       "lng": 101.4478,
       "event_type": "rapat",
       "event_label_id": "Rapat Kabinet",
-      "reported_at": "2026-08-24T07:26:31.000Z",
+      "reported_at": "2026-08-24T08:47:40.000Z",
       "confidence": 98,
       "outlet_scores": {
         "Antara News": 3.36,
-        "Setkab": 2.046,
+        "Setkab": 2.52,
         "Liputan6": 2.24,
         "Detik": 2.48
       },
       "sources": [
+        {
+          "outlet": "Setkab",
+          "title": "Presiden Prabowo Pastikan Karhutla Riau Dituntaskan, 15.000 Hektare Berhasil Ditangani",
+          "url": "https://setkab.go.id/presiden-prabowo-pastikan-karhutla-riau-dituntaskan-15-000-hektare-berhasil-ditangani/",
+          "published_at": "2026-08-24T08:47:40.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Respons Laporan Kapolda Riau, Prabowo Minta Segera Kirim 500 Tabung Oksigen",
+          "url": "https://news.detik.com/berita/d-8632602/respons-laporan-kapolda-riau-prabowo-minta-segera-kirim-500-tabung-oksigen",
+          "published_at": "2026-08-24T08:28:54.000Z"
+        },
+        {
+          "outlet": "Antara News",
+          "title": "Prabowo apresiasi gotong royong seluruh pihak tangani karhutla di Riau",
+          "url": "https://www.antaranews.com/berita/5708881/prabowo-apresiasi-gotong-royong-seluruh-pihak-tangani-karhutla-di-riau",
+          "published_at": "2026-08-24T07:50:26.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Prabowo Puji Penanganan Karhutla di Riau, Bakal Beri Jabatan Baru ke Pangdam-Kapolda",
+          "url": "https://news.detik.com/berita/d-8632514/prabowo-puji-penanganan-karhutla-di-riau-bakal-beri-jabatan-baru-ke-pangdam-kapolda",
+          "published_at": "2026-08-24T07:41:41.000Z"
+        },
         {
           "outlet": "Antara News",
           "title": "Presiden pastikan pemanfaatan penerjun freefall atasi karhutla Riau",
@@ -47,30 +71,6 @@
           "title": "Kapolda Riau Lapor Karhutla ke Prabowo: 36 Pembakar Lahan Ditindak di 2026",
           "url": "https://news.detik.com/berita/d-8632362/kapolda-riau-lapor-karhutla-ke-prabowo-36-pembakar-lahan-ditindak-di-2026",
           "published_at": "2026-08-24T06:47:33.000Z"
-        },
-        {
-          "outlet": "Detik",
-          "title": "Prabowo Minta Sumur Bor Segera Dibangun di 300 Hotspot Karhutla Riau",
-          "url": "https://news.detik.com/berita/d-8632228/prabowo-minta-sumur-bor-segera-dibangun-di-300-hotspot-karhutla-riau",
-          "published_at": "2026-08-24T05:41:37.000Z"
-        },
-        {
-          "outlet": "Liputan6",
-          "title": "Tiba di Riau, Prabowo Pimpin Langsung Penanganan Kebakaran Hutan",
-          "url": "https://www.liputan6.com/news/read/8276528/tiba-di-riau-prabowo-pimpin-langsung-penanganan-kebakaran-hutan",
-          "published_at": "2026-08-24T05:25:20.000Z"
-        },
-        {
-          "outlet": "Antara News",
-          "title": "Presiden Prabowo tiba di Riau, tinjau langsung penanganan karhutla",
-          "url": "https://www.antaranews.com/berita/5708527/presiden-prabowo-tiba-di-riau-tinjau-langsung-penanganan-karhutla",
-          "published_at": "2026-08-24T04:51:02.000Z"
-        },
-        {
-          "outlet": "Detik",
-          "title": "Tiba di Pekanbaru, Prabowo Disambut Kabut Asap Karhutla",
-          "url": "https://news.detik.com/berita/d-8632081/tiba-di-pekanbaru-prabowo-disambut-kabut-asap-karhutla",
-          "published_at": "2026-08-24T04:12:15.000Z"
         }
       ]
     },
