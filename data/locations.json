@@ -1,9 +1,41 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-08-25T01:53:22.798Z",
-  "current": "loc-20260824-2232-sumatera-selatan",
+  "generated_at": "2026-08-25T03:13:18.266Z",
+  "current": "loc-20260825-1009-denpasar",
   "locations": [
+    {
+      "id": "loc-20260825-1009-denpasar",
+      "place": "Denpasar",
+      "city": "Denpasar",
+      "region": "Bali",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -8.6705,
+      "lng": 115.2126,
+      "event_type": "peresmian",
+      "event_label_id": "Peresmian",
+      "reported_at": "2026-08-25T03:09:13.000Z",
+      "confidence": 91,
+      "outlet_scores": {
+        "Detik": 2.48,
+        "Antara News": 3.72
+      },
+      "sources": [
+        {
+          "outlet": "Detik",
+          "title": "Prabowo Resmikan Groundbreaking PLTS 100 GWp di Bali Hari Ini",
+          "url": "https://news.detik.com/berita/d-8633532/prabowo-resmikan-groundbreaking-plts-100-gwp-di-bali-hari-ini",
+          "published_at": "2026-08-25T03:09:13.000Z"
+        },
+        {
+          "outlet": "Antara News",
+          "title": "Prabowo akan luncurkan PLTS 100 GWp di Bali untuk perkuat kemandirian energi",
+          "url": "https://www.antaranews.com/berita/5710031/prabowo-akan-luncurkan-plts-100-gwp-di-bali-untuk-perkuat-kemandirian-energi",
+          "published_at": "2026-08-25T03:07:43.000Z"
+        }
+      ]
+    },
     {
       "id": "loc-20260824-2232-sumatera-selatan",
       "place": "Sumatera Selatan",
