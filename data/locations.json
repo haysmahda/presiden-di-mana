@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-08-25T03:13:18.266Z",
+  "generated_at": "2026-08-25T04:54:51.739Z",
   "current": "loc-20260825-1009-denpasar",
   "locations": [
     {
@@ -15,13 +15,20 @@
       "lng": 115.2126,
       "event_type": "peresmian",
       "event_label_id": "Peresmian",
-      "reported_at": "2026-08-25T03:09:13.000Z",
-      "confidence": 91,
+      "reported_at": "2026-08-25T03:14:45.000Z",
+      "confidence": 96,
       "outlet_scores": {
         "Detik": 2.48,
-        "Antara News": 3.72
+        "Antara News": 3.72,
+        "Liputan6": 2.48
       },
       "sources": [
+        {
+          "outlet": "Liputan6",
+          "title": "Prabowo Luncurkan Program PLTS 100 GW di Bali Hari Ini",
+          "url": "https://www.liputan6.com/news/read/8277137/prabowo-luncurkan-program-plts-100-gw-di-bali-hari-ini",
+          "published_at": "2026-08-25T03:14:45.000Z"
+        },
         {
           "outlet": "Detik",
           "title": "Prabowo Resmikan Groundbreaking PLTS 100 GWp di Bali Hari Ini",
