@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-08-25T13:12:08.642Z",
+  "generated_at": "2026-08-25T15:06:26.054Z",
   "current": "loc-20260825-1009-denpasar",
   "locations": [
     {
@@ -15,14 +15,21 @@
       "lng": 115.2126,
       "event_type": "peresmian",
       "event_label_id": "Peresmian",
-      "reported_at": "2026-08-25T11:34:15.000Z",
-      "confidence": 96,
+      "reported_at": "2026-08-25T14:25:03.000Z",
+      "confidence": 98,
       "outlet_scores": {
         "Detik": 2.48,
         "Antara News": 3.72,
-        "Liputan6": 2.48
+        "Liputan6": 2.48,
+        "Setkab": 0.93
       },
       "sources": [
+        {
+          "outlet": "Setkab",
+          "title": "Presiden Prabowo Luncurkan Program PLTS 100 GWp, Targetkan Pembangunan dalam Tiga Tahun",
+          "url": "https://setkab.go.id/presiden-prabowo-luncurkan-program-plts-100-gwp-targetkan-pembangunan-dalam-tiga-tahun/",
+          "published_at": "2026-08-25T14:25:03.000Z"
+        },
         {
           "outlet": "Antara News",
           "title": "Peluncuran program PLTS 100 GWp di Bali",
