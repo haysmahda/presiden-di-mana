@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-08-24T19:00:20.506Z",
+  "generated_at": "2026-08-25T01:53:22.798Z",
   "current": "loc-20260824-2232-sumatera-selatan",
   "locations": [
     {
@@ -15,7 +15,7 @@
       "lng": 103.9144,
       "event_type": "kenegaraan",
       "event_label_id": "Kegiatan Kenegaraan",
-      "reported_at": "2026-08-24T17:20:44.000Z",
+      "reported_at": "2026-08-25T01:31:00.000Z",
       "confidence": 94,
       "outlet_scores": {
         "Detik": 2.24,
@@ -23,6 +23,12 @@
         "Antara News": 3.36
       },
       "sources": [
+        {
+          "outlet": "Liputan6",
+          "title": "Seskab Teddy: 11.567 Personel hingga 20 Ekskavator Tangani Kebakaran Hutan Sumsel",
+          "url": "https://www.liputan6.com/news/read/8277099/seskab-teddy-11567-personel-hingga-20-ekskavator-tangani-kebakaran-hutan-sumsel",
+          "published_at": "2026-08-25T01:31:00.000Z"
+        },
         {
           "outlet": "Antara News",
           "title": "Prabowo perkuat penanganan karhutla di Sumatera Selatan",
