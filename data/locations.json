@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-08-25T09:01:00.097Z",
+  "generated_at": "2026-08-25T13:12:08.642Z",
   "current": "loc-20260825-1009-denpasar",
   "locations": [
     {
@@ -15,7 +15,7 @@
       "lng": 115.2126,
       "event_type": "peresmian",
       "event_label_id": "Peresmian",
-      "reported_at": "2026-08-25T08:43:26.000Z",
+      "reported_at": "2026-08-25T11:34:15.000Z",
       "confidence": 96,
       "outlet_scores": {
         "Detik": 2.48,
@@ -23,6 +23,12 @@
         "Liputan6": 2.48
       },
       "sources": [
+        {
+          "outlet": "Antara News",
+          "title": "Peluncuran program PLTS 100 GWp di Bali",
+          "url": "https://www.antaranews.com/foto/5710531/peluncuran-program-plts-100-gwp-di-bali",
+          "published_at": "2026-08-25T11:34:15.000Z"
+        },
         {
           "outlet": "Antara News",
           "title": "Prabowo tiba di Jembrana untuk luncurkan program PLTS 100 GWp",
