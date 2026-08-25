@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-08-25T04:54:51.739Z",
+  "generated_at": "2026-08-25T09:01:00.097Z",
   "current": "loc-20260825-1009-denpasar",
   "locations": [
     {
@@ -15,7 +15,7 @@
       "lng": 115.2126,
       "event_type": "peresmian",
       "event_label_id": "Peresmian",
-      "reported_at": "2026-08-25T03:14:45.000Z",
+      "reported_at": "2026-08-25T08:43:26.000Z",
       "confidence": 96,
       "outlet_scores": {
         "Detik": 2.48,
@@ -23,6 +23,24 @@
         "Liputan6": 2.48
       },
       "sources": [
+        {
+          "outlet": "Antara News",
+          "title": "Prabowo tiba di Jembrana untuk luncurkan program PLTS 100 GWp",
+          "url": "https://www.antaranews.com/berita/5710349/prabowo-tiba-di-jembrana-untuk-luncurkan-program-plts-100-gwp",
+          "published_at": "2026-08-25T08:43:26.000Z"
+        },
+        {
+          "outlet": "Antara News",
+          "title": "Presiden Prabowo tiba di Bali luncurkan pengembangan PLTS Gilimanuk",
+          "url": "https://www.antaranews.com/berita/5710327/presiden-prabowo-tiba-di-bali-luncurkan-pengembangan-plts-gilimanuk",
+          "published_at": "2026-08-25T08:20:56.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Prabowo Tiba di Bali Jelang Peluncuran Program PLTS 100 GW",
+          "url": "https://news.detik.com/berita/d-8633822/prabowo-tiba-di-bali-jelang-peluncuran-program-plts-100-gw",
+          "published_at": "2026-08-25T08:00:21.000Z"
+        },
         {
           "outlet": "Liputan6",
           "title": "Prabowo Luncurkan Program PLTS 100 GW di Bali Hari Ini",
