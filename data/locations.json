@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-08-26T13:17:27.919Z",
+  "generated_at": "2026-08-26T17:03:46.626Z",
   "current": "loc-20260826-1246-nusa-tenggara-timur",
   "locations": [
     {
@@ -15,7 +15,7 @@
       "lng": 121.0794,
       "event_type": "kunjungan_kerja",
       "event_label_id": "Kunjungan Kerja",
-      "reported_at": "2026-08-26T13:14:19.000Z",
+      "reported_at": "2026-08-26T16:30:49.000Z",
       "confidence": 95,
       "outlet_scores": {
         "Antara News": 3.36,
@@ -23,6 +23,12 @@
         "Liputan6": 2.24
       },
       "sources": [
+        {
+          "outlet": "Detik",
+          "title": "Gubernur NTT Ngadu Korban Gempa Dikejar Rentenir, Prabowo: Suruh Hadap Saya",
+          "url": "https://news.detik.com/berita/d-8635878/gubernur-ntt-ngadu-korban-gempa-dikejar-rentenir-prabowo-suruh-hadap-saya",
+          "published_at": "2026-08-26T16:30:49.000Z"
+        },
         {
           "outlet": "Liputan6",
           "title": "Telepon BRIN, Prabowo Minta Teknologi Ubah Air Laut jadi Tawar untuk NTT",
@@ -64,12 +70,6 @@
           "title": "Prabowo optimistis NTT bisa jadi sumber pangan bangsa dan dunia",
           "url": "https://www.antaranews.com/berita/5711892/prabowo-optimistis-ntt-bisa-jadi-sumber-pangan-bangsa-dan-dunia",
           "published_at": "2026-08-26T09:59:37.000Z"
-        },
-        {
-          "outlet": "Detik",
-          "title": "Prabowo di NTT: Rakyat di Sini Banyak Bakar Hutan, Benar?",
-          "url": "https://news.detik.com/berita/d-8635213/prabowo-di-ntt-rakyat-di-sini-banyak-bakar-hutan-benar",
-          "published_at": "2026-08-26T08:40:53.000Z"
         }
       ]
     },
