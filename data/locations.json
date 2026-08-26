@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-08-26T10:52:08.612Z",
+  "generated_at": "2026-08-26T13:17:27.919Z",
   "current": "loc-20260826-1246-nusa-tenggara-timur",
   "locations": [
     {
@@ -15,7 +15,7 @@
       "lng": 121.0794,
       "event_type": "kunjungan_kerja",
       "event_label_id": "Kunjungan Kerja",
-      "reported_at": "2026-08-26T10:33:08.000Z",
+      "reported_at": "2026-08-26T13:14:19.000Z",
       "confidence": 95,
       "outlet_scores": {
         "Antara News": 3.36,
@@ -23,6 +23,24 @@
         "Liputan6": 2.24
       },
       "sources": [
+        {
+          "outlet": "Liputan6",
+          "title": "Telepon BRIN, Prabowo Minta Teknologi Ubah Air Laut jadi Tawar untuk NTT",
+          "url": "https://www.liputan6.com/news/read/8278247/telepon-brin-prabowo-minta-teknologi-ubah-air-laut-jadi-tawar-untuk-ntt",
+          "published_at": "2026-08-26T13:14:19.000Z"
+        },
+        {
+          "outlet": "Antara News",
+          "title": "Gubernur NTT harap kehadiran Prabowo percepat pemulihan gempa Flores",
+          "url": "https://www.antaranews.com/berita/5712245/gubernur-ntt-harap-kehadiran-prabowo-percepat-pemulihan-gempa-flores",
+          "published_at": "2026-08-26T12:46:23.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Gempa NTT, Pemerintah Siapkan Bantuan hingga Rp 70 Juta per Rumah",
+          "url": "https://news.detik.com/berita/d-8635642/gempa-ntt-pemerintah-siapkan-bantuan-hingga-rp-70-juta-per-rumah",
+          "published_at": "2026-08-26T12:16:52.000Z"
+        },
         {
           "outlet": "Liputan6",
           "title": "Prabowo Kucurkan Rp 200 Miliar untuk Penanganan Gempa NTT",
@@ -52,24 +70,6 @@
           "title": "Prabowo di NTT: Rakyat di Sini Banyak Bakar Hutan, Benar?",
           "url": "https://news.detik.com/berita/d-8635213/prabowo-di-ntt-rakyat-di-sini-banyak-bakar-hutan-benar",
           "published_at": "2026-08-26T08:40:53.000Z"
-        },
-        {
-          "outlet": "Detik",
-          "title": "Prabowo Ungkap Alasan Tak ke NTT di Awal Gempa: Agar Tak Memecah Konsentrasi",
-          "url": "https://news.detik.com/berita/d-8635176/prabowo-ungkap-alasan-tak-ke-ntt-di-awal-gempa-agar-tak-memecah-konsentrasi",
-          "published_at": "2026-08-26T08:21:27.000Z"
-        },
-        {
-          "outlet": "Antara News",
-          "title": "Prabowo: Bantuan Rp20 miliar per kabupaten di NTT telah disalurkan",
-          "url": "https://www.antaranews.com/berita/5711595/prabowo-bantuan-rp20-miliar-per-kabupaten-di-ntt-telah-disalurkan",
-          "published_at": "2026-08-26T08:00:36.000Z"
-        },
-        {
-          "outlet": "Detik",
-          "title": "Prabowo Cek Posko Pengungsi Korban Gempa NTT",
-          "url": "https://news.detik.com/berita/d-8635083/prabowo-cek-posko-pengungsi-korban-gempa-ntt",
-          "published_at": "2026-08-26T07:39:32.000Z"
         }
       ]
     },
