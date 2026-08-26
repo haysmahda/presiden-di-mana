@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-08-25T16:56:27.430Z",
+  "generated_at": "2026-08-26T01:59:24.940Z",
   "current": "loc-20260825-1009-denpasar",
   "locations": [
     {
@@ -15,7 +15,7 @@
       "lng": 115.2126,
       "event_type": "peresmian",
       "event_label_id": "Peresmian",
-      "reported_at": "2026-08-25T16:29:57.000Z",
+      "reported_at": "2026-08-26T00:51:02.000Z",
       "confidence": 98,
       "outlet_scores": {
         "Detik": 2.48,
@@ -24,6 +24,12 @@
         "Setkab": 0.93
       },
       "sources": [
+        {
+          "outlet": "Antara News",
+          "title": "Dari Bali, Presiden akan bertolak ke NTT cek penanganan gempa",
+          "url": "https://www.antaranews.com/berita/5711021/dari-bali-presiden-akan-bertolak-ke-ntt-cek-penanganan-gempa",
+          "published_at": "2026-08-26T00:51:02.000Z"
+        },
         {
           "outlet": "Antara News",
           "title": "Peluncuran PLTS 100 GWp, Presiden Prabowo: tak boleh lagi impor minyak",
@@ -65,12 +71,6 @@
           "title": "Prabowo Luncurkan Program PLTS 100 GW di Bali Hari Ini",
           "url": "https://www.liputan6.com/news/read/8277137/prabowo-luncurkan-program-plts-100-gw-di-bali-hari-ini",
           "published_at": "2026-08-25T03:14:45.000Z"
-        },
-        {
-          "outlet": "Detik",
-          "title": "Prabowo Resmikan Groundbreaking PLTS 100 GWp di Bali Hari Ini",
-          "url": "https://news.detik.com/berita/d-8633532/prabowo-resmikan-groundbreaking-plts-100-gwp-di-bali-hari-ini",
-          "published_at": "2026-08-25T03:09:13.000Z"
         }
       ]
     },
