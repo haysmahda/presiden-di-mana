@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-08-26T07:09:49.995Z",
+  "generated_at": "2026-08-26T09:03:13.137Z",
   "current": "loc-20260826-1246-nusa-tenggara-timur",
   "locations": [
     {
@@ -13,16 +13,52 @@
       "country_code": "ID",
       "lat": -8.6574,
       "lng": 121.0794,
-      "event_type": "rapat",
-      "event_label_id": "Rapat Kabinet",
-      "reported_at": "2026-08-26T05:46:32.000Z",
-      "confidence": 91,
+      "event_type": "kunjungan_kerja",
+      "event_label_id": "Kunjungan Kerja",
+      "reported_at": "2026-08-26T08:40:53.000Z",
+      "confidence": 95,
       "outlet_scores": {
         "Antara News": 3.36,
         "Detik": 2.24,
-        "Liputan6": 0.56
+        "Liputan6": 2.24
       },
       "sources": [
+        {
+          "outlet": "Detik",
+          "title": "Prabowo di NTT: Rakyat di Sini Banyak Bakar Hutan, Benar?",
+          "url": "https://news.detik.com/berita/d-8635213/prabowo-di-ntt-rakyat-di-sini-banyak-bakar-hutan-benar",
+          "published_at": "2026-08-26T08:40:53.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Prabowo Ungkap Alasan Tak ke NTT di Awal Gempa: Agar Tak Memecah Konsentrasi",
+          "url": "https://news.detik.com/berita/d-8635176/prabowo-ungkap-alasan-tak-ke-ntt-di-awal-gempa-agar-tak-memecah-konsentrasi",
+          "published_at": "2026-08-26T08:21:27.000Z"
+        },
+        {
+          "outlet": "Antara News",
+          "title": "Prabowo: Bantuan Rp20 miliar per kabupaten di NTT telah disalurkan",
+          "url": "https://www.antaranews.com/berita/5711595/prabowo-bantuan-rp20-miliar-per-kabupaten-di-ntt-telah-disalurkan",
+          "published_at": "2026-08-26T08:00:36.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Prabowo Cek Posko Pengungsi Korban Gempa NTT",
+          "url": "https://news.detik.com/berita/d-8635083/prabowo-cek-posko-pengungsi-korban-gempa-ntt",
+          "published_at": "2026-08-26T07:39:32.000Z"
+        },
+        {
+          "outlet": "Liputan6",
+          "title": "Prabowo Ungkap Alasan Baru Hadir di NTT",
+          "url": "https://www.liputan6.com/news/read/8277932/prabowo-ungkap-alasan-baru-hadir-di-ntt",
+          "published_at": "2026-08-26T07:35:00.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Kapolri: Polri Gotong Royong Iuran Bantu Korban Gempa NTT, Capai Rp 12,6 M",
+          "url": "https://news.detik.com/berita/d-8635058/kapolri-polri-gotong-royong-iuran-bantu-korban-gempa-ntt-capai-rp-12-6-m",
+          "published_at": "2026-08-26T07:27:42.000Z"
+        },
         {
           "outlet": "Antara News",
           "title": "Tiba di NTT, Prabowo langsung pimpin rapat penanganan dampak bencana",
@@ -34,18 +70,6 @@
           "title": "Tiba di Nagekeo NTT, Prabowo Pimpin Rapat Penanganan Pascagempa di Tenda",
           "url": "https://news.detik.com/berita/d-8634813/tiba-di-nagekeo-ntt-prabowo-pimpin-rapat-penanganan-pascagempa-di-tenda",
           "published_at": "2026-08-26T05:30:07.000Z"
-        },
-        {
-          "outlet": "Liputan6",
-          "title": "Prabowo Tiba di Nagekeo, Tinjau Dampak Gempa NTT",
-          "url": "https://www.liputan6.com/news/read/8277804/prabowo-tiba-di-nagekeo-tinjau-dampak-gempa-ntt",
-          "published_at": "2026-08-26T05:30:00.000Z"
-        },
-        {
-          "outlet": "Detik",
-          "title": "Prabowo ke NTT Hari Ini, Cek Penanganan Gempa dan Bantuan untuk Warga",
-          "url": "https://news.detik.com/berita/d-8634466/prabowo-ke-ntt-hari-ini-cek-penanganan-gempa-dan-bantuan-untuk-warga",
-          "published_at": "2026-08-26T01:30:23.000Z"
         }
       ]
     },
