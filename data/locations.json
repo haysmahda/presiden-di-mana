@@ -1,9 +1,54 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-08-26T01:59:24.940Z",
-  "current": "loc-20260825-1009-denpasar",
+  "generated_at": "2026-08-26T07:09:49.995Z",
+  "current": "loc-20260826-1246-nusa-tenggara-timur",
   "locations": [
+    {
+      "id": "loc-20260826-1246-nusa-tenggara-timur",
+      "place": "Nusa Tenggara Timur",
+      "city": "Kupang",
+      "region": "Nusa Tenggara Timur",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -8.6574,
+      "lng": 121.0794,
+      "event_type": "rapat",
+      "event_label_id": "Rapat Kabinet",
+      "reported_at": "2026-08-26T05:46:32.000Z",
+      "confidence": 91,
+      "outlet_scores": {
+        "Antara News": 3.36,
+        "Detik": 2.24,
+        "Liputan6": 0.56
+      },
+      "sources": [
+        {
+          "outlet": "Antara News",
+          "title": "Tiba di NTT, Prabowo langsung pimpin rapat penanganan dampak bencana",
+          "url": "https://www.antaranews.com/berita/5711360/tiba-di-ntt-prabowo-langsung-pimpin-rapat-penanganan-dampak-bencana",
+          "published_at": "2026-08-26T05:46:32.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Tiba di Nagekeo NTT, Prabowo Pimpin Rapat Penanganan Pascagempa di Tenda",
+          "url": "https://news.detik.com/berita/d-8634813/tiba-di-nagekeo-ntt-prabowo-pimpin-rapat-penanganan-pascagempa-di-tenda",
+          "published_at": "2026-08-26T05:30:07.000Z"
+        },
+        {
+          "outlet": "Liputan6",
+          "title": "Prabowo Tiba di Nagekeo, Tinjau Dampak Gempa NTT",
+          "url": "https://www.liputan6.com/news/read/8277804/prabowo-tiba-di-nagekeo-tinjau-dampak-gempa-ntt",
+          "published_at": "2026-08-26T05:30:00.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Prabowo ke NTT Hari Ini, Cek Penanganan Gempa dan Bantuan untuk Warga",
+          "url": "https://news.detik.com/berita/d-8634466/prabowo-ke-ntt-hari-ini-cek-penanganan-gempa-dan-bantuan-untuk-warga",
+          "published_at": "2026-08-26T01:30:23.000Z"
+        }
+      ]
+    },
     {
       "id": "loc-20260825-1009-denpasar",
       "place": "Denpasar",
