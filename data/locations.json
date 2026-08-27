@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-08-26T23:34:38.151Z",
+  "generated_at": "2026-08-27T05:11:03.435Z",
   "current": "loc-20260826-1246-nusa-tenggara-timur",
   "locations": [
     {
@@ -13,16 +13,23 @@
       "country_code": "ID",
       "lat": -8.6574,
       "lng": 121.0794,
-      "event_type": "kunjungan_kerja",
-      "event_label_id": "Kunjungan Kerja",
-      "reported_at": "2026-08-26T16:30:49.000Z",
-      "confidence": 95,
+      "event_type": "rapat",
+      "event_label_id": "Rapat Kabinet",
+      "reported_at": "2026-08-27T00:34:11.000Z",
+      "confidence": 96,
       "outlet_scores": {
         "Antara News": 3.36,
         "Detik": 2.24,
-        "Liputan6": 2.24
+        "Liputan6": 2.24,
+        "Setkab": 0.84
       },
       "sources": [
+        {
+          "outlet": "Detik",
+          "title": "5 Momen Prabowo Datangi Lokasi Gempa NTT",
+          "url": "https://news.detik.com/berita/d-8635960/5-momen-prabowo-datangi-lokasi-gempa-ntt",
+          "published_at": "2026-08-27T00:34:11.000Z"
+        },
         {
           "outlet": "Detik",
           "title": "Gubernur NTT Ngadu Korban Gempa Dikejar Rentenir, Prabowo: Suruh Hadap Saya",
@@ -54,22 +61,16 @@
           "published_at": "2026-08-26T10:33:08.000Z"
         },
         {
+          "outlet": "Setkab",
+          "title": "Presiden Prabowo di Tengah Pengungsi Nagekeo: Menyapa, Mendengar, dan Menguatkan",
+          "url": "https://setkab.go.id/presiden-prabowo-di-tengah-pengungsi-nagekeo-menyapa-mendengar-dan-menguatkan/",
+          "published_at": "2026-08-26T10:20:01.000Z"
+        },
+        {
           "outlet": "Detik",
           "title": "Momen Canda Prabowo dengan Bocah di NTT: Yang Dia Ingat Oke Gas",
           "url": "https://news.detik.com/berita/d-8635440/momen-canda-prabowo-dengan-bocah-di-ntt-yang-dia-ingat-oke-gas",
           "published_at": "2026-08-26T10:11:53.000Z"
-        },
-        {
-          "outlet": "Antara News",
-          "title": "Prabowo targetkan kawasan gundul NTT kembali hijau dalam 10 tahun",
-          "url": "https://www.antaranews.com/berita/5711900/prabowo-targetkan-kawasan-gundul-ntt-kembali-hijau-dalam-10-tahun",
-          "published_at": "2026-08-26T10:02:23.000Z"
-        },
-        {
-          "outlet": "Antara News",
-          "title": "Prabowo optimistis NTT bisa jadi sumber pangan bangsa dan dunia",
-          "url": "https://www.antaranews.com/berita/5711892/prabowo-optimistis-ntt-bisa-jadi-sumber-pangan-bangsa-dan-dunia",
-          "published_at": "2026-08-26T09:59:37.000Z"
         }
       ]
     },
