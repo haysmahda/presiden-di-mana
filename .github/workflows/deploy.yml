@@ -6,6 +6,16 @@ name: Terbitkan situs
 on:
   push:
     branches: [main]
+
+  # The scanner commits with the default GITHUB_TOKEN, and GitHub deliberately
+  # does NOT fire `push` workflows for those commits (anti-recursion rule).
+  # So a data commit alone would never publish — the site sat 3 weeks stale
+  # because of exactly this. Chaining off the scanner's completion instead is
+  # the documented fix and needs no secrets.
+  workflow_run:
+    workflows: ["Perbarui lokasi"]
+    types: [completed]
+
   workflow_dispatch:
 
 permissions:
@@ -22,6 +32,10 @@ jobs:
   terbitkan:
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    # A failed scan leaves main unchanged, so there is nothing new to publish.
+    if: >-
+      github.event_name != 'workflow_run' ||
+      github.event.workflow_run.conclusion == 'success'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

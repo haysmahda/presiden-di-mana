@@ -1,9 +1,18 @@
 /* Home page: hero answer, Leaflet map, current-location card, movement feed. */
 
-const TILE_URL = 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png';
+/* Basemap: Esri Dark Gray Canvas. No API key, no watermark.
+   NOTE the tile order is {z}/{y}/{x} — Esri, unlike most providers.
+   We used CARTO until Aug 2026, when they moved their free basemaps behind an
+   API key and started stamping "API KEY REQUIRED" into the tiles themselves
+   (HTTP 200, so nothing errored — the map just quietly defaced itself).
+   If this provider ever does the same, these three constants are the only
+   thing to change. */
+const ESRI = 'https://server.arcgisonline.com/ArcGIS/rest/services/Canvas';
+const TILE_URL  = `${ESRI}/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}`;
+const LABEL_URL = `${ESRI}/World_Dark_Gray_Reference/MapServer/tile/{z}/{y}/{x}`;
 const TILE_ATTR =
-  '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> ' +
-  '&copy; <a href="https://carto.com/attributions">CARTO</a>';
+  'Tiles &copy; <a href="https://www.esri.com/">Esri</a> — Esri, HERE, Garmin, ' +
+  '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
 
 const JEJAK_MAX = 8;       // how many past points to trail on the map
 const FEED_MAX = 6;        // entries in the movement feed
@@ -126,7 +135,10 @@ function renderMap(list, current) {
     attributionControl: true
   });
 
-  L.tileLayer(TILE_URL, { attribution: TILE_ATTR, maxZoom: 18, subdomains: 'abcd' }).addTo(MAP);
+  L.tileLayer(TILE_URL, { attribution: TILE_ATTR, maxZoom: 16 }).addTo(MAP);
+  // Place names ride on a separate transparent layer, above the pins' basemap
+  // but below the markers.
+  L.tileLayer(LABEL_URL, { maxZoom: 16, opacity: .9, pane: 'overlayPane' }).addTo(MAP);
 
   const jejak = list.slice(0, JEJAK_MAX);
 
