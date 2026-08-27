@@ -145,75 +145,6 @@
       ]
     },
     {
-      "id": "loc-20260824-2232-sumatera-selatan",
-      "place": "Sumatera Selatan",
-      "city": "Palembang",
-      "region": "Sumatera Selatan",
-      "country": "Indonesia",
-      "country_code": "ID",
-      "lat": -3.3194,
-      "lng": 103.9144,
-      "event_type": "kenegaraan",
-      "event_label_id": "Kegiatan Kenegaraan",
-      "reported_at": "2026-08-25T01:31:00.000Z",
-      "confidence": 94,
-      "outlet_scores": {
-        "Detik": 2.24,
-        "Liputan6": 1.68,
-        "Antara News": 3.36
-      },
-      "sources": [
-        {
-          "outlet": "Liputan6",
-          "title": "Seskab Teddy: 11.567 Personel hingga 20 Ekskavator Tangani Kebakaran Hutan Sumsel",
-          "url": "https://www.liputan6.com/news/read/8277099/seskab-teddy-11567-personel-hingga-20-ekskavator-tangani-kebakaran-hutan-sumsel",
-          "published_at": "2026-08-25T01:31:00.000Z"
-        },
-        {
-          "outlet": "Antara News",
-          "title": "Prabowo perkuat penanganan karhutla di Sumatera Selatan",
-          "url": "https://www.antaranews.com/video/5709881/prabowo-perkuat-penanganan-karhutla-di-sumatera-selatan",
-          "published_at": "2026-08-24T17:20:44.000Z"
-        },
-        {
-          "outlet": "Detik",
-          "title": "Herman Deru Pastikan Penanganan Karhutla di Sumsel Terus Diperkuat",
-          "url": "https://news.detik.com/berita/d-8633286/herman-deru-pastikan-penanganan-karhutla-di-sumsel-terus-diperkuat",
-          "published_at": "2026-08-24T15:32:47.000Z"
-        },
-        {
-          "outlet": "Detik",
-          "title": "Prabowo Siapkan 1.000 Perwira TNI-Polri Perkuat Penanganan Karhutla Sumsel",
-          "url": "https://news.detik.com/berita/d-8632993/prabowo-siapkan-1-000-perwira-tni-polri-perkuat-penanganan-karhutla-sumsel",
-          "published_at": "2026-08-24T11:48:22.000Z"
-        },
-        {
-          "outlet": "Detik",
-          "title": "Kata Mensesneg soal Menhut Tak Hadir di Rapat Prabowo Tangani Karhutla",
-          "url": "https://news.detik.com/berita/d-8632961/kata-mensesneg-soal-menhut-tak-hadir-di-rapat-prabowo-tangani-karhutla",
-          "published_at": "2026-08-24T11:30:06.000Z"
-        },
-        {
-          "outlet": "Detik",
-          "title": "Prabowo Setujui Penambahan 500 Sumur Bor dan 500 APD untuk Karhutla Sumsel",
-          "url": "https://news.detik.com/berita/d-8632839/prabowo-setujui-penambahan-500-sumur-bor-dan-500-apd-untuk-karhutla-sumsel",
-          "published_at": "2026-08-24T10:07:50.000Z"
-        },
-        {
-          "outlet": "Liputan6",
-          "title": "Dapat Laporan Kebakaran Hutan Sumsel, Prabowo Tambah Helikopter",
-          "url": "https://www.liputan6.com/news/read/8276725/dapat-laporan-kebakaran-hutan-sumsel-prabowo-tambah-helikopter",
-          "published_at": "2026-08-24T09:08:56.000Z"
-        },
-        {
-          "outlet": "Detik",
-          "title": "Kapolda Sumsel Lapor Jerat 17 Tersangka Karhutla, Prabowo Minta Tindak Tegas",
-          "url": "https://news.detik.com/berita/d-8632594/kapolda-sumsel-lapor-jerat-17-tersangka-karhutla-prabowo-minta-tindak-tegas",
-          "published_at": "2026-08-24T08:27:32.000Z"
-        }
-      ]
-    },
-    {
       "id": "loc-20260824-1612-bandar-lampung",
       "place": "Bandar Lampung",
       "city": "Bandar Lampung",
@@ -347,6 +278,24 @@
       },
       "sources": [
         {
+          "outlet": "Liputan6",
+          "title": "Seskab Teddy: 11.567 Personel hingga 20 Ekskavator Tangani Kebakaran Hutan Sumsel",
+          "url": "https://www.liputan6.com/news/read/8277099/seskab-teddy-11567-personel-hingga-20-ekskavator-tangani-kebakaran-hutan-sumsel",
+          "published_at": "2026-08-25T01:31:00.000Z"
+        },
+        {
+          "outlet": "Antara News",
+          "title": "Prabowo perkuat penanganan karhutla di Sumatera Selatan",
+          "url": "https://www.antaranews.com/video/5709881/prabowo-perkuat-penanganan-karhutla-di-sumatera-selatan",
+          "published_at": "2026-08-24T17:20:44.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Herman Deru Pastikan Penanganan Karhutla di Sumsel Terus Diperkuat",
+          "url": "https://news.detik.com/berita/d-8633286/herman-deru-pastikan-penanganan-karhutla-di-sumsel-terus-diperkuat",
+          "published_at": "2026-08-24T15:32:47.000Z"
+        },
+        {
           "outlet": "Detik",
           "title": "Prabowo Siapkan 1.000 Perwira TNI-Polri Perkuat Penanganan Karhutla Sumsel",
           "url": "https://news.detik.com/berita/d-8632993/prabowo-siapkan-1-000-perwira-tni-polri-perkuat-penanganan-karhutla-sumsel",
@@ -375,50 +324,6 @@
           "title": "Kapolda Sumsel Lapor Jerat 17 Tersangka Karhutla, Prabowo Minta Tindak Tegas",
           "url": "https://news.detik.com/berita/d-8632594/kapolda-sumsel-lapor-jerat-17-tersangka-karhutla-prabowo-minta-tindak-tegas",
           "published_at": "2026-08-24T08:27:32.000Z"
-        },
-        {
-          "outlet": "Antara News",
-          "title": "Presiden tiba di Palembang pimpin rapat penanganan karhutla Sumsel",
-          "url": "https://www.antaranews.com/berita/5708749/presiden-tiba-di-palembang-pimpin-rapat-penanganan-karhutla-sumsel",
-          "published_at": "2026-08-24T07:00:36.000Z"
-        },
-        {
-          "outlet": "Detik",
-          "title": "Setelah Pekanbaru, Prabowo Lanjut Tinjau Penanganan Karhutla di Palembang",
-          "url": "https://news.detik.com/berita/d-8632377/setelah-pekanbaru-prabowo-lanjut-tinjau-penanganan-karhutla-di-palembang",
-          "published_at": "2026-08-24T06:51:45.000Z"
-        }
-      ]
-    },
-    {
-      "id": "loc-20260824-0949-riau",
-      "place": "Riau",
-      "city": "Pekanbaru",
-      "region": "Riau",
-      "country": "Indonesia",
-      "country_code": "ID",
-      "lat": 0.2933,
-      "lng": 101.7068,
-      "event_type": "kunjungan_kerja",
-      "event_label_id": "Kunjungan Kerja",
-      "reported_at": "2026-08-24T02:49:38.000Z",
-      "confidence": 88,
-      "outlet_scores": {
-        "Detik": 2.24,
-        "Antara News": 3.36
-      },
-      "sources": [
-        {
-          "outlet": "Detik",
-          "title": "Prabowo Kunker ke Riau Hari Ini, Cek Penanganan Karhutla di Sumatera",
-          "url": "https://news.detik.com/berita/d-8631923/prabowo-kunker-ke-riau-hari-ini-cek-penanganan-karhutla-di-sumatera",
-          "published_at": "2026-08-24T02:49:38.000Z"
-        },
-        {
-          "outlet": "Antara News",
-          "title": "Prabowo akan tinjau penanganan karhutla Sumatera, dimulai dari Riau",
-          "url": "https://www.antaranews.com/berita/5708387/prabowo-akan-tinjau-penanganan-karhutla-sumatera-dimulai-dari-riau",
-          "published_at": "2026-08-24T02:38:13.000Z"
         }
       ]
     },
@@ -569,50 +474,6 @@
       ]
     },
     {
-      "id": "loc-20260822-2340-kalimantan-tengah",
-      "place": "Kalimantan Tengah",
-      "city": "Palangka Raya",
-      "region": "Kalimantan Tengah",
-      "country": "Indonesia",
-      "country_code": "ID",
-      "lat": -1.6815,
-      "lng": 113.3824,
-      "event_type": "kunjungan_kerja",
-      "event_label_id": "Kunjungan Kerja",
-      "reported_at": "2026-08-22T16:40:31.000Z",
-      "confidence": 78,
-      "outlet_scores": {
-        "Liputan6": 1.68,
-        "Detik": 2.24
-      },
-      "sources": [
-        {
-          "outlet": "Liputan6",
-          "title": "Seskab Teddy: 4 Heli Water Bombing Ditambah untuk Kebakaran Hutan Kalteng",
-          "url": "https://www.liputan6.com/news/read/8275857/seskab-teddy-4-heli-water-bombing-ditambah-untuk-kebakaran-hutan-kalteng",
-          "published_at": "2026-08-22T16:40:31.000Z"
-        },
-        {
-          "outlet": "Liputan6",
-          "title": "Momen Prabowo Telepon di Tengah Rapat Kebakaran Hutan, Minta Pompa dan Heli",
-          "url": "https://www.liputan6.com/news/read/8275847/momen-prabowo-telepon-di-tengah-rapat-kebakaran-hutan-minta-pompa-dan-heli",
-          "published_at": "2026-08-22T16:18:49.000Z"
-        },
-        {
-          "outlet": "Detik",
-          "title": "Momen Prabowo Telepon di Tengah Rapat, Minta Tambahan Alat untuk Atasi Karhutla",
-          "url": "https://news.detik.com/berita/d-8630571/momen-prabowo-telepon-di-tengah-rapat-minta-tambahan-alat-untuk-atasi-karhutla",
-          "published_at": "2026-08-22T15:48:31.000Z"
-        },
-        {
-          "outlet": "Detik",
-          "title": "Mendagri Dampingi Prabowo ke Kalteng Bahas Penguatan Penanganan Karhutla",
-          "url": "https://news.detik.com/berita/d-8630404/mendagri-dampingi-prabowo-ke-kalteng-bahas-penguatan-penanganan-karhutla",
-          "published_at": "2026-08-22T13:27:57.000Z"
-        }
-      ]
-    },
-    {
       "id": "loc-20260822-1351-pontianak",
       "place": "Pontianak",
       "city": "Pontianak",
@@ -710,38 +571,6 @@
           "title": "Presiden Prabowo undang petugas upacara HUT Ke-81 RI ke Hambalang",
           "url": "https://www.antaranews.com/berita/5702673/presiden-prabowo-undang-petugas-upacara-hut-ke-81-ri-ke-hambalang",
           "published_at": "2026-08-19T22:17:05.000Z"
-        }
-      ]
-    },
-    {
-      "id": "loc-20260819-0801-nusa-tenggara-timur",
-      "place": "Nusa Tenggara Timur",
-      "city": "Kupang",
-      "region": "Nusa Tenggara Timur",
-      "country": "Indonesia",
-      "country_code": "ID",
-      "lat": -8.6574,
-      "lng": 121.0794,
-      "event_type": "kunjungan_kerja",
-      "event_label_id": "Kunjungan Kerja",
-      "reported_at": "2026-08-19T01:01:11.000Z",
-      "confidence": 83,
-      "outlet_scores": {
-        "Setkab": 3.36,
-        "Detik": 1.232
-      },
-      "sources": [
-        {
-          "outlet": "Setkab",
-          "title": "Hari Kelima Pascabencana, Pemerintah Kirim 65 Ton Logistik ke NTT",
-          "url": "https://setkab.go.id/253-ton-logistik-dikirim-ke-ntt/",
-          "published_at": "2026-08-19T01:01:11.000Z"
-        },
-        {
-          "outlet": "Detik",
-          "title": "Prabowo Direncanakan Tinjau Penanganan Bencana Gempa di NTT",
-          "url": "https://news.detik.com/berita/d-8624536/prabowo-direncanakan-tinjau-penanganan-bencana-gempa-di-ntt",
-          "published_at": "2026-08-18T13:12:49.000Z"
         }
       ]
     },
@@ -920,102 +749,6 @@
           "title": "Momen Prabowo Cium Bendera Merah Putih Sebelum Disimpan Kembali di Monas",
           "url": "https://www.liputan6.com/news/read/8271608/momen-prabowo-cium-bendera-merah-putih-sebelum-disimpan-kembali-di-monas",
           "published_at": "2026-08-17T10:59:40.000Z"
-        }
-      ]
-    },
-    {
-      "id": "loc-20260817-2021-bangkok",
-      "place": "Bangkok",
-      "city": "Bangkok",
-      "region": "",
-      "country": "Thailand",
-      "country_code": "TH",
-      "lat": 13.7563,
-      "lng": 100.5018,
-      "event_type": "upacara",
-      "event_label_id": "Upacara Kenegaraan",
-      "reported_at": "2026-08-17T13:21:09.000Z",
-      "confidence": 88,
-      "outlet_scores": {
-        "Antara News": 3.72,
-        "Detik": 1.86
-      },
-      "sources": [
-        {
-          "outlet": "Antara News",
-          "title": "Dubes RI di Bangkok: HUT RI momentum jaga semangat kebangsaan",
-          "url": "https://www.antaranews.com/berita/5698767/dubes-ri-di-bangkok-hut-ri-momentum-jaga-semangat-kebangsaan",
-          "published_at": "2026-08-17T13:21:09.000Z"
-        },
-        {
-          "outlet": "Detik",
-          "title": "Ratusan WNI Ikut Upacara HUT RI di KBRI Bangkok",
-          "url": "https://news.detik.com/berita/d-8622557/ratusan-wni-ikut-upacara-hut-ri-di-kbri-bangkok",
-          "published_at": "2026-08-17T09:17:22.000Z"
-        }
-      ]
-    },
-    {
-      "id": "loc-20260816-1628-nusa-tenggara-timur",
-      "place": "Nusa Tenggara Timur",
-      "city": "Kupang",
-      "region": "Nusa Tenggara Timur",
-      "country": "Indonesia",
-      "country_code": "ID",
-      "lat": -8.6574,
-      "lng": 121.0794,
-      "event_type": "kunjungan_kerja",
-      "event_label_id": "Kunjungan Kerja",
-      "reported_at": "2026-08-17T01:53:27.000Z",
-      "confidence": 96,
-      "outlet_scores": {
-        "Setkab": 0.84,
-        "Detik": 2.24,
-        "Liputan6": 2.24,
-        "Antara News": 3.36
-      },
-      "sources": [
-        {
-          "outlet": "Antara News",
-          "title": "Prabowo pertimbangkan ke NTT tinjau penanganan gempa",
-          "url": "https://www.antaranews.com/berita/5697744/prabowo-pertimbangkan-ke-ntt-tinjau-penanganan-gempa",
-          "published_at": "2026-08-17T01:53:27.000Z"
-        },
-        {
-          "outlet": "Liputan6",
-          "title": "Prabowo: Hati dan Doa Kami Bersama Saudara-Saudara Kita di NTT",
-          "url": "https://www.liputan6.com/news/read/8271178/prabowo-hati-dan-doa-kami-bersama-saudara-saudara-kita-di-ntt",
-          "published_at": "2026-08-16T15:31:54.000Z"
-        },
-        {
-          "outlet": "Detik",
-          "title": "Prabowo: Hati dan Doa Kami Bersama Saudara di NTT",
-          "url": "https://news.detik.com/berita/d-8621601/prabowo-hati-dan-doa-kami-bersama-saudara-di-ntt",
-          "published_at": "2026-08-16T15:01:29.000Z"
-        },
-        {
-          "outlet": "Liputan6",
-          "title": "Prabowo: Pemerintah Akan Berupaya yang Terbaik Pulihkan NTT",
-          "url": "https://www.liputan6.com/news/read/8271089/prabowo-pemerintah-akan-berupaya-yang-terbaik-pulihkan-ntt",
-          "published_at": "2026-08-16T11:18:14.000Z"
-        },
-        {
-          "outlet": "Setkab",
-          "title": "Sejak Awal Gempa, Arahan Presiden Prabowo Ditindaklanjuti Pengerahan Bantuan dan Ribuan Personel",
-          "url": "https://setkab.go.id/sejak-awal-gempa-arahan-presiden-prabowo-ditindaklanjuti-pengerahan-bantuan-dan-ribuan-personel/",
-          "published_at": "2026-08-16T09:28:24.000Z"
-        },
-        {
-          "outlet": "Detik",
-          "title": "Prabowo Pastikan Gerak Cepat Tangani Gempa NTT, Kirim 50 Ribu Paket Bantuan",
-          "url": "https://news.detik.com/berita/d-8621218/prabowo-pastikan-gerak-cepat-tangani-gempa-ntt-kirim-50-ribu-paket-bantuan",
-          "published_at": "2026-08-16T08:44:19.000Z"
-        },
-        {
-          "outlet": "Detik",
-          "title": "7 Fakta Gempa M 7 Nagekeo NTT yang Tewaskan Puluhan Jiwa",
-          "url": "https://news.detik.com/berita/d-8620347/7-fakta-gempa-m-7-nagekeo-ntt-yang-tewaskan-puluhan-jiwa",
-          "published_at": "2026-08-15T13:05:48.000Z"
         }
       ]
     },

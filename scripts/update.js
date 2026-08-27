@@ -182,12 +182,73 @@ function findLink(block) {
 /* Indonesian movement cues. A place right after one of these is far more
    likely to be where he actually is: "di Solo", "bertolak ke Beijing",
    "tiba di Makassar", "kunjungi Surabaya". */
+/* Any preposition that attaches a place to a sentence. Necessary but nowhere
+   near sufficient — "penanganan gempa DI NTT" matches this and says nothing
+   about where the President is. */
 const CUES = new Set([
   'di', 'ke', 'dari', 'menuju', 'tiba', 'mendarat', 'bertolak', 'berangkat',
   'kunjungi', 'mengunjungi', 'kunjungan', 'lawatan', 'sambangi', 'menyambangi',
   'singgah', 'tinjau', 'meninjau', 'resmikan', 'meresmikan', 'hadiri',
   'menghadiri', 'hadir', 'gelar', 'menggelar', 'pimpin', 'memimpin',
   'sampai', 'kembali', 'bermalam', 'menginap', 'buka', 'membuka'
+]);
+
+/* ------------------------------------------------------------------------
+   PRESENCE vs COMMENTARY
+
+   This is the distinction that matters most. Without it the scanner reports
+   "an article about the President that mentions a place", which is not the
+   same claim as "the President was at that place". It put him in Bangkok on
+   Independence Day off two articles about the *ambassador* there, and in NTT
+   while he was still only "considering" going.
+
+   Indonesian marks the difference fairly reliably, so we grade every hit and
+   require at least one genuinely presence-backed source before publishing.
+   ------------------------------------------------------------------------ */
+
+/* Verbs that place a body in a location. */
+const PRESENCE_VERBS = new Set([
+  'tiba', 'mendarat', 'bertolak', 'berangkat', 'menuju', 'singgah',
+  'kunjungi', 'mengunjungi', 'kunker', 'sambangi', 'menyambangi', 'blusukan',
+  'tinjau', 'meninjau', 'susuri', 'menyusuri', 'sapa', 'menyapa',
+  'bermalam', 'menginap', 'berada', 'kehadiran', 'hadir', 'hadiri', 'menghadiri',
+  'resmikan', 'meresmikan', 'luncurkan', 'meluncurkan', 'lantik', 'melantik',
+  'pimpin', 'memimpin', 'ziarah', 'buka', 'membuka', 'saksikan', 'menyaksikan',
+  'jamu', 'menjamu', 'temui', 'menemui', 'dampingi', 'mendampingi',
+  'terima', 'menerima', 'cek', 'mengecek', 'periksa', 'datangi', 'mendatangi',
+  /* Events that happen *at* a place. If the President is the subject of one,
+     he is there: "Rapat di Hambalang", "Upacara di Istana Merdeka". */
+  'rapat', 'ratas', 'sidang', 'upacara', 'apel', 'acara', 'pertemuan',
+  'peluncuran', 'peresmian', 'kunjungan', 'lawatan', 'jamuan'
+]);
+
+/* Words that mark the mention as *about* a place rather than *at* it. */
+const COMMENTARY = new Set([
+  'minta', 'meminta', 'perintahkan', 'memerintahkan', 'instruksikan',
+  'setujui', 'menyetujui', 'atensi', 'soroti', 'menyoroti', 'respons',
+  'merespons', 'tanggapi', 'menanggapi', 'komentari', 'sebut', 'menyebut',
+  'ungkap', 'mengungkap', 'janji', 'menjanjikan', 'pastikan', 'memastikan',
+  'penanganan', 'bantuan', 'logistik', 'kirim', 'mengirim', 'kucurkan',
+  'anggaran', 'dana', 'laporan', 'lapor', 'melapor', 'evaluasi', 'bahas',
+  'membahas', 'doa', 'duka', 'korban', 'dampak', 'kasus', 'situasi', 'nasib',
+  'target', 'targetkan', 'apresiasi', 'apresiasinya', 'puji', 'memuji',
+  'siapkan', 'menyiapkan', 'tambah', 'menambah', 'perkuat', 'memperkuat'
+]);
+
+/* Something that has not happened yet is not a location — and publishing it
+   would breach the project's own rule against predicting movements. */
+const FUTURE = /\b(akan|bakal|direncanakan|dijadwalkan|rencananya|berencana|pertimbangkan|mempertimbangkan|dikabarkan|jelang|bersiap|siap)\b/i;
+
+/* A place belonging to a diplomatic post rather than to the President.
+   "Dubes RI di Bangkok" and "Upacara di KBRI Bangkok" are the embassy's
+   location, not his — this is what put him in Bangkok on Independence Day.
+
+   Deliberately narrow. An earlier draft also vetoed 'gubernur', 'kapolda' and
+   similar, but "Gubernur NTT harap kehadiran Prabowo" *confirms* he was there,
+   so those produced false negatives. Regional officials are a normal way to
+   name a province while still reporting a visit. */
+const THIRD_PARTY = new Set([
+  'kbri', 'kjri', 'kedutaan', 'konsulat', 'dubes', 'duta', 'konsul', 'konjen'
 ]);
 
 /* A place name straight after a role word describes a *person*, not where the
@@ -291,9 +352,15 @@ function findPlaces(item, matchers) {
         const window = words.slice(-4);
         const norm = normalise(m.label);
 
+        const sentence0 = field.text.slice(Math.max(0, at - 110), at + 40);
+
         const veto =
           ctx.route.has(norm)                                   ? 'bagian rute/pasangan negara'
           : ROLES.has(prevWord)                                 ? `jabatan "${prevWord}" di depannya`
+          : window.some(w => THIRD_PARTY.has(w))                ? 'lokasi KBRI/kedutaan, bukan lokasi Presiden'
+          /* Not yet happened, so not a location — and publishing it would
+             breach the project's own rule against predicting movements. */
+          : FUTURE.test(sentence0)                              ? `rencana/belum terjadi ("${(sentence0.match(FUTURE) || [])[0]}")`
           : window.some(w => TOPICS.has(w))                     ? 'disebut sebagai topik, bukan tujuan'
           : (ctx.hosting && m.place.country_code !== 'ID')      ? 'Presiden sedang menjamu tamu di dalam negeri'
           : null;
@@ -305,12 +372,30 @@ function findPlaces(item, matchers) {
           ? (hasCue ? 'titleCue' : 'title')
           : (hasCue ? 'bodyCue'  : 'body');
 
+        /* Presence needs either a verb that puts a body somewhere, or a
+           specific venue with a preposition — nobody "discusses" Istana
+           Merdeka or Hambalang, you are either there or you are not, whereas
+           "di NTT" is just as likely to be the subject of a sentence.
+           Anything not yet happened is never presence. */
+        const sentence = field.text.slice(Math.max(0, at - 110), at + 40);
+        const venueLike = ['istana', 'venue', 'bandara'].includes(m.place.type);
+        const prepositional = prevWord === 'di' || prevWord === 'ke' || prevWord === 'dari';
+
+        const isPresence = !FUTURE.test(sentence) && (
+          window.some(w => PRESENCE_VERBS.has(w)) ||
+          (venueLike && prepositional)
+        );
+
         let strength = PLACEMENT[placement] * (1 + (m.place.specificity || 1) * 0.12);
         if (m.weak) strength *= 0.35;
+        if (!isPresence) strength *= 0.5;   // commentary still counts, but far less
 
         const prev = best.get(m.place.name);
         if (!prev || strength > prev.strength) {
-          best.set(m.place.name, { place: m.place, placement, strength, via: m.label, weak: m.weak });
+          best.set(m.place.name, {
+            place: m.place, placement, strength, via: m.label,
+            weak: m.weak, presence: isPresence
+          });
         }
       }
     }
@@ -354,6 +439,20 @@ function scoreCluster(reports) {
      aliases is not reportable, however many outlets repeat it. */
   const weakOnly = reports.every(r => r.match.weak);
 
+  /* At least one source has to actually place him there. Without this the
+     scanner publishes commentary — it had him in NTT on Independence Day off
+     "hati dan doa kami bersama saudara di NTT" while he was in fact leading
+     the flag ceremony at Istana Merdeka.
+
+     Only *vague* places are gated on this. A province is discussed as a topic
+     constantly ("penanganan karhutla di Sumsel"), whereas nobody discusses
+     "Istana Merdeka" or "Monumen Nasional" — you are either there or you are
+     not, and those already earn presence from a venue + preposition. Gating
+     specific places too would hide real visits. */
+  const place = reports[0].match.place;
+  const vague = (place.specificity || 1) <= 1;
+  const presence = reports.filter(r => r.match.presence).length;
+
   return {
     confidence: Math.max(20, Math.min(98, confidence)),
     outlets: [...perOutlet.keys()],
@@ -361,7 +460,12 @@ function scoreCluster(reports) {
       [...perOutlet].map(([outlet, v]) => [outlet, Math.round(v * 1000) / 1000])
     ),
     official: reports.some(r => r.official),
-    confirmed: perOutlet.size >= 2 && !weakOnly,
+    presence_sources: presence,
+    presenceBacked: presence > 0,
+    /* Vague places must show presence; specific ones need not. */
+    presenceRequired: vague,
+    presenceMissing: vague && presence === 0,
+    confirmed: perOutlet.size >= 2 && !weakOnly && !(vague && presence === 0),
     weakOnly
   };
 }
@@ -711,8 +815,9 @@ async function main() {
 
   /* -- 4. score ---------------------------------------------------------- */
   const all_clusters = cluster(located, 36);
-  const clusters = all_clusters.filter(cl => !cl.weakOnly);
-  const discarded = all_clusters.filter(cl => cl.weakOnly);
+  const clusters   = all_clusters.filter(cl => !cl.weakOnly && !cl.presenceMissing);
+  const discarded  = all_clusters.filter(cl => cl.weakOnly);
+  const noPresence = all_clusters.filter(cl => !cl.weakOnly && cl.presenceMissing);
 
   if (!clusters.length) {
     say(amber('  Semua kandidat hanya berdasar nama negara — tidak cukup kuat.'));
@@ -748,9 +853,15 @@ async function main() {
   }
 
   if (discarded.length) {
-    say(grey(`  Diabaikan (hanya disebut lewat nama negara, bukan tujuan): ${discarded.map(d => d.place.name).join(', ')}`));
-    say('');
+    say(grey(`  Diabaikan (hanya nama negara, bukan tujuan): ${discarded.map(d => d.place.name).join(', ')}`));
   }
+  if (noPresence.length) {
+    say(amber('  Diabaikan (wilayah luas tanpa bukti kehadiran — hanya dibicarakan):'));
+    for (const cl of noPresence.slice(0, 6)) {
+      say(grey(`    · ${cl.place.name} (${cl.confidence}%) — mis. "${cl.reports[0].title.slice(0, 58)}"`));
+    }
+  }
+  if (discarded.length || noPresence.length) say('');
 
   /* -- 5. verdict -------------------------------------------------------- */
   say(bold('  5. Kesimpulan'));
