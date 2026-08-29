@@ -1,9 +1,41 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-08-29T02:49:26.497Z",
-  "current": "loc-20260826-1246-nusa-tenggara-timur",
+  "generated_at": "2026-08-29T11:06:51.644Z",
+  "current": "loc-20260829-0030-istana-merdeka",
   "locations": [
+    {
+      "id": "loc-20260829-0030-istana-merdeka",
+      "place": "Istana Merdeka",
+      "city": "Jakarta Pusat",
+      "region": "DKI Jakarta",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -6.1701,
+      "lng": 106.8219,
+      "event_type": "kenegaraan",
+      "event_label_id": "Kegiatan Kenegaraan",
+      "reported_at": "2026-08-28T17:30:49.000Z",
+      "confidence": 62,
+      "outlet_scores": {
+        "Liputan6": 0.28,
+        "Setkab": 2.244
+      },
+      "sources": [
+        {
+          "outlet": "Liputan6",
+          "title": "Prabowo Temui Warga Relokasi Senen di Rumah Baru, Pesannya Sederhana",
+          "url": "https://www.liputan6.com/news/read/8280055/prabowo-temui-warga-relokasi-senen-di-rumah-baru-pesannya-sederhana",
+          "published_at": "2026-08-28T17:30:49.000Z"
+        },
+        {
+          "outlet": "Setkab",
+          "title": "Seskab Teddy Bagikan Momen Hangat Presiden Prabowo Bersama Warga Relokasi Senen di Hunian Baru",
+          "url": "https://setkab.go.id/seskab-teddy-bagikan-momen-hangat-presiden-prabowo-bersama-warga-relokasi-senen-di-hunian-baru/",
+          "published_at": "2026-08-28T16:00:22.000Z"
+        }
+      ]
+    },
     {
       "id": "loc-20260826-1246-nusa-tenggara-timur",
       "place": "Nusa Tenggara Timur",
