@@ -1,9 +1,41 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-09-01T11:40:52.966Z",
-  "current": "loc-20260829-0030-istana-merdeka",
+  "generated_at": "2026-09-01T16:41:15.824Z",
+  "current": "loc-20260901-2241-hambalang",
   "locations": [
+    {
+      "id": "loc-20260901-2241-hambalang",
+      "place": "Hambalang",
+      "city": "Bogor",
+      "region": "Jawa Barat",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -6.5333,
+      "lng": 106.9167,
+      "event_type": "kenegaraan",
+      "event_label_id": "Kegiatan Kenegaraan",
+      "reported_at": "2026-09-01T15:41:41.000Z",
+      "confidence": 51,
+      "outlet_scores": {
+        "Detik": 1.496,
+        "Liputan6": 0.34
+      },
+      "sources": [
+        {
+          "outlet": "Detik",
+          "title": "Fadli Zon Menghadap Prabowo, Usulkan Tokoh Penerima Tanda Jasa dan Kehormatan",
+          "url": "https://news.detik.com/berita/d-8644262/fadli-zon-menghadap-prabowo-usulkan-tokoh-penerima-tanda-jasa-dan-kehormatan",
+          "published_at": "2026-09-01T15:41:41.000Z"
+        },
+        {
+          "outlet": "Liputan6",
+          "title": "Fadli Zon Setor Usulan Nama Penerima Tanda Jasa ke Prabowo",
+          "url": "https://www.liputan6.com/news/read/8282601/fadli-zon-setor-usulan-nama-penerima-tanda-jasa-ke-prabowo",
+          "published_at": "2026-09-01T15:41:35.000Z"
+        }
+      ]
+    },
     {
       "id": "loc-20260829-0030-istana-merdeka",
       "place": "Istana Merdeka",
