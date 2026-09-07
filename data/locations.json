@@ -1,9 +1,41 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-09-07T04:44:09.867Z",
-  "current": "loc-20260901-2241-hambalang",
+  "generated_at": "2026-09-07T12:35:32.246Z",
+  "current": "loc-20260907-1658-istana-garuda-ibu-kota-n",
   "locations": [
+    {
+      "id": "loc-20260907-1658-istana-garuda-ibu-kota-n",
+      "place": "Istana Garuda, Ibu Kota Nusantara",
+      "city": "Penajam Paser Utara",
+      "region": "Kalimantan Timur",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -0.9265,
+      "lng": 116.6907,
+      "event_type": "militer",
+      "event_label_id": "Kegiatan Militer",
+      "reported_at": "2026-09-07T09:58:45.000Z",
+      "confidence": 54,
+      "outlet_scores": {
+        "Liputan6": 1.02,
+        "Detik": 1.02
+      },
+      "sources": [
+        {
+          "outlet": "Liputan6",
+          "title": "Prabowo Ingatkan Kebakaran Hutan Jangan Sampai ke Zona Inti IKN",
+          "url": "https://www.liputan6.com/news/read/8286585/prabowo-ingatkan-kebakaran-hutan-jangan-sampai-ke-zona-inti-ikn",
+          "published_at": "2026-09-07T09:58:45.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Atensi Prabowo: Jangan Sampai Karhutla Masuk Zona Inti IKN",
+          "url": "https://news.detik.com/berita/d-8652192/atensi-prabowo-jangan-sampai-karhutla-masuk-zona-inti-ikn",
+          "published_at": "2026-09-07T07:41:59.000Z"
+        }
+      ]
+    },
     {
       "id": "loc-20260901-2241-hambalang",
       "place": "Hambalang",
