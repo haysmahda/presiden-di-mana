@@ -1,9 +1,48 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-09-10T07:19:21.339Z",
-  "current": "loc-20260907-1658-istana-garuda-ibu-kota-n",
+  "generated_at": "2026-09-10T12:55:47.308Z",
+  "current": "loc-20260910-1721-lima",
   "locations": [
+    {
+      "id": "loc-20260910-1721-lima",
+      "place": "Lima",
+      "city": "Lima",
+      "region": "",
+      "country": "Peru",
+      "country_code": "PE",
+      "lat": -12.0464,
+      "lng": -77.0428,
+      "event_type": "kenegaraan",
+      "event_label_id": "Kegiatan Kenegaraan",
+      "reported_at": "2026-09-10T10:21:16.000Z",
+      "confidence": 48,
+      "outlet_scores": {
+        "Liputan6": 0.93,
+        "Setkab": 0.465,
+        "Detik": 0.31
+      },
+      "sources": [
+        {
+          "outlet": "Liputan6",
+          "title": "Prabowo Perintahkan TNI AL Optimalkan Pencarian Lima Jurnalis Hilang",
+          "url": "https://www.liputan6.com/photo/read/8289085/prabowo-perintahkan-tni-al-optimalkan-pencarian-lima-jurnalis-hilang",
+          "published_at": "2026-09-10T10:21:16.000Z"
+        },
+        {
+          "outlet": "Setkab",
+          "title": "Seskab Teddy: Sejak Dinyatakan Hilang, Presiden Prabowo Langsung Intruksikan KSAL Laksanakan Pencarian, 11 Kapal Gabungan Dikerahkan",
+          "url": "https://setkab.go.id/seskab-teddy-sejak-dinyatakan-hilang-presiden-prabowo-langsung-intruksikan-ksal-laksanakan-pencarian-11-kapal-gabungan-dikerahkan/",
+          "published_at": "2026-09-10T08:47:47.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Seskab: Presiden Langsung Instruksikan Cari 5 Jurnalis Hilang, 11 Kapal Dikirim",
+          "url": "https://news.detik.com/berita/d-8656888/seskab-presiden-langsung-instruksikan-cari-5-jurnalis-hilang-11-kapal-dikirim",
+          "published_at": "2026-09-10T06:51:41.000Z"
+        }
+      ]
+    },
     {
       "id": "loc-20260907-1658-istana-garuda-ibu-kota-n",
       "place": "Istana Garuda, Ibu Kota Nusantara",
