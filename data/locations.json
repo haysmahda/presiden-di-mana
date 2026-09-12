@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-09-12T12:11:21.205Z",
+  "generated_at": "2026-09-12T15:34:08.634Z",
   "current": "loc-20260912-1627-new-delhi",
   "locations": [
     {
@@ -15,13 +15,25 @@
       "lng": 77.209,
       "event_type": "forum",
       "event_label_id": "Forum Internasional",
-      "reported_at": "2026-09-12T09:27:46.000Z",
+      "reported_at": "2026-09-12T14:35:53.000Z",
       "confidence": 58,
       "outlet_scores": {
         "Detik": 1.364,
         "Liputan6": 0.868
       },
       "sources": [
+        {
+          "outlet": "Detik",
+          "title": "Momen Akrab Prabowo Bersama Putin, Xi Jinping hingga PM Modi Jelang KTT BRICS",
+          "url": "https://news.detik.com/berita/d-8660253/momen-akrab-prabowo-bersama-putin-xi-jinping-hingga-pm-modi-jelang-ktt-brics",
+          "published_at": "2026-09-12T14:35:53.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Prabowo, Putin, hingga Xi Jinping Tanam Pohon Banyan Bersama di Sela KTT BRICS",
+          "url": "https://news.detik.com/berita/d-8660244/prabowo-putin-hingga-xi-jinping-tanam-pohon-banyan-bersama-di-sela-ktt-brics",
+          "published_at": "2026-09-12T14:24:04.000Z"
+        },
         {
           "outlet": "Detik",
           "title": "Prabowo Hadiri KTT Ke-18 BRICS di India, Disambut Pelukan Hangat PM Modi",
