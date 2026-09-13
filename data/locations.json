@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-09-13T04:50:58.872Z",
+  "generated_at": "2026-09-13T11:55:07.759Z",
   "current": "loc-20260912-1627-new-delhi",
   "locations": [
     {
@@ -15,7 +15,7 @@
       "lng": 77.209,
       "event_type": "forum",
       "event_label_id": "Forum Internasional",
-      "reported_at": "2026-09-13T02:54:25.000Z",
+      "reported_at": "2026-09-13T05:56:44.000Z",
       "confidence": 71,
       "outlet_scores": {
         "Detik": 1.364,
@@ -23,6 +23,12 @@
         "Antara News": 1.023
       },
       "sources": [
+        {
+          "outlet": "Detik",
+          "title": "Prabowo Hadiri Sesi Terbuka KTT BRICS di India Hari Ini",
+          "url": "https://news.detik.com/berita/d-8660746/prabowo-hadiri-sesi-terbuka-ktt-brics-di-india-hari-ini",
+          "published_at": "2026-09-13T05:56:44.000Z"
+        },
         {
           "outlet": "Detik",
           "title": "Disambut Hangat di BRICS, Prabowo Puji Kepemimpinan PM India Modi",
@@ -64,12 +70,6 @@
           "title": "Prabowo Tiba di India, Bawa Agenda Strategis di BRICS",
           "url": "https://www.liputan6.com/news/read/8290173/prabowo-tiba-di-india-bawa-agenda-strategis-di-brics",
           "published_at": "2026-09-12T02:11:00.000Z"
-        },
-        {
-          "outlet": "Detik",
-          "title": "Prabowo Tiba di India untuk Hadiri KTT Ke-18 BRICS sebagai Anggota Penuh",
-          "url": "https://news.detik.com/berita/d-8659371/prabowo-tiba-di-india-untuk-hadiri-ktt-ke-18-brics-sebagai-anggota-penuh",
-          "published_at": "2026-09-12T01:15:24.000Z"
         }
       ]
     },
