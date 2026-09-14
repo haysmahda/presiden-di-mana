@@ -1,47 +1,9 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-09-14T00:13:25.985Z",
-  "current": "loc-20260913-0714-bandung",
+  "generated_at": "2026-09-14T05:03:46.942Z",
+  "current": "loc-20260912-1627-new-delhi",
   "locations": [
-    {
-      "id": "loc-20260913-0714-bandung",
-      "place": "Bandung",
-      "city": "Bandung",
-      "region": "Jawa Barat",
-      "country": "Indonesia",
-      "country_code": "ID",
-      "lat": -6.9175,
-      "lng": 107.6191,
-      "event_type": "forum",
-      "event_label_id": "Forum Internasional",
-      "reported_at": "2026-09-13T23:23:17.000Z",
-      "confidence": 51,
-      "outlet_scores": {
-        "Liputan6": 0.93,
-        "Detik": 0.93
-      },
-      "sources": [
-        {
-          "outlet": "Detik",
-          "title": "5 Suara Prabowo di KTT BRICS: Spirit Bandung hingga RI Tak Mau Didikte",
-          "url": "https://news.detik.com/berita/d-8661507/5-suara-prabowo-di-ktt-brics-spirit-bandung-hingga-ri-tak-mau-didikte",
-          "published_at": "2026-09-13T23:23:17.000Z"
-        },
-        {
-          "outlet": "Liputan6",
-          "title": "Prabowo Bawa Spirit Bandung ke KTT BRICS: Bersatu Kita Teguh, Terpecah Kita Runtuh",
-          "url": "https://www.liputan6.com/news/read/8290626/prabowo-bawa-spirit-bandung-ke-ktt-brics-bersatu-kita-teguh-terpecah-kita-runtuh",
-          "published_at": "2026-09-13T00:14:05.000Z"
-        },
-        {
-          "outlet": "Detik",
-          "title": "Prabowo Bawa Spirit KTT Bandung ke BRICS: Bersatu Kita Teguh, Terpecah Kita Runtuh",
-          "url": "https://news.detik.com/berita/d-8660172/prabowo-bawa-spirit-ktt-bandung-ke-brics-bersatu-kita-teguh-terpecah-kita-runtuh",
-          "published_at": "2026-09-12T13:16:46.000Z"
-        }
-      ]
-    },
     {
       "id": "loc-20260912-1627-new-delhi",
       "place": "New Delhi",
@@ -53,14 +15,21 @@
       "lng": 77.209,
       "event_type": "forum",
       "event_label_id": "Forum Internasional",
-      "reported_at": "2026-09-13T05:56:44.000Z",
-      "confidence": 71,
+      "reported_at": "2026-09-14T00:53:38.000Z",
+      "confidence": 81,
       "outlet_scores": {
         "Detik": 1.364,
         "Liputan6": 0.868,
-        "Antara News": 1.023
+        "Antara News": 1.023,
+        "Setkab": 1.023
       },
       "sources": [
+        {
+          "outlet": "Setkab",
+          "title": "Seskab Teddy: Presiden Prabowo Bawa Tiga Pesan Utama Indonesia untuk Dunia di KTT BRICS 2026",
+          "url": "https://setkab.go.id/seskab-teddy-presiden-prabowo-bawa-tiga-pesan-utama-indonesia-untuk-dunia-di-ktt-brics-2026/",
+          "published_at": "2026-09-14T00:53:38.000Z"
+        },
         {
           "outlet": "Detik",
           "title": "Prabowo Hadiri Sesi Terbuka KTT BRICS di India Hari Ini",
@@ -98,16 +67,48 @@
           "published_at": "2026-09-12T14:24:04.000Z"
         },
         {
+          "outlet": "Setkab",
+          "title": "Presiden Prabowo Hadiri KTT BRICS 2026, Tegaskan Peran Aktif Indonesia dalam Tata Kelola Global",
+          "url": "https://setkab.go.id/presiden-prabowo-hadiri-ktt-brics-2026-tegaskan-peran-aktif-indonesia-dalam-tata-kelola-global/",
+          "published_at": "2026-09-12T11:00:06.000Z"
+        }
+      ]
+    },
+    {
+      "id": "loc-20260913-0714-bandung",
+      "place": "Bandung",
+      "city": "Bandung",
+      "region": "Jawa Barat",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -6.9175,
+      "lng": 107.6191,
+      "event_type": "forum",
+      "event_label_id": "Forum Internasional",
+      "reported_at": "2026-09-13T23:23:17.000Z",
+      "confidence": 51,
+      "outlet_scores": {
+        "Liputan6": 0.93,
+        "Detik": 0.93
+      },
+      "sources": [
+        {
           "outlet": "Detik",
-          "title": "Prabowo Hadiri KTT Ke-18 BRICS di India, Disambut Pelukan Hangat PM Modi",
-          "url": "https://news.detik.com/berita/d-8659877/prabowo-hadiri-ktt-ke-18-brics-di-india-disambut-pelukan-hangat-pm-modi",
-          "published_at": "2026-09-12T09:27:46.000Z"
+          "title": "5 Suara Prabowo di KTT BRICS: Spirit Bandung hingga RI Tak Mau Didikte",
+          "url": "https://news.detik.com/berita/d-8661507/5-suara-prabowo-di-ktt-brics-spirit-bandung-hingga-ri-tak-mau-didikte",
+          "published_at": "2026-09-13T23:23:17.000Z"
         },
         {
           "outlet": "Liputan6",
-          "title": "Prabowo Tiba di India, Bawa Agenda Strategis di BRICS",
-          "url": "https://www.liputan6.com/news/read/8290173/prabowo-tiba-di-india-bawa-agenda-strategis-di-brics",
-          "published_at": "2026-09-12T02:11:00.000Z"
+          "title": "Prabowo Bawa Spirit Bandung ke KTT BRICS: Bersatu Kita Teguh, Terpecah Kita Runtuh",
+          "url": "https://www.liputan6.com/news/read/8290626/prabowo-bawa-spirit-bandung-ke-ktt-brics-bersatu-kita-teguh-terpecah-kita-runtuh",
+          "published_at": "2026-09-13T00:14:05.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Prabowo Bawa Spirit KTT Bandung ke BRICS: Bersatu Kita Teguh, Terpecah Kita Runtuh",
+          "url": "https://news.detik.com/berita/d-8660172/prabowo-bawa-spirit-ktt-bandung-ke-brics-bersatu-kita-teguh-terpecah-kita-runtuh",
+          "published_at": "2026-09-12T13:16:46.000Z"
         }
       ]
     },
