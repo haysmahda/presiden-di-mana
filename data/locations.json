@@ -1,9 +1,41 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-09-15T04:56:54.828Z",
-  "current": "loc-20260912-1627-new-delhi",
+  "generated_at": "2026-09-15T11:46:07.455Z",
+  "current": "loc-20260915-1247-istana-negara",
   "locations": [
+    {
+      "id": "loc-20260915-1247-istana-negara",
+      "place": "Istana Negara",
+      "city": "Jakarta Pusat",
+      "region": "DKI Jakarta",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -6.1704,
+      "lng": 106.8236,
+      "event_type": "pelantikan",
+      "event_label_id": "Pelantikan",
+      "reported_at": "2026-09-15T05:47:16.000Z",
+      "confidence": 67,
+      "outlet_scores": {
+        "Liputan6": 0.616,
+        "Setkab": 2.244
+      },
+      "sources": [
+        {
+          "outlet": "Liputan6",
+          "title": "Suahasil Nazara Resmi Jabat Menteri Keuangan",
+          "url": "https://www.liputan6.com/photo/read/8291991/suahasil-nazara-resmi-jabat-menteri-keuangan",
+          "published_at": "2026-09-15T05:47:16.000Z"
+        },
+        {
+          "outlet": "Setkab",
+          "title": "Presiden Prabowo Lantik Suahasil Nazara sebagai Menteri Keuangan",
+          "url": "https://setkab.go.id/presiden-prabowo-lantik-suahasil-nazara-sebagai-menteri-keuangan/",
+          "published_at": "2026-09-14T09:35:01.000Z"
+        }
+      ]
+    },
     {
       "id": "loc-20260912-1627-new-delhi",
       "place": "New Delhi",
