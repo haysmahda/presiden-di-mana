@@ -1,9 +1,77 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-09-16T07:42:18.698Z",
-  "current": "loc-20260915-1247-istana-negara",
+  "generated_at": "2026-09-16T13:31:29.601Z",
+  "current": "loc-20260916-1937-istana-merdeka",
   "locations": [
+    {
+      "id": "loc-20260916-1937-istana-merdeka",
+      "place": "Istana Merdeka",
+      "city": "Jakarta Pusat",
+      "region": "DKI Jakarta",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -6.1701,
+      "lng": 106.8219,
+      "event_type": "bilateral",
+      "event_label_id": "Pertemuan Bilateral",
+      "reported_at": "2026-09-16T12:37:41.000Z",
+      "confidence": 50,
+      "outlet_scores": {
+        "Detik": 0.84,
+        "Liputan6": 0.952
+      },
+      "sources": [
+        {
+          "outlet": "Detik",
+          "title": "PDIP: Pramono Bekerja dalam Diam, Sudah Selayaknya Diapresiasi Prabowo",
+          "url": "https://news.detik.com/berita/d-8665913/pdip-pramono-bekerja-dalam-diam-sudah-selayaknya-diapresiasi-prabowo",
+          "published_at": "2026-09-16T12:37:41.000Z"
+        },
+        {
+          "outlet": "Liputan6",
+          "title": "Suahasil hingga Bahlil Dipanggil Prabowo ke Istana",
+          "url": "https://www.liputan6.com/news/read/8293160/suahasil-hingga-bahlil-dipanggil-prabowo-ke-istana",
+          "published_at": "2026-09-16T11:00:20.000Z"
+        },
+        {
+          "outlet": "Liputan6",
+          "title": "Momen Prabowo Sapa Warga dan Pelajar Usai Resmikan LRT Manggarai",
+          "url": "https://www.liputan6.com/photo/read/8293073/momen-prabowo-sapa-warga-dan-pelajar-usai-resmikan-lrt-manggarai",
+          "published_at": "2026-09-16T09:53:58.000Z"
+        },
+        {
+          "outlet": "Liputan6",
+          "title": "Prabowo Ingin Jakarta Jadi Kota Hijau dan Penuh Taman",
+          "url": "https://www.liputan6.com/news/read/8293012/prabowo-ingin-jakarta-jadi-kota-hijau-dan-penuh-taman",
+          "published_at": "2026-09-16T08:38:41.000Z"
+        },
+        {
+          "outlet": "Liputan6",
+          "title": "Momen Prabowo Resmikan LRT Kelapa Gading-Manggarai",
+          "url": "https://www.liputan6.com/news/read/8292983/momen-prabowo-resmikan-lrt-kelapa-gading-manggarai",
+          "published_at": "2026-09-16T07:54:30.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Prabowo Ingin Jakarta Jadi The Green City, Setuju Konsep Vertical Garden",
+          "url": "https://news.detik.com/berita/d-8665343/prabowo-ingin-jakarta-jadi-the-green-city-setuju-konsep-vertical-garden",
+          "published_at": "2026-09-16T07:50:39.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "LRT Kelapa Gading-Manggarai Targetkan Angkut 80 Ribu Penumpang Per Hari",
+          "url": "https://news.detik.com/berita/d-8665342/lrt-kelapa-gading-manggarai-targetkan-angkut-80-ribu-penumpang-per-hari",
+          "published_at": "2026-09-16T07:50:37.000Z"
+        },
+        {
+          "outlet": "Liputan6",
+          "title": "Kelakar Prabowo saat Jajal LRT Kelapa Gading-Manggarai: Jakarta Kaya",
+          "url": "https://www.liputan6.com/news/read/8292974/kelakar-prabowo-saat-jajal-lrt-kelapa-gading-manggarai-jakarta-kaya",
+          "published_at": "2026-09-16T07:44:29.000Z"
+        }
+      ]
+    },
     {
       "id": "loc-20260915-1247-istana-negara",
       "place": "Istana Negara",
