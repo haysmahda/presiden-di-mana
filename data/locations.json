@@ -1,9 +1,41 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-09-16T21:21:56.214Z",
-  "current": "loc-20260916-1937-istana-merdeka",
+  "generated_at": "2026-09-17T07:41:43.272Z",
+  "current": "loc-20260917-1238-jakarta",
   "locations": [
+    {
+      "id": "loc-20260917-1238-jakarta",
+      "place": "Jakarta",
+      "city": "Jakarta",
+      "region": "DKI Jakarta",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -6.2088,
+      "lng": 106.8456,
+      "event_type": "peresmian",
+      "event_label_id": "Peresmian",
+      "reported_at": "2026-09-17T05:38:46.000Z",
+      "confidence": 28,
+      "outlet_scores": {
+        "Detik": 0.28,
+        "Liputan6": 0.56
+      },
+      "sources": [
+        {
+          "outlet": "Detik",
+          "title": "Dipuji Prabowo sebagai Gubernur Hebat, Pramono: Biar Publik yang Menilai",
+          "url": "https://news.detik.com/berita/d-8666682/dipuji-prabowo-sebagai-gubernur-hebat-pramono-biar-publik-yang-menilai",
+          "published_at": "2026-09-17T05:38:46.000Z"
+        },
+        {
+          "outlet": "Liputan6",
+          "title": "Reaksi Pramono Usai Dipuji Prabowo",
+          "url": "https://www.liputan6.com/news/read/8293568/reaksi-pramono-usai-dipuji-prabowo",
+          "published_at": "2026-09-17T04:54:48.000Z"
+        }
+      ]
+    },
     {
       "id": "loc-20260916-1937-istana-merdeka",
       "place": "Istana Merdeka",
