@@ -1,41 +1,9 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-09-17T07:41:43.272Z",
-  "current": "loc-20260917-1238-jakarta",
+  "generated_at": "2026-09-17T13:30:02.423Z",
+  "current": "loc-20260916-1937-istana-merdeka",
   "locations": [
-    {
-      "id": "loc-20260917-1238-jakarta",
-      "place": "Jakarta",
-      "city": "Jakarta",
-      "region": "DKI Jakarta",
-      "country": "Indonesia",
-      "country_code": "ID",
-      "lat": -6.2088,
-      "lng": 106.8456,
-      "event_type": "peresmian",
-      "event_label_id": "Peresmian",
-      "reported_at": "2026-09-17T05:38:46.000Z",
-      "confidence": 28,
-      "outlet_scores": {
-        "Detik": 0.28,
-        "Liputan6": 0.56
-      },
-      "sources": [
-        {
-          "outlet": "Detik",
-          "title": "Dipuji Prabowo sebagai Gubernur Hebat, Pramono: Biar Publik yang Menilai",
-          "url": "https://news.detik.com/berita/d-8666682/dipuji-prabowo-sebagai-gubernur-hebat-pramono-biar-publik-yang-menilai",
-          "published_at": "2026-09-17T05:38:46.000Z"
-        },
-        {
-          "outlet": "Liputan6",
-          "title": "Reaksi Pramono Usai Dipuji Prabowo",
-          "url": "https://www.liputan6.com/news/read/8293568/reaksi-pramono-usai-dipuji-prabowo",
-          "published_at": "2026-09-17T04:54:48.000Z"
-        }
-      ]
-    },
     {
       "id": "loc-20260916-1937-istana-merdeka",
       "place": "Istana Merdeka",
@@ -45,15 +13,27 @@
       "country_code": "ID",
       "lat": -6.1701,
       "lng": 106.8219,
-      "event_type": "bilateral",
-      "event_label_id": "Pertemuan Bilateral",
-      "reported_at": "2026-09-16T12:37:41.000Z",
-      "confidence": 50,
+      "event_type": "peresmian",
+      "event_label_id": "Peresmian",
+      "reported_at": "2026-09-17T09:13:13.000Z",
+      "confidence": 52,
       "outlet_scores": {
-        "Detik": 0.84,
+        "Detik": 0.952,
         "Liputan6": 0.952
       },
       "sources": [
+        {
+          "outlet": "Detik",
+          "title": "Prabowo Panggil Dewan Energi Nasional ke Istana, Bahas Apa?",
+          "url": "https://news.detik.com/berita/d-8667169/prabowo-panggil-dewan-energi-nasional-ke-istana-bahas-apa",
+          "published_at": "2026-09-17T09:13:13.000Z"
+        },
+        {
+          "outlet": "Liputan6",
+          "title": "Reaksi Pramono Usai Dipuji Prabowo",
+          "url": "https://www.liputan6.com/news/read/8293568/reaksi-pramono-usai-dipuji-prabowo",
+          "published_at": "2026-09-17T04:54:48.000Z"
+        },
         {
           "outlet": "Detik",
           "title": "PDIP: Pramono Bekerja dalam Diam, Sudah Selayaknya Diapresiasi Prabowo",
@@ -89,18 +69,38 @@
           "title": "Prabowo Ingin Jakarta Jadi The Green City, Setuju Konsep Vertical Garden",
           "url": "https://news.detik.com/berita/d-8665343/prabowo-ingin-jakarta-jadi-the-green-city-setuju-konsep-vertical-garden",
           "published_at": "2026-09-16T07:50:39.000Z"
-        },
+        }
+      ]
+    },
+    {
+      "id": "loc-20260917-1238-jakarta",
+      "place": "Jakarta",
+      "city": "Jakarta",
+      "region": "DKI Jakarta",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -6.2088,
+      "lng": 106.8456,
+      "event_type": "peresmian",
+      "event_label_id": "Peresmian",
+      "reported_at": "2026-09-17T05:38:46.000Z",
+      "confidence": 28,
+      "outlet_scores": {
+        "Detik": 0.28,
+        "Liputan6": 0.56
+      },
+      "sources": [
         {
           "outlet": "Detik",
-          "title": "LRT Kelapa Gading-Manggarai Targetkan Angkut 80 Ribu Penumpang Per Hari",
-          "url": "https://news.detik.com/berita/d-8665342/lrt-kelapa-gading-manggarai-targetkan-angkut-80-ribu-penumpang-per-hari",
-          "published_at": "2026-09-16T07:50:37.000Z"
+          "title": "Dipuji Prabowo sebagai Gubernur Hebat, Pramono: Biar Publik yang Menilai",
+          "url": "https://news.detik.com/berita/d-8666682/dipuji-prabowo-sebagai-gubernur-hebat-pramono-biar-publik-yang-menilai",
+          "published_at": "2026-09-17T05:38:46.000Z"
         },
         {
           "outlet": "Liputan6",
-          "title": "Kelakar Prabowo saat Jajal LRT Kelapa Gading-Manggarai: Jakarta Kaya",
-          "url": "https://www.liputan6.com/news/read/8292974/kelakar-prabowo-saat-jajal-lrt-kelapa-gading-manggarai-jakarta-kaya",
-          "published_at": "2026-09-16T07:44:29.000Z"
+          "title": "Reaksi Pramono Usai Dipuji Prabowo",
+          "url": "https://www.liputan6.com/news/read/8293568/reaksi-pramono-usai-dipuji-prabowo",
+          "published_at": "2026-09-17T04:54:48.000Z"
         }
       ]
     },
