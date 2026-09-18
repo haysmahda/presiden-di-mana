@@ -1,9 +1,53 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-09-17T22:52:08.618Z",
-  "current": "loc-20260916-1937-istana-merdeka",
+  "generated_at": "2026-09-18T11:17:31.694Z",
+  "current": "loc-20260918-1806-serang",
   "locations": [
+    {
+      "id": "loc-20260918-1806-serang",
+      "place": "Serang",
+      "city": "Serang",
+      "region": "Banten",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -6.12,
+      "lng": 106.1503,
+      "event_type": "peresmian",
+      "event_label_id": "Peresmian",
+      "reported_at": "2026-09-18T11:06:43.000Z",
+      "confidence": 76,
+      "outlet_scores": {
+        "Detik": 2.48,
+        "Antara News": 1.26
+      },
+      "sources": [
+        {
+          "outlet": "Detik",
+          "title": "Kapolri Ajak Warga Banten Lestarikan Silat-Debus hingga Dikenal Internasional",
+          "url": "https://news.detik.com/berita/d-8668995/kapolri-ajak-warga-banten-lestarikan-silat-debus-hingga-dikenal-internasional",
+          "published_at": "2026-09-18T11:06:43.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Kapolri Dorong Padepokan Tjimande Berdiri di Setiap Kabupaten Banten",
+          "url": "https://news.detik.com/berita/d-8668963/kapolri-dorong-padepokan-tjimande-berdiri-di-setiap-kabupaten-banten",
+          "published_at": "2026-09-18T10:42:34.000Z"
+        },
+        {
+          "outlet": "Antara News",
+          "title": "Kapolri dorong padepokan Tjimande di setiap kabupaten Banten",
+          "url": "https://www.antaranews.com/berita/5747607/kapolri-dorong-padepokan-tjimande-di-setiap-kabupaten-banten",
+          "published_at": "2026-09-18T10:33:52.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Kapolri Resmikan Balai Silat di Serang, Harap Jadi Wadah Lestarikan Budaya",
+          "url": "https://news.detik.com/berita/d-8668875/kapolri-resmikan-balai-silat-di-serang-harap-jadi-wadah-lestarikan-budaya",
+          "published_at": "2026-09-18T09:48:55.000Z"
+        }
+      ]
+    },
     {
       "id": "loc-20260916-1937-istana-merdeka",
       "place": "Istana Merdeka",
