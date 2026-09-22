@@ -1,9 +1,53 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-09-22T11:40:53.234Z",
-  "current": "loc-20260918-1806-serang",
+  "generated_at": "2026-09-22T16:58:26.026Z",
+  "current": "loc-20260922-1923-istana-merdeka",
   "locations": [
+    {
+      "id": "loc-20260922-1923-istana-merdeka",
+      "place": "Istana Merdeka",
+      "city": "Jakarta Pusat",
+      "region": "DKI Jakarta",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -6.1701,
+      "lng": 106.8219,
+      "event_type": "kenegaraan",
+      "event_label_id": "Kegiatan Kenegaraan",
+      "reported_at": "2026-09-22T12:23:02.000Z",
+      "confidence": 52,
+      "outlet_scores": {
+        "Detik": 0.952,
+        "Liputan6": 0.952
+      },
+      "sources": [
+        {
+          "outlet": "Detik",
+          "title": "Diminta Prabowo Bantu Tambah Rute LRT Jakarta, Danantara: Sedang Kami Kaji",
+          "url": "https://news.detik.com/berita/d-8674614/diminta-prabowo-bantu-tambah-rute-lrt-jakarta-danantara-sedang-kami-kaji",
+          "published_at": "2026-09-22T12:23:02.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Dipanggil ke Istana, Dirjen Bea Cukai Ungkap Arahan Prabowo",
+          "url": "https://news.detik.com/berita/d-8674470/dipanggil-ke-istana-dirjen-bea-cukai-ungkap-arahan-prabowo",
+          "published_at": "2026-09-22T10:49:21.000Z"
+        },
+        {
+          "outlet": "Liputan6",
+          "title": "Prabowo Panggil Dirjen Bea Cukai ke Istana, Bahas Apa?",
+          "url": "https://www.liputan6.com/news/read/8297111/prabowo-panggil-dirjen-bea-cukai-ke-istana-bahas-apa",
+          "published_at": "2026-09-22T09:27:23.000Z"
+        },
+        {
+          "outlet": "Liputan6",
+          "title": "Prabowo Panggil Menteri hingga Kepala Lembaga ke Istana",
+          "url": "https://www.liputan6.com/news/read/8297069/prabowo-panggil-menteri-hingga-kepala-lembaga-ke-istana",
+          "published_at": "2026-09-22T08:56:29.000Z"
+        }
+      ]
+    },
     {
       "id": "loc-20260918-1806-serang",
       "place": "Serang",
