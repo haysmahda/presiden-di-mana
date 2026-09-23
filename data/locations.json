@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-09-23T00:35:15.571Z",
+  "generated_at": "2026-09-23T07:46:37.748Z",
   "current": "loc-20260922-1923-istana-merdeka",
   "locations": [
     {
@@ -13,20 +13,46 @@
       "country_code": "ID",
       "lat": -6.1701,
       "lng": 106.8219,
-      "event_type": "kenegaraan",
-      "event_label_id": "Kegiatan Kenegaraan",
-      "reported_at": "2026-09-22T12:23:02.000Z",
-      "confidence": 52,
+      "event_type": "rapat",
+      "event_label_id": "Rapat Kabinet",
+      "reported_at": "2026-09-23T07:27:34.000Z",
+      "confidence": 85,
       "outlet_scores": {
         "Detik": 0.952,
-        "Liputan6": 0.952
+        "Liputan6": 0.952,
+        "Antara News": 2.244,
+        "Setkab": 0.785
       },
       "sources": [
+        {
+          "outlet": "Detik",
+          "title": "Pratikno hingga Brian Merapat ke Istana Rapat Pendidikan Gratis SD-PTN",
+          "url": "https://news.detik.com/berita/d-8675603/pratikno-hingga-brian-merapat-ke-istana-rapat-pendidikan-gratis-sd-ptn",
+          "published_at": "2026-09-23T07:27:34.000Z"
+        },
+        {
+          "outlet": "Antara News",
+          "title": "Seskab: Presiden hari ini gelar ratas bahas pendidikan negeri gratis",
+          "url": "https://www.antaranews.com/berita/5754295/seskab-presiden-hari-ini-gelar-ratas-bahas-pendidikan-negeri-gratis",
+          "published_at": "2026-09-23T06:45:26.000Z"
+        },
         {
           "outlet": "Detik",
           "title": "Diminta Prabowo Bantu Tambah Rute LRT Jakarta, Danantara: Sedang Kami Kaji",
           "url": "https://news.detik.com/berita/d-8674614/diminta-prabowo-bantu-tambah-rute-lrt-jakarta-danantara-sedang-kami-kaji",
           "published_at": "2026-09-22T12:23:02.000Z"
+        },
+        {
+          "outlet": "Setkab",
+          "title": "Presiden Prabowo Perkuat Industri Tekstil, Lindungi Jutaan Pekerja dan Produk Dalam Negeri",
+          "url": "https://setkab.go.id/presiden-prabowo-perkuat-industri-tekstil-lindungi-jutaan-pekerja-dan-produk-dalam-negeri/",
+          "published_at": "2026-09-22T11:30:28.000Z"
+        },
+        {
+          "outlet": "Setkab",
+          "title": "Presiden Prabowo Perintahkan IEU-CEPA Segera Tuntas, Perluas Akses Indonesia ke Pasar Eropa",
+          "url": "https://setkab.go.id/presiden-prabowo-perintahkan-ieu-cepa-segera-tuntas-perluas-akses-indonesia-ke-pasar-eropa/",
+          "published_at": "2026-09-22T11:00:23.000Z"
         },
         {
           "outlet": "Detik",
