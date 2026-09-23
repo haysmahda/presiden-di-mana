@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-09-23T07:46:37.748Z",
+  "generated_at": "2026-09-23T13:39:33.150Z",
   "current": "loc-20260922-1923-istana-merdeka",
   "locations": [
     {
@@ -15,7 +15,7 @@
       "lng": 106.8219,
       "event_type": "rapat",
       "event_label_id": "Rapat Kabinet",
-      "reported_at": "2026-09-23T07:27:34.000Z",
+      "reported_at": "2026-09-23T13:09:29.000Z",
       "confidence": 85,
       "outlet_scores": {
         "Detik": 0.952,
@@ -24,6 +24,12 @@
         "Setkab": 0.785
       },
       "sources": [
+        {
+          "outlet": "Antara News",
+          "title": "Mensos lapor ke Presiden Prabowo progres Sekolah Rakyat",
+          "url": "https://www.antaranews.com/video/5755091/mensos-lapor-ke-presiden-prabowo-progres-sekolah-rakyat",
+          "published_at": "2026-09-23T13:09:29.000Z"
+        },
         {
           "outlet": "Detik",
           "title": "Pratikno hingga Brian Merapat ke Istana Rapat Pendidikan Gratis SD-PTN",
@@ -65,12 +71,6 @@
           "title": "Prabowo Panggil Dirjen Bea Cukai ke Istana, Bahas Apa?",
           "url": "https://www.liputan6.com/news/read/8297111/prabowo-panggil-dirjen-bea-cukai-ke-istana-bahas-apa",
           "published_at": "2026-09-22T09:27:23.000Z"
-        },
-        {
-          "outlet": "Liputan6",
-          "title": "Prabowo Panggil Menteri hingga Kepala Lembaga ke Istana",
-          "url": "https://www.liputan6.com/news/read/8297069/prabowo-panggil-menteri-hingga-kepala-lembaga-ke-istana",
-          "published_at": "2026-09-22T08:56:29.000Z"
         }
       ]
     },
