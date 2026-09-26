@@ -1,9 +1,47 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-09-26T05:00:00.159Z",
-  "current": "loc-20260922-1923-istana-merdeka",
+  "generated_at": "2026-09-26T11:27:00.383Z",
+  "current": "loc-20260926-1329-istana-merdeka",
   "locations": [
+    {
+      "id": "loc-20260926-1329-istana-merdeka",
+      "place": "Istana Merdeka",
+      "city": "Jakarta Pusat",
+      "region": "DKI Jakarta",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -6.1701,
+      "lng": 106.8219,
+      "event_type": "kenegaraan",
+      "event_label_id": "Kegiatan Kenegaraan",
+      "reported_at": "2026-09-26T06:29:34.000Z",
+      "confidence": 62,
+      "outlet_scores": {
+        "Detik": 0.28,
+        "Setkab": 2.244
+      },
+      "sources": [
+        {
+          "outlet": "Detik",
+          "title": "Putra Prabowo Didit Melayat ke Rumah Duka Guruh Soekarnoputra",
+          "url": "https://news.detik.com/berita/d-8680130/putra-prabowo-didit-melayat-ke-rumah-duka-guruh-soekarnoputra",
+          "published_at": "2026-09-26T06:29:34.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "10 Hari Beroperasi, LRT Kelapa Gading-Manggarai Angkut 100.343 Penumpang",
+          "url": "https://news.detik.com/berita/d-8679880/10-hari-beroperasi-lrt-kelapa-gading-manggarai-angkut-100-343-penumpang",
+          "published_at": "2026-09-26T03:01:01.000Z"
+        },
+        {
+          "outlet": "Setkab",
+          "title": "Presiden Prabowo Bahas Penanganan Kebakaran Lahan Gambut Bersama Akademisi",
+          "url": "https://setkab.go.id/presiden-prabowo-bahas-penanganan-kebakaran-lahan-gambut-bersama-akademisi/",
+          "published_at": "2026-09-25T10:22:43.000Z"
+        }
+      ]
+    },
     {
       "id": "loc-20260922-1923-istana-merdeka",
       "place": "Istana Merdeka",
