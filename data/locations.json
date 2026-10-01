@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-10-01T05:57:22.682Z",
+  "generated_at": "2026-10-01T13:18:35.714Z",
   "current": "loc-20261001-1252-istana-merdeka",
   "locations": [
     {
@@ -15,30 +15,61 @@
       "lng": 106.8219,
       "event_type": "pelantikan",
       "event_label_id": "Pelantikan",
-      "reported_at": "2026-10-01T05:52:02.000Z",
-      "confidence": 27,
+      "reported_at": "2026-10-01T13:09:08.000Z",
+      "confidence": 54,
       "outlet_scores": {
         "Antara News": 0.536,
-        "Detik": 0.28
+        "Detik": 0.952,
+        "Liputan6": 0.524
       },
       "sources": [
+        {
+          "outlet": "Detik",
+          "title": "Doa Prabowo di Depan Sumur Maut Lubang Buaya",
+          "url": "https://news.detik.com/berita/d-8688437/doa-prabowo-di-depan-sumur-maut-lubang-buaya",
+          "published_at": "2026-10-01T13:09:08.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Momen Jenderal Suyudi Bersimpuh Cium Ibu Usai Dilantik Jadi Kapolri di Istana",
+          "url": "https://news.detik.com/berita/d-8688334/momen-jenderal-suyudi-bersimpuh-cium-ibu-usai-dilantik-jadi-kapolri-di-istana",
+          "published_at": "2026-10-01T11:36:46.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Kapolri Jenderal Suyudi Ungkap Isi Obrolan Saat Dipanggil ke Istana 2 Hari Lalu",
+          "url": "https://news.detik.com/berita/d-8687964/kapolri-jenderal-suyudi-ungkap-isi-obrolan-saat-dipanggil-ke-istana-2-hari-lalu",
+          "published_at": "2026-10-01T08:59:36.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Salam Komando Jenderal Suyudi dan Jenderal Sigit di Istana",
+          "url": "https://news.detik.com/berita/d-8687909/salam-komando-jenderal-suyudi-dan-jenderal-sigit-di-istana",
+          "published_at": "2026-10-01T08:34:30.000Z"
+        },
+        {
+          "outlet": "Liputan6",
+          "title": "Reshuffle Kabinet, Ini Daftar Lengkap 18 Pejabat Baru Kabinet Merah Putih",
+          "url": "https://www.liputan6.com/news/read/8303873/reshuffle-kabinet-ini-daftar-lengkap-18-pejabat-baru-kabinet-merah-putih",
+          "published_at": "2026-10-01T08:26:53.000Z"
+        },
+        {
+          "outlet": "Liputan6",
+          "title": "Reshuffle Kabinet, Dedi Prasetyo Resmi Jabat Kepala Badan Reformasi Agraria Nasional",
+          "url": "https://www.liputan6.com/news/read/8303838/reshuffle-kabinet-dedi-prasetyo-resmi-jabat-kepala-badan-reformasi-agraria-nasional",
+          "published_at": "2026-10-01T07:48:38.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Arrmanatha Nasir Jadi Menlu Gantikan Sugiono",
+          "url": "https://news.detik.com/berita/d-8687766/arrmanatha-nasir-jadi-menlu-gantikan-sugiono",
+          "published_at": "2026-10-01T07:36:09.000Z"
+        },
         {
           "outlet": "Antara News",
           "title": "Istana konfirmasi Prabowo lantik Suyudi jadi Kapolri siang ini",
           "url": "https://www.antaranews.com/berita/5766168/istana-konfirmasi-prabowo-lantik-suyudi-jadi-kapolri-siang-ini",
           "published_at": "2026-10-01T05:52:02.000Z"
-        },
-        {
-          "outlet": "Detik",
-          "title": "Usai Upacara, Prabowo Resmikan Renovasi Museum Kesaktian Pancasila",
-          "url": "https://news.detik.com/berita/d-8687177/usai-upacara-prabowo-resmikan-renovasi-museum-kesaktian-pancasila",
-          "published_at": "2026-10-01T03:09:56.000Z"
-        },
-        {
-          "outlet": "Detik",
-          "title": "Prabowo Pimpin Upacara Hari Kesaktian Pancasila di Lubang Buaya",
-          "url": "https://news.detik.com/berita/d-8687022/prabowo-pimpin-upacara-hari-kesaktian-pancasila-di-lubang-buaya",
-          "published_at": "2026-10-01T01:18:36.000Z"
         }
       ]
     },
