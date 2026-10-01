@@ -1,9 +1,47 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-09-30T19:21:53.327Z",
-  "current": "loc-20260926-1329-istana-merdeka",
+  "generated_at": "2026-10-01T05:57:22.682Z",
+  "current": "loc-20261001-1252-istana-merdeka",
   "locations": [
+    {
+      "id": "loc-20261001-1252-istana-merdeka",
+      "place": "Istana Merdeka",
+      "city": "Jakarta Pusat",
+      "region": "DKI Jakarta",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -6.1701,
+      "lng": 106.8219,
+      "event_type": "pelantikan",
+      "event_label_id": "Pelantikan",
+      "reported_at": "2026-10-01T05:52:02.000Z",
+      "confidence": 27,
+      "outlet_scores": {
+        "Antara News": 0.536,
+        "Detik": 0.28
+      },
+      "sources": [
+        {
+          "outlet": "Antara News",
+          "title": "Istana konfirmasi Prabowo lantik Suyudi jadi Kapolri siang ini",
+          "url": "https://www.antaranews.com/berita/5766168/istana-konfirmasi-prabowo-lantik-suyudi-jadi-kapolri-siang-ini",
+          "published_at": "2026-10-01T05:52:02.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Usai Upacara, Prabowo Resmikan Renovasi Museum Kesaktian Pancasila",
+          "url": "https://news.detik.com/berita/d-8687177/usai-upacara-prabowo-resmikan-renovasi-museum-kesaktian-pancasila",
+          "published_at": "2026-10-01T03:09:56.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Prabowo Pimpin Upacara Hari Kesaktian Pancasila di Lubang Buaya",
+          "url": "https://news.detik.com/berita/d-8687022/prabowo-pimpin-upacara-hari-kesaktian-pancasila-di-lubang-buaya",
+          "published_at": "2026-10-01T01:18:36.000Z"
+        }
+      ]
+    },
     {
       "id": "loc-20260926-1329-istana-merdeka",
       "place": "Istana Merdeka",
