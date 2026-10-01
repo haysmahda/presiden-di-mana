@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-10-01T13:18:35.714Z",
+  "generated_at": "2026-10-01T19:32:57.534Z",
   "current": "loc-20261001-1252-istana-merdeka",
   "locations": [
     {
@@ -70,6 +70,44 @@
           "title": "Istana konfirmasi Prabowo lantik Suyudi jadi Kapolri siang ini",
           "url": "https://www.antaranews.com/berita/5766168/istana-konfirmasi-prabowo-lantik-suyudi-jadi-kapolri-siang-ini",
           "published_at": "2026-10-01T05:52:02.000Z"
+        }
+      ]
+    },
+    {
+      "id": "loc-20261001-1556-istana-negara",
+      "place": "Istana Negara",
+      "city": "Jakarta Pusat",
+      "region": "DKI Jakarta",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -6.1704,
+      "lng": 106.8236,
+      "event_type": "pelantikan",
+      "event_label_id": "Pelantikan",
+      "reported_at": "2026-10-01T08:56:03.000Z",
+      "confidence": 52,
+      "outlet_scores": {
+        "Liputan6": 1.496,
+        "Setkab": 0.42
+      },
+      "sources": [
+        {
+          "outlet": "Liputan6",
+          "title": "Profil Fadil Imran, Pensiunan Jenderal Jadi Wakil Kepala Badan Otorita Pantura",
+          "url": "https://www.liputan6.com/news/read/8303907/profil-fadil-imran-pensiunan-jenderal-jadi-wakil-kepala-badan-otorita-pantura",
+          "published_at": "2026-10-01T08:56:03.000Z"
+        },
+        {
+          "outlet": "Liputan6",
+          "title": "Reshuffle Kabinet: Fadil Imran Jadi Wakil Kepala Badan Otorita Pantura",
+          "url": "https://www.liputan6.com/news/read/8303851/reshuffle-kabinet-fadil-imran-jadi-wakil-kepala-badan-otorita-pantura",
+          "published_at": "2026-10-01T08:25:40.000Z"
+        },
+        {
+          "outlet": "Setkab",
+          "title": "Usai Pimpin Upacara, Presiden Prabowo Resmikan Renovasi Museum Kesaktian Pancasila",
+          "url": "https://setkab.go.id/usai-pimpin-upacara-presiden-prabowo-resmikan-renovasi-museum-kesaktian-pancasila/",
+          "published_at": "2026-10-01T07:00:45.000Z"
         }
       ]
     },
