@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-10-01T19:32:57.534Z",
+  "generated_at": "2026-10-01T23:53:35.177Z",
   "current": "loc-20261001-1252-istana-merdeka",
   "locations": [
     {
@@ -16,11 +16,12 @@
       "event_type": "pelantikan",
       "event_label_id": "Pelantikan",
       "reported_at": "2026-10-01T13:09:08.000Z",
-      "confidence": 54,
+      "confidence": 61,
       "outlet_scores": {
         "Antara News": 0.536,
         "Detik": 0.952,
-        "Liputan6": 0.524
+        "Liputan6": 0.524,
+        "Setkab": 0.42
       },
       "sources": [
         {
@@ -66,10 +67,10 @@
           "published_at": "2026-10-01T07:36:09.000Z"
         },
         {
-          "outlet": "Antara News",
-          "title": "Istana konfirmasi Prabowo lantik Suyudi jadi Kapolri siang ini",
-          "url": "https://www.antaranews.com/berita/5766168/istana-konfirmasi-prabowo-lantik-suyudi-jadi-kapolri-siang-ini",
-          "published_at": "2026-10-01T05:52:02.000Z"
+          "outlet": "Setkab",
+          "title": "Usai Pimpin Upacara, Presiden Prabowo Resmikan Renovasi Museum Kesaktian Pancasila",
+          "url": "https://setkab.go.id/usai-pimpin-upacara-presiden-prabowo-resmikan-renovasi-museum-kesaktian-pancasila/",
+          "published_at": "2026-10-01T07:00:45.000Z"
         }
       ]
     },
