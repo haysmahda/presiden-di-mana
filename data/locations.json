@@ -1,9 +1,78 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-10-02T05:39:42.901Z",
-  "current": "loc-20261001-1252-istana-merdeka",
+  "generated_at": "2026-10-02T12:37:46.039Z",
+  "current": "loc-20261001-1556-istana-negara",
   "locations": [
+    {
+      "id": "loc-20261001-1556-istana-negara",
+      "place": "Istana Negara",
+      "city": "Jakarta Pusat",
+      "region": "DKI Jakarta",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -6.1704,
+      "lng": 106.8236,
+      "event_type": "pelantikan",
+      "event_label_id": "Pelantikan",
+      "reported_at": "2026-10-02T12:09:38.000Z",
+      "confidence": 89,
+      "outlet_scores": {
+        "Liputan6": 1.496,
+        "Setkab": 4.08,
+        "Detik": 0.28
+      },
+      "sources": [
+        {
+          "outlet": "Liputan6",
+          "title": "Profil Anwar Usman, Mantan Ketua MK Jadi Wantimpres Prabowo",
+          "url": "https://www.liputan6.com/news/read/8304857/profil-anwar-usman-mantan-ketua-mk-jadi-wantimpres-prabowo",
+          "published_at": "2026-10-02T12:09:38.000Z"
+        },
+        {
+          "outlet": "Liputan6",
+          "title": "26 Tokoh Dilantik Jadi Wantimpres, dari Quraish Shihab hingga Rocky Gerung",
+          "url": "https://www.liputan6.com/news/read/8304697/26-tokoh-dilantik-jadi-wantimpres-dari-quraish-shihab-hingga-rocky-gerung",
+          "published_at": "2026-10-02T09:28:59.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Doa Prabowo di Depan Sumur Maut Lubang Buaya",
+          "url": "https://news.detik.com/berita/d-8688437/doa-prabowo-di-depan-sumur-maut-lubang-buaya",
+          "published_at": "2026-10-01T13:09:08.000Z"
+        },
+        {
+          "outlet": "Setkab",
+          "title": "Presiden Prabowo Saksikan Pengucapan Sumpah Ketua dan Anggota Ombudsman RI",
+          "url": "https://setkab.go.id/presiden-prabowo-saksikan-pengucapan-sumpah-ketua-dan-anggota-ombudsman-ri/",
+          "published_at": "2026-10-01T11:30:55.000Z"
+        },
+        {
+          "outlet": "Setkab",
+          "title": "Presiden Prabowo Lantik Suyudi Ario Seto dan Wahyu Hadiningrat sebagai Kapolri dan Wakapolri",
+          "url": "https://setkab.go.id/presiden-prabowo-lantik-suyudi-ario-seto-dan-wahyu-hadiningrat-sebagai-kapolri-dan-wakapolri/",
+          "published_at": "2026-10-01T11:15:33.000Z"
+        },
+        {
+          "outlet": "Setkab",
+          "title": "Presiden Prabowo Lantik Menteri dan Wakil Menteri Kabinet Merah Putih di Istana Negara",
+          "url": "https://setkab.go.id/presiden-prabowo-lantik-menteri-dan-wakil-menteri-kabinet-merah-putih-di-istana-negara/",
+          "published_at": "2026-10-01T11:00:47.000Z"
+        },
+        {
+          "outlet": "Liputan6",
+          "title": "Profil Fadil Imran, Pensiunan Jenderal Jadi Wakil Kepala Badan Otorita Pantura",
+          "url": "https://www.liputan6.com/news/read/8303907/profil-fadil-imran-pensiunan-jenderal-jadi-wakil-kepala-badan-otorita-pantura",
+          "published_at": "2026-10-01T08:56:03.000Z"
+        },
+        {
+          "outlet": "Liputan6",
+          "title": "Reshuffle Kabinet: Fadil Imran Jadi Wakil Kepala Badan Otorita Pantura",
+          "url": "https://www.liputan6.com/news/read/8303851/reshuffle-kabinet-fadil-imran-jadi-wakil-kepala-badan-otorita-pantura",
+          "published_at": "2026-10-01T08:25:40.000Z"
+        }
+      ]
+    },
     {
       "id": "loc-20261001-1252-istana-merdeka",
       "place": "Istana Merdeka",
@@ -71,75 +140,6 @@
           "title": "Usai Pimpin Upacara, Presiden Prabowo Resmikan Renovasi Museum Kesaktian Pancasila",
           "url": "https://setkab.go.id/usai-pimpin-upacara-presiden-prabowo-resmikan-renovasi-museum-kesaktian-pancasila/",
           "published_at": "2026-10-01T07:00:45.000Z"
-        }
-      ]
-    },
-    {
-      "id": "loc-20261001-1556-istana-negara",
-      "place": "Istana Negara",
-      "city": "Jakarta Pusat",
-      "region": "DKI Jakarta",
-      "country": "Indonesia",
-      "country_code": "ID",
-      "lat": -6.1704,
-      "lng": 106.8236,
-      "event_type": "pelantikan",
-      "event_label_id": "Pelantikan",
-      "reported_at": "2026-10-01T13:09:08.000Z",
-      "confidence": 89,
-      "outlet_scores": {
-        "Liputan6": 1.496,
-        "Setkab": 4.08,
-        "Detik": 0.28
-      },
-      "sources": [
-        {
-          "outlet": "Detik",
-          "title": "Doa Prabowo di Depan Sumur Maut Lubang Buaya",
-          "url": "https://news.detik.com/berita/d-8688437/doa-prabowo-di-depan-sumur-maut-lubang-buaya",
-          "published_at": "2026-10-01T13:09:08.000Z"
-        },
-        {
-          "outlet": "Setkab",
-          "title": "Presiden Prabowo Saksikan Pengucapan Sumpah Ketua dan Anggota Ombudsman RI",
-          "url": "https://setkab.go.id/presiden-prabowo-saksikan-pengucapan-sumpah-ketua-dan-anggota-ombudsman-ri/",
-          "published_at": "2026-10-01T11:30:55.000Z"
-        },
-        {
-          "outlet": "Setkab",
-          "title": "Presiden Prabowo Lantik Suyudi Ario Seto dan Wahyu Hadiningrat sebagai Kapolri dan Wakapolri",
-          "url": "https://setkab.go.id/presiden-prabowo-lantik-suyudi-ario-seto-dan-wahyu-hadiningrat-sebagai-kapolri-dan-wakapolri/",
-          "published_at": "2026-10-01T11:15:33.000Z"
-        },
-        {
-          "outlet": "Setkab",
-          "title": "Presiden Prabowo Lantik Menteri dan Wakil Menteri Kabinet Merah Putih di Istana Negara",
-          "url": "https://setkab.go.id/presiden-prabowo-lantik-menteri-dan-wakil-menteri-kabinet-merah-putih-di-istana-negara/",
-          "published_at": "2026-10-01T11:00:47.000Z"
-        },
-        {
-          "outlet": "Liputan6",
-          "title": "Profil Fadil Imran, Pensiunan Jenderal Jadi Wakil Kepala Badan Otorita Pantura",
-          "url": "https://www.liputan6.com/news/read/8303907/profil-fadil-imran-pensiunan-jenderal-jadi-wakil-kepala-badan-otorita-pantura",
-          "published_at": "2026-10-01T08:56:03.000Z"
-        },
-        {
-          "outlet": "Liputan6",
-          "title": "Reshuffle Kabinet: Fadil Imran Jadi Wakil Kepala Badan Otorita Pantura",
-          "url": "https://www.liputan6.com/news/read/8303851/reshuffle-kabinet-fadil-imran-jadi-wakil-kepala-badan-otorita-pantura",
-          "published_at": "2026-10-01T08:25:40.000Z"
-        },
-        {
-          "outlet": "Setkab",
-          "title": "Usai Pimpin Upacara, Presiden Prabowo Resmikan Renovasi Museum Kesaktian Pancasila",
-          "url": "https://setkab.go.id/usai-pimpin-upacara-presiden-prabowo-resmikan-renovasi-museum-kesaktian-pancasila/",
-          "published_at": "2026-10-01T07:00:45.000Z"
-        },
-        {
-          "outlet": "Setkab",
-          "title": "Penuh Khidmat, Presiden Prabowo Pimpin Upacara Hari Kesaktian Pancasila Tahun 2026",
-          "url": "https://setkab.go.id/penuh-khidmat-presiden-prabowo-pimpin-upacara-hari-kesaktian-pancasila-tahun-2026/",
-          "published_at": "2026-10-01T04:30:53.000Z"
         }
       ]
     },
