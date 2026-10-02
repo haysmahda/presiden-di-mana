@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-10-02T19:20:57.417Z",
+  "generated_at": "2026-10-02T23:47:30.440Z",
   "current": "loc-20261001-1556-istana-negara",
   "locations": [
     {
@@ -15,14 +15,21 @@
       "lng": 106.8236,
       "event_type": "pelantikan",
       "event_label_id": "Pelantikan",
-      "reported_at": "2026-10-02T12:09:38.000Z",
-      "confidence": 89,
+      "reported_at": "2026-10-02T23:00:00.000Z",
+      "confidence": 93,
       "outlet_scores": {
         "Liputan6": 1.496,
         "Setkab": 4.08,
-        "Detik": 0.28
+        "Detik": 0.28,
+        "Antara News": 0.924
       },
       "sources": [
+        {
+          "outlet": "Antara News",
+          "title": "Ketua dan anggota Wantimpres",
+          "url": "https://www.antaranews.com/infografik/5769384/ketua-dan-anggota-wantimpres",
+          "published_at": "2026-10-02T23:00:00.000Z"
+        },
         {
           "outlet": "Liputan6",
           "title": "Profil Anwar Usman, Mantan Ketua MK Jadi Wantimpres Prabowo",
@@ -64,12 +71,6 @@
           "title": "Profil Fadil Imran, Pensiunan Jenderal Jadi Wakil Kepala Badan Otorita Pantura",
           "url": "https://www.liputan6.com/news/read/8303907/profil-fadil-imran-pensiunan-jenderal-jadi-wakil-kepala-badan-otorita-pantura",
           "published_at": "2026-10-01T08:56:03.000Z"
-        },
-        {
-          "outlet": "Liputan6",
-          "title": "Reshuffle Kabinet: Fadil Imran Jadi Wakil Kepala Badan Otorita Pantura",
-          "url": "https://www.liputan6.com/news/read/8303851/reshuffle-kabinet-fadil-imran-jadi-wakil-kepala-badan-otorita-pantura",
-          "published_at": "2026-10-01T08:25:40.000Z"
         }
       ]
     },
@@ -84,15 +85,27 @@
       "lng": 106.8219,
       "event_type": "pelantikan",
       "event_label_id": "Pelantikan",
-      "reported_at": "2026-10-01T13:09:08.000Z",
-      "confidence": 61,
+      "reported_at": "2026-10-02T09:18:28.000Z",
+      "confidence": 67,
       "outlet_scores": {
         "Antara News": 0.536,
         "Detik": 0.952,
-        "Liputan6": 0.524,
+        "Liputan6": 0.952,
         "Setkab": 0.42
       },
       "sources": [
+        {
+          "outlet": "Liputan6",
+          "title": "Muhammad Qodari 4 Kali Dilantik di Era Prabowo",
+          "url": "https://www.liputan6.com/news/read/8304716/muhammad-qodari-4-kali-dilantik-di-era-prabowo",
+          "published_at": "2026-10-02T09:18:28.000Z"
+        },
+        {
+          "outlet": "Liputan6",
+          "title": "Tiba di Istana, Pratikno Akui Dapat Tugas Jadi Wantimpres",
+          "url": "https://www.liputan6.com/news/read/8304600/tiba-di-istana-pratikno-akui-dapat-tugas-jadi-wantimpres",
+          "published_at": "2026-10-02T07:21:06.000Z"
+        },
         {
           "outlet": "Detik",
           "title": "Doa Prabowo di Depan Sumur Maut Lubang Buaya",
@@ -128,18 +141,6 @@
           "title": "Reshuffle Kabinet, Dedi Prasetyo Resmi Jabat Kepala Badan Reformasi Agraria Nasional",
           "url": "https://www.liputan6.com/news/read/8303838/reshuffle-kabinet-dedi-prasetyo-resmi-jabat-kepala-badan-reformasi-agraria-nasional",
           "published_at": "2026-10-01T07:48:38.000Z"
-        },
-        {
-          "outlet": "Detik",
-          "title": "Arrmanatha Nasir Jadi Menlu Gantikan Sugiono",
-          "url": "https://news.detik.com/berita/d-8687766/arrmanatha-nasir-jadi-menlu-gantikan-sugiono",
-          "published_at": "2026-10-01T07:36:09.000Z"
-        },
-        {
-          "outlet": "Setkab",
-          "title": "Usai Pimpin Upacara, Presiden Prabowo Resmikan Renovasi Museum Kesaktian Pancasila",
-          "url": "https://setkab.go.id/usai-pimpin-upacara-presiden-prabowo-resmikan-renovasi-museum-kesaktian-pancasila/",
-          "published_at": "2026-10-01T07:00:45.000Z"
         }
       ]
     },
