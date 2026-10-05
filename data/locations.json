@@ -1,9 +1,47 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-10-04T23:11:59.057Z",
-  "current": "loc-20261001-1556-istana-negara",
+  "generated_at": "2026-10-05T05:43:21.124Z",
+  "current": "loc-20261005-1137-markas-besar-tni-cilangk",
   "locations": [
+    {
+      "id": "loc-20261005-1137-markas-besar-tni-cilangk",
+      "place": "Markas Besar TNI Cilangkap",
+      "city": "Jakarta Timur",
+      "region": "DKI Jakarta",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -6.3239,
+      "lng": 106.9128,
+      "event_type": "pelantikan",
+      "event_label_id": "Pelantikan",
+      "reported_at": "2026-10-05T04:37:01.000Z",
+      "confidence": 76,
+      "outlet_scores": {
+        "Detik": 2.72,
+        "Liputan6": 1.02
+      },
+      "sources": [
+        {
+          "outlet": "Detik",
+          "title": "Momen Prabowo Foto Bareng SBY dan Jokowi Saat HUT Ke-81 TNI",
+          "url": "https://news.detik.com/berita/d-8692666/momen-prabowo-foto-bareng-sby-dan-jokowi-saat-hut-ke-81-tni",
+          "published_at": "2026-10-05T04:37:01.000Z"
+        },
+        {
+          "outlet": "Liputan6",
+          "title": "Potret Helikopter Prabowo Dikawal Heli 2 TNI Terbang di Langit Cilangkap",
+          "url": "https://www.liputan6.com/news/read/8305934/potret-helikopter-prabowo-dikawal-heli-2-tni-terbang-di-langit-cilangkap",
+          "published_at": "2026-10-05T03:06:24.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Prabowo Pimpin Upacara HUT ke-81 TNI di Cilangkap",
+          "url": "https://news.detik.com/berita/d-8692459/prabowo-pimpin-upacara-hut-ke-81-tni-di-cilangkap",
+          "published_at": "2026-10-05T02:22:10.000Z"
+        }
+      ]
+    },
     {
       "id": "loc-20261001-1556-istana-negara",
       "place": "Istana Negara",
