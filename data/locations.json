@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-10-05T05:43:21.124Z",
+  "generated_at": "2026-10-05T14:42:57.616Z",
   "current": "loc-20261005-1137-markas-besar-tni-cilangk",
   "locations": [
     {
@@ -13,15 +13,27 @@
       "country_code": "ID",
       "lat": -6.3239,
       "lng": 106.9128,
-      "event_type": "pelantikan",
-      "event_label_id": "Pelantikan",
-      "reported_at": "2026-10-05T04:37:01.000Z",
+      "event_type": "peresmian",
+      "event_label_id": "Peresmian",
+      "reported_at": "2026-10-05T09:17:03.000Z",
       "confidence": 76,
       "outlet_scores": {
         "Detik": 2.72,
         "Liputan6": 1.02
       },
       "sources": [
+        {
+          "outlet": "Detik",
+          "title": "Daftar 6 Kodam dan Pangdam Baru yang Diresmikan Prabowo di HUT TNI",
+          "url": "https://news.detik.com/berita/d-8693266/daftar-6-kodam-dan-pangdam-baru-yang-diresmikan-prabowo-di-hut-tni",
+          "published_at": "2026-10-05T09:17:03.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Mensos dan Wamensos Hadiri Upacara HUT ke-81 TNI di Mabes TNI Cilangkap",
+          "url": "https://news.detik.com/berita/d-8693261/mensos-dan-wamensos-hadiri-upacara-hut-ke-81-tni-di-mabes-tni-cilangkap",
+          "published_at": "2026-10-05T09:12:55.000Z"
+        },
         {
           "outlet": "Detik",
           "title": "Momen Prabowo Foto Bareng SBY dan Jokowi Saat HUT Ke-81 TNI",
