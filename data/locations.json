@@ -1,9 +1,59 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-10-06T06:23:18.283Z",
-  "current": "loc-20261005-1137-markas-besar-tni-cilangk",
+  "generated_at": "2026-10-06T15:13:29.137Z",
+  "current": "loc-20261006-1013-istana-merdeka",
   "locations": [
+    {
+      "id": "loc-20261006-1013-istana-merdeka",
+      "place": "Istana Merdeka",
+      "city": "Jakarta Pusat",
+      "region": "DKI Jakarta",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -6.1701,
+      "lng": 106.8219,
+      "event_type": "forum",
+      "event_label_id": "Forum Internasional",
+      "reported_at": "2026-10-06T10:23:37.000Z",
+      "confidence": 71,
+      "outlet_scores": {
+        "Setkab": 2.244,
+        "Detik": 0.952
+      },
+      "sources": [
+        {
+          "outlet": "Detik",
+          "title": "Prabowo di Kejagung: Rp 52 Triliun Sudah Kita Selamatkan dalam 2 Tahun",
+          "url": "https://news.detik.com/berita/d-8695234/prabowo-di-kejagung-rp-52-triliun-sudah-kita-selamatkan-dalam-2-tahun",
+          "published_at": "2026-10-06T10:23:37.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Prabowo Hadiri Penyerahan Uang Rp 13,24 T Hasil Rampasan Satgas PKH",
+          "url": "https://news.detik.com/berita/d-8695076/prabowo-hadiri-penyerahan-uang-rp-13-24-t-hasil-rampasan-satgas-pkh",
+          "published_at": "2026-10-06T09:18:30.000Z"
+        },
+        {
+          "outlet": "Setkab",
+          "title": "Cetak Sejarah di Hadapan Presiden Prabowo, Indonesia Juara Perdana FIFA ASEAN Cup",
+          "url": "https://setkab.go.id/cetak-sejarah-di-hadapan-presiden-prabowo-indonesia-juara-perdana-fifa-asean-cup/",
+          "published_at": "2026-10-06T03:13:40.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Momen Akrab Prabowo-Presiden FIFA, Ngobrol di Istana hingga Selebrasi di GBK",
+          "url": "https://news.detik.com/berita/d-8694135/momen-akrab-prabowo-presiden-fifa-ngobrol-di-istana-hingga-selebrasi-di-gbk",
+          "published_at": "2026-10-06T00:44:40.000Z"
+        },
+        {
+          "outlet": "Setkab",
+          "title": "Terima Presiden FIFA, Presiden Prabowo: Sepak Bola Bangun Prestasi dan Karakter Bangsa",
+          "url": "https://setkab.go.id/terima-presiden-fifa-presiden-prabowo-sepak-bola-bangun-prestasi-dan-karakter-bangsa/",
+          "published_at": "2026-10-05T10:02:20.000Z"
+        }
+      ]
+    },
     {
       "id": "loc-20261005-1137-markas-besar-tni-cilangk",
       "place": "Markas Besar TNI Cilangkap",
@@ -64,44 +114,6 @@
           "title": "Prabowo Pimpin Upacara HUT ke-81 TNI di Cilangkap",
           "url": "https://news.detik.com/berita/d-8692459/prabowo-pimpin-upacara-hut-ke-81-tni-di-cilangkap",
           "published_at": "2026-10-05T02:22:10.000Z"
-        }
-      ]
-    },
-    {
-      "id": "loc-20261006-1013-istana-merdeka",
-      "place": "Istana Merdeka",
-      "city": "Jakarta Pusat",
-      "region": "DKI Jakarta",
-      "country": "Indonesia",
-      "country_code": "ID",
-      "lat": -6.1701,
-      "lng": 106.8219,
-      "event_type": "forum",
-      "event_label_id": "Forum Internasional",
-      "reported_at": "2026-10-06T03:13:40.000Z",
-      "confidence": 71,
-      "outlet_scores": {
-        "Setkab": 2.244,
-        "Detik": 0.952
-      },
-      "sources": [
-        {
-          "outlet": "Setkab",
-          "title": "Cetak Sejarah di Hadapan Presiden Prabowo, Indonesia Juara Perdana FIFA ASEAN Cup",
-          "url": "https://setkab.go.id/cetak-sejarah-di-hadapan-presiden-prabowo-indonesia-juara-perdana-fifa-asean-cup/",
-          "published_at": "2026-10-06T03:13:40.000Z"
-        },
-        {
-          "outlet": "Detik",
-          "title": "Momen Akrab Prabowo-Presiden FIFA, Ngobrol di Istana hingga Selebrasi di GBK",
-          "url": "https://news.detik.com/berita/d-8694135/momen-akrab-prabowo-presiden-fifa-ngobrol-di-istana-hingga-selebrasi-di-gbk",
-          "published_at": "2026-10-06T00:44:40.000Z"
-        },
-        {
-          "outlet": "Setkab",
-          "title": "Terima Presiden FIFA, Presiden Prabowo: Sepak Bola Bangun Prestasi dan Karakter Bangsa",
-          "url": "https://setkab.go.id/terima-presiden-fifa-presiden-prabowo-sepak-bola-bangun-prestasi-dan-karakter-bangsa/",
-          "published_at": "2026-10-05T10:02:20.000Z"
         }
       ]
     },
