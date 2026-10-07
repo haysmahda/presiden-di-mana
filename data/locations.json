@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-10-07T08:41:33.138Z",
+  "generated_at": "2026-10-07T17:26:00.507Z",
   "current": "loc-20261006-1013-istana-merdeka",
   "locations": [
     {
@@ -15,13 +15,38 @@
       "lng": 106.8219,
       "event_type": "forum",
       "event_label_id": "Forum Internasional",
-      "reported_at": "2026-10-06T11:49:44.000Z",
-      "confidence": 71,
+      "reported_at": "2026-10-07T08:30:45.000Z",
+      "confidence": 80,
       "outlet_scores": {
         "Setkab": 2.244,
-        "Detik": 0.952
+        "Detik": 0.952,
+        "Liputan6": 0.952
       },
       "sources": [
+        {
+          "outlet": "Setkab",
+          "title": "Presiden Prabowo Sampaikan Taklimat kepada 800 Perwira Tinggi TNI-Polri",
+          "url": "https://setkab.go.id/presiden-prabowo-sampaikan-taklimat-kepada-800-perwira-tinggi-tni-polri/",
+          "published_at": "2026-10-07T08:30:45.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Kapolri di Acara Taklimat Presiden: Kami Dukung Kebijakan-Program Pemerintah",
+          "url": "https://news.detik.com/berita/d-8696393/kapolri-di-acara-taklimat-presiden-kami-dukung-kebijakan-program-pemerintah",
+          "published_at": "2026-10-07T07:27:09.000Z"
+        },
+        {
+          "outlet": "Liputan6",
+          "title": "Alasan Prabowo Kumpulkan 800 Pati TNI-Polri di Istana",
+          "url": "https://www.liputan6.com/news/read/8307639/alasan-prabowo-kumpulkan-800-pati-tni-polri-di-istana",
+          "published_at": "2026-10-07T03:15:00.000Z"
+        },
+        {
+          "outlet": "Liputan6",
+          "title": "Prabowo Kumpulkan 800 Perwira Tinggi TNI-Polri di Istana",
+          "url": "https://www.liputan6.com/news/read/8307609/prabowo-kumpulkan-800-perwira-tinggi-tni-polri-di-istana",
+          "published_at": "2026-10-07T02:38:22.000Z"
+        },
         {
           "outlet": "Setkab",
           "title": "Presiden Prabowo Saksikan Penyelamatan Kekayaan Negara Rp13,24 Triliun dan 259 Ribu Hektare Kawasan Hutan kepada Negara",
@@ -45,18 +70,6 @@
           "title": "Cetak Sejarah di Hadapan Presiden Prabowo, Indonesia Juara Perdana FIFA ASEAN Cup",
           "url": "https://setkab.go.id/cetak-sejarah-di-hadapan-presiden-prabowo-indonesia-juara-perdana-fifa-asean-cup/",
           "published_at": "2026-10-06T03:13:40.000Z"
-        },
-        {
-          "outlet": "Detik",
-          "title": "Momen Akrab Prabowo-Presiden FIFA, Ngobrol di Istana hingga Selebrasi di GBK",
-          "url": "https://news.detik.com/berita/d-8694135/momen-akrab-prabowo-presiden-fifa-ngobrol-di-istana-hingga-selebrasi-di-gbk",
-          "published_at": "2026-10-06T00:44:40.000Z"
-        },
-        {
-          "outlet": "Setkab",
-          "title": "Terima Presiden FIFA, Presiden Prabowo: Sepak Bola Bangun Prestasi dan Karakter Bangsa",
-          "url": "https://setkab.go.id/terima-presiden-fifa-presiden-prabowo-sepak-bola-bangun-prestasi-dan-karakter-bangsa/",
-          "published_at": "2026-10-05T10:02:20.000Z"
         }
       ]
     },
