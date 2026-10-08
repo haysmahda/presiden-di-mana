@@ -1,9 +1,47 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-10-08T06:07:21.591Z",
-  "current": "loc-20261006-1013-istana-merdeka",
+  "generated_at": "2026-10-08T13:32:40.000Z",
+  "current": "loc-20261008-1730-maluku-utara",
   "locations": [
+    {
+      "id": "loc-20261008-1730-maluku-utara",
+      "place": "Maluku Utara",
+      "city": "Sofifi",
+      "region": "Maluku Utara",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": 1.5709,
+      "lng": 127.8088,
+      "event_type": "kenegaraan",
+      "event_label_id": "Kegiatan Kenegaraan",
+      "reported_at": "2026-10-08T10:30:06.000Z",
+      "confidence": 42,
+      "outlet_scores": {
+        "Liputan6": 0.28,
+        "Detik": 1.12
+      },
+      "sources": [
+        {
+          "outlet": "Liputan6",
+          "title": "Diserbu Karyawan Buat Foto, Seskab Teddy Nyaris Ditinggal Rombongan Prabowo",
+          "url": "https://www.liputan6.com/news/read/8308991/diserbu-karyawan-buat-foto-seskab-teddy-nyaris-ditinggal-rombongan-prabowo",
+          "published_at": "2026-10-08T10:30:06.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Prabowo Saat Sapa Sherly Tjoanda: Pemilu Masih Lama",
+          "url": "https://news.detik.com/berita/d-8698017/prabowo-saat-sapa-sherly-tjoanda-pemilu-masih-lama",
+          "published_at": "2026-10-08T07:22:32.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Prabowo Luncurkan 11 Proyek Hilirisasi dan Ekspor Baterai EV Perdana di Malut",
+          "url": "https://news.detik.com/berita/d-8697977/prabowo-luncurkan-11-proyek-hilirisasi-dan-ekspor-baterai-ev-perdana-di-malut",
+          "published_at": "2026-10-08T07:00:37.000Z"
+        }
+      ]
+    },
     {
       "id": "loc-20261006-1013-istana-merdeka",
       "place": "Istana Merdeka",
@@ -15,7 +53,7 @@
       "lng": 106.8219,
       "event_type": "forum",
       "event_label_id": "Forum Internasional",
-      "reported_at": "2026-10-07T08:30:45.000Z",
+      "reported_at": "2026-10-08T06:45:47.000Z",
       "confidence": 80,
       "outlet_scores": {
         "Setkab": 2.244,
@@ -23,6 +61,18 @@
         "Liputan6": 0.952
       },
       "sources": [
+        {
+          "outlet": "Detik",
+          "title": "Istana Tepis Reshuffle Kabinet untuk 'Preteli' Orang-orang Jokowi",
+          "url": "https://news.detik.com/berita/d-8697932/istana-tepis-reshuffle-kabinet-untuk-preteli-orang-orang-jokowi",
+          "published_at": "2026-10-08T06:45:47.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Jokowi Ngaku Bahas Bola Saat Bertemu Prabowo, tapi Juga Bicara 2 Topik Ini",
+          "url": "https://news.detik.com/berita/d-8697869/jokowi-ngaku-bahas-bola-saat-bertemu-prabowo-tapi-juga-bicara-2-topik-ini",
+          "published_at": "2026-10-08T06:18:07.000Z"
+        },
         {
           "outlet": "Setkab",
           "title": "Presiden Prabowo Sampaikan Taklimat kepada 800 Perwira Tinggi TNI-Polri",
@@ -58,18 +108,6 @@
           "title": "Prabowo di Kejagung: Rp 52 Triliun Sudah Kita Selamatkan dalam 2 Tahun",
           "url": "https://news.detik.com/berita/d-8695234/prabowo-di-kejagung-rp-52-triliun-sudah-kita-selamatkan-dalam-2-tahun",
           "published_at": "2026-10-06T10:23:37.000Z"
-        },
-        {
-          "outlet": "Detik",
-          "title": "Prabowo Hadiri Penyerahan Uang Rp 13,24 T Hasil Rampasan Satgas PKH",
-          "url": "https://news.detik.com/berita/d-8695076/prabowo-hadiri-penyerahan-uang-rp-13-24-t-hasil-rampasan-satgas-pkh",
-          "published_at": "2026-10-06T09:18:30.000Z"
-        },
-        {
-          "outlet": "Setkab",
-          "title": "Cetak Sejarah di Hadapan Presiden Prabowo, Indonesia Juara Perdana FIFA ASEAN Cup",
-          "url": "https://setkab.go.id/cetak-sejarah-di-hadapan-presiden-prabowo-indonesia-juara-perdana-fifa-asean-cup/",
-          "published_at": "2026-10-06T03:13:40.000Z"
         }
       ]
     },
