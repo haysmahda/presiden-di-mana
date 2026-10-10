@@ -1,9 +1,41 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-10-10T05:54:49.756Z",
-  "current": "loc-20261008-1730-maluku-utara",
+  "generated_at": "2026-10-10T12:34:17.649Z",
+  "current": "loc-20261010-1908-istana-merdeka",
   "locations": [
+    {
+      "id": "loc-20261010-1908-istana-merdeka",
+      "place": "Istana Merdeka",
+      "city": "Jakarta Pusat",
+      "region": "DKI Jakarta",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -6.1701,
+      "lng": 106.8219,
+      "event_type": "kunjungan_kenegaraan",
+      "event_label_id": "Kunjungan Kenegaraan",
+      "reported_at": "2026-10-10T12:08:51.000Z",
+      "confidence": 90,
+      "outlet_scores": {
+        "Antara News": 3.36,
+        "Detik": 2.72
+      },
+      "sources": [
+        {
+          "outlet": "Antara News",
+          "title": "Presiden Mesir tiba di Jakarta untuk bertemu Prabowo Minggu",
+          "url": "https://www.antaranews.com/berita/5780126/presiden-mesir-tiba-di-jakarta-untuk-bertemu-prabowo-minggu",
+          "published_at": "2026-10-10T12:08:51.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Presiden Mesir El-Sisi Tiba di Jakarta, Bertemu Prabowo di Istana Merdeka Besok",
+          "url": "https://news.detik.com/berita/d-8701256/presiden-mesir-el-sisi-tiba-di-jakarta-bertemu-prabowo-di-istana-merdeka-besok",
+          "published_at": "2026-10-10T12:05:34.000Z"
+        }
+      ]
+    },
     {
       "id": "loc-20261008-1730-maluku-utara",
       "place": "Maluku Utara",
