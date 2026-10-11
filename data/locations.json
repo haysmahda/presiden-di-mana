@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-10-10T18:37:30.293Z",
+  "generated_at": "2026-10-11T05:49:24.529Z",
   "current": "loc-20261010-1908-istana-merdeka",
   "locations": [
     {
@@ -13,15 +13,39 @@
       "country_code": "ID",
       "lat": -6.1701,
       "lng": 106.8219,
-      "event_type": "kunjungan_kenegaraan",
-      "event_label_id": "Kunjungan Kenegaraan",
-      "reported_at": "2026-10-10T12:08:51.000Z",
-      "confidence": 90,
+      "event_type": "bilateral",
+      "event_label_id": "Pertemuan Bilateral",
+      "reported_at": "2026-10-11T04:43:51.000Z",
+      "confidence": 93,
       "outlet_scores": {
-        "Antara News": 3.36,
+        "Antara News": 4.08,
         "Detik": 2.72
       },
       "sources": [
+        {
+          "outlet": "Antara News",
+          "title": "Presiden Prabowo Subianto terima kunjungan Presiden Mesir di Istana Merdeka",
+          "url": "https://www.antaranews.com/foto/5780618/presiden-prabowo-subianto-terima-kunjungan-presiden-mesir-di-istana-merdeka",
+          "published_at": "2026-10-11T04:43:51.000Z"
+        },
+        {
+          "outlet": "Antara News",
+          "title": "Prabowo terima Presiden Mesir Abdel Fattah el-Sisi di Istana Merdeka",
+          "url": "https://www.antaranews.com/berita/5780586/prabowo-terima-presiden-mesir-abdel-fattah-el-sisi-di-istana-merdeka",
+          "published_at": "2026-10-11T04:16:46.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Momen Presiden Mesir Dikawal Pasukan Berkuda ke Istana untuk Bertemu Prabowo",
+          "url": "https://news.detik.com/berita/d-8701810/momen-presiden-mesir-dikawal-pasukan-berkuda-ke-istana-untuk-bertemu-prabowo",
+          "published_at": "2026-10-11T04:10:37.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Presiden Mesir El-Sisi Tiba Istana Jakarta, Disambut Hangat Prabowo",
+          "url": "https://news.detik.com/berita/d-8701809/presiden-mesir-el-sisi-tiba-istana-jakarta-disambut-hangat-prabowo",
+          "published_at": "2026-10-11T04:10:28.000Z"
+        },
         {
           "outlet": "Antara News",
           "title": "Presiden Mesir tiba di Jakarta untuk bertemu Prabowo Minggu",
