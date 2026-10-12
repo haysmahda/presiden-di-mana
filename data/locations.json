@@ -1,9 +1,72 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-10-12T15:28:56.782Z",
-  "current": "loc-20261010-1908-istana-merdeka",
+  "generated_at": "2026-10-12T23:00:22.277Z",
+  "current": "loc-20261013-0544-istana-merdeka",
   "locations": [
+    {
+      "id": "loc-20261013-0544-istana-merdeka",
+      "place": "Istana Merdeka",
+      "city": "Jakarta Pusat",
+      "region": "DKI Jakarta",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -6.1701,
+      "lng": 106.8219,
+      "event_type": "bilateral",
+      "event_label_id": "Pertemuan Bilateral",
+      "reported_at": "2026-10-12T22:44:35.000Z",
+      "confidence": 94,
+      "outlet_scores": {
+        "Antara News": 2.244,
+        "Liputan6": 0.952,
+        "Setkab": 4.08
+      },
+      "sources": [
+        {
+          "outlet": "Antara News",
+          "title": "Dari pelantang ke telinga Istana",
+          "url": "https://www.antaranews.com/berita/5782880/dari-pelantang-ke-telinga-istana",
+          "published_at": "2026-10-12T22:44:35.000Z"
+        },
+        {
+          "outlet": "Antara News",
+          "title": "Prabowo terima Fadli Zon bahas percepatan revitalisasi aset budaya",
+          "url": "https://www.antaranews.com/berita/5782816/prabowo-terima-fadli-zon-bahas-percepatan-revitalisasi-aset-budaya",
+          "published_at": "2026-10-12T16:41:07.000Z"
+        },
+        {
+          "outlet": "Liputan6",
+          "title": "Prabowo Panggil Menko Polkam hingga Kapolri ke Istana",
+          "url": "https://www.liputan6.com/news/read/8311421/prabowo-panggil-menko-polkam-hingga-kapolri-ke-istana",
+          "published_at": "2026-10-12T10:12:29.000Z"
+        },
+        {
+          "outlet": "Setkab",
+          "title": "Indonesia–Mesir Tegaskan Dukungan bagi Palestina dan Dorong Deeskalasi di Timur Tengah",
+          "url": "https://setkab.go.id/indonesia-mesir-tegaskan-dukungan-bagi-palestina-dan-dorong-deeskalasi-di-timur-tengah/",
+          "published_at": "2026-10-11T11:00:44.000Z"
+        },
+        {
+          "outlet": "Setkab",
+          "title": "Presiden Prabowo Perkuat Kerja Sama Indonesia–Mesir di Bidang Ekonomi, Kelautan, hingga Pertahanan",
+          "url": "https://setkab.go.id/presiden-prabowo-perkuat-kerja-sama-indonesia-mesir-di-bidang-ekonomi-kelautan-hingga-pertahanan/",
+          "published_at": "2026-10-11T10:30:36.000Z"
+        },
+        {
+          "outlet": "Setkab",
+          "title": "Pertemuan Presiden Prabowo dan Presiden El-Sisi Hasilkan Empat Kesepakatan Kerja Sama",
+          "url": "https://setkab.go.id/pertemuan-presiden-prabowo-dan-presiden-el-sisi-hasilkan-empat-kesepakatan-kerja-sama/",
+          "published_at": "2026-10-11T10:19:47.000Z"
+        },
+        {
+          "outlet": "Setkab",
+          "title": "Presiden Prabowo Sambut Presiden Mesir El-Sisi dengan Upacara Kenegaraan di Istana Merdeka",
+          "url": "https://setkab.go.id/presiden-prabowo-sambut-presiden-mesir-el-sisi-dengan-upacara-kenegaraan-di-istana-merdeka/",
+          "published_at": "2026-10-11T10:00:16.000Z"
+        }
+      ]
+    },
     {
       "id": "loc-20261010-1908-istana-merdeka",
       "place": "Istana Merdeka",
