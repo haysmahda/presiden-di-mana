@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-10-13T06:48:37.511Z",
+  "generated_at": "2026-10-13T16:00:39.322Z",
   "current": "loc-20261013-0544-istana-merdeka",
   "locations": [
     {
@@ -13,16 +13,23 @@
       "country_code": "ID",
       "lat": -6.1701,
       "lng": 106.8219,
-      "event_type": "bilateral",
-      "event_label_id": "Pertemuan Bilateral",
-      "reported_at": "2026-10-12T22:44:35.000Z",
-      "confidence": 94,
+      "event_type": "pelantikan",
+      "event_label_id": "Pelantikan",
+      "reported_at": "2026-10-13T07:49:48.000Z",
+      "confidence": 95,
       "outlet_scores": {
         "Antara News": 2.244,
         "Liputan6": 0.952,
-        "Setkab": 4.08
+        "Setkab": 4.08,
+        "Detik": 0.616
       },
       "sources": [
+        {
+          "outlet": "Detik",
+          "title": "99 Pengurus PP PIRA Resmi Dilantik, Prabowo Beri Pesan Ini",
+          "url": "https://news.detik.com/berita/d-8704973/99-pengurus-pp-pira-resmi-dilantik-prabowo-beri-pesan-ini",
+          "published_at": "2026-10-13T07:49:48.000Z"
+        },
         {
           "outlet": "Antara News",
           "title": "Dari pelantang ke telinga Istana",
@@ -34,6 +41,18 @@
           "title": "Prabowo terima Fadli Zon bahas percepatan revitalisasi aset budaya",
           "url": "https://www.antaranews.com/berita/5782816/prabowo-terima-fadli-zon-bahas-percepatan-revitalisasi-aset-budaya",
           "published_at": "2026-10-12T16:41:07.000Z"
+        },
+        {
+          "outlet": "Setkab",
+          "title": "Seskab Teddy Ungkap Arahan Presiden Prabowo untuk Percepat Revitalisasi Museum dan Aset Budaya di Seluruh Indonesia",
+          "url": "https://setkab.go.id/seskab-teddy-ungkap-arahan-presiden-prabowo-untuk-percepat-revitalisasi-museum-dan-aset-budaya-di-seluruh-indonesia/",
+          "published_at": "2026-10-12T14:30:03.000Z"
+        },
+        {
+          "outlet": "Setkab",
+          "title": "Penanganan Karhutla di Enam Provinsi Berlanjut, Presiden Prabowo Instruksikan Optimalisasi Upaya Pemadaman",
+          "url": "https://setkab.go.id/penanganan-karhutla-di-enam-provinsi-berlanjut-presiden-prabowo-instruksikan-optimalisasi-upaya-pemadaman/",
+          "published_at": "2026-10-12T14:00:02.000Z"
         },
         {
           "outlet": "Liputan6",
@@ -52,18 +71,6 @@
           "title": "Presiden Prabowo Perkuat Kerja Sama Indonesia–Mesir di Bidang Ekonomi, Kelautan, hingga Pertahanan",
           "url": "https://setkab.go.id/presiden-prabowo-perkuat-kerja-sama-indonesia-mesir-di-bidang-ekonomi-kelautan-hingga-pertahanan/",
           "published_at": "2026-10-11T10:30:36.000Z"
-        },
-        {
-          "outlet": "Setkab",
-          "title": "Pertemuan Presiden Prabowo dan Presiden El-Sisi Hasilkan Empat Kesepakatan Kerja Sama",
-          "url": "https://setkab.go.id/pertemuan-presiden-prabowo-dan-presiden-el-sisi-hasilkan-empat-kesepakatan-kerja-sama/",
-          "published_at": "2026-10-11T10:19:47.000Z"
-        },
-        {
-          "outlet": "Setkab",
-          "title": "Presiden Prabowo Sambut Presiden Mesir El-Sisi dengan Upacara Kenegaraan di Istana Merdeka",
-          "url": "https://setkab.go.id/presiden-prabowo-sambut-presiden-mesir-el-sisi-dengan-upacara-kenegaraan-di-istana-merdeka/",
-          "published_at": "2026-10-11T10:00:16.000Z"
         }
       ]
     },
