@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-10-16T13:16:11.639Z",
+  "generated_at": "2026-10-16T18:04:34.311Z",
   "current": "loc-20261016-1347-istana-kepresidenan-bogo",
   "locations": [
     {
@@ -15,13 +15,19 @@
       "lng": 106.7972,
       "event_type": "rapat",
       "event_label_id": "Rapat Kabinet",
-      "reported_at": "2026-10-16T12:13:07.000Z",
+      "reported_at": "2026-10-16T16:48:29.000Z",
       "confidence": 88,
       "outlet_scores": {
         "Detik": 2.72,
         "Liputan6": 2.72
       },
       "sources": [
+        {
+          "outlet": "Detik",
+          "title": "Maruarar Usai Pertemuan Kabinet di Istana Bogor: Bersyukur 2 Tahun Kerja",
+          "url": "https://news.detik.com/berita/d-8710919/maruarar-usai-pertemuan-kabinet-di-istana-bogor-bersyukur-2-tahun-kerja",
+          "published_at": "2026-10-16T16:48:29.000Z"
+        },
         {
           "outlet": "Detik",
           "title": "Menteri, Wamen, hingga Kepala Lembaga Merapat ke Istana Bogor Malam Ini",
