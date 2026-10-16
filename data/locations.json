@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-10-16T07:11:40.577Z",
+  "generated_at": "2026-10-16T13:16:11.639Z",
   "current": "loc-20261016-1347-istana-kepresidenan-bogo",
   "locations": [
     {
@@ -15,13 +15,19 @@
       "lng": 106.7972,
       "event_type": "rapat",
       "event_label_id": "Rapat Kabinet",
-      "reported_at": "2026-10-16T06:47:23.000Z",
+      "reported_at": "2026-10-16T12:13:07.000Z",
       "confidence": 88,
       "outlet_scores": {
         "Detik": 2.72,
         "Liputan6": 2.72
       },
       "sources": [
+        {
+          "outlet": "Detik",
+          "title": "Menteri, Wamen, hingga Kepala Lembaga Merapat ke Istana Bogor Malam Ini",
+          "url": "https://news.detik.com/berita/d-8710676/menteri-wamen-hingga-kepala-lembaga-merapat-ke-istana-bogor-malam-ini",
+          "published_at": "2026-10-16T12:13:07.000Z"
+        },
         {
           "outlet": "Detik",
           "title": "Kumpulkan Anak Buah di Istana Bogor, Prabowo Pimpin Rapat Kabinet Malam Ini",
