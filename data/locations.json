@@ -1,9 +1,47 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-10-16T00:25:26.796Z",
-  "current": "loc-20261016-0600-istana-negara",
+  "generated_at": "2026-10-16T07:11:40.577Z",
+  "current": "loc-20261016-1347-istana-kepresidenan-bogo",
   "locations": [
+    {
+      "id": "loc-20261016-1347-istana-kepresidenan-bogo",
+      "place": "Istana Kepresidenan Bogor",
+      "city": "Bogor",
+      "region": "Jawa Barat",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -6.5971,
+      "lng": 106.7972,
+      "event_type": "rapat",
+      "event_label_id": "Rapat Kabinet",
+      "reported_at": "2026-10-16T06:47:23.000Z",
+      "confidence": 88,
+      "outlet_scores": {
+        "Detik": 2.72,
+        "Liputan6": 2.72
+      },
+      "sources": [
+        {
+          "outlet": "Detik",
+          "title": "Kumpulkan Anak Buah di Istana Bogor, Prabowo Pimpin Rapat Kabinet Malam Ini",
+          "url": "https://news.detik.com/berita/d-8709959/kumpulkan-anak-buah-di-istana-bogor-prabowo-pimpin-rapat-kabinet-malam-ini",
+          "published_at": "2026-10-16T06:47:23.000Z"
+        },
+        {
+          "outlet": "Liputan6",
+          "title": "Prabowo Kumpulkan Menteri-Wamen di Istana Bogor Malam Ini, Bahas Apa?",
+          "url": "https://www.liputan6.com/news/read/8314641/prabowo-kumpulkan-menteri-wamen-di-istana-bogor-malam-ini-bahas-apa",
+          "published_at": "2026-10-16T06:17:24.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Prabowo Kumpulkan Menteri-Wamen di Istana Bogor Malam Ini, Bahas Apa?",
+          "url": "https://news.detik.com/berita/d-8709628/prabowo-kumpulkan-menteri-wamen-di-istana-bogor-malam-ini-bahas-apa",
+          "published_at": "2026-10-16T03:45:30.000Z"
+        }
+      ]
+    },
     {
       "id": "loc-20261016-0600-istana-negara",
       "place": "Istana Negara",
