@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-10-17T00:29:57.335Z",
+  "generated_at": "2026-10-17T06:58:32.038Z",
   "current": "loc-20261016-1347-istana-kepresidenan-bogo",
   "locations": [
     {
@@ -15,13 +15,25 @@
       "lng": 106.7972,
       "event_type": "rapat",
       "event_label_id": "Rapat Kabinet",
-      "reported_at": "2026-10-16T16:48:29.000Z",
+      "reported_at": "2026-10-17T06:25:35.000Z",
       "confidence": 88,
       "outlet_scores": {
         "Detik": 2.72,
         "Liputan6": 2.72
       },
       "sources": [
+        {
+          "outlet": "Liputan6",
+          "title": "Terungkap Alasan Prabowo Kumpulkan Kabinet di Istana Bogor",
+          "url": "https://www.liputan6.com/news/read/8315317/terungkap-alasan-prabowo-kumpulkan-kabinet-di-istana-bogor",
+          "published_at": "2026-10-17T06:25:35.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Ini Alasan Prabowo Kumpulkan Semua Anggota Kabinet di Istana Bogor Semalam",
+          "url": "https://news.detik.com/berita/d-8711338/ini-alasan-prabowo-kumpulkan-semua-anggota-kabinet-di-istana-bogor-semalam",
+          "published_at": "2026-10-17T06:13:46.000Z"
+        },
         {
           "outlet": "Detik",
           "title": "Maruarar Usai Pertemuan Kabinet di Istana Bogor: Bersyukur 2 Tahun Kerja",
