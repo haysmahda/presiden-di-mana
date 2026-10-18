@@ -1,9 +1,47 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-10-18T11:08:12.534Z",
-  "current": "loc-20261016-1347-istana-kepresidenan-bogo",
+  "generated_at": "2026-10-18T15:53:09.146Z",
+  "current": "loc-20261018-2218-hambalang",
   "locations": [
+    {
+      "id": "loc-20261018-2218-hambalang",
+      "place": "Hambalang",
+      "city": "Bogor",
+      "region": "Jawa Barat",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -6.5333,
+      "lng": 106.9167,
+      "event_type": "bilateral",
+      "event_label_id": "Pertemuan Bilateral",
+      "reported_at": "2026-10-18T15:18:52.000Z",
+      "confidence": 80,
+      "outlet_scores": {
+        "Detik": 1.496,
+        "Liputan6": 2.72
+      },
+      "sources": [
+        {
+          "outlet": "Detik",
+          "title": "Usai Bertemu Prabowo, Sekjen PBB Bakal Bermalam di Hambalang",
+          "url": "https://news.detik.com/berita/d-8713032/usai-bertemu-prabowo-sekjen-pbb-bakal-bermalam-di-hambalang",
+          "published_at": "2026-10-18T15:18:52.000Z"
+        },
+        {
+          "outlet": "Liputan6",
+          "title": "Sekjen PBB Temui Prabowo di Hambalang, Ini yang Dibahas",
+          "url": "https://www.liputan6.com/news/read/8315845/sekjen-pbb-temui-prabowo-di-hambalang-ini-yang-dibahas",
+          "published_at": "2026-10-18T12:22:20.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Prabowo Terima Sekjen PBB Antonio Guterres di Kediaman Hambalang",
+          "url": "https://news.detik.com/berita/d-8712832/prabowo-terima-sekjen-pbb-antonio-guterres-di-kediaman-hambalang",
+          "published_at": "2026-10-18T11:59:25.000Z"
+        }
+      ]
+    },
     {
       "id": "loc-20261016-1347-istana-kepresidenan-bogo",
       "place": "Istana Kepresidenan Bogor",
