@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-10-18T22:26:13.849Z",
+  "generated_at": "2026-10-19T04:42:47.996Z",
   "current": "loc-20261018-2218-hambalang",
   "locations": [
     {
@@ -15,14 +15,21 @@
       "lng": 106.9167,
       "event_type": "bilateral",
       "event_label_id": "Pertemuan Bilateral",
-      "reported_at": "2026-10-18T20:23:13.000Z",
-      "confidence": 96,
+      "reported_at": "2026-10-19T00:40:12.000Z",
+      "confidence": 98,
       "outlet_scores": {
-        "Detik": 1.496,
+        "Detik": 2.72,
         "Liputan6": 2.72,
-        "Antara News": 4.08
+        "Antara News": 4.08,
+        "Setkab": 4.08
       },
       "sources": [
+        {
+          "outlet": "Detik",
+          "title": "5 Hal Tentang Pertemuan Prabowo dan Sekjen PBB di Hambalang",
+          "url": "https://news.detik.com/berita/d-8713180/5-hal-tentang-pertemuan-prabowo-dan-sekjen-pbb-di-hambalang",
+          "published_at": "2026-10-19T00:40:12.000Z"
+        },
         {
           "outlet": "Antara News",
           "title": "Presiden terima kunjungan Sekjen PBB António Guterres di Hambalang",
@@ -34,6 +41,12 @@
           "title": "Usai Bertemu Prabowo, Sekjen PBB Bakal Bermalam di Hambalang",
           "url": "https://news.detik.com/berita/d-8713032/usai-bertemu-prabowo-sekjen-pbb-bakal-bermalam-di-hambalang",
           "published_at": "2026-10-18T15:18:52.000Z"
+        },
+        {
+          "outlet": "Setkab",
+          "title": "Presiden Prabowo Sambut Kunjungan Sekjen PBB António Guterres di Hambalang",
+          "url": "https://setkab.go.id/presiden-prabowo-sambut-kunjungan-sekjen-pbb-antonio-guterres-di-hambalang/",
+          "published_at": "2026-10-18T14:00:49.000Z"
         },
         {
           "outlet": "Liputan6",
