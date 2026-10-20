@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-10-20T04:52:59.588Z",
+  "generated_at": "2026-10-20T11:39:56.077Z",
   "current": "loc-20261020-1000-istana-merdeka",
   "locations": [
     {
@@ -34,6 +34,18 @@
           "title": "Cegah Pelajar Demo ke Jakarta, Dindik Tangerang Keluarkan Surat Edaran",
           "url": "https://www.liputan6.com/news/read/8316834/cegah-pelajar-demo-ke-jakarta-dindik-tangerang-keluarkan-surat-edaran",
           "published_at": "2026-10-20T00:04:02.000Z"
+        },
+        {
+          "outlet": "Setkab",
+          "title": "Dua Tahun Pemerintahan Presiden Prabowo, Investasi Rp3.923,2 Triliun Serap 5,48 Juta Tenaga Kerja, Lebih Separuh di Luar Jawa",
+          "url": "https://setkab.go.id/dua-tahun-pemerintahan-presiden-prabowo-investasi-rp3-9232-triliun-serap-548-juta-tenaga-kerja-lebih-separuh-di-luar-jawa/",
+          "published_at": "2026-10-19T12:30:46.000Z"
+        },
+        {
+          "outlet": "Setkab",
+          "title": "Presiden Prabowo Terima Laporan Ekonomi, Ekspor Dipacu dan Belanja APBN Rp1.300 Triliun Disiapkan pada Triwulan IV",
+          "url": "https://setkab.go.id/presiden-prabowo-terima-laporan-ekonomi-ekspor-dipacu-dan-belanja-apbn-rp1-300-triliun-disiapkan-pada-triwulan-iv/",
+          "published_at": "2026-10-19T12:00:00.000Z"
         },
         {
           "outlet": "Setkab",
