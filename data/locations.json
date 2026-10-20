@@ -1,9 +1,60 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-10-19T19:57:19.276Z",
-  "current": "loc-20261018-2218-hambalang",
+  "generated_at": "2026-10-20T04:52:59.588Z",
+  "current": "loc-20261020-1000-istana-merdeka",
   "locations": [
+    {
+      "id": "loc-20261020-1000-istana-merdeka",
+      "place": "Istana Merdeka",
+      "city": "Jakarta Pusat",
+      "region": "DKI Jakarta",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -6.1701,
+      "lng": 106.8219,
+      "event_type": "rapat",
+      "event_label_id": "Rapat Kabinet",
+      "reported_at": "2026-10-20T03:00:00.000Z",
+      "confidence": 78,
+      "outlet_scores": {
+        "Antara News": 0.536,
+        "Liputan6": 1.12,
+        "Setkab": 2.244
+      },
+      "sources": [
+        {
+          "outlet": "Antara News",
+          "title": "Istana sampaikan belasungkawa atas wafatnya mantan KSAD Subagyo HS",
+          "url": "https://www.antaranews.com/berita/5798313/istana-sampaikan-belasungkawa-atas-wafatnya-mantan-ksad-subagyo-hs",
+          "published_at": "2026-10-20T03:00:00.000Z"
+        },
+        {
+          "outlet": "Liputan6",
+          "title": "Cegah Pelajar Demo ke Jakarta, Dindik Tangerang Keluarkan Surat Edaran",
+          "url": "https://www.liputan6.com/news/read/8316834/cegah-pelajar-demo-ke-jakarta-dindik-tangerang-keluarkan-surat-edaran",
+          "published_at": "2026-10-20T00:04:02.000Z"
+        },
+        {
+          "outlet": "Setkab",
+          "title": "Presiden Prabowo Instruksikan Penanganan Karhutla Lebih Masif dan Terpadu",
+          "url": "https://setkab.go.id/presiden-prabowo-instruksikan-penanganan-karhutla-lebih-masif-dan-terpadu/",
+          "published_at": "2026-10-19T11:00:58.000Z"
+        },
+        {
+          "outlet": "Setkab",
+          "title": "Jelang Dua Tahun Pemerintahan, Presiden Prabowo Instruksikan KSP Kawal Program Prioritas Nasional",
+          "url": "https://setkab.go.id/jelang-dua-tahun-pemerintahan-presiden-prabowo-instruksikan-ksp-kawal-program-prioritas-nasional/",
+          "published_at": "2026-10-19T10:45:05.000Z"
+        },
+        {
+          "outlet": "Setkab",
+          "title": "Presiden Prabowo Tekankan Aparatur Profesional dan Berintegritas, Pelayanan Harus Menjawab Kebutuhan Rakyat",
+          "url": "https://setkab.go.id/presiden-prabowo-tekankan-aparatur-profesional-dan-berintegritas-pelayanan-harus-menjawab-kebutuhan-rakyat/",
+          "published_at": "2026-10-19T10:30:05.000Z"
+        }
+      ]
+    },
     {
       "id": "loc-20261018-2218-hambalang",
       "place": "Hambalang",
