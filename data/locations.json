@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-10-21T07:41:13.718Z",
+  "generated_at": "2026-10-21T13:49:18.302Z",
   "current": "loc-20261020-1000-istana-merdeka",
   "locations": [
     {
@@ -15,55 +15,62 @@
       "lng": 106.8219,
       "event_type": "rapat",
       "event_label_id": "Rapat Kabinet",
-      "reported_at": "2026-10-20T03:00:00.000Z",
-      "confidence": 78,
+      "reported_at": "2026-10-21T10:39:35.000Z",
+      "confidence": 85,
       "outlet_scores": {
         "Antara News": 0.536,
         "Liputan6": 1.12,
-        "Setkab": 2.244
+        "Setkab": 2.244,
+        "Detik": 0.952
       },
       "sources": [
+        {
+          "outlet": "Liputan6",
+          "title": "Finger Heart Rocky Gerung untuk Dua Tahun Prabowo-Gibran",
+          "url": "https://www.liputan6.com/news/read/8318349/finger-heart-rocky-gerung-untuk-dua-tahun-prabowo-gibran",
+          "published_at": "2026-10-21T10:39:35.000Z"
+        },
+        {
+          "outlet": "Liputan6",
+          "title": "Nusron Wahid Hadiri Sidang Kabinet Paripurna 2 Tahun Prabowo-Gibran",
+          "url": "https://www.liputan6.com/news/read/8318299/nusron-wahid-hadiri-sidang-kabinet-paripurna-2-tahun-prabowo-gibran",
+          "published_at": "2026-10-21T10:14:01.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Gibran hingga Raja Juli Hadiri Sidang Kabinet 2 Tahun Prabowo di Istana",
+          "url": "https://news.detik.com/berita/d-8717457/gibran-hingga-raja-juli-hadiri-sidang-kabinet-2-tahun-prabowo-di-istana",
+          "published_at": "2026-10-21T08:23:08.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Sidang Kabinet, Menteri hingga Kepala Lembaga Mulai Merapat ke Istana",
+          "url": "https://news.detik.com/berita/d-8717347/sidang-kabinet-menteri-hingga-kepala-lembaga-mulai-merapat-ke-istana",
+          "published_at": "2026-10-21T07:36:16.000Z"
+        },
+        {
+          "outlet": "Liputan6",
+          "title": "Prabowo Gelar Sidang Kabinet Paripurna di Istana Hari Ini",
+          "url": "https://www.liputan6.com/news/read/8317981/prabowo-gelar-sidang-kabinet-paripurna-di-istana-hari-ini",
+          "published_at": "2026-10-21T05:24:05.000Z"
+        },
+        {
+          "outlet": "Setkab",
+          "title": "Presiden Prabowo Terima Apresiasi Sekjen PBB atas Dukungan Indonesia",
+          "url": "https://setkab.go.id/presiden-prabowo-terima-apresiasi-sekjen-pbb-atas-dukungan-indonesia/",
+          "published_at": "2026-10-20T09:41:09.000Z"
+        },
+        {
+          "outlet": "Setkab",
+          "title": "Presiden Prabowo Beri Penghormatan Terakhir kepada Almarhum Subagyo H. S. di Mabesad",
+          "url": "https://setkab.go.id/presiden-prabowo-beri-penghormatan-terakhir-kepada-almarhum-subagyo-h-s-di-mabesad/",
+          "published_at": "2026-10-20T06:35:49.000Z"
+        },
         {
           "outlet": "Antara News",
           "title": "Istana sampaikan belasungkawa atas wafatnya mantan KSAD Subagyo HS",
           "url": "https://www.antaranews.com/berita/5798313/istana-sampaikan-belasungkawa-atas-wafatnya-mantan-ksad-subagyo-hs",
           "published_at": "2026-10-20T03:00:00.000Z"
-        },
-        {
-          "outlet": "Liputan6",
-          "title": "Cegah Pelajar Demo ke Jakarta, Dindik Tangerang Keluarkan Surat Edaran",
-          "url": "https://www.liputan6.com/news/read/8316834/cegah-pelajar-demo-ke-jakarta-dindik-tangerang-keluarkan-surat-edaran",
-          "published_at": "2026-10-20T00:04:02.000Z"
-        },
-        {
-          "outlet": "Setkab",
-          "title": "Dua Tahun Pemerintahan Presiden Prabowo, Investasi Rp3.923,2 Triliun Serap 5,48 Juta Tenaga Kerja, Lebih Separuh di Luar Jawa",
-          "url": "https://setkab.go.id/dua-tahun-pemerintahan-presiden-prabowo-investasi-rp3-9232-triliun-serap-548-juta-tenaga-kerja-lebih-separuh-di-luar-jawa/",
-          "published_at": "2026-10-19T12:30:46.000Z"
-        },
-        {
-          "outlet": "Setkab",
-          "title": "Presiden Prabowo Terima Laporan Ekonomi, Ekspor Dipacu dan Belanja APBN Rp1.300 Triliun Disiapkan pada Triwulan IV",
-          "url": "https://setkab.go.id/presiden-prabowo-terima-laporan-ekonomi-ekspor-dipacu-dan-belanja-apbn-rp1-300-triliun-disiapkan-pada-triwulan-iv/",
-          "published_at": "2026-10-19T12:00:00.000Z"
-        },
-        {
-          "outlet": "Setkab",
-          "title": "Presiden Prabowo Instruksikan Penanganan Karhutla Lebih Masif dan Terpadu",
-          "url": "https://setkab.go.id/presiden-prabowo-instruksikan-penanganan-karhutla-lebih-masif-dan-terpadu/",
-          "published_at": "2026-10-19T11:00:58.000Z"
-        },
-        {
-          "outlet": "Setkab",
-          "title": "Jelang Dua Tahun Pemerintahan, Presiden Prabowo Instruksikan KSP Kawal Program Prioritas Nasional",
-          "url": "https://setkab.go.id/jelang-dua-tahun-pemerintahan-presiden-prabowo-instruksikan-ksp-kawal-program-prioritas-nasional/",
-          "published_at": "2026-10-19T10:45:05.000Z"
-        },
-        {
-          "outlet": "Setkab",
-          "title": "Presiden Prabowo Tekankan Aparatur Profesional dan Berintegritas, Pelayanan Harus Menjawab Kebutuhan Rakyat",
-          "url": "https://setkab.go.id/presiden-prabowo-tekankan-aparatur-profesional-dan-berintegritas-pelayanan-harus-menjawab-kebutuhan-rakyat/",
-          "published_at": "2026-10-19T10:30:05.000Z"
         }
       ]
     },
