@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-10-21T23:21:27.042Z",
+  "generated_at": "2026-10-22T04:49:48.142Z",
   "current": "loc-20261020-1000-istana-merdeka",
   "locations": [
     {
@@ -15,7 +15,7 @@
       "lng": 106.8219,
       "event_type": "rapat",
       "event_label_id": "Rapat Kabinet",
-      "reported_at": "2026-10-21T10:39:35.000Z",
+      "reported_at": "2026-10-22T02:47:38.000Z",
       "confidence": 85,
       "outlet_scores": {
         "Antara News": 0.536,
@@ -24,6 +24,12 @@
         "Detik": 0.952
       },
       "sources": [
+        {
+          "outlet": "Setkab",
+          "title": "Seskab Teddy Ungkap Arahan Presiden Prabowo dalam Sidang Kabinet Paripurna: Perkuat Ketahanan Nasional hingga Tindak Tegas Karhutla",
+          "url": "https://setkab.go.id/seskab-teddy-ungkap-arahan-presiden-prabowo-dalam-sidang-kabinet-paripurna-perkuat-ketahanan-nasional-hingga-tindak-tegas-karhutla/",
+          "published_at": "2026-10-22T02:47:38.000Z"
+        },
         {
           "outlet": "Liputan6",
           "title": "Finger Heart Rocky Gerung untuk Dua Tahun Prabowo-Gibran",
@@ -65,12 +71,6 @@
           "title": "Presiden Prabowo Beri Penghormatan Terakhir kepada Almarhum Subagyo H. S. di Mabesad",
           "url": "https://setkab.go.id/presiden-prabowo-beri-penghormatan-terakhir-kepada-almarhum-subagyo-h-s-di-mabesad/",
           "published_at": "2026-10-20T06:35:49.000Z"
-        },
-        {
-          "outlet": "Antara News",
-          "title": "Istana sampaikan belasungkawa atas wafatnya mantan KSAD Subagyo HS",
-          "url": "https://www.antaranews.com/berita/5798313/istana-sampaikan-belasungkawa-atas-wafatnya-mantan-ksad-subagyo-hs",
-          "published_at": "2026-10-20T03:00:00.000Z"
         }
       ]
     },
