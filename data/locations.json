@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-10-23T07:33:58.715Z",
+  "generated_at": "2026-10-23T13:28:08.760Z",
   "current": "loc-20261020-1000-istana-merdeka",
   "locations": [
     {
@@ -15,7 +15,7 @@
       "lng": 106.8219,
       "event_type": "rapat",
       "event_label_id": "Rapat Kabinet",
-      "reported_at": "2026-10-22T02:47:38.000Z",
+      "reported_at": "2026-10-23T11:20:16.000Z",
       "confidence": 85,
       "outlet_scores": {
         "Antara News": 0.536,
@@ -24,6 +24,30 @@
         "Detik": 0.952
       },
       "sources": [
+        {
+          "outlet": "Liputan6",
+          "title": "Prabowo Beberkan Penindakan Pelanggaran MBG, Ini Hasillnya",
+          "url": "https://www.liputan6.com/news/read/8320025/prabowo-beberkan-penindakan-pelanggaran-mbg-ini-hasillnya",
+          "published_at": "2026-10-23T11:20:16.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Pramono Mulai Hitung Kebutuhan Dana LRT Jakarta untuk Diajukan ke Danantara",
+          "url": "https://news.detik.com/berita/d-8721138/pramono-mulai-hitung-kebutuhan-dana-lrt-jakarta-untuk-diajukan-ke-danantara",
+          "published_at": "2026-10-23T10:41:52.000Z"
+        },
+        {
+          "outlet": "Liputan6",
+          "title": "Alasan Dedi Mulyadi Absen saat Dicari Prabowo di Rakornas",
+          "url": "https://www.liputan6.com/news/read/8319756/alasan-dedi-mulyadi-absen-saat-dicari-prabowo-di-rakornas",
+          "published_at": "2026-10-23T06:35:26.000Z"
+        },
+        {
+          "outlet": "Setkab",
+          "title": "Presiden Prabowo Hadiri Rakornas TPAKD 2026, Apresiasi Perluasan Akses Keuangan hingga Seluruh Daerah",
+          "url": "https://setkab.go.id/presiden-prabowo-hadiri-rakornas-tpakd-2026-apresiasi-perluasan-akses-keuangan-hingga-seluruh-daerah/",
+          "published_at": "2026-10-22T14:00:49.000Z"
+        },
         {
           "outlet": "Setkab",
           "title": "Seskab Teddy Ungkap Arahan Presiden Prabowo dalam Sidang Kabinet Paripurna: Perkuat Ketahanan Nasional hingga Tindak Tegas Karhutla",
@@ -47,30 +71,6 @@
           "title": "Gibran hingga Raja Juli Hadiri Sidang Kabinet 2 Tahun Prabowo di Istana",
           "url": "https://news.detik.com/berita/d-8717457/gibran-hingga-raja-juli-hadiri-sidang-kabinet-2-tahun-prabowo-di-istana",
           "published_at": "2026-10-21T08:23:08.000Z"
-        },
-        {
-          "outlet": "Detik",
-          "title": "Sidang Kabinet, Menteri hingga Kepala Lembaga Mulai Merapat ke Istana",
-          "url": "https://news.detik.com/berita/d-8717347/sidang-kabinet-menteri-hingga-kepala-lembaga-mulai-merapat-ke-istana",
-          "published_at": "2026-10-21T07:36:16.000Z"
-        },
-        {
-          "outlet": "Liputan6",
-          "title": "Prabowo Gelar Sidang Kabinet Paripurna di Istana Hari Ini",
-          "url": "https://www.liputan6.com/news/read/8317981/prabowo-gelar-sidang-kabinet-paripurna-di-istana-hari-ini",
-          "published_at": "2026-10-21T05:24:05.000Z"
-        },
-        {
-          "outlet": "Setkab",
-          "title": "Presiden Prabowo Terima Apresiasi Sekjen PBB atas Dukungan Indonesia",
-          "url": "https://setkab.go.id/presiden-prabowo-terima-apresiasi-sekjen-pbb-atas-dukungan-indonesia/",
-          "published_at": "2026-10-20T09:41:09.000Z"
-        },
-        {
-          "outlet": "Setkab",
-          "title": "Presiden Prabowo Beri Penghormatan Terakhir kepada Almarhum Subagyo H. S. di Mabesad",
-          "url": "https://setkab.go.id/presiden-prabowo-beri-penghormatan-terakhir-kepada-almarhum-subagyo-h-s-di-mabesad/",
-          "published_at": "2026-10-20T06:35:49.000Z"
         }
       ]
     },
