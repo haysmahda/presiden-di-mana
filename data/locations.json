@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-10-26T07:49:25.446Z",
+  "generated_at": "2026-10-26T15:12:37.176Z",
   "current": "loc-20261025-2118-hambalang",
   "locations": [
     {
@@ -15,13 +15,20 @@
       "lng": 106.9167,
       "event_type": "kenegaraan",
       "event_label_id": "Kegiatan Kenegaraan",
-      "reported_at": "2026-10-25T14:18:52.000Z",
-      "confidence": 88,
+      "reported_at": "2026-10-26T01:33:27.000Z",
+      "confidence": 95,
       "outlet_scores": {
         "Liputan6": 2.72,
-        "Detik": 2.72
+        "Detik": 2.72,
+        "Setkab": 2.244
       },
       "sources": [
+        {
+          "outlet": "Setkab",
+          "title": "Seskab Teddy: Presiden Prabowo Terima Laporan Perkembangan Program Pendidikan Kepemimpinan URI",
+          "url": "https://setkab.go.id/seskab-teddy-presiden-prabowo-terima-laporan-perkembangan-program-pendidikan-kepemimpinan-uri/",
+          "published_at": "2026-10-26T01:33:27.000Z"
+        },
         {
           "outlet": "Liputan6",
           "title": "Gubernur URI Menghadap Prabowo di Hambalang, Ini yang Dilaporkan",
