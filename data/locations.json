@@ -1,9 +1,48 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-10-28T08:35:13.996Z",
-  "current": "loc-20261025-2118-hambalang",
+  "generated_at": "2026-10-28T16:38:31.526Z",
+  "current": "loc-20261028-2140-hambalang",
   "locations": [
+    {
+      "id": "loc-20261028-2140-hambalang",
+      "place": "Hambalang",
+      "city": "Bogor",
+      "region": "Jawa Barat",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -6.5333,
+      "lng": 106.9167,
+      "event_type": "kenegaraan",
+      "event_label_id": "Kegiatan Kenegaraan",
+      "reported_at": "2026-10-28T14:40:11.000Z",
+      "confidence": 97,
+      "outlet_scores": {
+        "Antara News": 4.08,
+        "Liputan6": 2.72,
+        "Detik": 2.72
+      },
+      "sources": [
+        {
+          "outlet": "Antara News",
+          "title": "Presiden Prabowo terima kunjungan Menlu Singapura di Hambalang",
+          "url": "https://www.antaranews.com/video/5817895/presiden-prabowo-terima-kunjungan-menlu-singapura-di-hambalang",
+          "published_at": "2026-10-28T14:40:11.000Z"
+        },
+        {
+          "outlet": "Liputan6",
+          "title": "Momen Menlu Singapura Temui Prabowo di Hambalang",
+          "url": "https://www.liputan6.com/news/read/8323516/momen-menlu-singapura-temui-prabowo-di-hambalang",
+          "published_at": "2026-10-28T12:34:47.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Momen Prabowo Terima Menlu Singapura di Hambalang",
+          "url": "https://news.detik.com/berita/d-8728444/momen-prabowo-terima-menlu-singapura-di-hambalang",
+          "published_at": "2026-10-28T12:26:14.000Z"
+        }
+      ]
+    },
     {
       "id": "loc-20261025-2118-hambalang",
       "place": "Hambalang",
