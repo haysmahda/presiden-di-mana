@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-10-29T05:50:40.078Z",
+  "generated_at": "2026-10-29T13:03:50.831Z",
   "current": "loc-20261028-2140-hambalang",
   "locations": [
     {
@@ -15,19 +15,32 @@
       "lng": 106.9167,
       "event_type": "kenegaraan",
       "event_label_id": "Kegiatan Kenegaraan",
-      "reported_at": "2026-10-28T14:40:11.000Z",
-      "confidence": 97,
+      "reported_at": "2026-10-29T06:39:14.000Z",
+      "confidence": 98,
       "outlet_scores": {
         "Antara News": 4.08,
         "Liputan6": 2.72,
-        "Detik": 2.72
+        "Detik": 2.72,
+        "Setkab": 4.08
       },
       "sources": [
+        {
+          "outlet": "Liputan6",
+          "title": "DPR Dorong RI-Singapura Perkuat Penegakan Hukum Kebakaran Hutan",
+          "url": "https://www.liputan6.com/news/read/8324012/dpr-dorong-ri-singapura-perkuat-penegakan-hukum-kebakaran-hutan",
+          "published_at": "2026-10-29T06:39:14.000Z"
+        },
         {
           "outlet": "Antara News",
           "title": "Presiden Prabowo terima kunjungan Menlu Singapura di Hambalang",
           "url": "https://www.antaranews.com/video/5817895/presiden-prabowo-terima-kunjungan-menlu-singapura-di-hambalang",
           "published_at": "2026-10-28T14:40:11.000Z"
+        },
+        {
+          "outlet": "Setkab",
+          "title": "Presiden Prabowo Terima Permohonan Pertemuan Menlu Singapura di Hambalang",
+          "url": "https://setkab.go.id/presiden-prabowo-terima-permohonan-pertemuan-menlu-singapura-di-hambalang/",
+          "published_at": "2026-10-28T14:00:02.000Z"
         },
         {
           "outlet": "Liputan6",
