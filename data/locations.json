@@ -1,9 +1,54 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-10-30T12:57:56.042Z",
-  "current": "loc-20261028-2140-hambalang",
+  "generated_at": "2026-10-30T19:24:25.439Z",
+  "current": "loc-20261030-2340-istana-merdeka",
   "locations": [
+    {
+      "id": "loc-20261030-2340-istana-merdeka",
+      "place": "Istana Merdeka",
+      "city": "Jakarta Pusat",
+      "region": "DKI Jakarta",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -6.1701,
+      "lng": 106.8219,
+      "event_type": "peresmian",
+      "event_label_id": "Peresmian",
+      "reported_at": "2026-10-30T16:40:31.000Z",
+      "confidence": 69,
+      "outlet_scores": {
+        "Liputan6": 0.616,
+        "Antara News": 1.68,
+        "Setkab": 0.785
+      },
+      "sources": [
+        {
+          "outlet": "Liputan6",
+          "title": "Naik Whoosh dari Cimahi, Prabowo Sapa Warga di Stasiun Halim",
+          "url": "https://www.liputan6.com/news/read/8325343/naik-whoosh-dari-cimahi-prabowo-sapa-warga-di-stasiun-halim",
+          "published_at": "2026-10-30T16:40:31.000Z"
+        },
+        {
+          "outlet": "Antara News",
+          "title": "Kembali ke Jakarta naik Whoosh, Prabowo sapa warga di Stasiun Halim",
+          "url": "https://www.antaranews.com/berita/5822727/kembali-ke-jakarta-naik-whoosh-prabowo-sapa-warga-di-stasiun-halim",
+          "published_at": "2026-10-30T16:18:16.000Z"
+        },
+        {
+          "outlet": "Setkab",
+          "title": "Terima Tim Perumus UU Satu Data Indonesia, Presiden Prabowo Tekankan Kedaulatan Data sebagai Fondasi Keutuhan Bangsa",
+          "url": "https://setkab.go.id/terima-tim-perumus-uu-satu-data-indonesia-presiden-prabowo-tekankan-kedaulatan-data-sebagai-fondasi-keutuhan-bangsa/",
+          "published_at": "2026-10-29T12:42:53.000Z"
+        },
+        {
+          "outlet": "Setkab",
+          "title": "Presiden Prabowo Beri Bonus kepada Atlet Peraih Medali Asian Games dan Asian Para Games Aichi-Nagoya 2026",
+          "url": "https://setkab.go.id/presiden-prabowo-beri-bonus-kepada-atlet-peraih-medali-asian-games-dan-asian-para-games-aichi-nagoya-2026/",
+          "published_at": "2026-10-29T12:40:21.000Z"
+        }
+      ]
+    },
     {
       "id": "loc-20261028-2140-hambalang",
       "place": "Hambalang",
