@@ -1,9 +1,41 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-10-31T12:33:36.312Z",
-  "current": "loc-20261030-2342-bandung",
+  "generated_at": "2026-10-31T18:34:35.346Z",
+  "current": "loc-20261031-2313-hambalang",
   "locations": [
+    {
+      "id": "loc-20261031-2313-hambalang",
+      "place": "Hambalang",
+      "city": "Bogor",
+      "region": "Jawa Barat",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -6.5333,
+      "lng": 106.9167,
+      "event_type": "kenegaraan",
+      "event_label_id": "Kegiatan Kenegaraan",
+      "reported_at": "2026-10-31T16:13:02.000Z",
+      "confidence": 93,
+      "outlet_scores": {
+        "Antara News": 4.08,
+        "Detik": 2.72
+      },
+      "sources": [
+        {
+          "outlet": "Antara News",
+          "title": "Prabowo terima 250 anggota Kadin di Hambalang Bogor",
+          "url": "https://www.antaranews.com/berita/5824167/prabowo-terima-250-anggota-kadin-di-hambalang-bogor",
+          "published_at": "2026-10-31T16:13:02.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Prabowo Terima Anggota Kadin di Hambalang, Ini yang Dibahas",
+          "url": "https://news.detik.com/berita/d-8733001/prabowo-terima-anggota-kadin-di-hambalang-ini-yang-dibahas",
+          "published_at": "2026-10-31T15:35:54.000Z"
+        }
+      ]
+    },
     {
       "id": "loc-20261030-2342-bandung",
       "place": "Bandung",
