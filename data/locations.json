@@ -1,9 +1,41 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-10-30T19:24:25.439Z",
-  "current": "loc-20261030-2340-istana-merdeka",
+  "generated_at": "2026-10-31T05:44:03.713Z",
+  "current": "loc-20261030-2342-bandung",
   "locations": [
+    {
+      "id": "loc-20261030-2342-bandung",
+      "place": "Bandung",
+      "city": "Bandung",
+      "region": "Jawa Barat",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -6.9175,
+      "lng": 107.6191,
+      "event_type": "peresmian",
+      "event_label_id": "Peresmian",
+      "reported_at": "2026-10-30T16:42:55.000Z",
+      "confidence": 44,
+      "outlet_scores": {
+        "Detik": 1.24,
+        "Liputan6": 0.28
+      },
+      "sources": [
+        {
+          "outlet": "Detik",
+          "title": "Prabowo Pulang dari Bandung Naik Whoosh, Sapa dan Foto Bareng Warga di Halim",
+          "url": "https://news.detik.com/berita/d-8731906/prabowo-pulang-dari-bandung-naik-whoosh-sapa-dan-foto-bareng-warga-di-halim",
+          "published_at": "2026-10-30T16:42:55.000Z"
+        },
+        {
+          "outlet": "Liputan6",
+          "title": "Pesan Prabowo saat Resmikan SMA Taruna Nusantara Cimahi",
+          "url": "https://www.liputan6.com/news/read/8325092/pesan-prabowo-saat-resmikan-sma-taruna-nusantara-cimahi",
+          "published_at": "2026-10-30T09:27:15.000Z"
+        }
+      ]
+    },
     {
       "id": "loc-20261030-2340-istana-merdeka",
       "place": "Istana Merdeka",
