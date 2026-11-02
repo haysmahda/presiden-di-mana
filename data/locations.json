@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-11-01T23:36:57.496Z",
+  "generated_at": "2026-11-02T06:07:33.251Z",
   "current": "loc-20261031-2313-hambalang",
   "locations": [
     {
@@ -16,11 +16,12 @@
       "event_type": "kenegaraan",
       "event_label_id": "Kegiatan Kenegaraan",
       "reported_at": "2026-10-31T23:43:07.000Z",
-      "confidence": 97,
+      "confidence": 98,
       "outlet_scores": {
         "Antara News": 4.08,
         "Detik": 2.72,
-        "Liputan6": 2.72
+        "Liputan6": 2.72,
+        "Setkab": 4.08
       },
       "sources": [
         {
@@ -40,6 +41,18 @@
           "title": "Prabowo Terima Anggota Kadin di Hambalang, Ini yang Dibahas",
           "url": "https://news.detik.com/berita/d-8733001/prabowo-terima-anggota-kadin-di-hambalang-ini-yang-dibahas",
           "published_at": "2026-10-31T15:35:54.000Z"
+        },
+        {
+          "outlet": "Setkab",
+          "title": "Presiden Prabowo Berikan Taklimat kepada Peserta P3MDI dan Rapimnas Kadin di Hambalang",
+          "url": "https://setkab.go.id/presiden-prabowo-berikan-taklimat-kepada-peserta-p3mdi-dan-rapimnas-kadin-di-hambalang/",
+          "published_at": "2026-10-31T14:00:18.000Z"
+        },
+        {
+          "outlet": "Setkab",
+          "title": "Era Baru SMA Taruna Nusantara, Presiden Prabowo Perluas Kampus dan Gratiskan Pendidikan bagi Seluruh Siswa",
+          "url": "https://setkab.go.id/era-baru-sma-taruna-nusantara-presiden-prabowo-perluas-kampus-dan-gratiskan-pendidikan-bagi-seluruh-siswa/",
+          "published_at": "2026-10-30T13:00:56.000Z"
         }
       ]
     },
