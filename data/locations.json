@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-11-04T16:20:18.867Z",
+  "generated_at": "2026-11-04T23:40:47.559Z",
   "current": "loc-20261104-1311-istana-merdeka",
   "locations": [
     {
@@ -15,7 +15,7 @@
       "lng": 106.8219,
       "event_type": "rapat",
       "event_label_id": "Rapat Kabinet",
-      "reported_at": "2026-11-04T11:47:30.000Z",
+      "reported_at": "2026-11-04T23:01:50.000Z",
       "confidence": 81,
       "outlet_scores": {
         "Detik": 0.357,
@@ -24,6 +24,12 @@
         "Setkab": 2.244
       },
       "sources": [
+        {
+          "outlet": "Detik",
+          "title": "Kata Istana soal Aksi Listyo Dkk Sadap Prabowo Mengarah ke Makar",
+          "url": "https://news.detik.com/berita/d-8738925/kata-istana-soal-aksi-listyo-dkk-sadap-prabowo-mengarah-ke-makar",
+          "published_at": "2026-11-04T23:01:50.000Z"
+        },
         {
           "outlet": "Detik",
           "title": "7 Poin Pernyataan Istana soal Presiden Disadap Mantan Kapolri",
@@ -65,12 +71,38 @@
           "title": "Istana: Penyadapan Listyo Sigit Cs ke Prabowo Masuk Kategori Makar",
           "url": "https://www.cnnindonesia.com/nasional/20261104122723-16-1423148/istana-penyadapan-listyo-sigit-cs-ke-prabowo-masuk-kategori-makar",
           "published_at": "2026-11-04T05:50:58.000Z"
+        }
+      ]
+    },
+    {
+      "id": "loc-20261105-0330-istana-negara",
+      "place": "Istana Negara",
+      "city": "Jakarta Pusat",
+      "region": "DKI Jakarta",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -6.1704,
+      "lng": 106.8236,
+      "event_type": "bilateral",
+      "event_label_id": "Pertemuan Bilateral",
+      "reported_at": "2026-11-04T20:30:24.000Z",
+      "confidence": 76,
+      "outlet_scores": {
+        "CNN Indonesia": 1.496,
+        "Antara News": 2.244
+      },
+      "sources": [
+        {
+          "outlet": "CNN Indonesia",
+          "title": "Mualem Temui Prabowo Bahas Bendera Aceh-Dana Abadi Eks Kombatan GAM",
+          "url": "https://www.cnnindonesia.com/nasional/20261104225924-32-1423445/mualem-temui-prabowo-bahas-bendera-aceh-dana-abadi-eks-kombatan-gam",
+          "published_at": "2026-11-04T20:30:24.000Z"
         },
         {
           "outlet": "Antara News",
-          "title": "Kehadiran Prabowo di KTT ASEAN, Kemlu: Tunggu konfirmasi Istana",
-          "url": "https://www.antaranews.com/berita/5830847/kehadiran-prabowo-di-ktt-asean-kemlu-tunggu-konfirmasi-istana",
-          "published_at": "2026-11-04T05:48:34.000Z"
+          "title": "Prabowo dan Mualem bahas dana otsus hingga bendera Aceh di Istana",
+          "url": "https://www.antaranews.com/berita/5832739/prabowo-dan-mualem-bahas-dana-otsus-hingga-bendera-aceh-di-istana",
+          "published_at": "2026-11-04T16:47:18.000Z"
         }
       ]
     },
