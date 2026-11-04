@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-11-04T06:25:35.028Z",
+  "generated_at": "2026-11-04T16:20:18.867Z",
   "current": "loc-20261104-1311-istana-merdeka",
   "locations": [
     {
@@ -15,7 +15,7 @@
       "lng": 106.8219,
       "event_type": "rapat",
       "event_label_id": "Rapat Kabinet",
-      "reported_at": "2026-11-04T06:11:57.000Z",
+      "reported_at": "2026-11-04T11:47:30.000Z",
       "confidence": 81,
       "outlet_scores": {
         "Detik": 0.357,
@@ -24,6 +24,30 @@
         "Setkab": 2.244
       },
       "sources": [
+        {
+          "outlet": "Detik",
+          "title": "7 Poin Pernyataan Istana soal Presiden Disadap Mantan Kapolri",
+          "url": "https://news.detik.com/berita/d-8738559/7-poin-pernyataan-istana-soal-presiden-disadap-mantan-kapolri",
+          "published_at": "2026-11-04T11:47:30.000Z"
+        },
+        {
+          "outlet": "Setkab",
+          "title": "Presiden Prabowo Prihatin atas Dugaan Penyadapan terhadap Kepala Negara dan Sejumlah Tokoh",
+          "url": "https://setkab.go.id/presiden-prabowo-prihatin-atas-dugaan-penyadapan-terhadap-kepala-negara-dan-sejumlah-tokoh/",
+          "published_at": "2026-11-04T09:50:13.000Z"
+        },
+        {
+          "outlet": "Setkab",
+          "title": "Presiden Prabowo Tekankan Penguatan Kompetensi dan Jiwa Kebangsaan Peserta P3MDI",
+          "url": "https://setkab.go.id/presiden-prabowo-tekankan-penguatan-kompetensi-dan-jiwa-kebangsaan-peserta-p3mdi/",
+          "published_at": "2026-11-04T09:48:42.000Z"
+        },
+        {
+          "outlet": "CNN Indonesia",
+          "title": "Istana Bingung Motif Listyo Cs Sadap Prabowo: Kita Juga Bertanya-tanya",
+          "url": "https://www.cnnindonesia.com/nasional/20261104141731-32-1423227/istana-bingung-motif-listyo-cs-sadap-prabowo-kita-juga-bertanya-tanya",
+          "published_at": "2026-11-04T07:30:50.000Z"
+        },
         {
           "outlet": "Detik",
           "title": "Jawaban Istana soal Isi Percakapan Prabowo yang Disadap Listyo Sigit dkk",
@@ -47,30 +71,6 @@
           "title": "Kehadiran Prabowo di KTT ASEAN, Kemlu: Tunggu konfirmasi Istana",
           "url": "https://www.antaranews.com/berita/5830847/kehadiran-prabowo-di-ktt-asean-kemlu-tunggu-konfirmasi-istana",
           "published_at": "2026-11-04T05:48:34.000Z"
-        },
-        {
-          "outlet": "Detik",
-          "title": "Istana Turut Bertanya-tanya Alasan Listyo Sigit dkk Sadap Presiden Prabowo",
-          "url": "https://news.detik.com/berita/d-8737788/istana-turut-bertanya-tanya-alasan-listyo-sigit-dkk-sadap-presiden-prabowo",
-          "published_at": "2026-11-04T05:32:10.000Z"
-        },
-        {
-          "outlet": "CNN Indonesia",
-          "title": "Istana: Presiden Prabowo Prihatin Luar Biasa terkait Kasus Penyadapan",
-          "url": "https://www.cnnindonesia.com/nasional/20261104122553-12-1423147/istana-presiden-prabowo-prihatin-luar-biasa-terkait-kasus-penyadapan",
-          "published_at": "2026-11-04T05:30:55.000Z"
-        },
-        {
-          "outlet": "CNN Indonesia",
-          "title": "Alasan Istana Sebut Penyadapan Listyo Sigit Cs ke Prabowo Makar",
-          "url": "https://www.cnnindonesia.com/nasional/20261104122239-12-1423144/alasan-istana-sebut-penyadapan-listyo-sigit-cs-ke-prabowo-makar",
-          "published_at": "2026-11-04T05:30:17.000Z"
-        },
-        {
-          "outlet": "CNN Indonesia",
-          "title": "Istana Kategorikan Penyadapan Listyo Sigit Cs ke Prabowo Makar",
-          "url": "https://www.cnnindonesia.com/nasional/20261104120431-12-1423134/istana-kategorikan-penyadapan-listyo-sigit-cs-ke-prabowo-makar",
-          "published_at": "2026-11-04T05:13:55.000Z"
         }
       ]
     },
