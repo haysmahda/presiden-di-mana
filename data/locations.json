@@ -1,9 +1,79 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-11-03T23:24:41.071Z",
-  "current": "loc-20261031-2313-hambalang",
+  "generated_at": "2026-11-04T06:25:35.028Z",
+  "current": "loc-20261104-1311-istana-merdeka",
   "locations": [
+    {
+      "id": "loc-20261104-1311-istana-merdeka",
+      "place": "Istana Merdeka",
+      "city": "Jakarta Pusat",
+      "region": "DKI Jakarta",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -6.1701,
+      "lng": 106.8219,
+      "event_type": "rapat",
+      "event_label_id": "Rapat Kabinet",
+      "reported_at": "2026-11-04T06:11:57.000Z",
+      "confidence": 81,
+      "outlet_scores": {
+        "Detik": 0.357,
+        "Antara News": 0.785,
+        "CNN Indonesia": 0.952,
+        "Setkab": 2.244
+      },
+      "sources": [
+        {
+          "outlet": "Detik",
+          "title": "Jawaban Istana soal Isi Percakapan Prabowo yang Disadap Listyo Sigit dkk",
+          "url": "https://news.detik.com/berita/d-8737871/jawaban-istana-soal-isi-percakapan-prabowo-yang-disadap-listyo-sigit-dkk",
+          "published_at": "2026-11-04T06:11:57.000Z"
+        },
+        {
+          "outlet": "Antara News",
+          "title": "Istana: Dugaan penyadapan Kepala Negara mengarah ke makar",
+          "url": "https://www.antaranews.com/berita/5830887/istana-dugaan-penyadapan-kepala-negara-mengarah-ke-makar",
+          "published_at": "2026-11-04T06:10:43.000Z"
+        },
+        {
+          "outlet": "CNN Indonesia",
+          "title": "Istana: Penyadapan Listyo Sigit Cs ke Prabowo Masuk Kategori Makar",
+          "url": "https://www.cnnindonesia.com/nasional/20261104122723-16-1423148/istana-penyadapan-listyo-sigit-cs-ke-prabowo-masuk-kategori-makar",
+          "published_at": "2026-11-04T05:50:58.000Z"
+        },
+        {
+          "outlet": "Antara News",
+          "title": "Kehadiran Prabowo di KTT ASEAN, Kemlu: Tunggu konfirmasi Istana",
+          "url": "https://www.antaranews.com/berita/5830847/kehadiran-prabowo-di-ktt-asean-kemlu-tunggu-konfirmasi-istana",
+          "published_at": "2026-11-04T05:48:34.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Istana Turut Bertanya-tanya Alasan Listyo Sigit dkk Sadap Presiden Prabowo",
+          "url": "https://news.detik.com/berita/d-8737788/istana-turut-bertanya-tanya-alasan-listyo-sigit-dkk-sadap-presiden-prabowo",
+          "published_at": "2026-11-04T05:32:10.000Z"
+        },
+        {
+          "outlet": "CNN Indonesia",
+          "title": "Istana: Presiden Prabowo Prihatin Luar Biasa terkait Kasus Penyadapan",
+          "url": "https://www.cnnindonesia.com/nasional/20261104122553-12-1423147/istana-presiden-prabowo-prihatin-luar-biasa-terkait-kasus-penyadapan",
+          "published_at": "2026-11-04T05:30:55.000Z"
+        },
+        {
+          "outlet": "CNN Indonesia",
+          "title": "Alasan Istana Sebut Penyadapan Listyo Sigit Cs ke Prabowo Makar",
+          "url": "https://www.cnnindonesia.com/nasional/20261104122239-12-1423144/alasan-istana-sebut-penyadapan-listyo-sigit-cs-ke-prabowo-makar",
+          "published_at": "2026-11-04T05:30:17.000Z"
+        },
+        {
+          "outlet": "CNN Indonesia",
+          "title": "Istana Kategorikan Penyadapan Listyo Sigit Cs ke Prabowo Makar",
+          "url": "https://www.cnnindonesia.com/nasional/20261104120431-12-1423134/istana-kategorikan-penyadapan-listyo-sigit-cs-ke-prabowo-makar",
+          "published_at": "2026-11-04T05:13:55.000Z"
+        }
+      ]
+    },
     {
       "id": "loc-20261031-2313-hambalang",
       "place": "Hambalang",
