@@ -1,9 +1,41 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-11-05T06:49:28.624Z",
-  "current": "loc-20261104-1311-istana-merdeka",
+  "generated_at": "2026-11-05T16:29:01.855Z",
+  "current": "loc-20261105-2107-monumen-nasional",
   "locations": [
+    {
+      "id": "loc-20261105-2107-monumen-nasional",
+      "place": "Monumen Nasional",
+      "city": "Jakarta Pusat",
+      "region": "DKI Jakarta",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -6.1754,
+      "lng": 106.8272,
+      "event_type": "peresmian",
+      "event_label_id": "Peresmian",
+      "reported_at": "2026-11-05T14:07:22.000Z",
+      "confidence": 54,
+      "outlet_scores": {
+        "Liputan6": 1.02,
+        "Detik": 1.02
+      },
+      "sources": [
+        {
+          "outlet": "Liputan6",
+          "title": "Seskab Teddy: Prabowo Perintahkan Revitalisasi Stasiun Gambir dan Kawasan Monas",
+          "url": "https://www.liputan6.com/news/read/8329489/seskab-teddy-prabowo-perintahkan-revitalisasi-stasiun-gambir-dan-kawasan-monas",
+          "published_at": "2026-11-05T14:07:22.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Seskab Ungkap Prabowo Minta Revitalisasi Gambir hingga Monas Dipercepat",
+          "url": "https://news.detik.com/berita/d-8740334/seskab-ungkap-prabowo-minta-revitalisasi-gambir-hingga-monas-dipercepat",
+          "published_at": "2026-11-05T14:01:00.000Z"
+        }
+      ]
+    },
     {
       "id": "loc-20261104-1311-istana-merdeka",
       "place": "Istana Merdeka",
@@ -13,17 +45,30 @@
       "country_code": "ID",
       "lat": -6.1701,
       "lng": 106.8219,
-      "event_type": "rapat",
-      "event_label_id": "Rapat Kabinet",
-      "reported_at": "2026-11-05T04:22:22.000Z",
-      "confidence": 81,
+      "event_type": "upacara",
+      "event_label_id": "Upacara Kenegaraan",
+      "reported_at": "2026-11-05T08:34:00.000Z",
+      "confidence": 85,
       "outlet_scores": {
         "Detik": 0.357,
         "Antara News": 0.785,
         "CNN Indonesia": 0.952,
-        "Setkab": 2.244
+        "Setkab": 2.244,
+        "Liputan6": 0.524
       },
       "sources": [
+        {
+          "outlet": "Liputan6",
+          "title": "Tergesa Masuk Istana, Dirut KAI Penuhi Panggilan Prabowo",
+          "url": "https://www.liputan6.com/news/read/8329157/tergesa-masuk-istana-dirut-kai-penuhi-panggilan-prabowo",
+          "published_at": "2026-11-05T08:34:00.000Z"
+        },
+        {
+          "outlet": "Setkab",
+          "title": "Presiden Prabowo Terima Menteri Kebudayaan, Bahas Rekomendasi Usulan Gelar Pahlawan Nasional 2026",
+          "url": "https://setkab.go.id/presiden-prabowo-terima-menteri-kebudayaan-bahas-rekomendasi-usulan-gelar-pahlawan-nasional-2026/",
+          "published_at": "2026-11-05T07:15:42.000Z"
+        },
         {
           "outlet": "Detik",
           "title": "Legislator DKI Sebut Isu Dasco Mau Jadi Wapres Hoax: Kawal Kasus Penyadapan",
@@ -59,18 +104,6 @@
           "title": "7 Poin Pernyataan Istana soal Presiden Disadap Mantan Kapolri",
           "url": "https://news.detik.com/berita/d-8738559/7-poin-pernyataan-istana-soal-presiden-disadap-mantan-kapolri",
           "published_at": "2026-11-04T11:47:30.000Z"
-        },
-        {
-          "outlet": "Setkab",
-          "title": "Presiden Prabowo Prihatin atas Dugaan Penyadapan terhadap Kepala Negara dan Sejumlah Tokoh",
-          "url": "https://setkab.go.id/presiden-prabowo-prihatin-atas-dugaan-penyadapan-terhadap-kepala-negara-dan-sejumlah-tokoh/",
-          "published_at": "2026-11-04T09:50:13.000Z"
-        },
-        {
-          "outlet": "Setkab",
-          "title": "Presiden Prabowo Tekankan Penguatan Kompetensi dan Jiwa Kebangsaan Peserta P3MDI",
-          "url": "https://setkab.go.id/presiden-prabowo-tekankan-penguatan-kompetensi-dan-jiwa-kebangsaan-peserta-p3mdi/",
-          "published_at": "2026-11-04T09:48:42.000Z"
         }
       ]
     },
