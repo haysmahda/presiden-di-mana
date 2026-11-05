@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-11-05T16:29:01.855Z",
+  "generated_at": "2026-11-05T23:39:18.314Z",
   "current": "loc-20261105-2107-monumen-nasional",
   "locations": [
     {
@@ -15,13 +15,20 @@
       "lng": 106.8272,
       "event_type": "peresmian",
       "event_label_id": "Peresmian",
-      "reported_at": "2026-11-05T14:07:22.000Z",
-      "confidence": 54,
+      "reported_at": "2026-11-05T20:54:40.000Z",
+      "confidence": 90,
       "outlet_scores": {
         "Liputan6": 1.02,
-        "Detik": 1.02
+        "Detik": 1.02,
+        "Antara News": 4.08
       },
       "sources": [
+        {
+          "outlet": "Antara News",
+          "title": "Prabowo ingin bangun Museum Agung Nasional di Monas",
+          "url": "https://www.antaranews.com/berita/5835515/prabowo-ingin-bangun-museum-agung-nasional-di-monas",
+          "published_at": "2026-11-05T20:54:40.000Z"
+        },
         {
           "outlet": "Liputan6",
           "title": "Seskab Teddy: Prabowo Perintahkan Revitalisasi Stasiun Gambir dan Kawasan Monas",
