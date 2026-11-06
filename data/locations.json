@@ -1,48 +1,9 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-11-05T23:39:18.314Z",
-  "current": "loc-20261105-2107-monumen-nasional",
+  "generated_at": "2026-11-06T06:49:43.398Z",
+  "current": "loc-20261104-1311-istana-merdeka",
   "locations": [
-    {
-      "id": "loc-20261105-2107-monumen-nasional",
-      "place": "Monumen Nasional",
-      "city": "Jakarta Pusat",
-      "region": "DKI Jakarta",
-      "country": "Indonesia",
-      "country_code": "ID",
-      "lat": -6.1754,
-      "lng": 106.8272,
-      "event_type": "peresmian",
-      "event_label_id": "Peresmian",
-      "reported_at": "2026-11-05T20:54:40.000Z",
-      "confidence": 90,
-      "outlet_scores": {
-        "Liputan6": 1.02,
-        "Detik": 1.02,
-        "Antara News": 4.08
-      },
-      "sources": [
-        {
-          "outlet": "Antara News",
-          "title": "Prabowo ingin bangun Museum Agung Nasional di Monas",
-          "url": "https://www.antaranews.com/berita/5835515/prabowo-ingin-bangun-museum-agung-nasional-di-monas",
-          "published_at": "2026-11-05T20:54:40.000Z"
-        },
-        {
-          "outlet": "Liputan6",
-          "title": "Seskab Teddy: Prabowo Perintahkan Revitalisasi Stasiun Gambir dan Kawasan Monas",
-          "url": "https://www.liputan6.com/news/read/8329489/seskab-teddy-prabowo-perintahkan-revitalisasi-stasiun-gambir-dan-kawasan-monas",
-          "published_at": "2026-11-05T14:07:22.000Z"
-        },
-        {
-          "outlet": "Detik",
-          "title": "Seskab Ungkap Prabowo Minta Revitalisasi Gambir hingga Monas Dipercepat",
-          "url": "https://news.detik.com/berita/d-8740334/seskab-ungkap-prabowo-minta-revitalisasi-gambir-hingga-monas-dipercepat",
-          "published_at": "2026-11-05T14:01:00.000Z"
-        }
-      ]
-    },
     {
       "id": "loc-20261104-1311-istana-merdeka",
       "place": "Istana Merdeka",
@@ -54,16 +15,28 @@
       "lng": 106.8219,
       "event_type": "upacara",
       "event_label_id": "Upacara Kenegaraan",
-      "reported_at": "2026-11-05T08:34:00.000Z",
-      "confidence": 85,
+      "reported_at": "2026-11-06T06:35:10.000Z",
+      "confidence": 88,
       "outlet_scores": {
-        "Detik": 0.357,
+        "Detik": 0.952,
         "Antara News": 0.785,
         "CNN Indonesia": 0.952,
         "Setkab": 2.244,
         "Liputan6": 0.524
       },
       "sources": [
+        {
+          "outlet": "Detik",
+          "title": "Kepala BIN Menghadap Prabowo ke Istana, Ada Apa?",
+          "url": "https://news.detik.com/berita/d-8741121/kepala-bin-menghadap-prabowo-ke-istana-ada-apa",
+          "published_at": "2026-11-06T06:35:10.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Daftar 4 Jenderal Tersangka Penyadapan Ilegal Presiden Prabowo",
+          "url": "https://news.detik.com/berita/d-8740957/daftar-4-jenderal-tersangka-penyadapan-ilegal-presiden-prabowo",
+          "published_at": "2026-11-06T04:49:19.000Z"
+        },
         {
           "outlet": "Liputan6",
           "title": "Tergesa Masuk Istana, Dirut KAI Penuhi Panggilan Prabowo",
@@ -99,18 +72,51 @@
           "title": "Jokowi Tiba di PN Jaktim untuk Sidang Ijazah, Disambut Massa Pendukung",
           "url": "https://www.cnnindonesia.com/nasional/20261105082659-20-1423495/jokowi-tiba-di-pn-jaktim-untuk-sidang-ijazah-disambut-massa-pendukung",
           "published_at": "2026-11-05T01:39:41.000Z"
+        }
+      ]
+    },
+    {
+      "id": "loc-20261105-2107-monumen-nasional",
+      "place": "Monumen Nasional",
+      "city": "Jakarta Pusat",
+      "region": "DKI Jakarta",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -6.1754,
+      "lng": 106.8272,
+      "event_type": "peresmian",
+      "event_label_id": "Peresmian",
+      "reported_at": "2026-11-06T03:48:15.000Z",
+      "confidence": 95,
+      "outlet_scores": {
+        "Liputan6": 2.72,
+        "Detik": 1.02,
+        "Antara News": 4.08
+      },
+      "sources": [
+        {
+          "outlet": "Liputan6",
+          "title": "Prabowo Ingin Bangun Museum Pusat Sejarah Skala Besar di Monas",
+          "url": "https://www.liputan6.com/news/read/8329689/prabowo-ingin-bangun-museum-pusat-sejarah-skala-besar-di-monas",
+          "published_at": "2026-11-06T03:48:15.000Z"
+        },
+        {
+          "outlet": "Antara News",
+          "title": "Prabowo ingin bangun Museum Agung Nasional di Monas",
+          "url": "https://www.antaranews.com/berita/5835515/prabowo-ingin-bangun-museum-agung-nasional-di-monas",
+          "published_at": "2026-11-05T20:54:40.000Z"
+        },
+        {
+          "outlet": "Liputan6",
+          "title": "Seskab Teddy: Prabowo Perintahkan Revitalisasi Stasiun Gambir dan Kawasan Monas",
+          "url": "https://www.liputan6.com/news/read/8329489/seskab-teddy-prabowo-perintahkan-revitalisasi-stasiun-gambir-dan-kawasan-monas",
+          "published_at": "2026-11-05T14:07:22.000Z"
         },
         {
           "outlet": "Detik",
-          "title": "Kata Istana soal Aksi Listyo Dkk Sadap Prabowo Mengarah ke Makar",
-          "url": "https://news.detik.com/berita/d-8738925/kata-istana-soal-aksi-listyo-dkk-sadap-prabowo-mengarah-ke-makar",
-          "published_at": "2026-11-04T23:01:50.000Z"
-        },
-        {
-          "outlet": "Detik",
-          "title": "7 Poin Pernyataan Istana soal Presiden Disadap Mantan Kapolri",
-          "url": "https://news.detik.com/berita/d-8738559/7-poin-pernyataan-istana-soal-presiden-disadap-mantan-kapolri",
-          "published_at": "2026-11-04T11:47:30.000Z"
+          "title": "Seskab Ungkap Prabowo Minta Revitalisasi Gambir hingga Monas Dipercepat",
+          "url": "https://news.detik.com/berita/d-8740334/seskab-ungkap-prabowo-minta-revitalisasi-gambir-hingga-monas-dipercepat",
+          "published_at": "2026-11-05T14:01:00.000Z"
         }
       ]
     },
