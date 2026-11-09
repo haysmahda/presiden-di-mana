@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-11-09T09:49:46.801Z",
+  "generated_at": "2026-11-09T20:45:37.195Z",
   "current": "loc-20261108-2211-hambalang",
   "locations": [
     {
@@ -15,7 +15,7 @@
       "lng": 106.9167,
       "event_type": "bilateral",
       "event_label_id": "Pertemuan Bilateral",
-      "reported_at": "2026-11-09T08:53:06.000Z",
+      "reported_at": "2026-11-09T09:55:57.000Z",
       "confidence": 98,
       "outlet_scores": {
         "Antara News": 4.08,
@@ -25,6 +25,12 @@
         "Setkab": 4.08
       },
       "sources": [
+        {
+          "outlet": "CNN Indonesia",
+          "title": "Tito Beber Isi Pertemuan Prabowo dan 10 Mantan Kapolri di Hambalang",
+          "url": "https://www.cnnindonesia.com/nasional/20261109161331-16-1425041/tito-beber-isi-pertemuan-prabowo-dan-10-mantan-kapolri-di-hambalang",
+          "published_at": "2026-11-09T09:55:57.000Z"
+        },
         {
           "outlet": "CNN Indonesia",
           "title": "Tito Ungkap Isi Pertemuan 10 Mantan Kapolri dan Prabowo di Hambalang",
@@ -66,12 +72,6 @@
           "title": "Pertemuan Prabowo dan 10 Mantan Kapolri di Tengah Kasus Penyadapan",
           "url": "https://www.cnnindonesia.com/nasional/20261109073716-32-1424780/pertemuan-prabowo-dan-10-mantan-kapolri-di-tengah-kasus-penyadapan",
           "published_at": "2026-11-09T00:41:35.000Z"
-        },
-        {
-          "outlet": "CNN Indonesia",
-          "title": "Silaturahmi dengan Prabowo, Mendagri Tito Hadir Bersama 9 Eks Kapolri",
-          "url": "https://www.cnnindonesia.com/nasional/20261109051218-20-1424741/silaturahmi-dengan-prabowo-mendagri-tito-hadir-bersama-9-eks-kapolri",
-          "published_at": "2026-11-08T22:15:15.000Z"
         }
       ]
     },
