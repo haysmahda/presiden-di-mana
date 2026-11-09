@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-11-08T16:41:09.121Z",
+  "generated_at": "2026-11-09T01:44:16.432Z",
   "current": "loc-20261108-2211-hambalang",
   "locations": [
     {
@@ -15,7 +15,7 @@
       "lng": 106.9167,
       "event_type": "bilateral",
       "event_label_id": "Pertemuan Bilateral",
-      "reported_at": "2026-11-08T15:11:26.000Z",
+      "reported_at": "2026-11-09T00:58:00.000Z",
       "confidence": 98,
       "outlet_scores": {
         "Antara News": 4.08,
@@ -24,6 +24,30 @@
         "CNN Indonesia": 2.72
       },
       "sources": [
+        {
+          "outlet": "Detik",
+          "title": "Prabowo Terima 10 Mantan Kapolri di Hambalang",
+          "url": "https://news.detik.com/berita/d-8744124/prabowo-terima-10-mantan-kapolri-di-hambalang",
+          "published_at": "2026-11-09T00:58:00.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Kumpulkan 10 Mantan Kapolri di Hambalang, Prabowo Bahas Internal Polri",
+          "url": "https://news.detik.com/berita/d-8744265/kumpulkan-10-mantan-kapolri-di-hambalang-prabowo-bahas-internal-polri",
+          "published_at": "2026-11-09T00:43:13.000Z"
+        },
+        {
+          "outlet": "CNN Indonesia",
+          "title": "Pertemuan Prabowo dan 10 Mantan Kapolri di Tengah Kasus Penyadapan",
+          "url": "https://www.cnnindonesia.com/nasional/20261109073716-32-1424780/pertemuan-prabowo-dan-10-mantan-kapolri-di-tengah-kasus-penyadapan",
+          "published_at": "2026-11-09T00:41:35.000Z"
+        },
+        {
+          "outlet": "CNN Indonesia",
+          "title": "Silaturahmi dengan Prabowo, Mendagri Tito Hadir Bersama 9 Eks Kapolri",
+          "url": "https://www.cnnindonesia.com/nasional/20261109051218-20-1424741/silaturahmi-dengan-prabowo-mendagri-tito-hadir-bersama-9-eks-kapolri",
+          "published_at": "2026-11-08T22:15:15.000Z"
+        },
         {
           "outlet": "Antara News",
           "title": "Presiden Prabowo terima sepuluh mantan Kapolri di Hambalang",
@@ -47,30 +71,6 @@
           "title": "Prabowo dan 10 Mantan Kapolri Tukar Pandangan Soal Isu Terkini",
           "url": "https://www.cnnindonesia.com/nasional/20261108201057-20-1424726/prabowo-dan-10-mantan-kapolri-tukar-pandangan-soal-isu-terkini",
           "published_at": "2026-11-08T13:46:34.000Z"
-        },
-        {
-          "outlet": "Detik",
-          "title": "Daftar 10 Mantan Kapolri yang Bertemu Prabowo di Hambalang",
-          "url": "https://news.detik.com/berita/d-8744075/daftar-10-mantan-kapolri-yang-bertemu-prabowo-di-hambalang",
-          "published_at": "2026-11-08T13:28:47.000Z"
-        },
-        {
-          "outlet": "Liputan6",
-          "title": "Di Tengah Kasus Penyadapan, Prabowo Terima Kunjungan 10 Mantan Kapolri",
-          "url": "https://www.liputan6.com/news/read/8331015/di-tengah-kasus-penyadapan-prabowo-terima-kunjungan-10-mantan-kapolri",
-          "published_at": "2026-11-08T12:15:00.000Z"
-        },
-        {
-          "outlet": "CNN Indonesia",
-          "title": "Pertemuan Prabowo dan 10 Mantan Kapolri di Tengah Kasus Penyadapan",
-          "url": "https://www.cnnindonesia.com/nasional/20261108185105-24-1424708/pertemuan-prabowo-dan-10-mantan-kapolri-di-tengah-kasus-penyadapan",
-          "published_at": "2026-11-08T12:08:30.000Z"
-        },
-        {
-          "outlet": "CNN Indonesia",
-          "title": "10 Mantan Kapolri Bertemu Prabowo di Hambalang, Tito Ikut Hadir",
-          "url": "https://www.cnnindonesia.com/nasional/20261108182232-12-1424703/10-mantan-kapolri-bertemu-prabowo-di-hambalang-tito-ikut-hadir",
-          "published_at": "2026-11-08T11:47:52.000Z"
         }
       ]
     },
