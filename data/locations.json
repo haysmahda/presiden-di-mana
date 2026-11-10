@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-11-10T12:40:35.524Z",
+  "generated_at": "2026-11-10T20:50:08.212Z",
   "current": "loc-20261110-1939-istana-merdeka",
   "locations": [
     {
@@ -15,13 +15,26 @@
       "lng": 106.8219,
       "event_type": "kenegaraan",
       "event_label_id": "Kegiatan Kenegaraan",
-      "reported_at": "2026-11-10T12:39:12.000Z",
-      "confidence": 52,
+      "reported_at": "2026-11-10T14:24:01.000Z",
+      "confidence": 65,
       "outlet_scores": {
         "CNN Indonesia": 0.952,
-        "Detik": 0.952
+        "Detik": 0.952,
+        "Liputan6": 0.84
       },
       "sources": [
+        {
+          "outlet": "Detik",
+          "title": "Cicit Jenderal Hoegeng Cerita Isi Obrolan Bareng Prabowo dan Kapolri",
+          "url": "https://news.detik.com/berita/d-8747342/cicit-jenderal-hoegeng-cerita-isi-obrolan-bareng-prabowo-dan-kapolri",
+          "published_at": "2026-11-10T14:24:01.000Z"
+        },
+        {
+          "outlet": "Liputan6",
+          "title": "Rano Karno Ungkap Jurus Baru Hijaukan Jakarta",
+          "url": "https://www.liputan6.com/news/read/8332636/rano-karno-ungkap-jurus-baru-hijaukan-jakarta",
+          "published_at": "2026-11-10T14:09:24.000Z"
+        },
         {
           "outlet": "CNN Indonesia",
           "title": "Pramono Apresiasi Prabowo 3 Tokoh Usulan Jakarta Dapat Gelar Pahlawan",
@@ -57,18 +70,6 @@
           "title": "Pramono hingga Khofifah Hadiri Pemberian Gelar Pahlawan Nasional di Istana",
           "url": "https://news.detik.com/berita/d-8746965/pramono-hingga-khofifah-hadiri-pemberian-gelar-pahlawan-nasional-di-istana",
           "published_at": "2026-11-10T09:50:41.000Z"
-        },
-        {
-          "outlet": "CNN Indonesia",
-          "title": "Gibran Dampingi Prabowo Acara di Istana Usai Niat Mundur Wapres",
-          "url": "https://www.cnnindonesia.com/nasional/20261110161632-32-1425497/gibran-dampingi-prabowo-acara-di-istana-usai-niat-mundur-wapres",
-          "published_at": "2026-11-10T09:29:59.000Z"
-        },
-        {
-          "outlet": "Detik",
-          "title": "Pernyataan Lengkap Istana soal Gibran Berniat Mundur, Prabowo Tidak Menolak",
-          "url": "https://news.detik.com/berita/d-8746837/pernyataan-lengkap-istana-soal-gibran-berniat-mundur-prabowo-tidak-menolak",
-          "published_at": "2026-11-10T09:05:48.000Z"
         }
       ]
     },
