@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-11-09T20:45:37.195Z",
+  "generated_at": "2026-11-10T04:07:41.835Z",
   "current": "loc-20261108-2211-hambalang",
   "locations": [
     {
@@ -15,7 +15,7 @@
       "lng": 106.9167,
       "event_type": "bilateral",
       "event_label_id": "Pertemuan Bilateral",
-      "reported_at": "2026-11-09T09:55:57.000Z",
+      "reported_at": "2026-11-10T00:17:02.000Z",
       "confidence": 98,
       "outlet_scores": {
         "Antara News": 4.08,
@@ -25,6 +25,18 @@
         "Setkab": 4.08
       },
       "sources": [
+        {
+          "outlet": "Liputan6",
+          "title": "Alasan 10 Mantan Kapolri Temui Prabowo di Hambalang",
+          "url": "https://www.liputan6.com/news/read/8331959/alasan-10-mantan-kapolri-temui-prabowo-di-hambalang",
+          "published_at": "2026-11-10T00:17:02.000Z"
+        },
+        {
+          "outlet": "Liputan6",
+          "title": "Janji Para Jenderal di Hambalang untuk Prabowo",
+          "url": "https://www.liputan6.com/news/read/8331928/janji-para-jenderal-di-hambalang-untuk-prabowo",
+          "published_at": "2026-11-09T23:04:31.000Z"
+        },
         {
           "outlet": "CNN Indonesia",
           "title": "Tito Beber Isi Pertemuan Prabowo dan 10 Mantan Kapolri di Hambalang",
@@ -60,18 +72,6 @@
           "title": "Prabowo Terima 10 Mantan Kapolri di Hambalang",
           "url": "https://news.detik.com/berita/d-8744124/prabowo-terima-10-mantan-kapolri-di-hambalang",
           "published_at": "2026-11-09T00:58:00.000Z"
-        },
-        {
-          "outlet": "Detik",
-          "title": "Kumpulkan 10 Mantan Kapolri di Hambalang, Prabowo Bahas Internal Polri",
-          "url": "https://news.detik.com/berita/d-8744265/kumpulkan-10-mantan-kapolri-di-hambalang-prabowo-bahas-internal-polri",
-          "published_at": "2026-11-09T00:43:13.000Z"
-        },
-        {
-          "outlet": "CNN Indonesia",
-          "title": "Pertemuan Prabowo dan 10 Mantan Kapolri di Tengah Kasus Penyadapan",
-          "url": "https://www.cnnindonesia.com/nasional/20261109073716-32-1424780/pertemuan-prabowo-dan-10-mantan-kapolri-di-tengah-kasus-penyadapan",
-          "published_at": "2026-11-09T00:41:35.000Z"
         }
       ]
     },
