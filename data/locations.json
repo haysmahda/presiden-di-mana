@@ -1,9 +1,109 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-11-10T04:07:41.835Z",
-  "current": "loc-20261108-2211-hambalang",
+  "generated_at": "2026-11-10T12:40:35.524Z",
+  "current": "loc-20261110-1939-istana-merdeka",
   "locations": [
+    {
+      "id": "loc-20261110-1939-istana-merdeka",
+      "place": "Istana Merdeka",
+      "city": "Jakarta Pusat",
+      "region": "DKI Jakarta",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -6.1701,
+      "lng": 106.8219,
+      "event_type": "kenegaraan",
+      "event_label_id": "Kegiatan Kenegaraan",
+      "reported_at": "2026-11-10T12:39:12.000Z",
+      "confidence": 52,
+      "outlet_scores": {
+        "CNN Indonesia": 0.952,
+        "Detik": 0.952
+      },
+      "sources": [
+        {
+          "outlet": "CNN Indonesia",
+          "title": "Pramono Apresiasi Prabowo 3 Tokoh Usulan Jakarta Dapat Gelar Pahlawan",
+          "url": "https://www.cnnindonesia.com/nasional/20261110190211-25-1425578/pramono-apresiasi-prabowo-3-tokoh-usulan-jakarta-dapat-gelar-pahlawan",
+          "published_at": "2026-11-10T12:39:12.000Z"
+        },
+        {
+          "outlet": "CNN Indonesia",
+          "title": "Gibran Buka Suara soal Niat Mundur dari Wapres",
+          "url": "https://www.cnnindonesia.com/nasional/20261110172249-32-1425528/gibran-buka-suara-soal-niat-mundur-dari-wapres",
+          "published_at": "2026-11-10T10:37:03.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Saat Prabowo Ajak Ngobrol Cicit Jenderal Hoegeng, Langsung Panggil Kapolri",
+          "url": "https://news.detik.com/berita/d-8747016/saat-prabowo-ajak-ngobrol-cicit-jenderal-hoegeng-langsung-panggil-kapolri",
+          "published_at": "2026-11-10T10:12:11.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Profil 19 Tokoh yang Diberi Gelar Pahlawan Nasional 2026",
+          "url": "https://news.detik.com/berita/d-8746993/profil-19-tokoh-yang-diberi-gelar-pahlawan-nasional-2026",
+          "published_at": "2026-11-10T10:03:05.000Z"
+        },
+        {
+          "outlet": "CNN Indonesia",
+          "title": "Wagub DKI Usul Beli Produk Kompos dari Warga untuk Penghijauan",
+          "url": "https://www.cnnindonesia.com/nasional/20261110164613-20-1425512/wagub-dki-usul-beli-produk-kompos-dari-warga-untuk-penghijauan",
+          "published_at": "2026-11-10T09:52:35.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Pramono hingga Khofifah Hadiri Pemberian Gelar Pahlawan Nasional di Istana",
+          "url": "https://news.detik.com/berita/d-8746965/pramono-hingga-khofifah-hadiri-pemberian-gelar-pahlawan-nasional-di-istana",
+          "published_at": "2026-11-10T09:50:41.000Z"
+        },
+        {
+          "outlet": "CNN Indonesia",
+          "title": "Gibran Dampingi Prabowo Acara di Istana Usai Niat Mundur Wapres",
+          "url": "https://www.cnnindonesia.com/nasional/20261110161632-32-1425497/gibran-dampingi-prabowo-acara-di-istana-usai-niat-mundur-wapres",
+          "published_at": "2026-11-10T09:29:59.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Pernyataan Lengkap Istana soal Gibran Berniat Mundur, Prabowo Tidak Menolak",
+          "url": "https://news.detik.com/berita/d-8746837/pernyataan-lengkap-istana-soal-gibran-berniat-mundur-prabowo-tidak-menolak",
+          "published_at": "2026-11-10T09:05:48.000Z"
+        }
+      ]
+    },
+    {
+      "id": "loc-20261110-1852-surabaya",
+      "place": "Surabaya",
+      "city": "Surabaya",
+      "region": "Jawa Timur",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -7.2575,
+      "lng": 112.7521,
+      "event_type": "kenegaraan",
+      "event_label_id": "Kegiatan Kenegaraan",
+      "reported_at": "2026-11-10T11:52:03.000Z",
+      "confidence": 59,
+      "outlet_scores": {
+        "Antara News": 1.395,
+        "CNN Indonesia": 0.93
+      },
+      "sources": [
+        {
+          "outlet": "Antara News",
+          "title": "Jasa Soengkono dalam Pertempuran Surabaya berbuah gelar pahlawan",
+          "url": "https://www.antaranews.com/berita/5844595/jasa-soengkono-dalam-pertempuran-surabaya-berbuah-gelar-pahlawan",
+          "published_at": "2026-11-10T11:52:03.000Z"
+        },
+        {
+          "outlet": "CNN Indonesia",
+          "title": "Soengkono, Komandan BKR dalam Pertempuran Surabaya 10 November 1945",
+          "url": "https://www.cnnindonesia.com/nasional/20261110133132-20-1425378/soengkono-komandan-bkr-dalam-pertempuran-surabaya-10-november-1945",
+          "published_at": "2026-11-10T10:44:03.000Z"
+        }
+      ]
+    },
     {
       "id": "loc-20261108-2211-hambalang",
       "place": "Hambalang",
