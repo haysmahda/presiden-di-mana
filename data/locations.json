@@ -1,9 +1,79 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-11-10T20:50:08.212Z",
-  "current": "loc-20261110-1939-istana-merdeka",
+  "generated_at": "2026-11-11T09:27:57.468Z",
+  "current": "loc-20261111-1555-aceh",
   "locations": [
+    {
+      "id": "loc-20261111-1555-aceh",
+      "place": "Aceh",
+      "city": "Banda Aceh",
+      "region": "Aceh",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": 4.6951,
+      "lng": 96.7494,
+      "event_type": "peresmian",
+      "event_label_id": "Peresmian",
+      "reported_at": "2026-11-11T08:55:04.000Z",
+      "confidence": 97,
+      "outlet_scores": {
+        "Liputan6": 1.68,
+        "Detik": 2.24,
+        "Setkab": 3.36,
+        "CNN Indonesia": 2.24
+      },
+      "sources": [
+        {
+          "outlet": "Liputan6",
+          "title": "Prabowo: Pendidikan Indonesia Harus Meningkat Drastis dalam Waktu Singkat",
+          "url": "https://www.liputan6.com/news/read/8333217/prabowo-pendidikan-indonesia-harus-meningkat-drastis-dalam-waktu-singkat",
+          "published_at": "2026-11-11T08:55:04.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Prabowo Resmikan Sekolah Rakyat Kampus Nagan Raya Aceh",
+          "url": "https://news.detik.com/berita/d-8748416/prabowo-resmikan-sekolah-rakyat-kampus-nagan-raya-aceh",
+          "published_at": "2026-11-11T08:43:08.000Z"
+        },
+        {
+          "outlet": "Setkab",
+          "title": "Presiden Prabowo Hadiri Pembentangan Kain Merah Putih Sepanjang 24 Kilometer di Nagan Raya",
+          "url": "https://setkab.go.id/presiden-prabowo-hadiri-pembentangan-kain-merah-putih-sepanjang-24-kilometer-di-nagan-raya/",
+          "published_at": "2026-11-11T08:32:55.000Z"
+        },
+        {
+          "outlet": "Liputan6",
+          "title": "Prabowo Bangga Resmikan Masjid Giok Aceh: Ini Satu-satunya di Dunia",
+          "url": "https://www.liputan6.com/news/read/8332994/prabowo-bangga-resmikan-masjid-giok-aceh-ini-satu-satunya-di-dunia",
+          "published_at": "2026-11-11T06:16:20.000Z"
+        },
+        {
+          "outlet": "CNN Indonesia",
+          "title": "Momen Prabowo Resmikan Masjid Giok di Aceh",
+          "url": "https://www.cnnindonesia.com/nasional/20261111123704-24-1425827/momen-prabowo-resmikan-masjid-giok-di-aceh",
+          "published_at": "2026-11-11T05:57:06.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Prabowo Resmikan Masjid Giok Aceh: Satu-satunya Masjid dari Giok di Dunia",
+          "url": "https://news.detik.com/berita/d-8748047/prabowo-resmikan-masjid-giok-aceh-satu-satunya-masjid-dari-giok-di-dunia",
+          "published_at": "2026-11-11T05:43:59.000Z"
+        },
+        {
+          "outlet": "CNN Indonesia",
+          "title": "Prabowo Resmikan Masjid Giok di Aceh",
+          "url": "https://www.cnnindonesia.com/nasional/20261111115613-20-1425798/prabowo-resmikan-masjid-giok-di-aceh",
+          "published_at": "2026-11-11T05:00:51.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Tiba di Nagan Raya Aceh, Prabowo Sapa Warga Bentangkan Merah Putih 24 Km",
+          "url": "https://news.detik.com/berita/d-8747811/tiba-di-nagan-raya-aceh-prabowo-sapa-warga-bentangkan-merah-putih-24-km",
+          "published_at": "2026-11-11T03:59:03.000Z"
+        }
+      ]
+    },
     {
       "id": "loc-20261110-1939-istana-merdeka",
       "place": "Istana Merdeka",
@@ -70,6 +140,38 @@
           "title": "Pramono hingga Khofifah Hadiri Pemberian Gelar Pahlawan Nasional di Istana",
           "url": "https://news.detik.com/berita/d-8746965/pramono-hingga-khofifah-hadiri-pemberian-gelar-pahlawan-nasional-di-istana",
           "published_at": "2026-11-10T09:50:41.000Z"
+        }
+      ]
+    },
+    {
+      "id": "loc-20261110-2100-istana-negara",
+      "place": "Istana Negara",
+      "city": "Jakarta Pusat",
+      "region": "DKI Jakarta",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -6.1704,
+      "lng": 106.8236,
+      "event_type": "upacara",
+      "event_label_id": "Upacara Kenegaraan",
+      "reported_at": "2026-11-10T14:00:47.000Z",
+      "confidence": 69,
+      "outlet_scores": {
+        "Setkab": 2.244,
+        "CNN Indonesia": 0.84
+      },
+      "sources": [
+        {
+          "outlet": "Setkab",
+          "title": "Presiden Prabowo Anugerahkan Gelar Pahlawan Nasional kepada 19 Tokoh dari Berbagai Daerah",
+          "url": "https://setkab.go.id/presiden-prabowo-anugerahkan-gelar-pahlawan-nasional-kepada-19-tokoh-dari-berbagai-daerah/",
+          "published_at": "2026-11-10T14:00:47.000Z"
+        },
+        {
+          "outlet": "CNN Indonesia",
+          "title": "Pramono Apresiasi Prabowo 3 Tokoh Usulan Jakarta Dapat Gelar Pahlawan",
+          "url": "https://www.cnnindonesia.com/nasional/20261110190211-25-1425578/pramono-apresiasi-prabowo-3-tokoh-usulan-jakarta-dapat-gelar-pahlawan",
+          "published_at": "2026-11-10T12:39:12.000Z"
         }
       ]
     },
