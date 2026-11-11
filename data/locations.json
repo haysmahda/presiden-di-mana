@@ -1,9 +1,54 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-11-11T09:27:57.468Z",
-  "current": "loc-20261111-1555-aceh",
+  "generated_at": "2026-11-11T17:54:54.054Z",
+  "current": "loc-20261110-2100-istana-negara",
   "locations": [
+    {
+      "id": "loc-20261110-2100-istana-negara",
+      "place": "Istana Negara",
+      "city": "Jakarta Pusat",
+      "region": "DKI Jakarta",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -6.1704,
+      "lng": 106.8236,
+      "event_type": "upacara",
+      "event_label_id": "Upacara Kenegaraan",
+      "reported_at": "2026-11-11T17:26:20.000Z",
+      "confidence": 74,
+      "outlet_scores": {
+        "Setkab": 2.244,
+        "CNN Indonesia": 0.84,
+        "Antara News": 0.42
+      },
+      "sources": [
+        {
+          "outlet": "Antara News",
+          "title": "Prabowo jadikan Pramono contoh kader yang berani perbaiki keadaan",
+          "url": "https://www.antaranews.com/berita/5848027/prabowo-jadikan-pramono-contoh-kader-yang-berani-perbaiki-keadaan",
+          "published_at": "2026-11-11T17:26:20.000Z"
+        },
+        {
+          "outlet": "CNN Indonesia",
+          "title": "Presiden Prabowo Hadiri HUT ke-15 NasDem, Disambut Surya Paloh",
+          "url": "https://www.cnnindonesia.com/nasional/20261111201116-32-1426073/presiden-prabowo-hadiri-hut-ke-15-nasdem-disambut-surya-paloh",
+          "published_at": "2026-11-11T13:18:49.000Z"
+        },
+        {
+          "outlet": "Setkab",
+          "title": "Presiden Prabowo Anugerahkan Gelar Pahlawan Nasional kepada 19 Tokoh dari Berbagai Daerah",
+          "url": "https://setkab.go.id/presiden-prabowo-anugerahkan-gelar-pahlawan-nasional-kepada-19-tokoh-dari-berbagai-daerah/",
+          "published_at": "2026-11-10T14:00:47.000Z"
+        },
+        {
+          "outlet": "CNN Indonesia",
+          "title": "Pramono Apresiasi Prabowo 3 Tokoh Usulan Jakarta Dapat Gelar Pahlawan",
+          "url": "https://www.cnnindonesia.com/nasional/20261110190211-25-1425578/pramono-apresiasi-prabowo-3-tokoh-usulan-jakarta-dapat-gelar-pahlawan",
+          "published_at": "2026-11-10T12:39:12.000Z"
+        }
+      ]
+    },
     {
       "id": "loc-20261111-1555-aceh",
       "place": "Aceh",
@@ -140,38 +185,6 @@
           "title": "Pramono hingga Khofifah Hadiri Pemberian Gelar Pahlawan Nasional di Istana",
           "url": "https://news.detik.com/berita/d-8746965/pramono-hingga-khofifah-hadiri-pemberian-gelar-pahlawan-nasional-di-istana",
           "published_at": "2026-11-10T09:50:41.000Z"
-        }
-      ]
-    },
-    {
-      "id": "loc-20261110-2100-istana-negara",
-      "place": "Istana Negara",
-      "city": "Jakarta Pusat",
-      "region": "DKI Jakarta",
-      "country": "Indonesia",
-      "country_code": "ID",
-      "lat": -6.1704,
-      "lng": 106.8236,
-      "event_type": "upacara",
-      "event_label_id": "Upacara Kenegaraan",
-      "reported_at": "2026-11-10T14:00:47.000Z",
-      "confidence": 69,
-      "outlet_scores": {
-        "Setkab": 2.244,
-        "CNN Indonesia": 0.84
-      },
-      "sources": [
-        {
-          "outlet": "Setkab",
-          "title": "Presiden Prabowo Anugerahkan Gelar Pahlawan Nasional kepada 19 Tokoh dari Berbagai Daerah",
-          "url": "https://setkab.go.id/presiden-prabowo-anugerahkan-gelar-pahlawan-nasional-kepada-19-tokoh-dari-berbagai-daerah/",
-          "published_at": "2026-11-10T14:00:47.000Z"
-        },
-        {
-          "outlet": "CNN Indonesia",
-          "title": "Pramono Apresiasi Prabowo 3 Tokoh Usulan Jakarta Dapat Gelar Pahlawan",
-          "url": "https://www.cnnindonesia.com/nasional/20261110190211-25-1425578/pramono-apresiasi-prabowo-3-tokoh-usulan-jakarta-dapat-gelar-pahlawan",
-          "published_at": "2026-11-10T12:39:12.000Z"
         }
       ]
     },
