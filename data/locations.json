@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-11-12T09:51:42.011Z",
+  "generated_at": "2026-11-12T18:20:04.215Z",
   "current": "loc-20261112-1641-istana-merdeka",
   "locations": [
     {
@@ -15,7 +15,7 @@
       "lng": 106.8219,
       "event_type": "bilateral",
       "event_label_id": "Pertemuan Bilateral",
-      "reported_at": "2026-11-12T09:41:49.000Z",
+      "reported_at": "2026-11-12T11:43:50.000Z",
       "confidence": 84,
       "outlet_scores": {
         "Setkab": 2.244,
@@ -23,6 +23,12 @@
         "CNN Indonesia": 1.02
       },
       "sources": [
+        {
+          "outlet": "Detik",
+          "title": "Dilepas Pegawai hingga Relawan, Gibran Tinggalkan Istana Wapres",
+          "url": "https://news.detik.com/berita/d-8750439/dilepas-pegawai-hingga-relawan-gibran-tinggalkan-istana-wapres",
+          "published_at": "2026-11-12T11:43:50.000Z"
+        },
         {
           "outlet": "Setkab",
           "title": "Presiden Prabowo Menerima Surat Pernyataan Berhenti Wapres Gibran",
