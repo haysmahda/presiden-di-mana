@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-11-11T17:54:54.054Z",
+  "generated_at": "2026-11-12T00:45:11.350Z",
   "current": "loc-20261110-2100-istana-negara",
   "locations": [
     {
@@ -15,14 +15,20 @@
       "lng": 106.8236,
       "event_type": "upacara",
       "event_label_id": "Upacara Kenegaraan",
-      "reported_at": "2026-11-11T17:26:20.000Z",
-      "confidence": 74,
+      "reported_at": "2026-11-11T21:04:43.000Z",
+      "confidence": 79,
       "outlet_scores": {
         "Setkab": 2.244,
         "CNN Indonesia": 0.84,
-        "Antara News": 0.42
+        "Antara News": 0.924
       },
       "sources": [
+        {
+          "outlet": "Antara News",
+          "title": "Prabowo ingatkan makna di balik \"Sing Becik Ketitik, Sing Olo Ketoro\"",
+          "url": "https://www.antaranews.com/berita/5848071/prabowo-ingatkan-makna-di-balik-sing-becik-ketitik-sing-olo-ketoro",
+          "published_at": "2026-11-11T21:04:43.000Z"
+        },
         {
           "outlet": "Antara News",
           "title": "Prabowo jadikan Pramono contoh kader yang berani perbaiki keadaan",
@@ -60,7 +66,7 @@
       "lng": 96.7494,
       "event_type": "peresmian",
       "event_label_id": "Peresmian",
-      "reported_at": "2026-11-11T08:55:04.000Z",
+      "reported_at": "2026-11-11T15:33:22.000Z",
       "confidence": 97,
       "outlet_scores": {
         "Liputan6": 1.68,
@@ -69,6 +75,18 @@
         "CNN Indonesia": 2.24
       },
       "sources": [
+        {
+          "outlet": "Detik",
+          "title": "Menteri PU Akan Renovasi Masjid Giok Aceh Sesuai Arahan Prabowo",
+          "url": "https://news.detik.com/berita/d-8749026/menteri-pu-akan-renovasi-masjid-giok-aceh-sesuai-arahan-prabowo",
+          "published_at": "2026-11-11T15:33:22.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Prabowo Dorong Pemulihan-Peningkatan Kesejahteraan Warga Nagan Raya Aceh",
+          "url": "https://news.detik.com/berita/d-8748971/prabowo-dorong-pemulihan-peningkatan-kesejahteraan-warga-nagan-raya-aceh",
+          "published_at": "2026-11-11T14:18:56.000Z"
+        },
         {
           "outlet": "Liputan6",
           "title": "Prabowo: Pendidikan Indonesia Harus Meningkat Drastis dalam Waktu Singkat",
@@ -104,18 +122,6 @@
           "title": "Prabowo Resmikan Masjid Giok Aceh: Satu-satunya Masjid dari Giok di Dunia",
           "url": "https://news.detik.com/berita/d-8748047/prabowo-resmikan-masjid-giok-aceh-satu-satunya-masjid-dari-giok-di-dunia",
           "published_at": "2026-11-11T05:43:59.000Z"
-        },
-        {
-          "outlet": "CNN Indonesia",
-          "title": "Prabowo Resmikan Masjid Giok di Aceh",
-          "url": "https://www.cnnindonesia.com/nasional/20261111115613-20-1425798/prabowo-resmikan-masjid-giok-di-aceh",
-          "published_at": "2026-11-11T05:00:51.000Z"
-        },
-        {
-          "outlet": "Detik",
-          "title": "Tiba di Nagan Raya Aceh, Prabowo Sapa Warga Bentangkan Merah Putih 24 Km",
-          "url": "https://news.detik.com/berita/d-8747811/tiba-di-nagan-raya-aceh-prabowo-sapa-warga-bentangkan-merah-putih-24-km",
-          "published_at": "2026-11-11T03:59:03.000Z"
         }
       ]
     },
