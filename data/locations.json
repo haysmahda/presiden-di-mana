@@ -1,9 +1,142 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-11-12T00:45:11.350Z",
-  "current": "loc-20261110-2100-istana-negara",
+  "generated_at": "2026-11-12T09:51:42.011Z",
+  "current": "loc-20261112-1641-istana-merdeka",
   "locations": [
+    {
+      "id": "loc-20261112-1641-istana-merdeka",
+      "place": "Istana Merdeka",
+      "city": "Jakarta Pusat",
+      "region": "DKI Jakarta",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -6.1701,
+      "lng": 106.8219,
+      "event_type": "bilateral",
+      "event_label_id": "Pertemuan Bilateral",
+      "reported_at": "2026-11-12T09:41:49.000Z",
+      "confidence": 84,
+      "outlet_scores": {
+        "Setkab": 2.244,
+        "Detik": 1.496,
+        "CNN Indonesia": 1.02
+      },
+      "sources": [
+        {
+          "outlet": "Setkab",
+          "title": "Presiden Prabowo Menerima Surat Pernyataan Berhenti Wapres Gibran",
+          "url": "https://setkab.go.id/presiden-prabowo-menerima-surat-pernyataan-berhenti-wapres-gibran/",
+          "published_at": "2026-11-12T09:41:49.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Gibran Bertemu Relawan-Politisi PSI Usai Pengunduran Dirinya Diterima Prabowo",
+          "url": "https://news.detik.com/berita/d-8750163/gibran-bertemu-relawan-politisi-psi-usai-pengunduran-dirinya-diterima-prabowo",
+          "published_at": "2026-11-12T09:11:43.000Z"
+        },
+        {
+          "outlet": "CNN Indonesia",
+          "title": "Momen Gibran Peluk Prabowo usai Resmi Mengundurkan Diri",
+          "url": "https://www.cnnindonesia.com/nasional/20261112154419-36-1426457/momen-gibran-peluk-prabowo-usai-resmi-mengundurkan-diri",
+          "published_at": "2026-11-12T09:05:51.000Z"
+        },
+        {
+          "outlet": "CNN Indonesia",
+          "title": "Momen Pelukan Terakhir Prabowo dan Gibran, Sempat Cium Tangan",
+          "url": "https://www.cnnindonesia.com/nasional/20261112153518-32-1426454/momen-pelukan-terakhir-prabowo-dan-gibran-sempat-cium-tangan",
+          "published_at": "2026-11-12T08:42:08.000Z"
+        },
+        {
+          "outlet": "CNN Indonesia",
+          "title": "Momen Prabowo Jabat Tangan Gibran saat Serahkan Surat Undur Diri",
+          "url": "https://www.cnnindonesia.com/nasional/20261112144251-32-1426413/momen-prabowo-jabat-tangan-gibran-saat-serahkan-surat-undur-diri",
+          "published_at": "2026-11-12T07:52:42.000Z"
+        },
+        {
+          "outlet": "CNN Indonesia",
+          "title": "Momen Gibran Tinggalkan Istana Merdeka Menuju MPR",
+          "url": "https://www.cnnindonesia.com/nasional/20261112113216-36-1426263/momen-gibran-tinggalkan-istana-merdeka-menuju-mpr",
+          "published_at": "2026-11-12T04:37:53.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Gibran Tinggalkan Istana Usai Bertemu Prabowo",
+          "url": "https://news.detik.com/berita/d-8749481/gibran-tinggalkan-istana-usai-bertemu-prabowo",
+          "published_at": "2026-11-12T04:14:52.000Z"
+        }
+      ]
+    },
+    {
+      "id": "loc-20261111-1555-aceh",
+      "place": "Aceh",
+      "city": "Banda Aceh",
+      "region": "Aceh",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": 4.6951,
+      "lng": 96.7494,
+      "event_type": "peresmian",
+      "event_label_id": "Peresmian",
+      "reported_at": "2026-11-12T05:45:49.000Z",
+      "confidence": 97,
+      "outlet_scores": {
+        "Liputan6": 1.68,
+        "Detik": 2.24,
+        "Setkab": 3.36,
+        "CNN Indonesia": 2.24
+      },
+      "sources": [
+        {
+          "outlet": "Liputan6",
+          "title": "Lagu Presidenku dari Siswa Sekolah Rakyat Nagan Raya Bikin Prabowo Terharu",
+          "url": "https://www.liputan6.com/news/read/8333821/lagu-presidenku-dari-siswa-sekolah-rakyat-nagan-raya-bikin-prabowo-terharu",
+          "published_at": "2026-11-12T05:45:49.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Menteri PU Akan Renovasi Masjid Giok Aceh Sesuai Arahan Prabowo",
+          "url": "https://news.detik.com/berita/d-8749026/menteri-pu-akan-renovasi-masjid-giok-aceh-sesuai-arahan-prabowo",
+          "published_at": "2026-11-11T15:33:22.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Prabowo Dorong Pemulihan-Peningkatan Kesejahteraan Warga Nagan Raya Aceh",
+          "url": "https://news.detik.com/berita/d-8748971/prabowo-dorong-pemulihan-peningkatan-kesejahteraan-warga-nagan-raya-aceh",
+          "published_at": "2026-11-11T14:18:56.000Z"
+        },
+        {
+          "outlet": "Liputan6",
+          "title": "Prabowo: Pendidikan Indonesia Harus Meningkat Drastis dalam Waktu Singkat",
+          "url": "https://www.liputan6.com/news/read/8333217/prabowo-pendidikan-indonesia-harus-meningkat-drastis-dalam-waktu-singkat",
+          "published_at": "2026-11-11T08:55:04.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Prabowo Resmikan Sekolah Rakyat Kampus Nagan Raya Aceh",
+          "url": "https://news.detik.com/berita/d-8748416/prabowo-resmikan-sekolah-rakyat-kampus-nagan-raya-aceh",
+          "published_at": "2026-11-11T08:43:08.000Z"
+        },
+        {
+          "outlet": "Setkab",
+          "title": "Presiden Prabowo Hadiri Pembentangan Kain Merah Putih Sepanjang 24 Kilometer di Nagan Raya",
+          "url": "https://setkab.go.id/presiden-prabowo-hadiri-pembentangan-kain-merah-putih-sepanjang-24-kilometer-di-nagan-raya/",
+          "published_at": "2026-11-11T08:32:55.000Z"
+        },
+        {
+          "outlet": "Liputan6",
+          "title": "Prabowo Bangga Resmikan Masjid Giok Aceh: Ini Satu-satunya di Dunia",
+          "url": "https://www.liputan6.com/news/read/8332994/prabowo-bangga-resmikan-masjid-giok-aceh-ini-satu-satunya-di-dunia",
+          "published_at": "2026-11-11T06:16:20.000Z"
+        },
+        {
+          "outlet": "CNN Indonesia",
+          "title": "Momen Prabowo Resmikan Masjid Giok di Aceh",
+          "url": "https://www.cnnindonesia.com/nasional/20261111123704-24-1425827/momen-prabowo-resmikan-masjid-giok-di-aceh",
+          "published_at": "2026-11-11T05:57:06.000Z"
+        }
+      ]
+    },
     {
       "id": "loc-20261110-2100-istana-negara",
       "place": "Istana Negara",
@@ -52,76 +185,6 @@
           "title": "Pramono Apresiasi Prabowo 3 Tokoh Usulan Jakarta Dapat Gelar Pahlawan",
           "url": "https://www.cnnindonesia.com/nasional/20261110190211-25-1425578/pramono-apresiasi-prabowo-3-tokoh-usulan-jakarta-dapat-gelar-pahlawan",
           "published_at": "2026-11-10T12:39:12.000Z"
-        }
-      ]
-    },
-    {
-      "id": "loc-20261111-1555-aceh",
-      "place": "Aceh",
-      "city": "Banda Aceh",
-      "region": "Aceh",
-      "country": "Indonesia",
-      "country_code": "ID",
-      "lat": 4.6951,
-      "lng": 96.7494,
-      "event_type": "peresmian",
-      "event_label_id": "Peresmian",
-      "reported_at": "2026-11-11T15:33:22.000Z",
-      "confidence": 97,
-      "outlet_scores": {
-        "Liputan6": 1.68,
-        "Detik": 2.24,
-        "Setkab": 3.36,
-        "CNN Indonesia": 2.24
-      },
-      "sources": [
-        {
-          "outlet": "Detik",
-          "title": "Menteri PU Akan Renovasi Masjid Giok Aceh Sesuai Arahan Prabowo",
-          "url": "https://news.detik.com/berita/d-8749026/menteri-pu-akan-renovasi-masjid-giok-aceh-sesuai-arahan-prabowo",
-          "published_at": "2026-11-11T15:33:22.000Z"
-        },
-        {
-          "outlet": "Detik",
-          "title": "Prabowo Dorong Pemulihan-Peningkatan Kesejahteraan Warga Nagan Raya Aceh",
-          "url": "https://news.detik.com/berita/d-8748971/prabowo-dorong-pemulihan-peningkatan-kesejahteraan-warga-nagan-raya-aceh",
-          "published_at": "2026-11-11T14:18:56.000Z"
-        },
-        {
-          "outlet": "Liputan6",
-          "title": "Prabowo: Pendidikan Indonesia Harus Meningkat Drastis dalam Waktu Singkat",
-          "url": "https://www.liputan6.com/news/read/8333217/prabowo-pendidikan-indonesia-harus-meningkat-drastis-dalam-waktu-singkat",
-          "published_at": "2026-11-11T08:55:04.000Z"
-        },
-        {
-          "outlet": "Detik",
-          "title": "Prabowo Resmikan Sekolah Rakyat Kampus Nagan Raya Aceh",
-          "url": "https://news.detik.com/berita/d-8748416/prabowo-resmikan-sekolah-rakyat-kampus-nagan-raya-aceh",
-          "published_at": "2026-11-11T08:43:08.000Z"
-        },
-        {
-          "outlet": "Setkab",
-          "title": "Presiden Prabowo Hadiri Pembentangan Kain Merah Putih Sepanjang 24 Kilometer di Nagan Raya",
-          "url": "https://setkab.go.id/presiden-prabowo-hadiri-pembentangan-kain-merah-putih-sepanjang-24-kilometer-di-nagan-raya/",
-          "published_at": "2026-11-11T08:32:55.000Z"
-        },
-        {
-          "outlet": "Liputan6",
-          "title": "Prabowo Bangga Resmikan Masjid Giok Aceh: Ini Satu-satunya di Dunia",
-          "url": "https://www.liputan6.com/news/read/8332994/prabowo-bangga-resmikan-masjid-giok-aceh-ini-satu-satunya-di-dunia",
-          "published_at": "2026-11-11T06:16:20.000Z"
-        },
-        {
-          "outlet": "CNN Indonesia",
-          "title": "Momen Prabowo Resmikan Masjid Giok di Aceh",
-          "url": "https://www.cnnindonesia.com/nasional/20261111123704-24-1425827/momen-prabowo-resmikan-masjid-giok-di-aceh",
-          "published_at": "2026-11-11T05:57:06.000Z"
-        },
-        {
-          "outlet": "Detik",
-          "title": "Prabowo Resmikan Masjid Giok Aceh: Satu-satunya Masjid dari Giok di Dunia",
-          "url": "https://news.detik.com/berita/d-8748047/prabowo-resmikan-masjid-giok-aceh-satu-satunya-masjid-dari-giok-di-dunia",
-          "published_at": "2026-11-11T05:43:59.000Z"
         }
       ]
     },
