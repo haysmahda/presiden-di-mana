@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-11-13T09:33:11.036Z",
+  "generated_at": "2026-11-13T17:45:29.078Z",
   "current": "loc-20261113-1535-istana-kepresidenan-bogo",
   "locations": [
     {
@@ -13,45 +13,64 @@
       "country_code": "ID",
       "lat": -6.5971,
       "lng": 106.7972,
-      "event_type": "kenegaraan",
-      "event_label_id": "Kegiatan Kenegaraan",
-      "reported_at": "2026-11-13T08:35:02.000Z",
-      "confidence": 96,
+      "event_type": "kunjungan_kerja",
+      "event_label_id": "Kunjungan Kerja",
+      "reported_at": "2026-11-13T17:02:12.000Z",
+      "confidence": 98,
       "outlet_scores": {
         "Detik": 2.72,
         "Liputan6": 2.72,
-        "CNN Indonesia": 2.72
+        "CNN Indonesia": 2.72,
+        "Antara News": 2.244
       },
       "sources": [
         {
-          "outlet": "Detik",
-          "title": "Cak Imin Beri Bocoran soal Prabowo Kumpulkan Ketum Parpol di Istana Bogor",
-          "url": "https://news.detik.com/berita/d-8751715/cak-imin-beri-bocoran-soal-prabowo-kumpulkan-ketum-parpol-di-istana-bogor",
-          "published_at": "2026-11-13T08:35:02.000Z"
+          "outlet": "Antara News",
+          "title": "Menkes harap tanda kehormatan Presiden jadi motivasi bagi para nakes",
+          "url": "https://www.antaranews.com/video/5853067/menkes-harap-tanda-kehormatan-presiden-jadi-motivasi-bagi-para-nakes",
+          "published_at": "2026-11-13T17:02:12.000Z"
         },
         {
-          "outlet": "Detik",
-          "title": "Kumpulkan Ketum Parpol Usai Gibran Mundur, Prabowo Tiba di Istana Bogor",
-          "url": "https://news.detik.com/berita/d-8751555/kumpulkan-ketum-parpol-usai-gibran-mundur-prabowo-tiba-di-istana-bogor",
-          "published_at": "2026-11-13T07:33:29.000Z"
+          "outlet": "Antara News",
+          "title": "Ketum PAN ungkap isi pertemuan Presiden dengan para ketua parpol",
+          "url": "https://www.antaranews.com/video/5852959/ketum-pan-ungkap-isi-pertemuan-presiden-dengan-para-ketua-parpol",
+          "published_at": "2026-11-13T16:48:51.000Z"
         },
         {
           "outlet": "Liputan6",
-          "title": "Prabowo Kumpulkan Ketum Parpol di Istana Bogor Sore Ini",
-          "url": "https://www.liputan6.com/news/read/8334616/prabowo-kumpulkan-ketum-parpol-di-istana-bogor-sore-ini",
-          "published_at": "2026-11-13T06:23:25.000Z"
-        },
-        {
-          "outlet": "CNN Indonesia",
-          "title": "Prabowo Kumpulkan Ketum Parpol Koalisi ke Istana Bogor Sore Ini",
-          "url": "https://www.cnnindonesia.com/nasional/20261113113018-32-1426749/prabowo-kumpulkan-ketum-parpol-koalisi-ke-istana-bogor-sore-ini",
-          "published_at": "2026-11-13T04:39:44.000Z"
+          "title": "Prabowo Beri Waktu Seminggu ke Parpol Godok Nama Cawapres",
+          "url": "https://www.liputan6.com/news/read/8334963/prabowo-beri-waktu-seminggu-ke-parpol-godok-nama-cawapres",
+          "published_at": "2026-11-13T13:35:53.000Z"
         },
         {
           "outlet": "Detik",
-          "title": "Prabowo Kumpulkan Ketum Parpol di Istana Bogor Sore Ini",
-          "url": "https://news.detik.com/berita/d-8751121/prabowo-kumpulkan-ketum-parpol-di-istana-bogor-sore-ini",
-          "published_at": "2026-11-13T04:13:17.000Z"
+          "title": "Hasil Pertemuan Prabowo-Petinggi Parpol: Usulan Cawapres Dibahas 1 Pekan",
+          "url": "https://news.detik.com/berita/d-8752168/hasil-pertemuan-prabowo-petinggi-parpol-usulan-cawapres-dibahas-1-pekan",
+          "published_at": "2026-11-13T13:25:02.000Z"
+        },
+        {
+          "outlet": "CNN Indonesia",
+          "title": "Prabowo Beri Bintang Jasa 23 Relawan-Petugas yang Gugur dan Cedera",
+          "url": "https://www.cnnindonesia.com/nasional/20261113191608-24-1427013/prabowo-beri-bintang-jasa-23-relawan-petugas-yang-gugur-dan-cedera",
+          "published_at": "2026-11-13T12:37:58.000Z"
+        },
+        {
+          "outlet": "CNN Indonesia",
+          "title": "Elite Parpol Koalisi Prabowo Mulai Berdatangan ke Istana Bogor",
+          "url": "https://www.cnnindonesia.com/nasional/20261113171936-32-1426971/elite-parpol-koalisi-prabowo-mulai-berdatangan-ke-istana-bogor",
+          "published_at": "2026-11-13T10:33:21.000Z"
+        },
+        {
+          "outlet": "Liputan6",
+          "title": "Rapat Bareng Prabowo, Ketum Parpol Mulai Berdatangan di Istana Bogor",
+          "url": "https://www.liputan6.com/news/read/8334824/rapat-bareng-prabowo-ketum-parpol-mulai-berdatangan-di-istana-bogor",
+          "published_at": "2026-11-13T10:14:36.000Z"
+        },
+        {
+          "outlet": "Liputan6",
+          "title": "Prabowo Tiba di Istana Bogor, Pimpin Rapat Bareng Ketum Parpol",
+          "url": "https://www.liputan6.com/news/read/8334809/prabowo-tiba-di-istana-bogor-pimpin-rapat-bareng-ketum-parpol",
+          "published_at": "2026-11-13T09:40:14.000Z"
         }
       ]
     },
