@@ -1,9 +1,60 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-11-13T01:05:32.333Z",
-  "current": "loc-20261112-1641-istana-merdeka",
+  "generated_at": "2026-11-13T09:33:11.036Z",
+  "current": "loc-20261113-1535-istana-kepresidenan-bogo",
   "locations": [
+    {
+      "id": "loc-20261113-1535-istana-kepresidenan-bogo",
+      "place": "Istana Kepresidenan Bogor",
+      "city": "Bogor",
+      "region": "Jawa Barat",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -6.5971,
+      "lng": 106.7972,
+      "event_type": "kenegaraan",
+      "event_label_id": "Kegiatan Kenegaraan",
+      "reported_at": "2026-11-13T08:35:02.000Z",
+      "confidence": 96,
+      "outlet_scores": {
+        "Detik": 2.72,
+        "Liputan6": 2.72,
+        "CNN Indonesia": 2.72
+      },
+      "sources": [
+        {
+          "outlet": "Detik",
+          "title": "Cak Imin Beri Bocoran soal Prabowo Kumpulkan Ketum Parpol di Istana Bogor",
+          "url": "https://news.detik.com/berita/d-8751715/cak-imin-beri-bocoran-soal-prabowo-kumpulkan-ketum-parpol-di-istana-bogor",
+          "published_at": "2026-11-13T08:35:02.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Kumpulkan Ketum Parpol Usai Gibran Mundur, Prabowo Tiba di Istana Bogor",
+          "url": "https://news.detik.com/berita/d-8751555/kumpulkan-ketum-parpol-usai-gibran-mundur-prabowo-tiba-di-istana-bogor",
+          "published_at": "2026-11-13T07:33:29.000Z"
+        },
+        {
+          "outlet": "Liputan6",
+          "title": "Prabowo Kumpulkan Ketum Parpol di Istana Bogor Sore Ini",
+          "url": "https://www.liputan6.com/news/read/8334616/prabowo-kumpulkan-ketum-parpol-di-istana-bogor-sore-ini",
+          "published_at": "2026-11-13T06:23:25.000Z"
+        },
+        {
+          "outlet": "CNN Indonesia",
+          "title": "Prabowo Kumpulkan Ketum Parpol Koalisi ke Istana Bogor Sore Ini",
+          "url": "https://www.cnnindonesia.com/nasional/20261113113018-32-1426749/prabowo-kumpulkan-ketum-parpol-koalisi-ke-istana-bogor-sore-ini",
+          "published_at": "2026-11-13T04:39:44.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Prabowo Kumpulkan Ketum Parpol di Istana Bogor Sore Ini",
+          "url": "https://news.detik.com/berita/d-8751121/prabowo-kumpulkan-ketum-parpol-di-istana-bogor-sore-ini",
+          "published_at": "2026-11-13T04:13:17.000Z"
+        }
+      ]
+    },
     {
       "id": "loc-20261112-1641-istana-merdeka",
       "place": "Istana Merdeka",
@@ -15,14 +66,21 @@
       "lng": 106.8219,
       "event_type": "bilateral",
       "event_label_id": "Pertemuan Bilateral",
-      "reported_at": "2026-11-12T11:43:50.000Z",
-      "confidence": 84,
+      "reported_at": "2026-11-13T07:35:29.000Z",
+      "confidence": 86,
       "outlet_scores": {
         "Setkab": 2.244,
         "Detik": 1.496,
-        "CNN Indonesia": 1.02
+        "CNN Indonesia": 1.02,
+        "Liputan6": 0.28
       },
       "sources": [
+        {
+          "outlet": "Liputan6",
+          "title": "Gibran 'Masih Ada' di Sisi Prabowo",
+          "url": "https://www.liputan6.com/news/read/8334679/gibran-masih-ada-di-sisi-prabowo",
+          "published_at": "2026-11-13T07:35:29.000Z"
+        },
         {
           "outlet": "Detik",
           "title": "Dilepas Pegawai hingga Relawan, Gibran Tinggalkan Istana Wapres",
@@ -64,12 +122,6 @@
           "title": "Momen Gibran Tinggalkan Istana Merdeka Menuju MPR",
           "url": "https://www.cnnindonesia.com/nasional/20261112113216-36-1426263/momen-gibran-tinggalkan-istana-merdeka-menuju-mpr",
           "published_at": "2026-11-12T04:37:53.000Z"
-        },
-        {
-          "outlet": "Detik",
-          "title": "Gibran Tinggalkan Istana Usai Bertemu Prabowo",
-          "url": "https://news.detik.com/berita/d-8749481/gibran-tinggalkan-istana-usai-bertemu-prabowo",
-          "published_at": "2026-11-12T04:14:52.000Z"
         }
       ]
     },
