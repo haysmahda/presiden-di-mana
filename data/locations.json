@@ -1,9 +1,91 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-11-14T06:25:42.770Z",
-  "current": "loc-20261113-1535-istana-kepresidenan-bogo",
+  "generated_at": "2026-11-14T15:06:16.426Z",
+  "current": "loc-20261114-2130-manila",
   "locations": [
+    {
+      "id": "loc-20261114-2130-manila",
+      "place": "Manila",
+      "city": "Manila",
+      "region": "",
+      "country": "Filipina",
+      "country_code": "PH",
+      "lat": 14.5995,
+      "lng": 120.9842,
+      "event_type": "forum",
+      "event_label_id": "Forum Internasional",
+      "reported_at": "2026-11-14T14:30:43.000Z",
+      "confidence": 86,
+      "outlet_scores": {
+        "Antara News": 3.72,
+        "Detik": 1.364
+      },
+      "sources": [
+        {
+          "outlet": "Antara News",
+          "title": "Presiden Prabowo tiba di Manila, Filipina untuk hadiri KTT ke-49 ASEAN",
+          "url": "https://www.antaranews.com/berita/5854707/presiden-prabowo-tiba-di-manila-filipina-untuk-hadiri-ktt-ke-49-asean",
+          "published_at": "2026-11-14T14:30:43.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Setelah dari Palu, Prabowo Tiba di Filipina untuk Hadiri KTT ke-49 ASEAN",
+          "url": "https://news.detik.com/berita/d-8753329/setelah-dari-palu-prabowo-tiba-di-filipina-untuk-hadiri-ktt-ke-49-asean",
+          "published_at": "2026-11-14T13:51:25.000Z"
+        }
+      ]
+    },
+    {
+      "id": "loc-20261114-2038-palu",
+      "place": "Palu",
+      "city": "Palu",
+      "region": "Sulawesi Tengah",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -0.8917,
+      "lng": 119.8707,
+      "event_type": "kenegaraan",
+      "event_label_id": "Kegiatan Kenegaraan",
+      "reported_at": "2026-11-14T13:38:41.000Z",
+      "confidence": 76,
+      "outlet_scores": {
+        "CNN Indonesia": 1.24,
+        "Detik": 2.48
+      },
+      "sources": [
+        {
+          "outlet": "CNN Indonesia",
+          "title": "Mendagri Hadiri Pembukaan Tanwir dan Milad ke-114 Muhammadiyah di Palu",
+          "url": "https://www.cnnindonesia.com/nasional/20261114200740-25-1427247/mendagri-hadiri-pembukaan-tanwir-dan-milad-ke-114-muhammadiyah-di-palu",
+          "published_at": "2026-11-14T13:38:41.000Z"
+        },
+        {
+          "outlet": "CNN Indonesia",
+          "title": "Canda Prabowo: Bintang 4, Presiden tapi di Muhammadiyah Anggota",
+          "url": "https://www.cnnindonesia.com/nasional/20261114184203-20-1427241/canda-prabowo-bintang-4-presiden-tapi-di-muhammadiyah-anggota",
+          "published_at": "2026-11-14T12:10:04.000Z"
+        },
+        {
+          "outlet": "CNN Indonesia",
+          "title": "Prabowo Cerita Kursi Mendes Sempat Disiapkan untuk Bahlil",
+          "url": "https://www.cnnindonesia.com/nasional/20261114144854-20-1427179/prabowo-cerita-kursi-mendes-sempat-disiapkan-untuk-bahlil",
+          "published_at": "2026-11-14T08:06:17.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Canda Prabowo Sebut Kursi Mendes PDT Sempat Disiapkan untuk Bahlil",
+          "url": "https://news.detik.com/berita/d-8752874/canda-prabowo-sebut-kursi-mendes-pdt-sempat-disiapkan-untuk-bahlil",
+          "published_at": "2026-11-14T08:02:00.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Prabowo Hadiri Acara Tanwir Muhammadiyah di Palu Sulteng",
+          "url": "https://news.detik.com/berita/d-8752782/prabowo-hadiri-acara-tanwir-muhammadiyah-di-palu-sulteng",
+          "published_at": "2026-11-14T06:45:04.000Z"
+        }
+      ]
+    },
     {
       "id": "loc-20261113-1535-istana-kepresidenan-bogo",
       "place": "Istana Kepresidenan Bogor",
