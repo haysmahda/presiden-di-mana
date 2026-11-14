@@ -1,9 +1,79 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-11-14T15:06:16.426Z",
-  "current": "loc-20261114-2130-manila",
+  "generated_at": "2026-11-14T20:43:49.864Z",
+  "current": "loc-20261113-1535-istana-kepresidenan-bogo",
   "locations": [
+    {
+      "id": "loc-20261113-1535-istana-kepresidenan-bogo",
+      "place": "Istana Kepresidenan Bogor",
+      "city": "Bogor",
+      "region": "Jawa Barat",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -6.5971,
+      "lng": 106.7972,
+      "event_type": "kenegaraan",
+      "event_label_id": "Kegiatan Kenegaraan",
+      "reported_at": "2026-11-14T16:10:02.000Z",
+      "confidence": 98,
+      "outlet_scores": {
+        "Detik": 2.72,
+        "Liputan6": 2.72,
+        "CNN Indonesia": 2.72,
+        "Antara News": 4.08
+      },
+      "sources": [
+        {
+          "outlet": "Liputan6",
+          "title": "Demokrat Ungkap Hasil Pertemuan Prabowo dengan Pimpinan Parpol",
+          "url": "https://www.liputan6.com/news/read/8335449/demokrat-ungkap-hasil-pertemuan-prabowo-dengan-pimpinan-parpol",
+          "published_at": "2026-11-14T16:10:02.000Z"
+        },
+        {
+          "outlet": "Antara News",
+          "title": "Ratas di Istana Bogor, Prabowo beri arahan inflasi pangan terkendali",
+          "url": "https://www.antaranews.com/berita/5853119/ratas-di-istana-bogor-prabowo-beri-arahan-inflasi-pangan-terkendali",
+          "published_at": "2026-11-13T19:45:00.000Z"
+        },
+        {
+          "outlet": "Antara News",
+          "title": "Menkes harap tanda kehormatan Presiden jadi motivasi bagi para nakes",
+          "url": "https://www.antaranews.com/video/5853067/menkes-harap-tanda-kehormatan-presiden-jadi-motivasi-bagi-para-nakes",
+          "published_at": "2026-11-13T17:02:12.000Z"
+        },
+        {
+          "outlet": "Antara News",
+          "title": "Ketum PAN ungkap isi pertemuan Presiden dengan para ketua parpol",
+          "url": "https://www.antaranews.com/video/5852959/ketum-pan-ungkap-isi-pertemuan-presiden-dengan-para-ketua-parpol",
+          "published_at": "2026-11-13T16:48:51.000Z"
+        },
+        {
+          "outlet": "Liputan6",
+          "title": "Prabowo Beri Waktu Seminggu ke Parpol Godok Nama Cawapres",
+          "url": "https://www.liputan6.com/news/read/8334963/prabowo-beri-waktu-seminggu-ke-parpol-godok-nama-cawapres",
+          "published_at": "2026-11-13T13:35:53.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Hasil Pertemuan Prabowo-Petinggi Parpol: Usulan Cawapres Dibahas 1 Pekan",
+          "url": "https://news.detik.com/berita/d-8752168/hasil-pertemuan-prabowo-petinggi-parpol-usulan-cawapres-dibahas-1-pekan",
+          "published_at": "2026-11-13T13:25:02.000Z"
+        },
+        {
+          "outlet": "CNN Indonesia",
+          "title": "Prabowo Beri Bintang Jasa 23 Relawan-Petugas yang Gugur dan Cedera",
+          "url": "https://www.cnnindonesia.com/nasional/20261113191608-24-1427013/prabowo-beri-bintang-jasa-23-relawan-petugas-yang-gugur-dan-cedera",
+          "published_at": "2026-11-13T12:37:58.000Z"
+        },
+        {
+          "outlet": "CNN Indonesia",
+          "title": "Elite Parpol Koalisi Prabowo Mulai Berdatangan ke Istana Bogor",
+          "url": "https://www.cnnindonesia.com/nasional/20261113171936-32-1426971/elite-parpol-koalisi-prabowo-mulai-berdatangan-ke-istana-bogor",
+          "published_at": "2026-11-13T10:33:21.000Z"
+        }
+      ]
+    },
     {
       "id": "loc-20261114-2130-manila",
       "place": "Manila",
@@ -15,13 +85,20 @@
       "lng": 120.9842,
       "event_type": "forum",
       "event_label_id": "Forum Internasional",
-      "reported_at": "2026-11-14T14:30:43.000Z",
-      "confidence": 86,
+      "reported_at": "2026-11-14T15:20:52.000Z",
+      "confidence": 92,
       "outlet_scores": {
         "Antara News": 3.72,
-        "Detik": 1.364
+        "Detik": 1.364,
+        "Liputan6": 1.364
       },
       "sources": [
+        {
+          "outlet": "Liputan6",
+          "title": "Prabowo Tiba di Filipina, Siap Hadiri KTT ke-49 ASEAN",
+          "url": "https://www.liputan6.com/news/read/8335436/prabowo-tiba-di-filipina-siap-hadiri-ktt-ke-49-asean",
+          "published_at": "2026-11-14T15:20:52.000Z"
+        },
         {
           "outlet": "Antara News",
           "title": "Presiden Prabowo tiba di Manila, Filipina untuk hadiri KTT ke-49 ASEAN",
@@ -83,76 +160,6 @@
           "title": "Prabowo Hadiri Acara Tanwir Muhammadiyah di Palu Sulteng",
           "url": "https://news.detik.com/berita/d-8752782/prabowo-hadiri-acara-tanwir-muhammadiyah-di-palu-sulteng",
           "published_at": "2026-11-14T06:45:04.000Z"
-        }
-      ]
-    },
-    {
-      "id": "loc-20261113-1535-istana-kepresidenan-bogo",
-      "place": "Istana Kepresidenan Bogor",
-      "city": "Bogor",
-      "region": "Jawa Barat",
-      "country": "Indonesia",
-      "country_code": "ID",
-      "lat": -6.5971,
-      "lng": 106.7972,
-      "event_type": "rapat",
-      "event_label_id": "Rapat Kabinet",
-      "reported_at": "2026-11-13T19:45:00.000Z",
-      "confidence": 98,
-      "outlet_scores": {
-        "Detik": 2.72,
-        "Liputan6": 2.72,
-        "CNN Indonesia": 2.72,
-        "Antara News": 4.08
-      },
-      "sources": [
-        {
-          "outlet": "Antara News",
-          "title": "Ratas di Istana Bogor, Prabowo beri arahan inflasi pangan terkendali",
-          "url": "https://www.antaranews.com/berita/5853119/ratas-di-istana-bogor-prabowo-beri-arahan-inflasi-pangan-terkendali",
-          "published_at": "2026-11-13T19:45:00.000Z"
-        },
-        {
-          "outlet": "Antara News",
-          "title": "Menkes harap tanda kehormatan Presiden jadi motivasi bagi para nakes",
-          "url": "https://www.antaranews.com/video/5853067/menkes-harap-tanda-kehormatan-presiden-jadi-motivasi-bagi-para-nakes",
-          "published_at": "2026-11-13T17:02:12.000Z"
-        },
-        {
-          "outlet": "Antara News",
-          "title": "Ketum PAN ungkap isi pertemuan Presiden dengan para ketua parpol",
-          "url": "https://www.antaranews.com/video/5852959/ketum-pan-ungkap-isi-pertemuan-presiden-dengan-para-ketua-parpol",
-          "published_at": "2026-11-13T16:48:51.000Z"
-        },
-        {
-          "outlet": "Liputan6",
-          "title": "Prabowo Beri Waktu Seminggu ke Parpol Godok Nama Cawapres",
-          "url": "https://www.liputan6.com/news/read/8334963/prabowo-beri-waktu-seminggu-ke-parpol-godok-nama-cawapres",
-          "published_at": "2026-11-13T13:35:53.000Z"
-        },
-        {
-          "outlet": "Detik",
-          "title": "Hasil Pertemuan Prabowo-Petinggi Parpol: Usulan Cawapres Dibahas 1 Pekan",
-          "url": "https://news.detik.com/berita/d-8752168/hasil-pertemuan-prabowo-petinggi-parpol-usulan-cawapres-dibahas-1-pekan",
-          "published_at": "2026-11-13T13:25:02.000Z"
-        },
-        {
-          "outlet": "CNN Indonesia",
-          "title": "Prabowo Beri Bintang Jasa 23 Relawan-Petugas yang Gugur dan Cedera",
-          "url": "https://www.cnnindonesia.com/nasional/20261113191608-24-1427013/prabowo-beri-bintang-jasa-23-relawan-petugas-yang-gugur-dan-cedera",
-          "published_at": "2026-11-13T12:37:58.000Z"
-        },
-        {
-          "outlet": "CNN Indonesia",
-          "title": "Elite Parpol Koalisi Prabowo Mulai Berdatangan ke Istana Bogor",
-          "url": "https://www.cnnindonesia.com/nasional/20261113171936-32-1426971/elite-parpol-koalisi-prabowo-mulai-berdatangan-ke-istana-bogor",
-          "published_at": "2026-11-13T10:33:21.000Z"
-        },
-        {
-          "outlet": "Liputan6",
-          "title": "Rapat Bareng Prabowo, Ketum Parpol Mulai Berdatangan di Istana Bogor",
-          "url": "https://www.liputan6.com/news/read/8334824/rapat-bareng-prabowo-ketum-parpol-mulai-berdatangan-di-istana-bogor",
-          "published_at": "2026-11-13T10:14:36.000Z"
         }
       ]
     },
