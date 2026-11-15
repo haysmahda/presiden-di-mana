@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-11-15T09:29:00.373Z",
+  "generated_at": "2026-11-15T17:12:31.610Z",
   "current": "loc-20261114-2130-manila",
   "locations": [
     {
@@ -15,7 +15,7 @@
       "lng": 120.9842,
       "event_type": "forum",
       "event_label_id": "Forum Internasional",
-      "reported_at": "2026-11-15T08:58:46.000Z",
+      "reported_at": "2026-11-15T14:36:03.000Z",
       "confidence": 92,
       "outlet_scores": {
         "Antara News": 3.72,
@@ -23,6 +23,18 @@
         "Liputan6": 1.364
       },
       "sources": [
+        {
+          "outlet": "Detik",
+          "title": "Di KTT Manila, Prabowo Bicara Penanganan Karhutla: 104 Korporasi Ditindak",
+          "url": "https://news.detik.com/berita/d-8754356/di-ktt-manila-prabowo-bicara-penanganan-karhutla-104-korporasi-ditindak",
+          "published_at": "2026-11-15T14:36:03.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Prabowo di KTT Manila: ASEAN Harus Solid dan Punya Pengaruh Lebih Besar di Dunia",
+          "url": "https://news.detik.com/berita/d-8754041/prabowo-di-ktt-manila-asean-harus-solid-dan-punya-pengaruh-lebih-besar-di-dunia",
+          "published_at": "2026-11-15T09:28:09.000Z"
+        },
         {
           "outlet": "Antara News",
           "title": "Prabowo ikuti pose jabat tangan khas ASEAN di Manila",
@@ -58,12 +70,6 @@
           "title": "Presiden Prabowo tiba di Manila, Filipina untuk hadiri KTT ke-49 ASEAN",
           "url": "https://www.antaranews.com/berita/5854707/presiden-prabowo-tiba-di-manila-filipina-untuk-hadiri-ktt-ke-49-asean",
           "published_at": "2026-11-14T14:30:43.000Z"
-        },
-        {
-          "outlet": "Detik",
-          "title": "Setelah dari Palu, Prabowo Tiba di Filipina untuk Hadiri KTT ke-49 ASEAN",
-          "url": "https://news.detik.com/berita/d-8753329/setelah-dari-palu-prabowo-tiba-di-filipina-untuk-hadiri-ktt-ke-49-asean",
-          "published_at": "2026-11-14T13:51:25.000Z"
         }
       ]
     },
@@ -84,7 +90,8 @@
         "Detik": 2.72,
         "Liputan6": 2.72,
         "CNN Indonesia": 2.72,
-        "Antara News": 4.08
+        "Antara News": 4.08,
+        "Setkab": 2.244
       },
       "sources": [
         {
@@ -149,10 +156,11 @@
       "event_type": "kenegaraan",
       "event_label_id": "Kegiatan Kenegaraan",
       "reported_at": "2026-11-14T13:38:41.000Z",
-      "confidence": 76,
+      "confidence": 88,
       "outlet_scores": {
         "CNN Indonesia": 1.24,
-        "Detik": 2.48
+        "Detik": 2.48,
+        "Setkab": 1.86
       },
       "sources": [
         {
@@ -166,6 +174,12 @@
           "title": "Canda Prabowo: Bintang 4, Presiden tapi di Muhammadiyah Anggota",
           "url": "https://www.cnnindonesia.com/nasional/20261114184203-20-1427241/canda-prabowo-bintang-4-presiden-tapi-di-muhammadiyah-anggota",
           "published_at": "2026-11-14T12:10:04.000Z"
+        },
+        {
+          "outlet": "Setkab",
+          "title": "Presiden Prabowo Buka Tanwir dan Milad ke-114 Muhammadiyah di Palu",
+          "url": "https://setkab.go.id/presiden-prabowo-buka-tanwir-dan-milad-ke-114-muhammadiyah-di-palu/",
+          "published_at": "2026-11-14T11:00:27.000Z"
         },
         {
           "outlet": "CNN Indonesia",
