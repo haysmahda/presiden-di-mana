@@ -1,9 +1,54 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-11-14T20:43:49.864Z",
-  "current": "loc-20261113-1535-istana-kepresidenan-bogo",
+  "generated_at": "2026-11-15T01:56:39.981Z",
+  "current": "loc-20261114-2130-manila",
   "locations": [
+    {
+      "id": "loc-20261114-2130-manila",
+      "place": "Manila",
+      "city": "Manila",
+      "region": "",
+      "country": "Filipina",
+      "country_code": "PH",
+      "lat": 14.5995,
+      "lng": 120.9842,
+      "event_type": "forum",
+      "event_label_id": "Forum Internasional",
+      "reported_at": "2026-11-15T01:25:44.000Z",
+      "confidence": 92,
+      "outlet_scores": {
+        "Antara News": 3.72,
+        "Detik": 1.364,
+        "Liputan6": 1.364
+      },
+      "sources": [
+        {
+          "outlet": "Antara News",
+          "title": "Prabowo tiba hadiri pembukaan KTT ke-49 ASEAN di Manila",
+          "url": "https://www.antaranews.com/berita/5854971/prabowo-tiba-hadiri-pembukaan-ktt-ke-49-asean-di-manila",
+          "published_at": "2026-11-15T01:25:44.000Z"
+        },
+        {
+          "outlet": "Liputan6",
+          "title": "Prabowo Tiba di Filipina, Siap Hadiri KTT ke-49 ASEAN",
+          "url": "https://www.liputan6.com/news/read/8335436/prabowo-tiba-di-filipina-siap-hadiri-ktt-ke-49-asean",
+          "published_at": "2026-11-14T15:20:52.000Z"
+        },
+        {
+          "outlet": "Antara News",
+          "title": "Presiden Prabowo tiba di Manila, Filipina untuk hadiri KTT ke-49 ASEAN",
+          "url": "https://www.antaranews.com/berita/5854707/presiden-prabowo-tiba-di-manila-filipina-untuk-hadiri-ktt-ke-49-asean",
+          "published_at": "2026-11-14T14:30:43.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Setelah dari Palu, Prabowo Tiba di Filipina untuk Hadiri KTT ke-49 ASEAN",
+          "url": "https://news.detik.com/berita/d-8753329/setelah-dari-palu-prabowo-tiba-di-filipina-untuk-hadiri-ktt-ke-49-asean",
+          "published_at": "2026-11-14T13:51:25.000Z"
+        }
+      ]
+    },
     {
       "id": "loc-20261113-1535-istana-kepresidenan-bogo",
       "place": "Istana Kepresidenan Bogor",
@@ -15,7 +60,7 @@
       "lng": 106.7972,
       "event_type": "kenegaraan",
       "event_label_id": "Kegiatan Kenegaraan",
-      "reported_at": "2026-11-14T16:10:02.000Z",
+      "reported_at": "2026-11-14T23:46:09.000Z",
       "confidence": 98,
       "outlet_scores": {
         "Detik": 2.72,
@@ -24,6 +69,12 @@
         "Antara News": 4.08
       },
       "sources": [
+        {
+          "outlet": "Detik",
+          "title": "Demokrat Spill Isi Pertemuan Prabowo dan Ketum Parpol di Istana Bogor",
+          "url": "https://news.detik.com/berita/d-8753498/demokrat-spill-isi-pertemuan-prabowo-dan-ketum-parpol-di-istana-bogor",
+          "published_at": "2026-11-14T23:46:09.000Z"
+        },
         {
           "outlet": "Liputan6",
           "title": "Demokrat Ungkap Hasil Pertemuan Prabowo dengan Pimpinan Parpol",
@@ -65,51 +116,6 @@
           "title": "Prabowo Beri Bintang Jasa 23 Relawan-Petugas yang Gugur dan Cedera",
           "url": "https://www.cnnindonesia.com/nasional/20261113191608-24-1427013/prabowo-beri-bintang-jasa-23-relawan-petugas-yang-gugur-dan-cedera",
           "published_at": "2026-11-13T12:37:58.000Z"
-        },
-        {
-          "outlet": "CNN Indonesia",
-          "title": "Elite Parpol Koalisi Prabowo Mulai Berdatangan ke Istana Bogor",
-          "url": "https://www.cnnindonesia.com/nasional/20261113171936-32-1426971/elite-parpol-koalisi-prabowo-mulai-berdatangan-ke-istana-bogor",
-          "published_at": "2026-11-13T10:33:21.000Z"
-        }
-      ]
-    },
-    {
-      "id": "loc-20261114-2130-manila",
-      "place": "Manila",
-      "city": "Manila",
-      "region": "",
-      "country": "Filipina",
-      "country_code": "PH",
-      "lat": 14.5995,
-      "lng": 120.9842,
-      "event_type": "forum",
-      "event_label_id": "Forum Internasional",
-      "reported_at": "2026-11-14T15:20:52.000Z",
-      "confidence": 92,
-      "outlet_scores": {
-        "Antara News": 3.72,
-        "Detik": 1.364,
-        "Liputan6": 1.364
-      },
-      "sources": [
-        {
-          "outlet": "Liputan6",
-          "title": "Prabowo Tiba di Filipina, Siap Hadiri KTT ke-49 ASEAN",
-          "url": "https://www.liputan6.com/news/read/8335436/prabowo-tiba-di-filipina-siap-hadiri-ktt-ke-49-asean",
-          "published_at": "2026-11-14T15:20:52.000Z"
-        },
-        {
-          "outlet": "Antara News",
-          "title": "Presiden Prabowo tiba di Manila, Filipina untuk hadiri KTT ke-49 ASEAN",
-          "url": "https://www.antaranews.com/berita/5854707/presiden-prabowo-tiba-di-manila-filipina-untuk-hadiri-ktt-ke-49-asean",
-          "published_at": "2026-11-14T14:30:43.000Z"
-        },
-        {
-          "outlet": "Detik",
-          "title": "Setelah dari Palu, Prabowo Tiba di Filipina untuk Hadiri KTT ke-49 ASEAN",
-          "url": "https://news.detik.com/berita/d-8753329/setelah-dari-palu-prabowo-tiba-di-filipina-untuk-hadiri-ktt-ke-49-asean",
-          "published_at": "2026-11-14T13:51:25.000Z"
         }
       ]
     },
