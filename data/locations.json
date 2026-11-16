@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-11-16T06:32:22.932Z",
+  "generated_at": "2026-11-16T18:34:36.918Z",
   "current": "loc-20261114-2130-manila",
   "locations": [
     {
@@ -15,7 +15,7 @@
       "lng": 120.9842,
       "event_type": "forum",
       "event_label_id": "Forum Internasional",
-      "reported_at": "2026-11-16T03:09:59.000Z",
+      "reported_at": "2026-11-16T15:23:54.000Z",
       "confidence": 93,
       "outlet_scores": {
         "Antara News": 3.72,
@@ -24,6 +24,30 @@
         "Setkab": 0.651
       },
       "sources": [
+        {
+          "outlet": "Antara News",
+          "title": "Presiden Prabowo Subianto hadiri Gala Dinner KTT ke-49 ASEAN di Filipina",
+          "url": "https://www.antaranews.com/foto/5858403/presiden-prabowo-subianto-hadiri-gala-dinner-ktt-ke-49-asean-di-filipina",
+          "published_at": "2026-11-16T15:23:54.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Prabowo Hadiri Gala Dinner KTT ASEAN, Pakai Baju Barong Tagalog Khas Filipina",
+          "url": "https://news.detik.com/berita/d-8755824/prabowo-hadiri-gala-dinner-ktt-asean-pakai-baju-barong-tagalog-khas-filipina",
+          "published_at": "2026-11-16T13:32:25.000Z"
+        },
+        {
+          "outlet": "Liputan6",
+          "title": "Momen Prabowo Hadiri Gala Dinner KTT ke-49 ASEAN di Manila",
+          "url": "https://www.liputan6.com/news/read/8336463/momen-prabowo-hadiri-gala-dinner-ktt-ke-49-asean-di-manila",
+          "published_at": "2026-11-16T13:17:28.000Z"
+        },
+        {
+          "outlet": "Liputan6",
+          "title": "Prabowo Hadiri KTT ke-49 ASEAN di Manila Bahas Stabilitas dan Kerja Sama Kawasan",
+          "url": "https://www.liputan6.com/photo/read/8336362/prabowo-hadiri-ktt-ke-49-asean-di-manila-bahas-stabilitas-dan-kerja-sama-kawasan",
+          "published_at": "2026-11-16T10:35:28.000Z"
+        },
         {
           "outlet": "Detik",
           "title": "Momen Prabowo Ikut Family Photo Saat KTT ASEAN di Manila",
@@ -47,30 +71,6 @@
           "title": "Prabowo di KTT Manila: ASEAN Harus Solid dan Punya Pengaruh Lebih Besar di Dunia",
           "url": "https://news.detik.com/berita/d-8754041/prabowo-di-ktt-manila-asean-harus-solid-dan-punya-pengaruh-lebih-besar-di-dunia",
           "published_at": "2026-11-15T09:28:09.000Z"
-        },
-        {
-          "outlet": "Antara News",
-          "title": "Prabowo ikuti pose jabat tangan khas ASEAN di Manila",
-          "url": "https://www.antaranews.com/video/5855519/prabowo-ikuti-pose-jabat-tangan-khas-asean-di-manila",
-          "published_at": "2026-11-15T08:58:46.000Z"
-        },
-        {
-          "outlet": "Setkab",
-          "title": "Presiden Prabowo Hadiri Upacara Pembukaan KTT ke-49 ASEAN di Filipina",
-          "url": "https://setkab.go.id/presiden-prabowo-hadiri-upacara-pembukaan-ktt-ke-49-asean-di-filipina/",
-          "published_at": "2026-11-15T04:00:05.000Z"
-        },
-        {
-          "outlet": "Liputan6",
-          "title": "Momen Prabowo Naik Tricycle Bersama PM Vietnam di KTT ASEAN Filipina",
-          "url": "https://www.liputan6.com/news/read/8335593/momen-prabowo-naik-tricycle-bersama-pm-vietnam-di-ktt-asean-filipina",
-          "published_at": "2026-11-15T03:29:59.000Z"
-        },
-        {
-          "outlet": "Detik",
-          "title": "Prabowo Hadiri Pembukaan KTT Ke-49 ASEAN di Manila, Disambut Bongbong Marcos",
-          "url": "https://news.detik.com/berita/d-8753541/prabowo-hadiri-pembukaan-ktt-ke-49-asean-di-manila-disambut-bongbong-marcos",
-          "published_at": "2026-11-15T02:01:45.000Z"
         }
       ]
     },
