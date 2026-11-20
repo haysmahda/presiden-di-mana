@@ -1,9 +1,47 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-11-20T03:17:50.573Z",
-  "current": "loc-20261114-2130-manila",
+  "generated_at": "2026-11-20T12:55:19.616Z",
+  "current": "loc-20261120-1822-bogor",
   "locations": [
+    {
+      "id": "loc-20261120-1822-bogor",
+      "place": "Bogor",
+      "city": "Bogor",
+      "region": "Jawa Barat",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -6.595,
+      "lng": 106.8166,
+      "event_type": "kenegaraan",
+      "event_label_id": "Kegiatan Kenegaraan",
+      "reported_at": "2026-11-20T11:22:32.000Z",
+      "confidence": 52,
+      "outlet_scores": {
+        "CNN Indonesia": 1.24,
+        "Detik": 0.682
+      },
+      "sources": [
+        {
+          "outlet": "CNN Indonesia",
+          "title": "Kasus Makar, Polri Geledah Rumah Jadi Posko Kombes Iman Imanuddin",
+          "url": "https://www.cnnindonesia.com/nasional/20261120154716-12-1429548/kasus-makar-polri-geledah-rumah-jadi-posko-kombes-iman-imanuddin",
+          "published_at": "2026-11-20T11:22:32.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Bareskrim Ungkap Lokasi Digeledah di Kasus Makar Rumah Brigjen TK dan Kombes IM",
+          "url": "https://news.detik.com/berita/d-8761928/bareskrim-ungkap-lokasi-digeledah-di-kasus-makar-rumah-brigjen-tk-dan-kombes-im",
+          "published_at": "2026-11-20T08:39:42.000Z"
+        },
+        {
+          "outlet": "CNN Indonesia",
+          "title": "Polri Geledah Lokasi di Bogor dan Tangerang Terkait Dugaan Makar",
+          "url": "https://www.cnnindonesia.com/nasional/20261120125227-12-1429398/polri-geledah-lokasi-di-bogor-dan-tangerang-terkait-dugaan-makar",
+          "published_at": "2026-11-20T06:03:08.000Z"
+        }
+      ]
+    },
     {
       "id": "loc-20261114-2130-manila",
       "place": "Manila",
