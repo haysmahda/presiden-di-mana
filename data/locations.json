@@ -1,9 +1,41 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-11-20T21:49:51.332Z",
-  "current": "loc-20261120-1822-bogor",
+  "generated_at": "2026-11-21T03:13:36.882Z",
+  "current": "loc-20261121-0901-lima",
   "locations": [
+    {
+      "id": "loc-20261121-0901-lima",
+      "place": "Lima",
+      "city": "Lima",
+      "region": "",
+      "country": "Peru",
+      "country_code": "PE",
+      "lat": -12.0464,
+      "lng": -77.0428,
+      "event_type": "forum",
+      "event_label_id": "Forum Internasional",
+      "reported_at": "2026-11-21T02:01:28.000Z",
+      "confidence": 26,
+      "outlet_scores": {
+        "Antara News": 0.465,
+        "Liputan6": 0.31
+      },
+      "sources": [
+        {
+          "outlet": "Antara News",
+          "title": "Politik kemarin, KTT ASEAN hingga pertemuan Prabowo-Xi Jinping",
+          "url": "https://www.antaranews.com/berita/5868971/politik-kemarin-ktt-asean-hingga-pertemuan-prabowo-xi-jinping",
+          "published_at": "2026-11-21T02:01:28.000Z"
+        },
+        {
+          "outlet": "Liputan6",
+          "title": "Kasus Dugaan Makar Eks Kapolri Listyo Sigit, Bareskrim Geledah 5 Lokasi",
+          "url": "https://www.liputan6.com/news/read/8339403/kasus-dugaan-makar-eks-kapolri-listyo-sigit-bareskrim-geledah-5-lokasi",
+          "published_at": "2026-11-20T15:01:19.000Z"
+        }
+      ]
+    },
     {
       "id": "loc-20261120-1822-bogor",
       "place": "Bogor",
@@ -15,13 +47,25 @@
       "lng": 106.8166,
       "event_type": "kenegaraan",
       "event_label_id": "Kegiatan Kenegaraan",
-      "reported_at": "2026-11-20T11:22:32.000Z",
-      "confidence": 52,
+      "reported_at": "2026-11-21T00:39:36.000Z",
+      "confidence": 61,
       "outlet_scores": {
         "CNN Indonesia": 1.24,
-        "Detik": 0.682
+        "Detik": 1.24
       },
       "sources": [
+        {
+          "outlet": "Detik",
+          "title": "Terbongkar Rumah di Bogor Diduga Jadi Posko Terkait Makar",
+          "url": "https://news.detik.com/berita/d-8762760/terbongkar-rumah-di-bogor-diduga-jadi-posko-terkait-makar",
+          "published_at": "2026-11-21T00:39:36.000Z"
+        },
+        {
+          "outlet": "CNN Indonesia",
+          "title": "Nama Baru di Kasus Dugaan Makar: Brigjen Tedjo dan Kombes Iman",
+          "url": "https://www.cnnindonesia.com/nasional/20261120195131-12-1429675/nama-baru-di-kasus-dugaan-makar-brigjen-tedjo-dan-kombes-iman",
+          "published_at": "2026-11-20T23:40:09.000Z"
+        },
         {
           "outlet": "CNN Indonesia",
           "title": "Kasus Makar, Polri Geledah Rumah Jadi Posko Kombes Iman Imanuddin",
