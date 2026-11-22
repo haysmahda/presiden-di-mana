@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-11-22T12:36:33.119Z",
+  "generated_at": "2026-11-22T20:43:55.748Z",
   "current": "loc-20261122-1925-hambalang",
   "locations": [
     {
@@ -15,13 +15,20 @@
       "lng": 106.9167,
       "event_type": "kenegaraan",
       "event_label_id": "Kegiatan Kenegaraan",
-      "reported_at": "2026-11-22T12:25:49.000Z",
-      "confidence": 85,
+      "reported_at": "2026-11-22T13:06:55.000Z",
+      "confidence": 95,
       "outlet_scores": {
         "Detik": 2.72,
-        "Antara News": 2.244
+        "Antara News": 2.244,
+        "CNN Indonesia": 2.72
       },
       "sources": [
+        {
+          "outlet": "CNN Indonesia",
+          "title": "Dasco dan Sejumlah Elite Gerindra Temui Prabowo di Hambalang",
+          "url": "https://www.cnnindonesia.com/nasional/20261122200236-32-1430163/dasco-dan-sejumlah-elite-gerindra-temui-prabowo-di-hambalang",
+          "published_at": "2026-11-22T13:06:55.000Z"
+        },
         {
           "outlet": "Detik",
           "title": "Prabowo Kumpulkan Elite Gerindra di Hambalang",
