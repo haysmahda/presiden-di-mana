@@ -1,9 +1,41 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-11-21T20:32:06.758Z",
-  "current": "loc-20261121-0901-lima",
+  "generated_at": "2026-11-22T12:36:33.119Z",
+  "current": "loc-20261122-1925-hambalang",
   "locations": [
+    {
+      "id": "loc-20261122-1925-hambalang",
+      "place": "Hambalang",
+      "city": "Bogor",
+      "region": "Jawa Barat",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -6.5333,
+      "lng": 106.9167,
+      "event_type": "kenegaraan",
+      "event_label_id": "Kegiatan Kenegaraan",
+      "reported_at": "2026-11-22T12:25:49.000Z",
+      "confidence": 85,
+      "outlet_scores": {
+        "Detik": 2.72,
+        "Antara News": 2.244
+      },
+      "sources": [
+        {
+          "outlet": "Detik",
+          "title": "Prabowo Kumpulkan Elite Gerindra di Hambalang",
+          "url": "https://news.detik.com/berita/d-8764791/prabowo-kumpulkan-elite-gerindra-di-hambalang",
+          "published_at": "2026-11-22T12:25:49.000Z"
+        },
+        {
+          "outlet": "Antara News",
+          "title": "Elite Gerindra berkumpul di Hambalang jelang pengajuan cawapres",
+          "url": "https://www.antaranews.com/berita/5871115/elite-gerindra-berkumpul-di-hambalang-jelang-pengajuan-cawapres",
+          "published_at": "2026-11-22T12:14:15.000Z"
+        }
+      ]
+    },
     {
       "id": "loc-20261121-0901-lima",
       "place": "Lima",
