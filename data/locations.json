@@ -1,9 +1,105 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-11-23T02:46:43.582Z",
-  "current": "loc-20261122-1925-hambalang",
+  "generated_at": "2026-11-23T14:41:38.722Z",
+  "current": "loc-20261123-2035-kompleks-parlemen-senaya",
   "locations": [
+    {
+      "id": "loc-20261123-2035-kompleks-parlemen-senaya",
+      "place": "Kompleks Parlemen Senayan",
+      "city": "Jakarta Pusat",
+      "region": "DKI Jakarta",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -6.2101,
+      "lng": 106.8003,
+      "event_type": "kenegaraan",
+      "event_label_id": "Kegiatan Kenegaraan",
+      "reported_at": "2026-11-23T13:35:28.000Z",
+      "confidence": 95,
+      "outlet_scores": {
+        "Antara News": 1.02,
+        "Liputan6": 1.496,
+        "Detik": 2.72,
+        "CNN Indonesia": 2.72
+      },
+      "sources": [
+        {
+          "outlet": "Antara News",
+          "title": "Momen Presiden Prabowo serahkan nama Cawapres ke MPR RI",
+          "url": "https://www.antaranews.com/video/5873315/momen-presiden-prabowo-serahkan-nama-cawapres-ke-mpr-ri",
+          "published_at": "2026-11-23T13:35:28.000Z"
+        },
+        {
+          "outlet": "Liputan6",
+          "title": "Prabowo Serahkan Dua Nama Cawapres Pengganti Gibran ke MPR",
+          "url": "https://www.liputan6.com/photo/read/8340922/prabowo-serahkan-dua-nama-cawapres-pengganti-gibran-ke-mpr",
+          "published_at": "2026-11-23T11:29:55.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Suasana Pertemuan Prabowo dengan Pimpinan MPR Saat Serahkan 2 Nama Cawapres",
+          "url": "https://news.detik.com/berita/d-8766178/suasana-pertemuan-prabowo-dengan-pimpinan-mpr-saat-serahkan-2-nama-cawapres",
+          "published_at": "2026-11-23T10:07:09.000Z"
+        },
+        {
+          "outlet": "CNN Indonesia",
+          "title": "Prabowo Tiba di Gedung MPR untuk Serahkan 2 Nama Calon Wapres",
+          "url": "https://www.cnnindonesia.com/nasional/20261123132148-32-1430373/prabowo-tiba-di-gedung-mpr-untuk-serahkan-2-nama-calon-wapres",
+          "published_at": "2026-11-23T09:49:47.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Prabowo Tiba di Gedung MPR untuk Serahkan 2 Nama Calon Wapres",
+          "url": "https://news.detik.com/berita/d-8766132/prabowo-tiba-di-gedung-mpr-untuk-serahkan-2-nama-calon-wapres",
+          "published_at": "2026-11-23T09:49:33.000Z"
+        },
+        {
+          "outlet": "CNN Indonesia",
+          "title": "MPR Bakal Bacakan Nama Calon Wapres Hari Ini",
+          "url": "https://www.cnnindonesia.com/nasional/20261123133959-32-1430379/mpr-bakal-bacakan-nama-calon-wapres-hari-ini",
+          "published_at": "2026-11-23T06:45:07.000Z"
+        }
+      ]
+    },
+    {
+      "id": "loc-20261123-2024-lima",
+      "place": "Lima",
+      "city": "Lima",
+      "region": "",
+      "country": "Peru",
+      "country_code": "PE",
+      "lat": -12.0464,
+      "lng": -77.0428,
+      "event_type": "kenegaraan",
+      "event_label_id": "Kegiatan Kenegaraan",
+      "reported_at": "2026-11-23T13:24:53.000Z",
+      "confidence": 21,
+      "outlet_scores": {
+        "CNN Indonesia": 0.31,
+        "Detik": 0.31
+      },
+      "sources": [
+        {
+          "outlet": "CNN Indonesia",
+          "title": "Polri Ungkap Motif Listyo dkk: Ingin Tetap Kapolri, Lemahkan Prabowo",
+          "url": "https://www.cnnindonesia.com/nasional/20261123201208-12-1430566/polri-ungkap-motif-listyo-dkk-ingin-tetap-kapolri-lemahkan-prabowo",
+          "published_at": "2026-11-23T13:24:53.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Listyo Sigit cs Bikin Chart Makar hingga Analisis Krisis '98 Soeharto Mundur",
+          "url": "https://news.detik.com/berita/d-8766487/listyo-sigit-cs-bikin-chart-makar-hingga-analisis-krisis-98-soeharto-mundur",
+          "published_at": "2026-11-23T13:08:04.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Listyo Sigit dkk Dijerat Pasal Makar, Terancam Hukuman Mati",
+          "url": "https://news.detik.com/berita/d-8766476/listyo-sigit-dkk-dijerat-pasal-makar-terancam-hukuman-mati",
+          "published_at": "2026-11-23T13:01:42.000Z"
+        }
+      ]
+    },
     {
       "id": "loc-20261122-1925-hambalang",
       "place": "Hambalang",
