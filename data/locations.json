@@ -1,9 +1,53 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-11-23T14:41:38.722Z",
-  "current": "loc-20261123-2035-kompleks-parlemen-senaya",
+  "generated_at": "2026-11-24T02:54:23.795Z",
+  "current": "loc-20261123-2024-lima",
   "locations": [
+    {
+      "id": "loc-20261123-2024-lima",
+      "place": "Lima",
+      "city": "Lima",
+      "region": "",
+      "country": "Peru",
+      "country_code": "PE",
+      "lat": -12.0464,
+      "lng": -77.0428,
+      "event_type": "kenegaraan",
+      "event_label_id": "Kegiatan Kenegaraan",
+      "reported_at": "2026-11-23T23:21:02.000Z",
+      "confidence": 21,
+      "outlet_scores": {
+        "CNN Indonesia": 0.31,
+        "Detik": 0.31
+      },
+      "sources": [
+        {
+          "outlet": "CNN Indonesia",
+          "title": "Jadi Tersangka Kasus Makar, Listyo Sigit Cs Terancam Hukuman Mati",
+          "url": "https://www.cnnindonesia.com/nasional/20261123222835-12-1430606/jadi-tersangka-kasus-makar-listyo-sigit-cs-terancam-hukuman-mati",
+          "published_at": "2026-11-23T23:21:02.000Z"
+        },
+        {
+          "outlet": "CNN Indonesia",
+          "title": "Polri Ungkap Motif Listyo dkk: Ingin Tetap Kapolri, Lemahkan Prabowo",
+          "url": "https://www.cnnindonesia.com/nasional/20261123201208-12-1430566/polri-ungkap-motif-listyo-dkk-ingin-tetap-kapolri-lemahkan-prabowo",
+          "published_at": "2026-11-23T13:24:53.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Listyo Sigit cs Bikin Chart Makar hingga Analisis Krisis '98 Soeharto Mundur",
+          "url": "https://news.detik.com/berita/d-8766487/listyo-sigit-cs-bikin-chart-makar-hingga-analisis-krisis-98-soeharto-mundur",
+          "published_at": "2026-11-23T13:08:04.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Listyo Sigit dkk Dijerat Pasal Makar, Terancam Hukuman Mati",
+          "url": "https://news.detik.com/berita/d-8766476/listyo-sigit-dkk-dijerat-pasal-makar-terancam-hukuman-mati",
+          "published_at": "2026-11-23T13:01:42.000Z"
+        }
+      ]
+    },
     {
       "id": "loc-20261123-2035-kompleks-parlemen-senaya",
       "place": "Kompleks Parlemen Senayan",
@@ -59,44 +103,6 @@
           "title": "MPR Bakal Bacakan Nama Calon Wapres Hari Ini",
           "url": "https://www.cnnindonesia.com/nasional/20261123133959-32-1430379/mpr-bakal-bacakan-nama-calon-wapres-hari-ini",
           "published_at": "2026-11-23T06:45:07.000Z"
-        }
-      ]
-    },
-    {
-      "id": "loc-20261123-2024-lima",
-      "place": "Lima",
-      "city": "Lima",
-      "region": "",
-      "country": "Peru",
-      "country_code": "PE",
-      "lat": -12.0464,
-      "lng": -77.0428,
-      "event_type": "kenegaraan",
-      "event_label_id": "Kegiatan Kenegaraan",
-      "reported_at": "2026-11-23T13:24:53.000Z",
-      "confidence": 21,
-      "outlet_scores": {
-        "CNN Indonesia": 0.31,
-        "Detik": 0.31
-      },
-      "sources": [
-        {
-          "outlet": "CNN Indonesia",
-          "title": "Polri Ungkap Motif Listyo dkk: Ingin Tetap Kapolri, Lemahkan Prabowo",
-          "url": "https://www.cnnindonesia.com/nasional/20261123201208-12-1430566/polri-ungkap-motif-listyo-dkk-ingin-tetap-kapolri-lemahkan-prabowo",
-          "published_at": "2026-11-23T13:24:53.000Z"
-        },
-        {
-          "outlet": "Detik",
-          "title": "Listyo Sigit cs Bikin Chart Makar hingga Analisis Krisis '98 Soeharto Mundur",
-          "url": "https://news.detik.com/berita/d-8766487/listyo-sigit-cs-bikin-chart-makar-hingga-analisis-krisis-98-soeharto-mundur",
-          "published_at": "2026-11-23T13:08:04.000Z"
-        },
-        {
-          "outlet": "Detik",
-          "title": "Listyo Sigit dkk Dijerat Pasal Makar, Terancam Hukuman Mati",
-          "url": "https://news.detik.com/berita/d-8766476/listyo-sigit-dkk-dijerat-pasal-makar-terancam-hukuman-mati",
-          "published_at": "2026-11-23T13:01:42.000Z"
         }
       ]
     },
