@@ -1,9 +1,54 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-11-24T14:53:35.027Z",
-  "current": "loc-20261123-2024-lima",
+  "generated_at": "2026-11-25T00:45:51.058Z",
+  "current": "loc-20261125-0723-istana-merdeka",
   "locations": [
+    {
+      "id": "loc-20261125-0723-istana-merdeka",
+      "place": "Istana Merdeka",
+      "city": "Jakarta Pusat",
+      "region": "DKI Jakarta",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -6.1701,
+      "lng": 106.8219,
+      "event_type": "kenegaraan",
+      "event_label_id": "Kegiatan Kenegaraan",
+      "reported_at": "2026-11-25T00:23:02.000Z",
+      "confidence": 83,
+      "outlet_scores": {
+        "CNN Indonesia": 2.72,
+        "Liputan6": 0.952,
+        "Detik": 0.952
+      },
+      "sources": [
+        {
+          "outlet": "CNN Indonesia",
+          "title": "Prabowo Bertemu Dasco di Istana, Apa yang Dibahas?",
+          "url": "https://www.cnnindonesia.com/nasional/20261125064002-32-1431083/prabowo-bertemu-dasco-di-istana-apa-yang-dibahas",
+          "published_at": "2026-11-25T00:23:02.000Z"
+        },
+        {
+          "outlet": "Liputan6",
+          "title": "Prabowo-Dasco Bertemu Empat Mata di Istana, Ini yang Dibahas",
+          "url": "https://www.liputan6.com/news/read/8341796/prabowo-dasco-bertemu-empat-mata-di-istana-ini-yang-dibahas",
+          "published_at": "2026-11-24T15:22:22.000Z"
+        },
+        {
+          "outlet": "CNN Indonesia",
+          "title": "Dasco Temui Prabowo di Istana Merdeka",
+          "url": "https://www.cnnindonesia.com/nasional/20261124220537-32-1431060/dasco-temui-prabowo-di-istana-merdeka",
+          "published_at": "2026-11-24T15:18:04.000Z"
+        },
+        {
+          "outlet": "Detik",
+          "title": "Prabowo Bertemu 4 Mata dengan Dasco di Istana, Apa yang Dibahas?",
+          "url": "https://news.detik.com/berita/d-8768440/prabowo-bertemu-4-mata-dengan-dasco-di-istana-apa-yang-dibahas",
+          "published_at": "2026-11-24T15:05:18.000Z"
+        }
+      ]
+    },
     {
       "id": "loc-20261123-2024-lima",
       "place": "Lima",
@@ -15,14 +60,20 @@
       "lng": -77.0428,
       "event_type": "kenegaraan",
       "event_label_id": "Kegiatan Kenegaraan",
-      "reported_at": "2026-11-24T12:22:44.000Z",
-      "confidence": 30,
+      "reported_at": "2026-11-24T23:01:32.000Z",
+      "confidence": 38,
       "outlet_scores": {
         "CNN Indonesia": 0.31,
-        "Detik": 0.31,
+        "Detik": 0.62,
         "Liputan6": 0.31
       },
       "sources": [
+        {
+          "outlet": "Detik",
+          "title": "Deretan Jenderal Bintang 3 yang Adili Etik Listyo Sigit",
+          "url": "https://news.detik.com/berita/d-8768555/deretan-jenderal-bintang-3-yang-adili-etik-listyo-sigit",
+          "published_at": "2026-11-24T23:01:32.000Z"
+        },
         {
           "outlet": "Liputan6",
           "title": "Infografis: Peran 6 Tersangka Dugaan Makar",
