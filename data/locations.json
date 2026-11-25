@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-11-25T00:45:51.058Z",
+  "generated_at": "2026-11-25T11:19:08.063Z",
   "current": "loc-20261125-0723-istana-merdeka",
   "locations": [
     {
@@ -16,11 +16,12 @@
       "event_type": "kenegaraan",
       "event_label_id": "Kegiatan Kenegaraan",
       "reported_at": "2026-11-25T00:23:02.000Z",
-      "confidence": 83,
+      "confidence": 96,
       "outlet_scores": {
         "CNN Indonesia": 2.72,
         "Liputan6": 0.952,
-        "Detik": 0.952
+        "Detik": 0.952,
+        "Setkab": 4.08
       },
       "sources": [
         {
@@ -28,6 +29,12 @@
           "title": "Prabowo Bertemu Dasco di Istana, Apa yang Dibahas?",
           "url": "https://www.cnnindonesia.com/nasional/20261125064002-32-1431083/prabowo-bertemu-dasco-di-istana-apa-yang-dibahas",
           "published_at": "2026-11-25T00:23:02.000Z"
+        },
+        {
+          "outlet": "Setkab",
+          "title": "Presiden Prabowo Bertemu Empat Mata dengan Sufmi Dasco di Istana Merdeka, Bahas Laporan dan Aspirasi Masyarakat",
+          "url": "https://setkab.go.id/presiden-prabowo-bertemu-empat-mata-dengan-sufmi-dasco-di-istana-merdeka-bahas-laporan-dan-aspirasi-masyarakat/",
+          "published_at": "2026-11-24T15:37:14.000Z"
         },
         {
           "outlet": "Liputan6",
@@ -46,6 +53,12 @@
           "title": "Prabowo Bertemu 4 Mata dengan Dasco di Istana, Apa yang Dibahas?",
           "url": "https://news.detik.com/berita/d-8768440/prabowo-bertemu-4-mata-dengan-dasco-di-istana-apa-yang-dibahas",
           "published_at": "2026-11-24T15:05:18.000Z"
+        },
+        {
+          "outlet": "Setkab",
+          "title": "Presiden Prabowo Bahas Proyeksi Ekonomi 2027, Instruksikan Investasi USD15 Miliar dari Shenzhen Segera Ditindaklanjuti",
+          "url": "https://setkab.go.id/presiden-prabowo-bahas-proyeksi-ekonomi-2027-instruksikan-investasi-usd15-miliar-dari-shenzhen-segera-ditindaklanjuti/",
+          "published_at": "2026-11-24T11:26:42.000Z"
         }
       ]
     },
