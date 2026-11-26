@@ -1,9 +1,41 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-11-26T13:55:15.491Z",
-  "current": "loc-20261125-0723-istana-merdeka",
+  "generated_at": "2026-11-26T22:59:43.645Z",
+  "current": "loc-20261126-2238-bogor",
   "locations": [
+    {
+      "id": "loc-20261126-2238-bogor",
+      "place": "Bogor",
+      "city": "Bogor",
+      "region": "Jawa Barat",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "lat": -6.595,
+      "lng": 106.8166,
+      "event_type": "pidato",
+      "event_label_id": "Pidato",
+      "reported_at": "2026-11-26T15:38:09.000Z",
+      "confidence": 57,
+      "outlet_scores": {
+        "Antara News": 1.86,
+        "CNN Indonesia": 0.31
+      },
+      "sources": [
+        {
+          "outlet": "Antara News",
+          "title": "Presiden hadiri puncak Hari Guru Nasional 2026 di Bogor",
+          "url": "https://www.antaranews.com/foto/5881459/presiden-hadiri-puncak-hari-guru-nasional-2026-di-bogor",
+          "published_at": "2026-11-26T15:38:09.000Z"
+        },
+        {
+          "outlet": "CNN Indonesia",
+          "title": "Prabowo Menitikkan Air Mata di Puncak Hari Guru",
+          "url": "https://www.cnnindonesia.com/nasional/20261126165612-20-1431960/prabowo-menitikkan-air-mata-di-puncak-hari-guru",
+          "published_at": "2026-11-26T10:06:11.000Z"
+        }
+      ]
+    },
     {
       "id": "loc-20261125-0723-istana-merdeka",
       "place": "Istana Merdeka",
