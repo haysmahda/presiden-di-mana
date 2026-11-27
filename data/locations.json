@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "sample_data": false,
-  "generated_at": "2026-11-26T22:59:43.645Z",
+  "generated_at": "2026-11-27T08:36:44.574Z",
   "current": "loc-20261126-2238-bogor",
   "locations": [
     {
@@ -13,15 +13,22 @@
       "country_code": "ID",
       "lat": -6.595,
       "lng": 106.8166,
-      "event_type": "pidato",
-      "event_label_id": "Pidato",
-      "reported_at": "2026-11-26T15:38:09.000Z",
-      "confidence": 57,
+      "event_type": "upacara",
+      "event_label_id": "Upacara Kenegaraan",
+      "reported_at": "2026-11-27T05:13:47.000Z",
+      "confidence": 64,
       "outlet_scores": {
         "Antara News": 1.86,
-        "CNN Indonesia": 0.31
+        "CNN Indonesia": 0.31,
+        "Setkab": 0.465
       },
       "sources": [
+        {
+          "outlet": "Setkab",
+          "title": "Presiden Prabowo Hadiri Puncak Peringatan Hari Guru Nasional 2026",
+          "url": "https://setkab.go.id/presiden-prabowo-hadiri-puncak-peringatan-hari-guru-nasional-2026/",
+          "published_at": "2026-11-27T05:13:47.000Z"
+        },
         {
           "outlet": "Antara News",
           "title": "Presiden hadiri puncak Hari Guru Nasional 2026 di Bogor",
